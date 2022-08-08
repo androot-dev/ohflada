@@ -7372,3 +7372,30 @@ html {
   flex-direction: column;
   justify-content: center;
 }
+
+
+--paragraph: {{settings.paragraph-color}};
+      --paragraph-size: {{settings.paragraph-size}};
+      --paragraph-weight: {{settings.paragraph-weight}};
+      --heading1: {{settings.heading1-color}};
+      --heading1-size: {{settings.heading1-size}};
+      --heading1-weight: {{settings.heading1-weight}};
+      --heading1-color: {{settings.heading1-color}};
+      --heading2: {{settings.heading2-color}};
+      --heading2-size: {{settings.heading2-size}};
+      --heading2-weight: {{settings.heading2-weight}};
+      --heading2-color: {{settings.heading2-color}};
+
+
+.title-section h1{
+  font-size: var(--heading1-size);
+  font-weight: var(--heading1-weight);
+  color: var(--heading1-color);
+  margin-bottom: 0;
+}
+.title-section h2{
+  font-size: var(--heading2-size);
+  font-weight: var(--heading2-weight);
+  color: var(--heading2-color);
+  margin-bottom: 0;
+}
