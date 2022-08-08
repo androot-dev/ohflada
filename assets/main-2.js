@@ -219,7 +219,7 @@ function getParameterByName() {
     }
 } 
 document.addEventListener('DOMContentLoaded', function () { 
-    page.scroll_tracking = ".scroll-tracking";
+    //page.scroll_tracking = ".scroll-tracking";
     page.lazy_backgrounds = ".lazy-background";
     page.videoReproduction = ".playBtn";
     page.scroll_to_section= getParameterByName();
