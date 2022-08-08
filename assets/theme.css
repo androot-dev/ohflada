@@ -7036,15 +7036,13 @@ hr {
 @font-face {
 font-family: "fuente-titulos";
 font-display: swap;
-  src: url("Lalezar-Regular.woff2") format("woff2"),
-       url("Lalezar-Regular.woff") format("woff");
+src: url("GreatVibes-Regular.ttf");
 } 
 
 @font-face {
 font-family: "fuente-contenido";
 font-display: swap;
-  src: url("RobotoCondensed-Regular.woff2") format("woff2"),
-       url("RobotoCondensed-Regular.woff") format("woff");
+src: url("PlayfairDisplay-VariableFont_wght.ttf");
 }
 
 h1,h2,h3,h4,h5 { 
