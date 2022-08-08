@@ -73,6 +73,11 @@
   - Remove `outline: none` from `.slick-dots li button`
 ==============================================================================*/
 /*================ Slick Slider SCSS ================*/
+
+:root{
+  --section-separation: 50px;
+  --element-separation: 25px;
+}
 .slick-slider {
   position: relative;
   display: block;
