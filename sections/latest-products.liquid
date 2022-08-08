@@ -392,15 +392,15 @@
 </style>
 <section class="latest-products container-fluid">
   <div class="row">
-  <div class="title-section d-flex justify-content-center ">
-    <h1 class="title-primary">{{section.settings.title}}</h1>
-    <h2 class="title-secondary">{{section.settings.subtitle}}</h2>
-  </div>
+    <div class="title-section d-flex justify-content-center ">
+      <h1 class="title-primary">{{section.settings.title}}</h1>
+      <h2 class="title-secondary">{{section.settings.subtitle}}</h2>
+    </div>
 
-  <div class="container-fluid page-width">
-  {% render "section-pastel" section: section.blocks %}
+    <div class="container-fluid page-width">
+    {% render "section-pastel" section: section.blocks %}
+    </div>
   </div>
-</div>
 </section>
 {% schema %}
   {
