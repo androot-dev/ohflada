@@ -7391,3 +7391,8 @@ p, .p{
   color: var(--paragraph);
   margin-bottom: 0;
 }
+a, .a{
+  font-weight: var(--paragraph-weight);
+  color: var(--primary);
+  text-decoration: none;
+}
