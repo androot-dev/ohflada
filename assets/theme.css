@@ -1451,7 +1451,7 @@ a[href^="tel"] {
   font-family: var(--font-stack-header);
   font-style: var(--font-style-header);
   font-weight: var(--font-weight-header);
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 0.08em;
   white-space: normal;
   font-size: calc(((var(--font-size-base) - 2) / (var(--font-size-base))) * 1em); }
@@ -7050,6 +7050,7 @@ h1,h2,h3,h4,h5 {
   font-weight: 900;
   letter-spacing: 3;
   letter-spacing: none !important;
+  text-transform: capitalize;
 }
 
 p { 
