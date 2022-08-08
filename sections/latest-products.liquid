@@ -1,0 +1,520 @@
+<style>
+
+.latest-products{
+ position: relative;
+ overflow:hidden;
+ padding-top: 50px;
+ padding-bottom: 40px;
+}  
+
+  
+.latest-products .section-tittle h2{
+   color:#383838;
+   font-size:30px;
+   font-weight:300;
+   line-height:1.3;
+}
+  
+.latest-products .section-tittle p{
+   color:#ff0000;
+   font-size:18px;
+   margin-top: -20px;
+   margin-bottom: 20px;
+}
+  
+.latest-products .logo-background{
+   position: absolute;
+   right: -200px;
+   top: 80px;
+   height: 80%;
+   opacity: 0.03;
+}
+
+.el-wrapper {
+  width: 320px;
+  padding: 15px;
+  margin: 15px auto;
+  background-color: #fff;
+  border: 1px solid rgb(0 0 0 / 10%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  border-radius: 6px;
+}
+
+@media (max-width: 991px) {
+  .el-wrapper {
+    width: 345px;
+  }
+}
+
+@media (max-width: 767px) {
+  .el-wrapper {
+    width: 290px;
+    margin: 30px auto;
+  }
+}
+
+.el-wrapper:hover .h-bg {
+  left: 0px;
+}
+
+.el-wrapper:hover .price {
+  left: 20px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #818181;
+  
+}
+
+.el-wrapper:hover .add-to-cart {
+  left: 50%;
+}
+
+.el-wrapper:hover .img {
+  webkit-filter: blur(7px);
+  -o-filter: blur(7px);
+  -ms-filter: blur(7px);
+  filter: blur(7px);
+  filter: progid:DXImageTransform.Microsoft.Blur(pixelradius='7', shadowopacity='0.0');
+  opacity: 0.4;
+}
+
+.el-wrapper:hover .info-inner {
+  bottom: 155px;
+}
+
+.el-wrapper:hover .a-size {
+  -webkit-transition-delay: 300ms;
+  -o-transition-delay: 300ms;
+  transition-delay: 300ms;
+  bottom: 50px;
+  opacity: 1;
+}
+
+.el-wrapper .box-down {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  
+}
+
+.el-wrapper .box-up {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.el-wrapper .img {
+  padding: 20px 0;
+  -webkit-transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  -o-transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -o-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+}
+  
+.el-wrapper  img {
+   height: 318px;
+   width: 318px;
+}
+
+.h-bg {
+  -webkit-transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  -o-transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -o-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  width: 660px;
+  height: 100%;
+  background-color: #ff0000;
+  position: absolute;
+  left: -659px;
+}
+
+.h-bg .h-bg-inner {
+  width: 50%;
+  height: 100%;
+  background-color: #464646;
+}
+
+.info-inner {
+  -webkit-transition: all 400ms cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition: all 400ms cubic-bezier(0, 0, 0.18, 1);
+  -o-transition: all 400ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 400ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -o-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  position: absolute;
+  width: 100%;
+  bottom: 25px;
+}
+
+.info-inner .p-name,
+.info-inner .p-company {
+  display: block;
+}
+
+.info-inner .p-name {
+  font-family: 'fuente-titulos', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  background:  #ff0000;
+  padding: 10px 5px;
+  width: 150px;
+  transition: all 300ms;
+  border-radius: 6px;
+}
+
+.el-wrapper:hover .info-inner .p-name  {
+  -webkit-transition-delay: 300ms;
+  -o-transition-delay: 300ms;
+  transition-delay: 300ms;
+  background:  transparent;
+  padding: 10px 5px;
+  width: 100%;
+  font-size: 22px;
+  font-weight: 700;
+   color: #252525;
+}
+  
+  
+.info-inner .p-company {
+  font-family: 'fuente-titulos', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ff0000;
+  opacity: 0;
+}
+  
+.el-wrapper:hover .info-inner .p-company  {
+   opacity: 1;
+   transition: all 300ms;
+}
+
+.a-size {
+  -webkit-transition: all 300ms cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition: all 300ms cubic-bezier(0, 0, 0.18, 1);
+  -o-transition: all 300ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 300ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -o-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  font-family: 'PT Sans', sans-serif;
+  color: #828282;
+  opacity: 0;
+}
+
+.a-size .size {
+  color: #252525;
+}
+
+.cart {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+.cart .price {
+  -webkit-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  -o-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -o-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-delay: 100ms;
+  -o-transition-delay: 100ms;
+  transition-delay: 100ms;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #252525;
+  border-radius: 6px;
+}
+  
+.el-wrapper:hover .cart .price {
+  -webkit-transition-delay: 300ms;
+  -o-transition-delay: 300ms;
+  transition-delay: 300ms;
+  color: #ff0000;
+}
+
+.cart .add-to-cart {
+  -webkit-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  -o-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -o-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-delay: 100ms;
+  -o-transition-delay: 100ms;
+  transition-delay: 100ms;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+}
+
+.cart .add-to-cart .txt {
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-family: "fuente-contenido"
+}
+/*  
+ .latest-products .adorno-1{
+          position: absolute;
+          content: "";
+          width: 150px;
+          height: 500px;
+          top: -50px;
+          right: 280px;
+          background: #ff0000;
+          z-index: 0;
+          transform: skewX(-35deg);
+          opacity: 0.2;
+        }
+
+ .latest-products .adorno-2{
+          position: absolute;
+          content: "";
+          width: 150px;
+          height: 500px;
+          top: -50px;
+          right: 120px;
+          background:#000000;
+          z-index: 0;
+          transform: skewX(-35deg);
+         opacity: 0.2;
+          }
+
+ .latest-products .adorno-3{
+          position: absolute;
+          content: "";
+          width: 30px;
+          height: 300px;
+          bottom: -150px;
+          left: 0px;
+          background: #000;
+          z-index: 0;
+          transform: skewX(-35deg);
+          opacity: 1;
+        }
+
+ .latest-products .adorno-4{
+          position: absolute;
+          content: "";
+          width: 30px;
+          height: 400px;
+          bottom: -200px;
+          left: 40px;
+          background: #ff0000;
+          z-index: 0;
+          transform: skewX(-35deg);          
+        }
+
+
+        @media (max-width: 768px) {            
+ .latest-products .adorno-1{          
+          top: -50px;
+          opacity: 0.08;
+          
+        }
+
+ .latest-products .adorno-2{          
+          height: 80px;                
+        }
+
+ .latest-products .adorno-3{         
+          height: 200px;          
+        }
+
+ .latest-products .adorno-4{        
+          height: 250px;
+          bottom: -200px;                   
+        }
+
+
+        }
+  
+ */ 
+</style>
+<section class="latest-products">
+    <img src="https://cdn.shopify.com/s/files/1/0611/2473/9300/files/products-2.png?v=1637991440" style="position: absolute; z-index: 0; opacity: 0.2; top:0">
+
+  <!--<div class="adorno-1"></div>
+  <div class="adorno-2"></div>
+  <div class="adorno-3"></div>
+  <div class="adorno-4"></div>-->
+  <img src="https://cdn.shopify.com/s/files/1/0611/2473/9300/files/EK_s_New_Life_Logo_Black.png?v=1637594001" class="logo-background">
+  <div class="container">
+    <div class="row d-flex justify-content-center mb-4">
+        <div class="col-xl-7 col-lg-8">
+             <div class="section-tittle text-center mb-70" data-aos="fade-up" >
+                 <h2>{{ section.settings.title }}</h2>
+                  <p>{{ section.settings.subtitle }}</p>
+                 
+              </div>
+          </div>
+      </div>
+    <div class="row">
+      
+    <div class="owl-carousel owl-products" data-aos="fade-up" >
+     {% for block in section.blocks %} 
+    <div class="item">
+     {% assign b = all_products[block.settings.featured_product] %} 
+      <div class="el-wrapper">
+        <div class="box-up">
+          <a href="{{ b.url }}">
+          <img class="img" src="{{ b.featured_image | img_url: 'large' }}" alt="">
+          </a>
+          <div class="img-info">
+            <div class="info-inner">
+              <span class="p-name">{{ b.title }}</span>
+              <span class="p-company">EK's New Life</span>
+            </div>
+            <!--<div class="a-size">Description : <span class="size">S , M , L , XL</span></div>-->
+          </div>
+        </div>
+
+        <div class="box-down">
+          <div class="h-bg">
+            <div class="h-bg-inner"></div>
+          </div>
+
+          <a class="cart" href="https://eks-new-life.myshopify.com/cart/add?id={{ b.variants.first.id }}&quantity=1">
+            <span class="price">{{b.price | money}} </span>
+            <span class="add-to-cart">
+              <span class="txt">{{ block.settings.button_label }}</span>
+            </span>
+          </a>
+        </div>
+      </div>
+      </div>
+      {% endfor %}        
+      </div> 
+      <div class="col-12 d-flex align-items-center justify-content-center">
+        <a href="{{ section.settings.button_link }}" class="scanfcode">
+          {{ section.settings.button_label }}
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Latest Products",
+    "settings": [
+
+       {
+		"type": "text",
+        "id": "title",
+		"label": "Title Section",
+        "default": "Products"
+        
+     },
+     {
+		"type": "text",
+        "id": "subtitle",
+		"label": "SubTitle Section",
+        "default": "Subtitle"
+      },
+     {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+	  "default": "View More Products"
+      },
+      {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+      }
+
+     ],
+     "blocks": [
+      {
+       "type": "product",
+        "name": "Product", 
+     "settings": [
+    {
+      "type": "product",
+      "id": "featured_product",
+      "label": "Product"      
+    },
+      {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Add To Cart"
+    }
+	]
+	}
+    ],   
+  	"presets": [
+      {
+        "category": "Home",
+        "name": "Latest Products"     
+        
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

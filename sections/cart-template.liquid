@@ -1,0 +1,1065 @@
+<style>
+.breadcrumb-area {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 400px;
+  margin-top: -55px; 
+  overflow: hidden;
+}
+  
+@media only screen and (max-width: 767px) {
+  .breadcrumb-area {
+    height: 180px;
+    text-align: center;
+  } 
+  
+  .spad {
+    padding-top: 200px!important;
+    padding-bottom: 170px !important;
+}
+  
+.breadcrumb-area .breadcrumb-content .breadcrumb {
+   justify-content: center;
+}
+  
+}
+  
+.breadcrumb-area .breadcrumb-content{
+   margin-left: 70px;
+   position: relative;
+   z-index: 30;
+}
+ 
+  
+.breadcrumb-area .breadcrumb-content h2 {
+  color: #ffffff;
+  font-size: 3rem; 
+  display: block;
+  text-transform: none !important;
+  font-weight: 300;
+  letter-spacing: 0;
+   position: relative;
+  z-index: 30;
+}
+  
+ 
+
+@media only screen and (max-width: 767px) {
+  .breadcrumb-area .breadcrumb-content h2 {
+     font-size: 3rem;
+  }
+  
+  .breadcrumb-area .breadcrumb-content{
+   margin-left: 0px;
+}
+  
+  .breadcrumb-area .breadcrumb-content h2::before{
+  display: none;
+  
+}
+ 
+}
+
+.breadcrumb-area .breadcrumb-content .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.breadcrumb-area .breadcrumb-content .breadcrumb .breadcrumb-item::before {
+   color: #ffffff;
+}
+    
+.breadcrumb-area .breadcrumb-content .breadcrumb .breadcrumb-item.active {
+   color:  #fff;
+   font-size: 18px;
+   font-weight: 300;
+   font-family: "fuente-contenido" !important;
+}
+
+.breadcrumb-area .breadcrumb-content .breadcrumb .breadcrumb-item a {
+   font-size: 18px;
+   color: #ffffff;
+   font-weight: 300;
+   transition: 0.6s;
+   font-family: "fuente-contenido" !important;
+}
+      
+.breadcrumb-area .breadcrumb-content .breadcrumb .breadcrumb-item a:hover {
+   color: #ff0000;
+   transition: 0.6s;
+}
+  
+ 
+.bg-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+  
+.bg-overlay {
+  position: relative;
+  z-index: 2;
+  background-position: center center;
+  background-size: cover; 
+}
+
+.bg-overlay::after {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+ 
+  
+.spad {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+  
+.div1 { 
+    background-color: white; 
+    border: 20px solid white; 
+} 
+.div2 { 
+    float: right; 
+    border-top: 20px solid red; 
+    border-right: 20px solid red; 
+    border-left: 20px solid transparent; 
+} 
+.div3 { 
+    float: right; 
+    margin: 10px -20px; 
+    border-bottom: 20px solid red; 
+    border-right: 20px solid transparent; 
+    border-left: 20px solid transparent; 
+} 
+.div4 { 
+    border-top: 20px solid red; 
+    border-right: 20px solid transparent; 
+    margin-right: 40px; 
+} 
+
+  
+/*.breadcrumb-area .adorno-1{
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 100%;
+  bottom:0;
+  right:-40px;
+  background-image: linear-gradient(to right top, #ff0000, #d60006, #ae0008, #870007, #620000);
+  z-index: 3;
+  transform: skewX(-35deg);
+  opacity: 0.3;
+}
+
+.breadcrumb-area .adorno-2{
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 500px;
+  top:-200px;
+  right:90px;
+  background:#000000;
+  z-index: 2;
+  transform: skewX(-35deg);
+  opacity: 0.3;
+}
+
+.breadcrumb-area .adorno-3{
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 500px;
+  bottom:-200px;
+  right:150px;
+  background:#000;
+  z-index: 2;
+  transform: skewX(-35deg);
+  opacity: 0.7;
+}
+
+.breadcrumb-area .adorno-4{
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 400px;
+  bottom: -200px;
+  right:50px;
+  background:#fff;
+  z-index: 3;
+  transform: skewX(-35deg); 
+  opacity: 0.2;
+}*/
+  
+  
+/* FIN PORTADA SUB PAGINAS*/
+  
+  
+.section-cart{
+  padding-top:30px;
+  padding-bottom:50px;
+  overflow: hidden;
+  position: relative;
+ z-index: 3;
+}
+  
+
+ 
+.section-cart .btn{
+  background: transparent;
+}
+ 
+
+.section-cart .btn-3 {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ff0000 !important;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 15px 50px;
+  text-decoration: none;
+  text-align: center; 
+  font-family: "fuente-titulos";
+  font-weight: 300;
+  position: relative; 
+  z-index:4;
+  
+  transition: 0.3s
+}
+
+.section-cart .btn-3:before,
+.section-cart .btn-3:after {
+  border-color: #ff5050;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content:"";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+.section-cart .btn-3:before {
+  border-left-width: 2px;
+  border-top-width: 2px;
+  left: -5px;
+  top: -5px;
+   border-radius: 6px 0px 0px 0px;
+}
+
+.section-cart .btn-3:after {
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  bottom: -5px;
+  right: -5px;
+  border-radius: 0px 0px 6px 0px;
+}
+.section-cart .btn-3:hover:before,
+.section-cart .btn-3:hover:after
+{
+  height:100%;
+  width:100%;
+}
+
+
+  
+.empty-page-content h1{
+   color:  #383838 !important; 
+   font-size: 3rem;
+  }
+  
+   table  {
+    position: relative;
+    z-index: 5px;
+  }
+  
+  table a {
+    border-bottom:0!important;
+  
+  }
+  
+  thead th {
+   background: #000 !important; 
+   font-family: "fuente-contenido" !important;
+   color:#fff!important;
+   text-align: center;
+   padding: 10px!important;
+   text-transform: none !important;
+   border-right: 1px solid #d9d9d9 !important;
+  }
+  
+  thead th:first-child {   
+   border-top-left-radius: 6px;
+   border-bottom-left-radius:6px; 
+  }
+  
+   thead th:last-child {   
+   border-top-right-radius: 6px;
+   border-bottom-right-radius: 6px;
+   border-right: 0px solid #d9d9d9 !important;
+  }
+ 
+  .cart__row--heading{
+   font-size: 18px;
+  }  
+  
+  
+  .cart-subtotal__title{
+   color: #383838 !important; 
+   font-family: "fuente-contenido" !important;
+   font-weight: 500;
+  }
+  
+  
+  .cart__product-title{
+   font-family: "fuente-titulos" !important;
+   font-size: 22px;
+   color: #383838  !important; 
+   border:0;
+   font-weight: 900;
+   outline: none;
+   text-decoration: none;
+   transition: 0.6s;
+   font-weight: 300;
+  }
+ 
+  
+
+ 
+ .text-link {
+  display: inline;
+  border: 0 none;
+  background: none;
+  padding: 0;
+  margin: 0; 
+  font-weight: 300px !important;
+ }
+  
+  
+
+.text-link--accent {
+  color:  #ff0000 !important; 
+  font-family: "fuente-contenido" !important;
+  font-size: 18px;
+  padding-bottom: 1px;
+  transition: 0.6s;
+  font-weight: 700 !important;
+}
+  
+.text-link--accent:not([disabled]):hover, .text-link--accent:focus {
+    
+    opacity: 0.5;
+    transition: 0.6s;
+    font-weight: 700 !important;
+}
+  
+.cart__removed-product-details{
+   font-weight: 300px !important;
+  }
+  
+  @media only screen and (max-width: 767px) {
+   
+  .cart__product-title{   
+   font-size: 12px;
+  }
+    
+    .clase-borde{
+       border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+   
+  }
+  
+  .cart__image{
+  border: 2px solid  #fff;
+  background: #fff !important; 
+  box-shadow: -12px 10px 5px -8px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  
+  }
+  
+.disclosure__toggle, input, select, textarea {
+    border: 1px solid var(--color-border-form);
+    background-color: var(--color-text-field);
+    color: var(--color-text-field-text);
+    max-width: 100%;
+    line-height: 1.2;
+    border-radius: 6px;
+}
+  
+/*TRIANGULOS ADORNOS*/ 
+  
+/*.section-cart .container-triangle {
+    width: 188px;
+    height: 195px;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    border-top: 4px solid red;
+    z-index: 300;
+  transform: rotate(-30deg);
+  opacity: 0.2;
+   z-index: 1;
+}
+
+.section-cart .triangle {
+    position: absolute;
+    margin: auto;
+    top: -70px;
+    left: 0;
+    right: 0;
+    width: 137px;
+    height: 137px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-right: 4px solid red;
+    border-bottom: 4px solid red;
+    z-index: 1;
+  
+}
+  
+.section-cart .triangle-right {
+    width: 0;
+    height: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 5%;
+    left: 1%;
+    transform: rotate(25deg);
+    z-index: 1;
+}
+.section-cart .triangle-right:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top:-500px;
+    margin-left: -500px;
+    opacity: 0.1;
+    border-top: 500px solid transparent;
+    border-bottom: 500px solid transparent;
+    border-left: 500px solid #000;
+    z-index: 1;
+}
+  
+.section-cart .triangle-4 {
+  width: 60px;
+  height: 30px;
+  border-bottom: solid 30px rgb(200,30,50);
+  border-left: solid 30px transparent;
+  border-right: solid 30px transparent;
+  position: absolute;
+  z-index: 1;
+  top: 70%;
+  left: -80%;
+  transform: rotate(-20deg);
+  opacity: 0.2;
+  
+}
+
+  
+.section-cart .container-triangle-2 {
+    width: 23px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    border-top: 3px solid black;
+    z-index: 300;
+  transform: rotate(-10deg);
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.section-cart .triangle-2 {
+    position: absolute;
+    margin: auto;
+    top: -10px;
+    left: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    z-index: 1;
+}
+  
+.section-cart .triangle-5 {
+    width: 60px;
+    height: 50px;
+    border-bottom: solid 50px rgb(255,255,255);
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+    position: absolute;
+    z-index: 30;
+    top: 30%;
+    left: %;
+    transform: rotate(-95deg);
+    opacity: 0.1;
+    z-index: 1;
+  
+}
+  
+.section-cart .container-triangle-3 {
+    width: 188px;
+    height: 195px;
+    position: absolute;
+    top: 55%;
+    left: -3%;
+    border-top: 4px solid red;
+    z-index: 300;
+  transform: rotate(-40deg);
+  opacity: 0.2;
+   z-index: 1;
+}
+
+.section-cart .triangle-3 {
+    position: absolute;
+    margin: auto;
+    top: -70px;
+    left: 0;
+    right: 0;
+    width: 137px;
+    height: 137px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-right: 4px solid red;
+    border-bottom: 4px solid red;
+    z-index: 1;
+}*/
+ 
+   
+</style>
+
+ <!--==========================
+      SECCION HERO SUBPAGINAS
+ ============================-->
+
+<section class="breadcrumb-area spad bg-img bg-overlay" style="background-image: url('{{ section.settings.image-bg-1 | img_url: 'master' }}');">
+    <img src="https://cdn.shopify.com/s/files/1/0611/2473/9300/files/hero-subpages.png?v=1638040332" style="position: absolute; z-index: 2; opacity: 0.2; top: 0">
+
+  <!-- <div class="adorno-1"></div>
+  <div class="adorno-2"></div>
+  <div class="adorno-3"></div>
+  <div class="adorno-4"></div>-->
+  <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content">
+                        <h2>{{ 'cart.general.title' | t }}</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="{{ routes.root_url }}">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">{{ 'cart.general.title' | t }}</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</section>
+<div class="div2"></div> 
+<div class="div3"></div> 
+<div class="div4"></div>
+ <!-- FIN SUBPAGINAS -->
+
+
+<section class="section-cart">
+  <img src="https://cdn.shopify.com/s/files/1/0611/2473/9300/files/producy-5.png?v=1638042518" style="position: absolute; z-index: 0; opacity: 0.2; top: 0">
+        <img src="https://cdn.shopify.com/s/files/1/0611/2473/9300/files/product-4.png?v=1638041100" style="position: absolute; z-index: 0; opacity: 0.2; bottom: 0">
+
+ <!--<div class="container-triangle d-lg-block d-none">
+    <div class="triangle"></div>
+  </div>
+  <div class="triangle-right"></div>
+  <div class="triangle triangle-4"></div>
+  <div class="container-triangle-2">
+    <div class="triangle-2"></div>
+  </div>
+  <div class="triangle-5"></div>
+  <div class="container-triangle-3">
+    <div class="triangle-3"></div>
+  </div>-->
+<div class="page-width" data-section-id="{{ section.id }}" data-section-type="cart-template" data-ajax-enabled="{{ section.settings.cart_ajax_enable }}">
+
+  <div {% if cart.item_count == 0 %}class="hide" {% endif %}data-cart-wrapper>
+    <div class="cart-header">    
+      <!--<a href="{{ routes.all_products_collection_url }}" class="text-link text-link--accent">
+        {{ 'cart.general.continue_shopping' | t }}
+      </a>-->
+      
+       <a href="https://noodles-more.myshopify.com/pages/menu" class="text-link text-link--accent">
+        {{ 'cart.general.continue_shopping' | t }}
+      </a>
+    </div>
+
+    <form action="{{ routes.cart_url }}" method="post" novalidate class="cart">
+      <table>
+        <thead class="cart__row cart__row--heading">
+          <th scope="col">{{ 'cart.label.product' | t }}</th>
+          <th class="clase-borde" scope="col">{{ 'cart.label.price' | t }}</th>
+          <th class="small--hide" scope="col">{{ 'cart.label.quantity' | t }}</th>
+          <th class="small--hide" scope="col">{{ 'cart.label.total' | t }}</th>
+        </thead>
+        <tbody data-cart-line-items>
+          {%- for item in cart.items -%}
+            <!--<tr class="cart__row" data-cart-item data-cart-item-key="{{ item.key }}" data-cart-item-url="{{ item.url }}" data-cart-item-title="{{ item.title }}" data-cart-item-index="{{ forloop.index }}" data-cart-item-quantity="{{ item.quantity }}">-->
+              <tr class="cart__row" data-cart-item data-cart-item-key="{{ item.key }}" data-cart-item-url="{{ item.url }}" data-cart-item-title="{{ item.title }}" data-cart-item-index="{{ forloop.index }}" data-cart-item-quantity="{{ item.quantity }}">
+              <td class="cart__meta small--text-left" data-cart-table-cell>
+                <div class="cart__product-information">
+                  <div class="cart__image-wrapper">
+                    <img class="cart__image{% if item.image == null %} hide{% endif %}" src="{{ item | img_url: 'x190' }}" alt="{{ item.image.alt | escape }}" data-cart-item-image>
+                  </div>
+                  <div>
+                    <div class="list-view-item__title">
+                      <!--<a href="{{ item.url }}" class="cart__product-title" data-cart-item-title data-role="product-title">-->
+                      <a class="cart__product-title" data-cart-item-title data-role="product-title">
+                        {{ item.product.title }}
+                      </a>
+                    </div>
+
+                    {%- assign variant_options = 'template ' | split: ' ' -%}
+                    {%- if item.product.has_only_default_variant != true -%}
+                      {%- assign variant_options = item.options_with_values -%}
+                    {%- endif -%}
+                    {%- assign property_size = item.properties | size -%}
+
+                    <ul class="product-details{% if item.product.has_only_default_variant and property_size == 0 and item.selling_plan_allocation == nil %} hide{% endif %}" data-cart-item-details aria-label="{{ 'cart.label.product_details' | t }}">
+                      {%- for option in variant_options -%}
+                        <li class="product-details__item product-details__item--variant-option{% if item.product.has_only_default_variant %} hide{% endif %}" data-cart-item-option>{{ option.name }}: {{ option.value }}</li>
+                      {%- endfor -%}
+
+                      <li
+                        class="product-details__item product-details__item--property
+                        {% if item.selling_plan_allocation == empty %} hide {% endif %}"
+                        data-cart-item-selling-plan-name
+                      >
+                        {{ item.selling_plan_allocation.selling_plan.name }}
+                      </li>
+
+                      {%- comment -%}
+                        Optional, loop through custom product line items if available
+
+                        Line item properties come in as having two parts. The first part will be passed with the default form,
+                        but p.last is the actual custom property and may be blank. If it is, don't show it.
+
+                        For more info on line item properties, visit:
+                          - http://docs.shopify.com/support/your-store/products/how-do-I-collect-additional-information-on-the-product-page-Like-for-a-monogram-engraving-or-customization
+                      {%- endcomment -%}
+
+                      {%- assign properties = 'template ' | split: ' ' -%}
+                      {%- if property_size > 0 -%}
+                        {%- assign properties = item.properties -%}
+                      {%- endif -%}
+
+                      {%- for p in properties -%}
+                        {% assign property_first_char = p.first | slice: 0 %}
+                        <li class="product-details__item product-details__item--property
+                          {%if property_size == 0 or p.last == blank or property_first_char == '_' %} hide{% endif %}" data-cart-item-property>
+                          <span class="product-details__item-label" data-cart-item-property-name>{{ p.first }}: </span>
+
+                          {%- comment -%}
+                            Check if there was an uploaded file associated
+                          {%- endcomment -%}
+                          <span data-cart-item-property-value>
+                            {%- if p.last contains '/uploads/' -%}
+                              <a href="{{ p.last }}" data-role="product-upload">{{ p.last | split: '/' | last }}</a>
+                            {%- else -%}
+                              {{ p.last }}
+                            {%- endif -%}
+                          </span>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+
+                    <p class="cart__remove">                    
+                        <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="text-link text-link--accent" aria-label="{{ 'cart.label.remove' | t: product: item.title }}" data-cart-remove data-role="product-remove">{{ 'cart.general.remove' | t }}</a>
+                      
+                    </p>
+                  </div>
+                </div>
+              </td>
+              <td class="cart__price text-right">
+
+                {%- assign hasDiscount = false -%}
+                {%- if item.original_price != item.final_price -%}
+                  {%- assign hasDiscount = true -%}
+                {%- endif -%}
+
+                <div data-cart-item-price>
+                  <dl data-cart-item-price-list>
+                    {%- comment -%}
+                      Markup template for discount item
+                    {%- endcomment -%}
+                    <div {% unless hasDiscount %}class="hide" {% endunless %}data-cart-item-discounted-price-group>
+                      <dt>
+                        <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+                      </dt>
+                      <dd>
+                        <s data-cart-item-original-price><span class='hulkapps-cart-item-price' data-key='{{item.key}}'>{{ item.original_price | money }}</span></s>
+                      </dd>
+                      <dt>
+                        <span class="visually-hidden">{{ 'products.product.sale_price' | t }}</span>
+                      </dt>
+                      <dd>
+                        <span class="order-discount" data-cart-item-final-price>{{ item.final_price | money }}</span>
+                      </dd>
+                    </div>
+
+                    {%- comment -%}
+                      Markup template for regular price item
+                    {%- endcomment -%}
+                    <div {% if hasDiscount %}class="hide" {% endif %}data-cart-item-regular-price-group>
+                      <dt>
+                        <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+                      </dt>
+                      <dd data-cart-item-regular-price>
+                        <span class='hulkapps-cart-item-price' data-key='{{item.key}}'>{{ item.original_price | money }}</span>
+                      </dd>
+                    </div>
+
+                    {%- comment -%}
+                      Markup template for unit price
+                    {%- endcomment -%}
+                    <div {% unless item.unit_price_measurement %}class="hide" {% endunless %}data-unit-price-group>
+                      <dt>
+                        <span class="visually-hidden visually-hidden--inline">{{ 'products.product.unit_price_label' | t }}</span>
+                      </dt>
+                      <dd>
+                        <span class="price-unit-price">
+                          {%- capture unit_price_separator -%}
+                            <span aria-hidden="true">/</span><span class="visually-hidden">{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
+                          {%- endcapture -%}
+                          {%- capture unit_price_base_unit -%}
+                            {%- if item.unit_price_measurement.reference_value != 1 -%}
+                              {{- item.unit_price_measurement.reference_value -}}
+                            {%- endif -%}
+                            {{ item.unit_price_measurement.reference_unit }}
+                          {%- endcapture -%}
+
+                          <span data-unit-price>{{ item.unit_price | money }}</span>{{- unit_price_separator -}}<span data-unit-price-base-unit>{{- unit_price_base_unit -}}</span>
+                        </span>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+
+                {%- assign itemDiscounts = 'template ' | split: ' ' -%}
+                {%- if item.line_level_discount_allocations != blank -%}
+                  {%- assign itemDiscounts = item.line_level_discount_allocations -%}
+                {%- endif -%}
+
+                <ul class="order-discount order-discount--list order-discount--title order-discount--cart{% if item.line_level_discount_allocations == blank %} hide{% endif %}" aria-label="{{ 'customer.order.discount' | t }}" data-cart-item-discount-list>
+                  {%- for discount_allocation in itemDiscounts -%}
+                    <li class="order-discount__item" data-cart-item-discount>
+                      {% include 'icon-saletag' %}
+                      <span data-cart-item-discount-title>
+                        {{- discount_allocation.discount_application.title -}}
+                      </span> (-<span data-cart-item-discount-amount>{{ discount_allocation.amount | money }}</span>)
+                    </li>
+                  {%- endfor -%}
+                </ul>
+
+                <div class="cart__qty medium-up--hide">
+                  <label for="updates_{{ item.key }}" class="cart__qty-label" aria-label="{{ 'cart.label.quantity' | t }}" data-quantity-label-mobile>
+                    {{ 'cart.label.qty' | t }}
+                  </label>
+                  <input id="updates_{{ item.key }}" class="cart__qty-input" type="number"
+                    value="{{ item.quantity }}" min="0" pattern="[0-9]*"
+                    data-quantity-input data-quantity-item="{{ forloop.index }}" data-quantity-input-mobile data-role="product-quantity-mobile">
+                </div>
+                <div class="cart__qty-error-message-wrapper cart__qty-error-message-wrapper--mobile hide" role="alert" data-cart-quantity-error-message-wrapper>
+                  <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+                  {% include 'icon-error' %}
+                  <span class="cart__qty-error-message" data-cart-quantity-error-message></span>
+                </div>
+              </td>
+              <td class="cart__quantity-td text-right small--hide">
+                <div class="cart__qty">
+                  <label for="updates_large_{{ item.key }}" class="cart__qty-label" data-quantity-label-desktop>{{ 'cart.label.quantity' | t }}</label>
+                  <input id="updates_large_{{ item.key }}" class="cart__qty-input" type="number"
+                    name="updates[]" value="{{ item.quantity }}" min="0" pattern="[0-9]*"
+                    data-quantity-input data-quantity-item="{{ forloop.index }}" data-quantity-input-desktop data-role="product-quantity-desktop">
+                </div>
+                <div class="cart__qty-error-message-wrapper cart__qty-error-message-wrapper--desktop hide" role="alert" data-cart-quantity-error-message-wrapper>
+                  <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+                  {% include 'icon-error' %}
+                  <span class="cart__qty-error-message" data-cart-quantity-error-message></span>
+                </div>
+              </td>
+              <td class="cart__final-price text-right small--hide" data-cart-item-line-price>
+                {%- comment -%}
+                  Markup template for discount item
+                {%- endcomment -%}
+                <dl {% unless item.original_line_price != item.final_line_price %}class="hide" {% endunless %}data-cart-item-discounted-price-group>
+                  <dt>
+                    <span class="visually-hidden">{{ 'cart.label.regular_total' | t }}</span>
+                  </dt>
+                  <dd>
+                    <s data-cart-item-original-price><span class='hulkapps-cart-item-line-price' data-key='{{item.key}}'>{{ item.original_line_price | money }}</span></s>
+                  </dd>
+                  <dt>
+                    <span class="visually-hidden">{{ 'cart.label.discounted_total' | t }}</span>
+                  </dt>
+                  <dd>
+                    <span class="order-discount" data-cart-item-final-price>{{ item.final_line_price | money }}</span>
+                  </dd>
+                </dl >
+
+                {%- comment -%}
+                  Markup template for regular price item
+                {%- endcomment -%}
+                <div {% if item.original_line_price != item.final_line_price %}class="hide" {% endif %}data-cart-item-regular-price-group>
+                  <span data-cart-item-regular-price><span class='hulkapps-cart-item-line-price' data-key='{{item.key}}'>{{ item.original_line_price | money }}</span></span>
+                </div>
+              </td>
+            </tr>
+          {%- endfor -%}
+        </tbody>
+      </table>
+
+      <div class="cart__footer">
+        <div class="grid">
+          {%- if section.settings.cart_notes_enable -%}
+            <div class="grid__item medium-up--one-half cart-note">
+              <label for="CartSpecialInstructions" class="cart-note__label small--text-center">{{ 'cart.general.note' | t }}</label>
+              <textarea name="note" id="CartSpecialInstructions" class="cart-note__input" data-cart-notes>{{ cart.note }}</textarea>
+            </div>
+          {%- endif -%}
+          <div class="grid__item text-right small--text-center{% if section.settings.cart_notes_enable %} medium-up--one-half{% endif %}">
+
+            {%- assign cartDiscounts = 'template ' | split: ' ' -%}
+            {%- if cart.cart_level_discount_applications.size > 0 -%}
+              {%- assign cartDiscounts = cart.cart_level_discount_applications -%}
+            {%- endif -%}
+            <div{% if cart.cart_level_discount_applications.size == 0 %} class="hide"{% endif %} data-cart-discount-wrapper>
+              <div class="order-discount-card-wrapper" data-cart-discount>
+                {%- for discount_application in cartDiscounts -%}
+                  <span class="order-discount order-discount--title order-discount--cart">
+                    {% include 'icon-saletag' %}<span class="visually-hidden">{{ 'customer.order.discount' | t }}:</span><span data-cart-discount-title>{{- discount_application.title -}}</span>
+                  </span>
+                  <span class="order-discount order-discount--cart order-discount--cart-total">
+                    -<span data-cart-discount-amount>{{ discount_application.total_allocated_amount | money }}</span>
+                  </span>
+                {%- endfor -%}
+              </div>
+            </div>
+
+            <div class="cart-subtotal">
+              <span class="cart-subtotal__title">{{ 'cart.general.subtotal' | t }}</span>
+              <span class="cart-subtotal__price" data-cart-subtotal><span class='hulkapps-cart-original-total'>{{ cart.total_price | money_with_currency }}</span></span>
+            </div>
+
+            {%- capture taxes_shipping_checkout -%}
+              {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
+                {{ 'cart.general.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
+              {%- elsif cart.taxes_included -%}
+                {{ 'cart.general.taxes_included_but_shipping_at_checkout' | t }}
+              {%- elsif shop.shipping_policy.body != blank -%}
+                {{ 'cart.general.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}
+              {%- else -%}
+                {{ 'cart.general.taxes_and_shipping_at_checkout' | t }}
+              {%- endif -%}
+            {%- endcapture -%}
+            <div class="cart__shipping rte">{{ taxes_shipping_checkout }}</div>
+            <div class="cart__buttons-container">
+              <div class="cart__submit-controls">
+                {%- unless section.settings.cart_ajax_enable -%}
+                <button type="submit" name="update"
+                  class="btn btn-3"
+                  value="">
+                  {{ 'cart.general.update' | t }}
+                </button>
+                {%- endunless -%}
+                <button type="submit" name="checkout"
+                  class=" btn btn-3"
+                  value="">
+                 {{ 'cart.general.checkout' | t }}
+                </button>
+              </div>
+
+              <div class="cart__error-message-wrapper hide" role="alert" data-cart-error-message-wrapper>
+                <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+                {% include 'icon-error' %}
+                <span class="cart__error-message" data-cart-error-message></span>
+              </div>
+
+              {%- if additional_checkout_buttons -%}
+                <div class="additional-checkout-buttons">{{ content_for_additional_checkout_buttons }}</div>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <p class="visually-hidden" data-cart-status
+      aria-live="polite"
+      role="status"
+    ></p>
+  </div>
+
+  <div class="empty-page-content{% if cart.item_count > 0 %} hide{% endif %} text-center " data-empty-page-content>
+    <h1>{{ 'cart.general.title' | t }}</h1>
+    <p class="cart--empty-message">{{ 'cart.general.empty' | t }}</p>
+    <div class="cookie-message">
+      <p>{{ 'cart.general.cookies_required' | t }}</p>
+    </div>
+    <div class="col-12 d-flex align-items-center justify-content-center">
+    <a href="{{ routes.root_url }}" class="btn btn--has-icon-after btn-3 d-flex align-items-center justify-content-center" style="width: 350px;">{{ 'general.404.link' | t }}{% include 'icon-arrow-right' %}</a>
+    </div>
+    </div>
+</div>
+</section>
+
+
+
+{% schema %}
+{
+  "name": {
+    "cs": "Stránka košíku",
+    "da": "Side med indkøbskurv",
+    "de": "Warenkorb-Seite",
+    "en": "Cart page",
+    "es": "Página del carrito",
+    "fi": "Ostoskorisivu",
+    "fr": "Page du panier",
+    "it": "Pagina del carrello",
+    "ja": "カートページ",
+    "ko": "카트 페이지",
+    "nb": "Handlekurvside",
+    "nl": "Winkelwagenpagina",
+    "pl": "Strona koszyka",
+    "pt-BR": "Página do carrinho",
+    "pt-PT": "Página do carrinho",
+    "sv": "Varukorgssida",
+    "th": "หน้าตะกร้าสินค้า",
+    "tr": "Sepet sayfası",
+    "vi": "Trang giỏ hàng",
+    "zh-CN": "购物车页面",
+    "zh-TW": "購物車頁面"
+  },
+  "settings": [
+    {
+	"type": "image_picker",
+     "id": "image-bg-1",
+     "label": "Image Background"
+	 },
+    {
+      "type": "checkbox",
+      "id": "cart_ajax_enable",
+      "label": {
+        "cs": "Povolit automatické aktualizace košíku",
+        "da": "Aktivér automatisk opdatering af indkøbskurv",
+        "de": "Automatische Warenkorbaktualisierungen aktivieren",
+        "en": "Enable automatic cart updates",
+        "es": "Habilitar las actualizaciones automáticas del carrito",
+        "fi": "Ota automaattinen ostoskorin päivitykset käyttöön",
+        "fr": "Activer les mises à jour automatiques",
+        "it": "Abilita aggiornamenti automatici carrello",
+        "ja": "自動カートの更新を有効にする",
+        "ko": "자동 카트 업데이트 활성화하기",
+        "nb": "Aktiver automatiske oppdateringer av handlekurven",
+        "nl": "Automatische winkelwagen-updates inschakelen",
+        "pl": "Włącz automatyczne aktualizacje koszyka",
+        "pt-BR": "Permitir atualizações automáticas do carrinho",
+        "pt-PT": "Ativar atualizações automáticas do carrinho",
+        "sv": "Aktivera automatiska uppdateringar av varukorgen",
+        "th": "เปิดใช้การอัปเดตตะกร้าสินค้าอัตโนมัติ",
+        "tr": "Otomatik sepet güncellemelerini etkinleştir",
+        "vi": "Bật cập nhật giỏ hàng tự động",
+        "zh-CN": "启用购物车自动更新功能",
+        "zh-TW": "啟用自動更新購物車"
+      },
+      "info": {
+        "cs": "Aktualizuje košík hned, jak zákazník provede změny.",
+        "da": "Opdaterer indkøbskurven, så snart kunden foretager ændringer",
+        "de": "Aktualisiert den Warenkorb, sobald Kundenänderungen vorgenommen werden",
+        "en": "Updates the cart as soon as customer changes are made",
+        "es": "Actualiza el carrito tan pronto como el cliente realice cambios",
+        "fi": "Päivittää ostoskorin heti, kun asiakkaan muutokset on tehty",
+        "fr": "Mise à jour du panier dès que les modifications apportées aux clients ont été effectuées",
+        "it": "Aggiorna il carrello appena il cliente apporta le modifiche",
+        "ja": "お客様が変更されるとすぐにカートを更新します",
+        "ko": "고객 변경 시 카트를 업데이트합니다.",
+        "nb": "Oppdaterer handlekurven så snart kundens endringer er gjort",
+        "nl": "De winkelwagen wordt bijgewerkt zodra de klant wijzigingen aanbrengt",
+        "pl": "Aktualizuje koszyk, gdy tylko wprowadzone zostaną zmiany u klienta",
+        "pt-BR": "Atualiza o carrinho assim que o cliente faz alterações",
+        "pt-PT": "Atualiza o carrinho assim que o cliente faz alterações",
+        "sv": "Uppdaterar varukorgen så snart kundändringar görs",
+        "th": "อัปเดตตะกร้าสินค้าเมื่อลูกค้าได้ทำการเปลี่ยนแปลง",
+        "tr": "Müşteri değişiklikleri yapıldıktan sonra sepet güncellenir",
+        "vi": "Cập nhật giỏ hàng ngay khi khách hàng thay đổi",
+        "zh-CN": "客户做出更改后立即更新购物车",
+        "zh-TW": "在顧客進行變更時立即更新購物車"
+      },
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "cart_notes_enable",
+      "label": {
+        "cs": "Povolit poznámky ke košíku",
+        "da": "Aktivér bemærkninger til indkøbskurv",
+        "de": "Warenkorbanmerkungen erlauben",
+        "en": "Enable cart notes",
+        "es": "Habilitar notas del carrito",
+        "fi": "Ota tilauskommentit käyttöön",
+        "fr": "Activer les notes de panier",
+        "it": "Abilita note carrello",
+        "ja": "カートメモを有効にする",
+        "ko": "카트 참고 사항 사용",
+        "nb": "Aktiver handlekurvmerknader",
+        "nl": "Opmerkingen voor winkelwagen inschakelen",
+        "pl": "Włącz uwagi dotyczące koszyka",
+        "pt-BR": "Habilitar observações do carrinho",
+        "pt-PT": "Ativar notas do carrinho",
+        "sv": "Aktivera varukorgsmeddelanden",
+        "th": "เปิดใช้หมายเหตุสำหรับตะกร้าสินค้า",
+        "tr": "Sepet notlarını etkinleştir",
+        "vi": "Bật ghi chú trong giỏ hàng",
+        "zh-CN": "启用购物车备注",
+        "zh-TW": "啟用購物車備註"
+      },
+      "default": false
+    }
+  ]
+}
+{% endschema %}

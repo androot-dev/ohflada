@@ -1,0 +1,240 @@
+<style>
+
+  
+.channels{
+  background: #ff0000;
+  padding: 20px;
+  text-align: center;
+  height: auto !important;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+  
+  
+.channels p{
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 0px 0px 0px;
+}
+
+.channels img{
+  max-width: 70px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 7;
+  transition: all ease-in-out .3s;
+}
+
+
+.channels h2{
+  color: #fff;
+  font-size:30px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 7;
+  margin-bottom: auto;
+}
+
+.channels img:hover {
+    transform: rotateY(180deg);
+    transition: all ease-in-out .3s;
+}
+  
+ .channels .adorno {
+    position: absolute;
+    left: -200px;
+    top: 80px;
+    height: 100%;
+    opacity: 0.05;
+}
+
+@media (max-width: 760px){
+  .channels .border-left-channels {
+    border-left: 0px;
+  }
+  
+  .channels .adorno {
+    position: absolute;
+    left: -200px;
+    top: 80px;
+    height: 100%;
+    opacity: 0.05;
+}
+  
+  .channels h2{
+  
+  margin: 20px 0px;
+}
+  
+  .channels p{
+
+  margin-bottom: 20px;
+}
+
+
+
+}
+ 
+/*.channels .cuadro-0{
+  width: 140px;
+  height: 300px;
+  background: #191919;
+    transform: skew(-40deg);
+    position: absolute;
+    top: 0;
+    left: -13%;
+    content: '';
+    z-index: 0; 
+     opacity: 0.6;    
+}
+
+.channels .cuadro-1{
+  width: 140px;
+  height: 600px;
+  background: #b5140a;
+    transform: skew(-40deg);
+    position: absolute;
+    top: 0;
+    left: -12%;
+    content: '';
+    z-index: 0;
+    opacity: 0.6;
+}
+
+.channels .cuadro-2{
+  width: 160px;
+  height: 600px;
+  background: #000;
+    transform: skew(-40deg);
+    position: absolute;
+    top: 0;
+    left: -7%;
+    content: '';
+    z-index: 0;
+    opacity: 0.3;
+}*/
+  
+</style>
+
+  <section class="channels fix">
+    <!--<div class="cuadro-0 d-lg-block d-none"></div>
+    <div class="cuadro-1"></div>
+    <div class="cuadro-2 d-lg-block d-none"></div>-->
+          <div class="container">
+                             
+                  <div class="row  justify-content-center d-flex align-items-center ">
+                      <div class="col-md-4 justify-content-center d-flex align-items-center ">
+                        <h2>{{ section.settings.title_channels }}</h2>
+                        
+                      </div>
+                    
+                     <div class="col-md-4">
+                       <div class="row">
+                         <div class="col-md-6 col-6 ">
+                         <img src="{{ section.settings.image_channel_1 | img_url: 'master' }}" loading="lazy" alt="">  
+                          <p> {{ section.settings.channel_1 }}</p>
+                         </div>
+                         <div class="col-md-6 col-6 ">
+                         <img src="{{ section.settings.image_channel_2 | img_url: 'master' }}" loading="lazy" alt="">  
+                         <p> {{ section.settings.channel_2 }}</p>
+                         </div>
+                       </div>           
+                     </div>
+                    <div class="col-md-4 ">
+                       <div class="row">
+                         <div class="col-md-6 col-6 ">
+                         <img src="{{ section.settings.image_channel_3 | img_url: 'master' }}" loading="lazy" alt="">  
+                         <p> {{ section.settings.channel_3 }}</p>
+                         </div>
+                         <div class="col-md-6 col-6 ">
+                         <img   src="{{ section.settings.image_channel_4 | img_url: 'master' }}" loading="lazy" alt="">  
+                         <p> {{ section.settings.channel_4 }}</p>
+                         </div>
+                       </div>           
+                     </div>
+                   
+                   
+                                         
+                  </div>                                  
+                </div>
+                
+                   
+        </section> 
+
+
+
+{% schema %}
+  {
+    "name": "Benefits",
+    "settings": [ 
+    {
+	"type": "text",
+     "id": "title_channels",
+     "label": "Title",
+     "default": "Benefits"
+	 },
+     {
+	"type": "image_picker",
+     "id": "image_channel_1",
+     "label": "Image 1"
+	 },
+    {
+    "type": "text",
+     "id": "channel_1",
+     "label": "Text 1"     
+	 },
+     {
+	"type": "image_picker",
+     "id": "image_channel_2",
+     "label": "Image 2"
+	 },
+    {
+    "type": "text",
+     "id": "channel_2",
+     "label": "Text 2"     
+	 },
+     {
+	"type": "image_picker",
+     "id": "image_channel_3",
+     "label": "Image 3"
+	 },
+    {
+    "type": "text",
+     "id": "channel_3",
+     "label": "Text 3"     
+	 },
+     {
+	"type": "image_picker",
+     "id": "image_channel_4",
+     "label": "Image 4"
+	 },
+    {
+    "type": "text",
+     "id": "channel_4",
+     "label": "Text 4"     
+	 }
+    
+      
+    ],
+   
+  	"presets": [
+      {
+        "category": "Home",
+        "name": "Benefits"     
+        
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+

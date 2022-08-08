@@ -1,0 +1,295 @@
+<style>
+   
+.reviews{
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ align-items: left;
+ justify-content: center;
+ text-align: bottom;
+ color: #fff;
+ max-height: auto;
+ width: 100%;
+ overflow: hidden;
+ z-index: 3;
+ border-top: 3px solid #e52b34;
+  padding: 50px 0px;
+ }
+
+.reviews::before{
+ content: '';
+ background: rgba(0, 0, 0, 0.6); /*OVERLAY*/
+ position: absolute;
+ height: 200%;
+ width: 100%;
+ z-index: 1;
+} 
+  
+  
+ 
+.reviews h2{
+   color: #ffff;
+   font-size:30px;
+   font-weight:300;
+   line-height:1.3;
+   text-align: left;
+   position: relative;
+   z-index:3;
+   
+  }
+  
+  
+.reviews .subtitle {
+   color:#ff0000;
+   font-size:18px;
+   margin-top: -20px;
+   margin-bottom: 40px; 
+   text-align: left;
+   position: relative;
+   z-index:3;
+   
+}
+
+@media (max-width: 780px){
+.reviews h2{
+    font-size:30px;
+    line-height:1.3;
+    text-align: center;
+  }
+  
+.reviews .subtitle {
+   text-align: center;   
+}
+}
+  
+  
+.reviews .image-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: 0;  
+}
+
+.reviews .image-container img {
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+.testimony-wrap {
+  display: block;
+  position: relative;
+  background: white;
+  padding: 0 20px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  -webkit-box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14);
+  box-shadow: rgba(255,0,0, 0.4) -5px 5px, rgba(255,0,0, 0.3) -10px 10px, rgba(255,0,0, 0.2) -15px 15px, rgba(255,0,0, 0.1) -20px 20px, rgba(255,0,0, 0.05) -25px 25px;  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  z-index: 3; 
+  margin-left: 20px;
+  margin-bottom: 20px;
+
+}
+  
+  
+.testimony-wrap .user-img {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 5px; 
+
+}
+  .testimony-wrap .name {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #000000;
+    font-family:"fuente-titulos" !important;
+  
+  }
+  .testimony-wrap .position {
+    font-size: 12px;
+    color: #ff0000; 
+     font-family:"fuente-titulos" !important;
+  }
+  
+  .testimony-wrap .text .star {
+    color: #fc9927; 
+  }
+  
+@media (max-width: 768px) {
+  .testimony-wrap { 
+  margin-left: 20px;
+  margin-bottom: 20px;
+   margin-right: 20px;
+
+}
+}
+.scanfcode
+{
+ 
+  margin: 50px 40px;
+ 
+}
+
+</style>
+
+
+<section class="reviews">
+  <div class="image-container">
+	  <img class="img-fluid" src="{{ section.settings.image-fondo | img_url: 'master' }}"/>
+   </div>
+  <div class="container">
+    <div class="col-12">
+         <h2> {{ section.settings.title }}</h2>
+         <p class="subtitle"> {{ section.settings.subtitle }}</p>              
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        
+        <div class="owl-carousel owl-review">
+           {% for block in section.blocks %}           
+            <div class="item">      
+         <div class="testimony-wrap py-4 mb-5">
+              <div class="text">
+                 <p class="star">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </p>
+                <p class="mb-4">{{  block.settings.block_text}}</p>
+                <div class="d-flex align-items-center">
+                   <div class="user-img" style="background-image: url({{ block.settings.image-customer | img_url: 'master' }}); background-size: cover"></div>
+                   <div class="pl-3">
+                      <p class="name">{{block.settings.text}}</p>
+                      <span class="position">Customer</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+          </div>
+          {% endfor %}
+                  </div>
+        
+         
+      </div>
+      <div class="col-md-8 text-center">
+         <a href="{{ section.settings.button_link }}" class="scanfcode mt-5" data-aos="fade-up" target="_blank"  style="margin-bottom: 50px">
+          {{ section.settings.button_label }} 
+        </a> 
+        <div class="col-12 d-lg-none d-block mb-5 "></div>
+        <a href="{{ section.settings.button_link-2 }}" class="scanfcode mt-5" data-aos="fade-up" target="_blank" >
+          {{ section.settings.button_label-2 }} 
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Reviews",
+    "settings": [
+      {
+			"type": "image_picker",
+			"id": "image-fondo",            
+            "label": "Image Background"
+	  },
+      {
+		"type": "text",
+        "id": "title",
+		"label": "Title Section",
+        "default": "Reviews"
+        
+     },
+     {
+		"type": "text",
+        "id": "subtitle",
+		"label": "SubTitle Section",
+        "default": "What do our customers say"
+      },
+      {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+	  "default": "Google"
+      },
+      {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+      },
+      
+      {
+      "type": "text",
+      "id": "button_label-2",
+      "label": "Button Label",
+	  "default": "instagram"
+      },
+      {
+      "type": "url",
+      "id": "button_link-2",
+      "label": "Button Link"
+      }
+
+    ],
+     "blocks": [
+         {
+       "type": "text",
+        "name": "Review", 
+     "settings": [     
+	{
+      "type": "text",
+      "id": "text",
+      "label": "Name Customer",
+	  "default": "Review"
+    },    
+     {
+    	"type": "image_picker",
+		"id": "image-customer",            
+         "label": "Image Customer"
+	 },
+    {
+      "type": "textarea",
+       "id": "block_text",
+       "label": "Content Review"
+    }     
+	]
+	}
+     ],
+   
+  	"presets": [
+      {
+        "category": "Home",
+        "name": "Review"     
+        
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

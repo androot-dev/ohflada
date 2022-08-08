@@ -1,0 +1,581 @@
+<style>
+  
+.classes-section {
+	background: #fff;
+	padding: 50px 0px;
+   position: relative;
+   overflow: hidden;
+}
+
+  
+.classes-section .section-tittle h2{
+   color:#383838;
+   font-size:30px;
+   font-weight:300;
+   line-height:1.3;
+}
+  
+.classes-section .section-tittle p{
+   color:#ff0000;
+   font-size:18px;
+   margin-top: -20px;
+   margin-bottom: 20px;
+}
+  
+
+.class-item {
+	overflow: hidden;
+	margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background: #000;
+  border-radius: 6px;
+}
+  
+.class-item .ci-pic {
+	position: relative;
+    overflow:  hidden;
+    
+}
+
+.class-item .ci-pic .img-1 {
+	min-width: 100%;
+    height: 260px;
+    transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+}
+  
+  
+.class-item .ci-pic .img-2 {
+	min-width: 100%;
+    height: 370px;
+     transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+}
+  
+.class-item:hover .img-1 {
+	transform: scale(1.1);
+    transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+}
+  
+.class-item:hover .img-2 {
+	transform: scale(1.1);
+    transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+}
+
+.class-item .ci-text {
+	/*background: rgb(250, 0, 0, 0.5);*/
+	position: relative;
+	padding: 10px 30px 26px 30px;
+	z-index: 1;
+}
+
+.class-item .ci-text:after {
+	position: absolute;
+	left: -5px;
+	top: -44px;
+	height: 100px;
+	width: 600px;
+	border-top: 4px solid #ff0000;
+	background: #0a0a0a;
+	content: "";
+	-webkit-transform: rotate(-5deg);
+	-ms-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+	z-index: -1;
+}
+
+.class-item .ci-text span {
+	color: #ff0000;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+  font-family:"fuente-titulos"
+}
+
+.class-item .ci-text h5 {
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 4px;
+}
+
+.class-item .ci-text h4 {
+	font-size: 26px;
+	color: #ffffff;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 4px;
+}
+
+.class-item .ci-text a {
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	background: #ff0000;
+	line-height: 46px;
+	text-align: center;
+	font-size: 24px;
+	color: #ffffff;
+	position: absolute;
+	right: 30px;
+	bottom: 26px;
+    border-radius: 6px;
+}
+  
+.class-item .ci-text a:before,
+.class-item .ci-text a:after {
+  border-color: #ff5050;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content:"";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+.class-item .ci-text a:before {
+  border-left-width: 2px;
+  border-top-width: 2px;
+  left: -5px;
+  top: -5px;
+  border-radius: 6px 0px 0px 0px;
+}
+
+.class-item .ci-text a:after {
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  bottom: -5px;
+  right: -5px;
+  border-radius: 0px 0px 6px 0px;
+}
+.class-item .ci-text a:hover:before,
+.class-item .ci-text a:hover:after
+{
+  height:100%;
+  width:100%;
+}
+
+  
+  
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	.class-item .ci-text:after {
+		width: 750px;
+    }
+}
+  
+  
+@media (max-width: 768px) {
+
+	.class-item .ci-text:after {
+		width: 750px;
+    }
+  
+    .class-item .ci-pic .img-1 {
+	min-width: 100%;
+    height: 240px;
+    
+}
+  
+  
+    .class-item .ci-pic .img-2 {
+	min-width: 100%;
+    height: 240px;
+    
+}
+}
+  
+  
+/*TRIANGULOS ADORNOS*/ 
+  
+.classes-section .container-triangle {
+    width: 188px;
+    height: 195px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    border-top: 4px solid red;
+    z-index: 300;
+  transform: rotate(-30deg);
+  opacity: 0.08;
+   z-index: 0;
+}
+
+.classes-section .triangle {
+    position: absolute;
+    margin: auto;
+    top: -70px;
+    left: 0;
+    right: 0;
+    width: 137px;
+    height: 137px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-right: 4px solid red;
+    border-bottom: 4px solid red;
+    z-index: 0;
+  
+}
+  
+.classes-section .triangle-right {
+    width: 0;
+    height: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 5%;
+    left: 1%;
+    transform: rotate(25deg);
+    z-index: 0;
+}
+.classes-section .triangle-right:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top:-500px;
+    margin-left: -500px;
+    opacity: 0.1;
+    border-top: 500px solid transparent;
+    border-bottom: 500px solid transparent;
+    border-left: 500px solid #000;
+    z-index: 0;
+}
+  
+.classes-section .triangle-4 {
+  width: 60px;
+  height: 30px;
+  border-bottom: solid 30px rgb(200,30,50);
+  border-left: solid 30px transparent;
+  border-right: solid 30px transparent;
+  position: absolute;
+  z-index: 0;
+  top: 70%;
+  left: -80%;
+  transform: rotate(-20deg);
+  opacity: 0.08;
+  
+}
+
+  
+.classes-section .container-triangle-2 {
+    width: 23px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    border-top: 3px solid black;
+    z-index: 300;
+  transform: rotate(-10deg);
+  opacity: 0.08;
+  z-index: 0;
+}
+
+.classes-section .triangle-2 {
+    position: absolute;
+    margin: auto;
+    top: -10px;
+    left: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    z-index: 0;
+}
+  
+.classes-section .triangle-5 {
+    width: 60px;
+    height: 50px;
+    border-bottom: solid 50px rgb(255,255,255);
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+    position: absolute;
+    z-index: 0;
+    top: 30%;
+    left: %;
+    transform: rotate(-95deg);
+    opacity: 0.08;
+    z-index: 0;
+  
+}
+  
+.classes-section .container-triangle-3 {
+    width: 188px;
+    height: 195px;
+    position: absolute;
+    top: 55%;
+    left: -3%;
+    border-top: 4px solid red;
+    z-index: 300;
+  transform: rotate(-40deg);
+  opacity: 0.08;
+   z-index: 0;
+}
+
+.classes-section .triangle-3 {
+    position: absolute;
+    margin: auto;
+    top: -70px;
+    left: 0;
+    right: 0;
+    width: 137px;
+    height: 137px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-right: 4px solid red;
+    border-bottom: 4px solid red;
+    z-index: 0;
+}
+ 
+  
+.classes-section .about-us .adorno-1{
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 80%;
+  bottom:0;
+  right:-40px;
+  background-image: linear-gradient(to right top, #ff0000, #d60006, #ae0008, #870007, #620000);
+  z-index: 3;
+  transform: skewX(-35deg);
+  opacity: 0.08;
+  z-index: 0;
+}
+
+
+
+</style>
+
+
+
+
+ <section class="classes-section spad">
+  <div class="adorno-1"></div>
+  <div class="adorno-2"></div>
+  <div class="adorno-3"></div>
+  <div class="adorno-4"></div>
+  <div class="container-triangle">
+    <div class="triangle"></div>
+  </div>
+  <div class="triangle-right"></div>
+  <div class="triangle triangle-4"></div>
+  <div class="container-triangle-2">
+    <div class="triangle-2"></div>
+  </div>
+  <div class="triangle-5"></div>
+  <div class="container-triangle-3">
+    <div class="triangle-3"></div>
+  </div>
+        <div class="container">
+            <div class="row d-flex justify-content-center mb-4">
+              <div class="col-xl-7 col-lg-8">
+                   <div class="section-tittle text-center mb-70" data-aos="fade-up" >
+                       <h2>{{ section.settings.title }}</h2>
+                        <p>{{ section.settings.subtitle }}</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    {%- assign collection = collections[section.settings.featured-collection]-%}
+                    <div class="class-item">
+                        <div class="ci-pic">
+                            <a href="{{collection.url}}">
+                            <img class="img-1" src="{{ section.settings.image-1 | img_url: 'master' }}" alt="">
+                            </a>
+                        </div>
+                        <div class="ci-text">
+                            <span>Discover</span>
+                            <h5>{{ collection.title }}</h5>
+                            <a href="{{collection.url}}"><i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  {%- assign collection2 = collections[section.settings.featured-collection-2]-%}
+                    <div class="class-item">
+                        <div class="ci-pic">
+                            <a href="{{collection2.url}}">
+                            <img class="img-1" src="{{ section.settings.image-2 | img_url: 'master' }}" alt="">
+                          	</a>
+                         </div>
+                        <div class="ci-text">
+                             <span>Discover</span>
+                            <h5>{{ collection2.title }}</h5>
+                            <a href="{{collection2.url}}"><i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                     {%- assign collection3 = collections[section.settings.featured-collection-3]-%}
+                    <div class="class-item">
+                        <div class="ci-pic">
+                            <a href="{{collection3.url}}">
+                            <img  class="img-1" src="{{ section.settings.image-3 | img_url: 'master' }}" alt="">
+                            </a>
+                        </div>
+                        <div class="ci-text">
+                             <span>Discover</span>
+                            <h5>{{ collection3.title }}</h5>
+                            <a href="{{collection3.url}}"><i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                     {%- assign collection4 = collections[section.settings.featured-collection-4]-%}
+                    <div class="class-item">
+                        <div class="ci-pic">
+                            <a href="{{collection4.url}}">
+                            <img class="img-2" src="{{ section.settings.image-4 | img_url: 'master' }}" alt="">
+                            </a>
+                        </div>
+                        <div class="ci-text">
+                             <span>Discover</span>
+                            <h4>{{ collection4.title }}</h4>
+                            <a href="{{collection4.url}}"><i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                     {%- assign collection5 = collections[section.settings.featured-collection-5]-%}
+                    <div class="class-item">
+                        <div class="ci-pic">
+                            <a href="{{collection5.url}}">
+                            <img class="img-2" src="{{ section.settings.image-5 | img_url: 'master' }}" alt="">
+                            </a>
+                        </div>
+                        <div class="ci-text">
+                             <span>Discover</span>
+                            <h4>{{ collection5.title }}</h4>
+                            <a href="{{collection5.url}}"><i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+               <div class="col-12 my-3 text-center">
+                        <a href="{{ section.settings.button_link }}" class="scanfcode mt-5">
+                          {{ section.settings.button_label }}
+                        </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Categories",
+    "settings": [
+     
+       {
+		"type": "text",
+        "id": "title",
+		"label": "Title Section",
+        "default": "Shop By Category"
+        
+     },
+     {
+		"type": "text",
+        "id": "subtitle",
+		"label": "SubTitle Section",
+        "default": "Subtitle"
+      },
+	
+		{
+		  "id": "featured-collection",
+		  "type": "collection",
+		  "label": "Collection 1"
+	   },
+       {
+        "type": "image_picker",
+         "id": "image-1",
+         "label": "Image Collection 1"
+       },
+
+		{
+		  "id": "featured-collection-2",
+		  "type": "collection",
+		  "label": "Collection 2"
+	   },
+		{
+        "type": "image_picker",
+         "id": "image-2",
+         "label": "Image Collection 2"
+       },
+	   {
+		  "id": "featured-collection-3",
+		  "type": "collection",
+		  "label": "Collection 3"
+	   },
+	   {
+        "type": "image_picker",
+         "id": "image-3",
+         "label": "Image Collection 3"
+       },
+
+		{
+		  "id": "featured-collection-4",
+		  "type": "collection",
+		  "label": "Collection 4"
+	   },
+       {
+        "type": "image_picker",
+         "id": "image-4",
+         "label": "Image Collection 4"
+       },
+
+		{
+		  "id": "featured-collection-5",
+		  "type": "collection",
+		  "label": "Collection 5"
+	   },
+		{
+        "type": "image_picker",
+         "id": "image-5",
+         "label": "Image Collection 5"
+       },
+		{
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+	  "default": "View More"
+      },
+      {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+      }
+	  	
+    ],
+   
+  	"presets": [
+      {
+        "category": "Home",
+        "name": "Categories"     
+        
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

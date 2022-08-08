@@ -1,0 +1,105 @@
+<style>
+  .list{
+    margin-bottom: 60px;
+  }
+
+  
+  
+ .product-card {
+  position: relative; 
+ 
+ }
+  
+ .product-card img{
+  border-radius: 6px;
+  border: 2px solid  #fff;
+  background: #fff !important; 
+  box-shadow: -12px 10px 5px -8px rgba(0,0,0,0.2);
+ }
+ 
+ .product-card:hover .product-card__image-wrapper, .product-card:focus-within .product-card__image-wrapper {
+    opacity: 0.8; 
+  }
+    
+ .product-card:hover .product-card__title, .product-card:focus-within .product-card__title {
+    border-bottom-color: 1px solid transparent !important;
+   
+ }
+
+.product-card__image-with-placeholder-wrapper {
+  position: relative;
+  border-radius: 50%;
+
+}
+
+.product-card__title {
+  border-bottom: none;
+  display: inline;    
+  font-weight: 700;
+  color:#383838;
+  white-space: normal;
+  font-family: "fuente-titulos" !important;
+  text-decoration: none !important;
+  font-size: 18px !important;
+    
+ }
+  
+  .product-card__image-wrapper{
+    border-radius: 50%;
+  
+  }
+  
+  
+  .price__regular {
+    display: block;
+    color: red !important;
+}
+  
+</style>
+
+
+
+
+
+
+
+
+
+{% comment %}
+    Renders a product card using "List" style
+
+    Accepts:
+    - product: {Object} Product Liquid object (required)
+    - show_vendor: {Boolean} Show the product's vendor depending on the section setting (optional)
+
+    Usage:
+    {% include 'product-card-list', product: product, show_vendor: section.settings.show_vendor %}
+{% endcomment %}
+<div class="product-card product-card--list">
+  <a class="full-width-link" href="{{ product.url }}">
+    <span class="visually-hidden">{{ product.title }}</span>
+  </a>
+
+  <div class="list-view-item__link">
+    <div class="list-view-item__image-column">
+      <div class="list-view-item__image-wrapper product-card__image-wrapper">
+      {% unless product.featured_media == null %}
+        <img class="list-view-item__image" src="{{ product.featured_media | img_url: '95x95', scale: 2 }}" alt="{{ product.featured_media.alt }}">
+      {% endunless %}
+      </div>
+    </div>
+
+    <div class="list-view-item__title-column">
+      <div class="list-view-item__title" aria-hidden="true">
+        <span class="product-card__title">{{ product.title }}</span>
+      </div>
+      {% if show_vendor %}
+        <div class="list-view-item__vendor">{{ product.vendor }}</div>
+      {% endif %}
+    </div>
+
+    <div class="list-view-item__price-column">
+      {% include 'product-price-listing', product: product, show_vendor: false %}
+    </div>
+  </div>
+</div>

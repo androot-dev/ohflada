@@ -1,0 +1,159 @@
+{%- style -%}
+  {% assign cart_popup_box_shadow = settings.color_borders | color_modify: 'alpha', 0.5 %}
+
+
+.cart-popup-wrapper {
+    z-index: 93999;
+}
+  
+  .cart-popup {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px 2px {{ cart_popup_box_shadow }};
+    z-index: 3000;
+  }
+
+  .cart-popup {
+    box-shadow: 1px 1px 10px 2px {{ cart_popup_box_shadow }};
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cart-popup .cart-popup-item__title{
+    color: #383838 !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    font-family: "fuente-titulos" !important;
+   }
+
+
+.cart-popup .text-link--accent {
+  color: #383838;
+  font-family: "fuente-contenido" !important;
+  padding-bottom: 1px;
+  border: none !important;
+}
+
+
+.cart-popup .cart-popup__heading{
+  text-transform: none !important;
+  font-size: 16px !important;
+  color: #383838;
+  font-family: "fuente-titulos" !important;
+}
+
+.text-link--accent:not([disabled]):hover, .text-link--accent:focus {
+    color: var(--color-btn-primary-focus); 
+}
+
+.cart-popup .btn-3 {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ff0000 !important;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 15px 50px;
+  text-decoration: none;
+  text-align: center; 
+  font-family: "fuente-titulos";
+  font-weight: 300;
+  position: relative; 
+  z-index:4;
+  transition: 0.3s
+}
+
+.cart-popup .btn-3:before,
+.cart-popup .btn-3:after {
+  border-color: #ff5050;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content:"";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+.cart-popup .btn-3:before {
+  border-left-width: 2px;
+  border-top-width: 2px;
+  left: -5px;
+  top: -5px;
+ border-radius: 6px 0px 0px 0px;
+}
+
+.cart-popup .btn-3:after {
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  bottom: -5px;
+  right: -5px;
+ border-radius: 0px 0px 6px 0px;
+}
+.cart-popup .btn-3:hover:before,
+.cart-popup .btn-3:hover:after
+{
+  height:100%;
+  width:100%;
+}
+
+.cart-popup-item__image {
+    display: block;
+    margin: 0 auto;
+    max-height: 95px;
+    border: 2px solid  #fff;
+    background: #fff !important; 
+    box-shadow: -12px 10px 5px -8px rgba(0,0,0,0.2);
+    border-radius: 6px;
+}
+
+
+{%- endstyle -%}
+
+<div class="cart-popup-wrapper cart-popup-wrapper--hidden critical-hidden" role="dialog" aria-modal="true" aria-labelledby="CartPopupHeading" data-cart-popup-wrapper>
+  <div class="cart-popup" data-cart-popup tabindex="-1">    
+    <div class="cart-popup__header">
+      <h2 id="CartPopupHeading" class="cart-popup__heading">{{ 'cart.popup.added_to_cart' | t }}</h2>
+      <button class="cart-popup__close" aria-label="{{ 'general.accessibility.close_modal' | t }}" data-cart-popup-close>{% include 'icon-close' %}</button>
+    </div>
+    <div class="cart-popup-item">
+      <div class="cart-popup-item__image-wrapper hide" data-cart-popup-image-wrapper data-image-loading-animation></div>
+      <div class="cart-popup-item__description">
+        <div>
+          <h3 class="cart-popup-item__title" data-cart-popup-title></h3>
+          <ul class="product-details" aria-label="{{ 'cart.popup.product_details' | t }}" data-cart-popup-product-details></ul>
+        </div>
+        <div class="cart-popup-item__quantity">
+          <span class="visually-hidden" data-cart-popup-quantity-label></span>
+          <span aria-hidden="true">{{ 'cart.popup.quantity' | t }}:</span>
+          <span aria-hidden="true" data-cart-popup-quantity></span>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center">
+    <a href="{{ routes.cart_url }}" class="cart-popup__cta-link btn btn-3 d-flex justify-content-center">
+      {{ 'products.product.view_cart' | t }} (<span data-cart-popup-cart-quantity></span>)
+    </a>
+    </div>
+   
+
+    <div class="cart-popup__dismiss">
+      <button class="cart-popup__dismiss-button text-link text-link--accent" data-cart-popup-dismiss>
+        {{ 'cart.general.continue_shopping' | t }}
+      </button>
+    </div>
+  </div>
+</div>

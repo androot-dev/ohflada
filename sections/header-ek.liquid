@@ -1,0 +1,765 @@
+<style>
+.header-area {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  background-color: transparent; 
+  
+}
+
+.header-area .search-icon {
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    right: 15%;
+}
+
+    
+.header-area .search-icon i {
+      font-size: 16px;
+      color: #ffffff;
+      cursor: pointer; 
+}
+  
+.header-area .cart-icon {
+    position: absolute;
+    z-index: 1;
+    top: 18px; 
+    right: 12%;
+}
+    
+.header-area .cart-icon i {
+      font-size: 18px;
+      color: #ffffff;
+      cursor: pointer; 
+}
+
+ @media screen and (max-width: 936px) {
+       
+.header-area .search-icon {
+    position: absolute;
+    z-index: 1;
+    top: 22px;
+    right: 18%;
+}
+   
+.header-area .cart-icon {
+    position: absolute;
+    z-index: 1;
+    top: 16px; 
+    right: 12%;
+}
+
+   
+ }
+ @media screen and (max-width: 736px) {
+ 
+ .header-area .search-icon {
+    position: absolute;
+    top: 24%;
+    right: 100px;
+    font-size: 18px !important;
+}
+
+.header-area .search-icon i {
+    font-size: 18px !important;
+}
+  
+.header-area .cart-icon {
+    position: absolute;
+    top: 25%;
+    right: 65px;
+}
+   
+
+ 
+ }
+
+.top-search-area .modal {
+  background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.top-search-area .modal-content .modal-body {
+  padding: 50px; 
+}
+  
+  
+.top-search-area .modal-content .modal-body button.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+    font-size: 14px; 
+}
+    
+.top-search-area .modal-content .modal-body button.close-btn.btn {
+      padding: 0;
+      background-color: transparent; 
+}
+
+ .top-search-area form {
+  width: 100%;
+  position: relative;
+  z-index: 5; 
+}
+  
+.top-search-area form input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    -webkit-box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    font-size: 12px;
+    font-style: italic;
+    padding: 0 20px;
+}
+    
+.top-search-area form input:focus {
+      -webkit-box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.08); 
+}
+  
+.top-search-area form button {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    border-radius: 0 6px 6px 0;
+    border: none;
+    background-color: #fc6060;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer; 
+}
+
+.classy-nav-container {
+  background-color: transparent;
+  padding: 0;
+  height:  auto;
+  padding: 5px 0px;
+  position: relative;
+  
+}
+  
+.classy-nav-container .classy-navbar {
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    
+    padding: 0; 
+}
+
+@media only screen and (max-width: 767px) {
+   .classy-nav-container .classy-navbar .nav-brand {
+        max-width: 90px;
+        margin-right: 15px; 
+   }
+}
+  
+ .classy-nav-container .classy-navbar .nav-brand img{
+        max-width: 60px;
+        margin-right: 15px; 
+      
+   }
+
+.classy-nav-container .classy-navbar .classynav ul li a {
+      font-size: 18px;
+      text-transform: capitalize;
+      color: #ffffff;
+      font-weight: 500;
+      padding: 0 20px; 
+      font-family: "fuente-contenido"
+}
+      
+.classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
+        color: #ff0000;
+}
+     
+  
+  
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+   .classy-nav-container .classy-navbar .classynav ul li a {
+          font-size: 16px; 
+    } 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .classy-nav-container .classy-navbar .classynav ul li a {
+          font-size: 16px;
+          color: #252525; 
+    }
+     
+    .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
+            color: #ff0000;
+    } 
+}
+     
+@media only screen and (max-width: 767px) {
+   .classy-nav-container .classy-navbar .classynav ul li a {
+          font-size: 16px;
+          color: #252525; 
+     }
+         
+  .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
+            color: #ff0000; 
+  } 
+}
+    
+.classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a {
+      font-size: 14px;
+      text-transform: capitalize;
+      
+      line-height: 42px;
+      padding: 0 30px;
+      color: #252525; 
+}
+      
+.classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:hover {
+        color: #ff0000;
+}
+
+.classynav ul li.active a {
+  position: relative;
+  z-index: 1; 
+}
+ 
+  
+.classynav ul li.active a::before {
+    width: calc(100% - 40px);
+    height: 2px;
+    background-color: #ff0000;
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    z-index: 1;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%); 
+}
+    
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+      .classynav ul li.active a::before {
+        display: none; 
+      } 
+}
+    
+@media only screen and (max-width: 767px) {
+  .classynav ul li.active a::before {
+        display: none; 
+    } 
+}
+
+.classynav ul li.has-down > a::after,
+.classynav ul li.has-down.active > a::after,
+.classynav ul li.megamenu-item > a::after {
+  color: #ff0000; 
+}
+
+.breakpoint-off .classynav ul li .dropdown,
+.breakpoint-off .classynav ul li .megamenu {
+  width: 210px;
+  -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+  box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+  border-radius: 6px; 
+}
+
+.breakpoint-off .classynav ul li .megamenu {
+  width: 100%; 
+}
+
+.classy-navbar-toggler .navbarToggler span {
+  background-color: #252525; 
+}
+
+.main-header-area {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  background-color: rgba(0, 0, 0, 0.2);
+   height:  auto;
+}
+  .main-header-area.sticky {
+    background-color: #000000; 
+    height:  auto;
+  }
+
+.classy-navbar-toggler .navbarToggler span {
+  background-color: #ffffff; 
+}
+  
+  
+  
+header .site-header__cart-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -0.1rem;
+    top: 0.2rem;
+    font-weight: bold;
+    background-color: #ff0000 !important;
+    color: #fff !important; 
+    border-radius:2px !important; 
+    min-width: 1em;
+    height: 1em;
+}
+  
+  
+.search-bar__interior {  
+  padding-top: 300px; 
+}
+  
+  
+.announcement-bar { 
+    background-color:  #ff0000;
+    width: 110%;
+    position: relative;
+    margin-left: -70px;
+    margin-top: -2px;
+    text-align: center;
+    z-index: 4;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .announcement-bar { 
+     font-size: 12px;
+     width: 135%;
+  }
+  
+  }
+  
+  @media screen and (max-width: 360px) {
+    .announcement-bar { 
+     font-size: 12px;
+     width: 135%;
+    
+  }
+  
+  }
+  
+  .announcement-bar__link{
+   transition: all 0.6s;
+  }
+   
+  .announcement-bar__link:hover { background-color: #c00202 } 
+  .announcement-bar__message { color: #ffffff; }
+  
+</style>
+
+{% include 'search-drawer' %}
+  <!-- Top Search Form Area -->
+    <div class="top-search-area">
+        <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- Close -->
+                        <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
+                        <!-- Form -->
+                        <form action="index.html" method="post">
+                            <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter...">
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+   {% if section.settings.message %}
+    {% if section.settings.home_page_only == false or request.page_type == 'index' %}     
+      <div class="announcement-bar" role="region" aria-label="{{ 'sections.header.announcement_bar_label' | t }}">
+        {%- unless section.settings.message_link == blank -%}
+          <a href="{{ section.settings.message_link }}" class="announcement-bar__link">
+        {%- endunless -%}
+            <p class="announcement-bar__message">{{ section.settings.message_text | escape }}</p>
+        {%- unless section.settings.message_link == blank -%}
+          </a>
+        {%- endunless -%}
+      </div>
+
+    {% endif %}
+  {% endif %}
+
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alimeNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="{{ routes.root_url }}"><img src="{{ section.settings.logo | img_url: 'master' }}" alt="" style="max-width: {{ section.settings.logo_max_width }}px"></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul id="nav">
+                                   
+                                  {% include 'site-nav', linklist: section.settings.main_linklist, wrapper_class: 'site-nav--centered' %}
+
+                                   <li class="ml-5 pl-5"></li>
+                                   <li class="ml-5"></li>
+                                  
+                                  
+                                  
+                                    <!--<li><a href="">About Us</a></li>
+                                    <li><a href="#">Shop By Category</a>
+                                        <ul class="dropdown">
+                                            
+                                            <li><a href="./about.html">- About</a></li>
+                                            <li><a href="./gallery.html">- Gallery</a></li>
+                                            <li><a href="./blog.html">- Blog</a></li>
+                                            <li><a href="./single-blog.html">- Blog Details</a></li>
+                                            <li><a href="./contact.html">- Contact</a></li>
+                                            <li><a href="#">- Dropdown</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li><a href="./gallery.html">Products</a></li>                                   
+                                    <li><a href="./contact.html">Contact Us</a></li>-->
+                                </ul>
+
+                                <!-- Search Icon 
+                              <div class="search-icon">
+                                <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer>
+                                 <i class="fas fa-search"></i>
+                                <span class="icon__fallback-text">{{ 'layout.navigation.search' | t }}</span>
+                                </button>
+                              </div>
+                              <div class="cart-icon" >
+                                <a href="{{ routes.cart_url }}" class="site-header__icon site-header__cart text-light" >
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
+                                <div id="CartCount" class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden" data-cart-count-bubble>
+                                  <span data-cart-count>{{ cart.item_count }}</span>
+                                  <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
+                                </div>
+                                </a>
+                              </div>-->
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                      <!-- Search Icon -->
+                              <div class="search-icon">
+                                <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer>
+                                 <i class="fas fa-search"></i>
+                                <span class="icon__fallback-text">{{ 'layout.navigation.search' | t }}</span>
+                                </button>
+                              </div>
+                              <div class="cart-icon" >
+                                <a href="{{ routes.cart_url }}" class="site-header__icon site-header__cart text-light" >
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
+                                <div id="CartCount" class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden" data-cart-count-bubble>
+                                  <span data-cart-count>{{ cart.item_count }}</span>
+                                  <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
+                                </div>
+                                </a>
+                              </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+<div data-section-id="{{ section.id }}" data-section-type="header-section" data-header-section>
+  <header  role="banner">     
+        <nav class="grid__item medium-up--one-half small--hide" id="AccessibleNav" role="navigation">
+          <!--{% include 'site-nav', linklist: section.settings.main_linklist %}-->
+        </nav>
+      
+  </header>
+</div>
+
+{% schema %}
+  {
+    "name": "Header",
+    "settings": [
+	  {
+	   "type": "image_picker",
+	   "id": "logo",            
+        "label": "Logo"
+	  },
+      {
+      "type": "range",
+      "id": "logo_max_width",
+      "label": {
+        "cs": "Šířka vlastního loga",
+        "da": "Tilpasset logobredde",
+        "de": "Logobreite",
+        "en": "Custom logo width",
+        "es": "Ancho del logo personalizado",
+        "fi": "Mukautetun logon leveys",
+        "fr": "Largeur personnalisée du logo",
+        "it": "Larghezza logo personalizzato",
+        "ja": "ロゴの幅をカスタマイズする",
+        "ko": "사용자 지정 로고 폭",
+        "nb": "Tilpasset logobredde",
+        "nl": "Aangepaste logo-breedte",
+        "pl": "Niestandardowa szerokość logo",
+        "pt-BR": "Largura do logo personalizado",
+        "pt-PT": "Largura de logótipo personalizada",
+        "sv": "Anpassad logotypsbredd",
+        "th": "ความกว้างของโลโก้แบบกำหนดเอง",
+        "tr": "Özel logo genişliği",
+        "vi": "Chiều rộng logo tùy chỉnh",
+        "zh-CN": "自定义 logo 宽度",
+        "zh-TW": "自訂商標寬度"
+      },
+      "min": 50,
+      "max": 85,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+      {
+      "type": "link_list",
+      "id": "main_linklist",
+      "label": {
+        "cs": "Nabídka",
+        "da": "Menu",
+        "de": "Menü",
+        "en": "Menu",
+        "es": "Menú",
+        "fi": "Valikko",
+        "fr": "Menu",
+        "it": "Menu",
+        "ja": "メニュー",
+        "ko": "메뉴",
+        "nb": "Meny",
+        "nl": "Menu",
+        "pl": "Menu",
+        "pt-BR": "Menu",
+        "pt-PT": "Menu",
+        "sv": "Meny",
+        "th": "เมนู",
+        "tr": "Menü",
+        "vi": "Menu",
+        "zh-CN": "菜单",
+        "zh-TW": "選單"
+      },
+      "default": "main-menu"
+    },
+    {
+      "type": "header",
+      "content": {
+        "cs": "Panel oznámení",
+        "da": "Meddelelseslinje",
+        "de": "Ankündigungsbereich",
+        "en": "Announcement bar",
+        "es": "Barra de anuncios",
+        "fi": "Ilmoituspalkki",
+        "fr": "Barre d'annonces",
+        "it": "Barra degli annunci",
+        "ja": "告知バー",
+        "ko": "공지 표시줄",
+        "nb": "Kunngjøringslinje",
+        "nl": "Aankondigingsbalk",
+        "pl": "Pasek ogłoszeń",
+        "pt-BR": "Barra de avisos",
+        "pt-PT": "Barra de comunicado",
+        "sv": "Meddelandefält",
+        "th": "แถบประกาศ",
+        "tr": "Duyuru çubuğu",
+        "vi": "Thanh thông báo",
+        "zh-CN": "公告栏",
+        "zh-TW": "公告列"
+      }
+    },
+    {
+      "type": "checkbox",
+      "id": "message",
+      "label": {
+        "cs": "Zobrazit oznámení",
+        "da": "Vis meddelelse",
+        "de": "Ankündigung anzeigen",
+        "en": "Show announcement",
+        "es": "Mostrar anuncio",
+        "fi": "Näytä ilmoitus",
+        "fr": "Afficher l'annonce",
+        "it": "Mostra annuncio",
+        "ja": "告知を表示する",
+        "ko": "공지 표시",
+        "nb": "Vis kunngjøring",
+        "nl": "Aankondiging weergeven",
+        "pl": "Pokaż ogłoszenie",
+        "pt-BR": "Exibir comunicado",
+        "pt-PT": "Mostrar comunicado",
+        "sv": "Visa tillkännagivande",
+        "th": "แสดงประกาศ",
+        "tr": "Duyuruyu göster",
+        "vi": "Hiển thị thông báo",
+        "zh-CN": "显示公告",
+        "zh-TW": "顯示公告"
+      },
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "home_page_only",
+      "label": {
+        "cs": "Jen domovská stránka",
+        "da": "Kun startside",
+        "de": "Nur Startseite",
+        "en": "Home page only",
+        "es": "Solo página de inicio",
+        "fi": "Vain etusivu",
+        "fr": "Page d'accueil uniquement",
+        "it": "Solo home page",
+        "ja": "ホームページのみ",
+        "ko": "홈페이지만",
+        "nb": "Kun på startsiden",
+        "nl": "Alleen homepage",
+        "pl": "Tylko strona główna",
+        "pt-BR": "Apenas na página inicial",
+        "pt-PT": "Apenas a página inicial",
+        "sv": "Endast hemsida",
+        "th": "หน้าแรกเท่านั้น",
+        "tr": "Yalnızca ana sayfa",
+        "vi": "Chỉ trang chủ",
+        "zh-CN": "仅主页",
+        "zh-TW": "僅限首頁"
+      },
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "message_text",
+      "label": {
+        "cs": "Text",
+        "da": "Tekst",
+        "de": "Text",
+        "en": "Text",
+        "es": "Texto",
+        "fi": "Teksti",
+        "fr": "Texte",
+        "it": "Testo",
+        "ja": "テキスト",
+        "ko": "텍스트",
+        "nb": "Tekst",
+        "nl": "Tekst",
+        "pl": "Tekst",
+        "pt-BR": "Texto",
+        "pt-PT": "Texto",
+        "sv": "Text",
+        "th": "ข้อความ",
+        "tr": "Metin",
+        "vi": "Văn bản",
+        "zh-CN": "文本",
+        "zh-TW": "文字"
+      },
+      "default": {
+        "cs": "Tady můžete zadat oznámení",
+        "da": "Meddel noget her",
+        "de": "Hier etwas ankündigen",
+        "en": "Announce something here",
+        "es": "Anuncia algo aquí",
+        "fi": "Ilmoita jotakin tässä",
+        "fr": "Annoncez quelque chose ici",
+        "it": "Annuncia qualcosa qui",
+        "ja": "ここで告知してください",
+        "ko": "여기에 공지하십시오",
+        "nb": "Kunngjør noe her",
+        "nl": "Kondig hier iets aan",
+        "pl": "Ogłoś coś tutaj",
+        "pt-BR": "Anuncie algo aqui",
+        "pt-PT": "Anunciar algo aqui",
+        "sv": "Meddela något här",
+        "th": "ประกาศข้อความที่นี่",
+        "tr": "Buraya bir duyuru ekleyin",
+        "vi": "Thông báo điều gì đó tại đây",
+        "zh-CN": "在此处进行公告",
+        "zh-TW": "在此公告資訊"
+      }
+    },
+    {
+      "type": "url",
+      "id": "message_link",
+      "label": {
+        "cs": "Odkaz",
+        "da": "Link",
+        "de": "Link",
+        "en": "Link",
+        "es": "Enlace",
+        "fi": "Linkki",
+        "fr": "Lien",
+        "it": "Link",
+        "ja": "リンク",
+        "ko": "링크",
+        "nb": "Kobling",
+        "nl": "Link",
+        "pl": "Link",
+        "pt-BR": "Link",
+        "pt-PT": "Ligação",
+        "sv": "Länk",
+        "th": "ลิงก์",
+        "tr": "Bağlantı",
+        "vi": "Liên kết",
+        "zh-CN": "链接",
+        "zh-TW": "連結"
+      },
+      "info": {
+        "cs": "Volitelné",
+        "da": "Valgfri",
+        "de": "Optional",
+        "en": "Optional",
+        "es": "Opcional",
+        "fi": "Valinnainen",
+        "fr": "Facultatif",
+        "it": "Facoltativo",
+        "ja": "オプション",
+        "ko": "선택 사항",
+        "nb": "Valgfritt",
+        "nl": "Optioneel",
+        "pl": "Opcjonalnie",
+        "pt-BR": "Opcional",
+        "pt-PT": "Opcional",
+        "sv": "Valfritt",
+        "th": "ไม่จำเป็น",
+        "tr": "İsteğe bağlı",
+        "vi": "Không bắt buộc",
+        "zh-CN": "可选",
+        "zh-TW": "(選填)"
+      }
+    }
+   ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

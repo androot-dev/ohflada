@@ -1,0 +1,636 @@
+<style>
+  
+.breadcrumb-area {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 400px;
+  margin-top: -55px; 
+  overflow: hidden;
+}
+  
+@media only screen and (max-width: 767px) {
+  .breadcrumb-area {
+    height: 180px;
+    text-align: center;
+  } 
+  
+  .spad {
+    padding-top: 200px!important;
+    padding-bottom: 170px !important;
+}
+  
+.breadcrumb-area .breadcrumb-content .breadcrumb {
+   justify-content: center;
+}
+  
+}
+  
+.breadcrumb-area .breadcrumb-content{
+   margin-left: 70px;
+   position: relative;
+   z-index: 30;
+}
+ 
+  
+.breadcrumb-area .breadcrumb-content h2 {
+  color: #ffffff;
+  font-size: 3rem; 
+  display: block;
+  text-transform: none !important;
+  font-weight: 300;
+  letter-spacing: 0;
+   position: relative;
+  z-index: 30;
+}
+  
+ 
+
+@media only screen and (max-width: 767px) {
+  .breadcrumb-area .breadcrumb-content h2 {
+     font-size: 3rem;
+  }
+  
+  .breadcrumb-area .breadcrumb-content{
+   margin-left: 0px;
+}
+  
+  .breadcrumb-area .breadcrumb-content h2::before{
+  display: none;
+  
+}
+ 
+}
+
+.breadcrumb-area .breadcrumb-content .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.breadcrumb-area .breadcrumb-content .breadcrumb .breadcrumb-item::before {
+   color: #ffffff;
+}
+    
+.breadcrumb-area .breadcrumb-content .breadcrumb .breadcrumb-item.active {
+   color:  #fff;
+   font-size: 18px;
+   font-weight: 300;
+   font-family: "fuente-contenido" !important;
+}
+
+.breadcrumb-area .breadcrumb-content .breadcrumb .breadcrumb-item a {
+   font-size: 18px;
+   color: #ffffff;
+   font-weight: 300;
+   transition: 0.6s;
+   font-family: "fuente-contenido" !important;
+}
+      
+.breadcrumb-area .breadcrumb-content .breadcrumb .breadcrumb-item a:hover {
+   color: #ff0000;
+   transition: 0.6s;
+}
+  
+ 
+.bg-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+  
+.bg-overlay {
+  position: relative;
+  z-index: 2;
+  background-position: center center;
+  background-size: cover; 
+}
+
+.bg-overlay::after {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+ 
+  
+.spad {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+  
+.div1 { 
+    background-color: white; 
+    border: 20px solid white; 
+} 
+.div2 { 
+    float: right; 
+    border-top: 20px solid red; 
+    border-right: 20px solid red; 
+    border-left: 20px solid transparent; 
+} 
+.div3 { 
+    float: right; 
+    margin: 10px -20px; 
+    border-bottom: 20px solid red; 
+    border-right: 20px solid transparent; 
+    border-left: 20px solid transparent; 
+} 
+.div4 { 
+    border-top: 20px solid red; 
+    border-right: 20px solid transparent; 
+    margin-right: 40px; 
+} 
+
+  
+/*.breadcrumb-area .adorno-1{
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 100%;
+  bottom:0;
+  right:-40px;
+  background-image: linear-gradient(to right top, #ff0000, #d60006, #ae0008, #870007, #620000);
+  z-index: 3;
+  transform: skewX(-35deg);
+  opacity: 0.3;
+}
+
+.breadcrumb-area .adorno-2{
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 500px;
+  top:-200px;
+  right:90px;
+  background:#000000;
+  z-index: 2;
+  transform: skewX(-35deg);
+  opacity: 0.3;
+}
+
+.breadcrumb-area .adorno-3{
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 500px;
+  bottom:-200px;
+  right:150px;
+  background:#000;
+  z-index: 2;
+  transform: skewX(-35deg);
+  opacity: 0.7;
+}
+
+.breadcrumb-area .adorno-4{
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 400px;
+  bottom: -200px;
+  right:50px;
+  background:#fff;
+  z-index: 3;
+  transform: skewX(-35deg); 
+  opacity: 0.2;
+}*/
+  
+/* FIN PORTADA SUB PAGINAS*/ 
+  
+
+.busqueda {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+  
+
+
+  
+.busqueda h1{
+  color:  #383838 !important; 
+  font-weight: 300 !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+
+}
+  
+
+
+ .busqueda input{
+   /*border: 2px solid #d8d8d8;*/
+   background: rgb(255,255,255, 0.5);
+   margin-right: 20px;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+   border-radius: 6px 0px 0px 6px;
+ }
+ 
+.search-form__input {
+    padding-right: 45px;
+    width: 100%;
+     border: 1px solid transparent !importants;
+    min-height: 44px;
+    color: var(--color-text-field-text);
+    background-color: var(--color-text-field);
+    border: none;
+      
+}
+.predictive-search-title__content {
+  flex: 1 1 auto;
+  margin-bottom: 0;
+  padding-right: 40px; 
+  text-transform: none !important;
+  color:#383838 !important;
+  white-space: normal; 
+    
+}
+
+.busqueda .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  background-color: #ff0000 !important;
+  border-radius: 0px 6px 6px 0px;!important;
+  padding: 10px 14px; 
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;  
+  font-family: "fuente-contenido" !important;
+  transition: 0.6s;
+  fill: #383838;
+  
+  
+}
+  
+  
+.busqueda .input-group button:before,
+.busqueda .input-group button:after {
+  border-color: #ff5050;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content:"";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+  border-radius: 6px 6px 6px 6px;
+}
+.busqueda .input-group button:before {
+  border-left-width: 2px;
+  border-top-width: 2px;
+  left: -5px;
+  top: -5px;
+}
+
+.busqueda .input-group button:after {
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  bottom: -5px;
+  right: -5px;
+}
+.busqueda .input-group button:hover:before,
+.busqueda .input-group button:hover:after
+{
+  height:100%;
+  width:100%;
+}
+
+  
+.busqueda .input-group button:hover {
+  transition: 0.6s;
+  border-radius: 0px;
+  margin-left: 30px;
+ 
+}
+  
+  
+/*TRIANGULOS ADORNOS*/ 
+  
+.busqueda .container-triangle {
+    width: 188px;
+    height: 195px;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    border-top: 4px solid red;
+    z-index: 300;
+  transform: rotate(-30deg);
+  opacity: 0.2;
+   z-index: 1;
+}
+
+.busqueda .triangle {
+    position: absolute;
+    margin: auto;
+    top: -70px;
+    left: 0;
+    right: 0;
+    width: 137px;
+    height: 137px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-right: 4px solid red;
+    border-bottom: 4px solid red;
+    z-index: 1;
+  
+}
+  
+.busqueda .triangle-right {
+    width: 0;
+    height: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 5%;
+    left: 1%;
+    transform: rotate(25deg);
+    z-index: 1;
+}
+.busqueda .triangle-right:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top:-500px;
+    margin-left: -500px;
+    opacity: 0.1;
+    border-top: 500px solid transparent;
+    border-bottom: 500px solid transparent;
+    border-left: 500px solid #000;
+    z-index: 1;
+}
+  
+.busqueda .triangle-4 {
+  width: 60px;
+  height: 30px;
+  border-bottom: solid 30px rgb(200,30,50);
+  border-left: solid 30px transparent;
+  border-right: solid 30px transparent;
+  position: absolute;
+  z-index: 1;
+  top: 70%;
+  left: -80%;
+  transform: rotate(-20deg);
+  opacity: 0.2;
+  
+}
+
+  
+.busqueda .container-triangle-2 {
+    width: 23px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    border-top: 3px solid black;
+    z-index: 300;
+  transform: rotate(-10deg);
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.busqueda .triangle-2 {
+    position: absolute;
+    margin: auto;
+    top: -10px;
+    left: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    z-index: 1;
+}
+  
+.busqueda .triangle-5 {
+    width: 60px;
+    height: 50px;
+    border-bottom: solid 50px rgb(255,255,255);
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+    position: absolute;
+    z-index: 30;
+    top: 30%;
+    left: %;
+    transform: rotate(-95deg);
+    opacity: 0.1;
+    z-index: 1;
+  
+}
+  
+.busqueda .container-triangle-3 {
+    width: 188px;
+    height: 195px;
+    position: absolute;
+    top: 55%;
+    left: -3%;
+    border-top: 4px solid red;
+    z-index: 300;
+  transform: rotate(-40deg);
+  opacity: 0.2;
+   z-index: 1;
+}
+
+.busqueda .triangle-3 {
+    position: absolute;
+    margin: auto;
+    top: -70px;
+    left: 0;
+    right: 0;
+    width: 137px;
+    height: 137px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-right: 4px solid red;
+    border-bottom: 4px solid red;
+    z-index: 1;
+}
+ 
+  
+
+  
+</style>
+
+
+ <!--==========================
+      SECCION HERO SUBPAGINAS
+ ============================-->
+<section class="breadcrumb-area spad bg-img bg-overlay" style="background-image: url('https://cdn.shopify.com/s/files/1/0611/2473/9300/files/pexels-helena-lopes-708392.jpg?v=1637710913');">
+    <img src="https://cdn.shopify.com/s/files/1/0611/2473/9300/files/hero-subpages.png?v=1638040332" style="position: absolute; z-index: 2; opacity: 0.2; top: 0">
+
+  <!-- <div class="adorno-1"></div>
+  <div class="adorno-2"></div>
+  <div class="adorno-3"></div>
+  <div class="adorno-4"></div>-->
+  <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content">
+                        <h2>
+                          Search
+                        </h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="{{ routes.root_url }}">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                 Search
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<div class="div2"></div> 
+<div class="div3"></div> 
+<div class="div4"></div>
+ <!-- FIN SUBPAGINAS -->
+
+
+
+<section class="busqueda"> 
+ <img src="https://cdn.shopify.com/s/files/1/0611/2473/9300/files/producy-5.png?v=1638042518" style="position: absolute; z-index: 0; opacity: 0.2; top: 0">
+        <img src="https://cdn.shopify.com/s/files/1/0611/2473/9300/files/product-4.png?v=1638041100" style="position: absolute; z-index: 0; opacity: 0.2; bottom: 0">
+
+<!-- <div class="container-triangle d-lg-block d-none">
+    <div class="triangle"></div>
+  </div>
+  <div class="triangle-right"></div>
+  <div class="triangle triangle-4"></div>
+  <div class="container-triangle-2">
+    <div class="triangle-2"></div>
+  </div>
+  <div class="triangle-5"></div>
+  <div class="container-triangle-3">
+    <div class="triangle-3"></div>
+  </div>-->
+{% paginate search.results by 3 %}
+
+<div class="page-width">
+  {% if search.performed == false %}
+    <div class="text-center">
+      <h1 class="h2">{{ 'general.search.title' | t }}</h1>
+  {% else %}
+    <div class="text-center">
+      <h1 class="h2">
+        <span class="visually-hidden">{{ 'general.search.heading' | t: count: search.results_count }}:</span>
+        {{ 'general.search.results_with_count' | t: terms: search.terms, count: search.results_count }}
+      </h1>
+  {% endif %}
+      <div class="grid">
+        <div class="grid__item medium-up--six-tenths medium-up--push-two-tenths">
+          {% if search.performed and search.results_count == 0 %}
+            <div class="rte search--no-results-found">
+              <p>{{ 'general.search.no_results' | t }}</p>
+            </div>
+          {% endif %}
+          <form action="{{ routes.search_url }}" method="get" role="search" class="search-form search-page-form">
+            <div class="input-group input-group--nowrap">
+              <div class="input-group__field input-group__field--connected search-form__input-wrapper">
+                <input
+                  type="search"
+                  name="q"
+                  value="{{ search.terms | escape }}"
+                  placeholder="{{ 'general.search.placeholder' | t }}"
+                  role="combobox"
+                  aria-autocomplete="list"
+                  aria-owns="predictive-search-results"
+                  aria-expanded="false"
+                  aria-label="{{ 'general.search.placeholder' | t }}"
+                  aria-haspopup="listbox"
+                  class="search-form__input"
+                  data-search-page-predictive-search-input
+                  data-base-url="{{ routes.search_url }}"
+                />
+
+                <input type="hidden" name="options[prefix]" value="last" aria-hidden="true" />
+
+                <button type="reset" class="search-form__clear-action" aria-label="{{ 'general.search.clear_search_term' | t }}" data-search-page-predictive-search-clear>
+                  {% include 'icon-close' %}
+                </button>
+
+                <div class="predictive-search-wrapper" data-predictive-search-mount="default"></div>
+              </div>
+
+              <button type="submit" class="search-form__connected-submit" aria-label="{{ 'general.search.submit' | t }}" data-search-page-predictive-search-submit>
+                {% include 'icon-search' %}
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+{% if search.performed %}
+  {% if search.results_count > 0 %}
+    <hr aria-hidden="true" />
+  {% endif %}
+
+  <h2 class="visually-hidden">{{ 'general.search.heading' | t: count: search.results_count }}</h2>
+
+  <ul class="page-width list-view-items">
+    {% for item in search.results %}
+      <li class="list-view-item">
+        {% if item.object_type == 'product' %}
+          {% include 'product-card-list', product: item %}
+        {% else %}
+          <div class="product-card product-card--list">
+            <a href="{{ item.url }}" class="full-width-link">
+              <span class="visually-hidden">{{ item.title }}</span>
+            </a>
+            <div class="list-view-item__link">
+              <div class="list-view-item__image-column">
+                <div class="list-view-item__image-wrapper product-card__image-wrapper">
+                  {% unless item.image == null %}
+                    <img class="list-view-item__image" src="{{ item.image.src | img_url: '600x600' }}" alt="{{ item.image.alt | escape }}">
+                  {% endunless %}
+                </div>
+              </div>
+
+              <div class="list-view-item__title-column">
+                <div class="list-view-item__title" aria-hidden="true">
+                  <span class="product-card__title">{{ item.title }}</span>
+                </div>
+                <div>
+                  {% if item.published_at %}{{ item.published_at | date: format: "date" }} &#8212; {% endif %}
+                  {{ item.content | strip_html | truncate: 200 }}
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+
+  {%- if paginate.pages > 1 -%}
+    {% include 'pagination', paginate: paginate %}
+  {%- endif -%}
+{% endif %}
+
+{% if search.results_count < 2  %}
+  <div class="search--less-than-2-results"></div>
+{% endif %}
+
+{% endpaginate %}
+  </div>

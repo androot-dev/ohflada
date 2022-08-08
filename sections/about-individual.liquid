@@ -1,0 +1,468 @@
+<style>  
+  .about-individual{
+   
+    padding-top: 50px;
+    padding-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+
+  
+ .about-individual h2{
+   color: #383838;
+   font-size:30px;
+   font-weight:300;
+   line-height:1.3;
+  }
+  
+  
+.about-individual .subtitle {
+   color:#ff0000;
+   font-size:18px;
+   margin-top: -20px;
+   margin-bottom: 20px;   
+}
+
+@media (max-width: 575px){
+.about-individual h2{
+    font-size:30px;
+    line-height:1.3;
+    text-align: center;
+  }
+  
+.about-individual .subtitle {
+   text-align: center;   
+}
+}
+  
+
+  
+ 
+.about-individual p {
+  font-size: 16px;  
+  font-weight: 500;
+  margin-top:-10px;
+  position: relative;
+  z-index: 2;  
+  color: #383838;   
+}
+  
+
+
+
+
+
+  
+.about-individual .img-1{
+  width: 450px;
+  height: 450px;  
+  z-index: 3;
+  position: relative;
+  border: 4px solid #fff;
+  box-shadow: rgba(255, 0, 0, 0.4) 5px 5px, rgba(255, 0, 0, 0.3) 10px 10px, rgba(255, 0, 0, 0.2) 15px 15px, rgba(255, 0, 0, 0.1) 20px 20px, rgba(255, 0, 0, 0.05) 25px 25px;
+  border-radius: 6px;
+  transition: 3s;
+}
+
+  .about-individual  :hover .img-1{
+  transform: rotate(10deg);
+  
+}
+
+.about-individual .about-us-square:after{
+  
+  position: absolute;
+  top: -10%;
+  left: -3%;
+  width: 500px;
+  height: 500px; 
+  content: '';
+  background-image: linear-gradient(to left bottom, #858383, #999797, #aeacac, #c3c1c1, #d9d7d7);
+  z-index: 1;
+  border-radius: 10px;
+}
+  
+
+  
+  @media only screen and (max-width: 767px) {
+  
+
+    
+.about-individual .img-1 {
+    height: 365px;
+
+}
+  
+     
+.about-individual p {
+  text-align: center;
+}
+  }
+  
+/*TRIANGULOS ADORNOS 
+  
+.about-individual .container-triangle {
+    width: 188px;
+    height: 195px;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    border-top: 4px solid red;
+    z-index: 300;
+  transform: rotate(-30deg);
+  opacity: 0.2;
+   z-index: 1;
+}
+
+.about-individual .triangle {
+    position: absolute;
+    margin: auto;
+    top: -70px;
+    left: 0;
+    right: 0;
+    width: 137px;
+    height: 137px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-right: 4px solid red;
+    border-bottom: 4px solid red;
+    z-index: 1;
+  
+}
+  
+.about-individual .triangle-right {
+    width: 0;
+    height: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 5%;
+    left: 1%;
+    transform: rotate(25deg);
+    z-index: 1;
+}
+.about-individual .triangle-right:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top:-500px;
+    margin-left: -500px;
+    opacity: 0.1;
+    border-top: 500px solid transparent;
+    border-bottom: 500px solid transparent;
+    border-left: 500px solid #000;
+    z-index: 1;
+}
+  
+.about-individual .triangle-4 {
+  width: 60px;
+  height: 30px;
+  border-bottom: solid 30px rgb(200,30,50);
+  border-left: solid 30px transparent;
+  border-right: solid 30px transparent;
+  position: absolute;
+  z-index: 1;
+  top: 70%;
+  left: -80%;
+  transform: rotate(-20deg);
+  opacity: 0.2;
+  
+}
+
+  
+.about-individual .container-triangle-2 {
+    width: 23px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    border-top: 3px solid black;
+    z-index: 300;
+  transform: rotate(-10deg);
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.about-individual .triangle-2 {
+    position: absolute;
+    margin: auto;
+    top: -10px;
+    left: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    z-index: 1;
+}
+  
+.about-individual .triangle-5 {
+    width: 60px;
+    height: 50px;
+    border-bottom: solid 50px rgb(255,255,255);
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+    position: absolute;
+    z-index: 30;
+    top: 30%;
+    left: %;
+    transform: rotate(-95deg);
+    opacity: 0.1;
+    z-index: 1;
+  
+}
+  
+.about-individual .container-triangle-3 {
+    width: 188px;
+    height: 195px;
+    position: absolute;
+    top: 55%;
+    left: -3%;
+    border-top: 4px solid red;
+    z-index: 300;
+  transform: rotate(-40deg);
+  opacity: 0.2;
+   z-index: 1;
+}
+
+.about-individual .triangle-3 {
+    position: absolute;
+    margin: auto;
+    top: -70px;
+    left: 0;
+    right: 0;
+    width: 137px;
+    height: 137px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-right: 4px solid red;
+    border-bottom: 4px solid red;
+    z-index: 1;
+}
+ 
+ */ 
+  
+.scanfcode-2
+{
+  background-color: #ff0000;
+  border:0px;
+  color:#fff;
+  font-family: 'fuente-titulos', Arial, sans-serif;
+  font-size:16px;
+  margin:28px 10px;
+  position:relative;
+  text-transform:uppercase;
+  z-index: 3;
+  padding: 5px 10px;
+  padding-bottom: 5px;
+  border-radius: 6px;
+}
+.scanfcode-2:before,
+.scanfcode-2:after {
+  border-color: #ff5050;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content:"";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+  
+}
+.scanfcode-2:before {
+  border-left-width: 2px;
+  border-top-width: 2px;
+  left: -5px;
+  top: -5px;
+  border-radius: 6px 0px 0px 0px;
+}
+
+.scanfcode-2:after {
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  bottom: -5px;
+  right: -5px;
+  border-radius: 0px 0px 6px 0px;
+}
+.scanfcode-2:hover:before,
+.scanfcode-2:hover:after
+{
+  height:100%;
+  width:100%;
+    
+}
+
+  .mb-ek{
+   margin-bottom: -30px;
+  }
+  
+  .content-button{
+    text-align: right;
+  
+  }
+    
+  @media only screen and (max-width: 767px) {
+    
+    .content-button{
+    text-align: center;
+  
+  }
+  
+  }
+
+</style>
+<section class="about-individual">
+  <img src="https://cdn.shopify.com/s/files/1/0611/2473/9300/files/about-us.png?v=1638039882" style="position: absolute; z-index: 0; opacity: 0.2; top:0">
+<!--
+  <div class="adorno-1"></div>
+  <div class="adorno-2"></div>
+  <div class="adorno-3"></div>
+  <div class="adorno-4"></div>
+  <div class="container-triangle d-lg-block d-none">
+    <div class="triangle"></div>
+  </div>
+  <div class="triangle-right"></div>
+  <div class="triangle triangle-4"></div>
+  <div class="container-triangle-2">
+    <div class="triangle-2"></div>
+  </div>
+  <div class="triangle-5"></div>
+  <div class="container-triangle-3">
+    <div class="triangle-3"></div>
+  </div>-->
+  
+
+  <div class="container">
+    <div class="row">
+     
+       <div class="col-md-6 ">
+         <div class="">
+         <div class="col-12 text-left ">
+         <h2> {{ section.settings.title }}</h2>
+         <p class="subtitle"> {{ section.settings.subtitle }}</p>              
+         </div>
+         <!--<div class=" py-4 content-text">
+           {{ section.settings.block_text }}
+         </div>-->
+           
+       <div class="col-12">
+         <div class="content-button mt-3 mb-5">
+          <a class="scanfcode-2 url" href="#en">En</a> 
+          <a class="scanfcode-2 url" href="#ar">Ar</a> 
+          <a class="scanfcode-2 url" href="#ch">Ch</a> 
+         </div>
+       <div class="owl-about owl-carousel">
+            <div class="item my-3 mb-5" data-hash="en">
+               {{ section.settings.block_text }}
+                 <div class=" col-12 mt-5 text-lg-left text-center ">
+                  <a href="{{ section.settings.button_link }}" class="scanfcode mt-5" data-aos="fade-up" >
+                    {{ section.settings.button_label }}
+                  </a>
+                 </div>           
+            </div>
+            <div class="item mt-3 mb-5 text-right" data-hash="ar">
+               {{ section.settings.block_text-2 }}
+               <div class=" col-12 mt-5 text-lg-left text-center ">
+                  <a href="{{ section.settings.button_link }}" class="scanfcode mt-5" data-aos="fade-up" >
+                    {{ section.settings.button_label }}
+                  </a>
+                 </div>
+            </div>
+            <div class="item mt-3" data-hash="ch">
+               {{ section.settings.block_text-3 }}
+               <div class=" col-12 mt-5 text-lg-left text-center ">
+                  <a href="{{ section.settings.button_link }}" class="scanfcode mt-5" data-aos="fade-up" >
+                    {{ section.settings.button_label }}
+                  </a>
+               </div>
+            </div>
+            
+          </div>
+         
+        
+          
+           </div>
+
+       
+         
+           
+        </div>
+         
+      </div>
+       <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <img class="img-fluid img-1 my-5" src="{{ section.settings.image-1 | img_url: 'master' }}" data-aos="fade-up" />
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "About Us",
+    "settings": [
+	{
+		"type": "text",
+        "id": "title",
+		"label": "Title Section",
+        "default": "About"
+        
+     },
+     {
+		"type": "text",
+        "id": "subtitle",
+		"label": "SubTitle Section",
+        "default": "Subtitle"
+      },
+     {
+	     "type": "richtext",
+          "id": "block_text",
+          "label": "Content Text English"
+     },
+     {
+	     "type": "richtext",
+          "id": "block_text-2",
+          "label": "Content Text Arabe"
+     },
+     {
+	     "type": "richtext",
+          "id": "block_text-3",
+          "label": "Content Text Chinesse"
+     },
+     {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+	  "default": "Read More"
+      },
+      {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+      },
+	  {
+	   "type": "image_picker",
+	   "id": "image-1",            
+        "label": "Image About 1"
+	  }
+     
+	]
+  }
+{% endschema %}

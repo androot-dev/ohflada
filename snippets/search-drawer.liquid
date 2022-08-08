@@ -1,0 +1,107 @@
+<style>
+  
+ #SearchDrawer .search-bar__form {
+    flex: 1 1 100%;
+    position: relative;
+    max-width: 750px;
+    border: 1px solid transparent;
+}
+  
+  
+#SearchDrawer .search-bar__input {
+    padding-right: 45px;
+    width: 100%;
+    min-height: 44px;
+    color: var(--color-text-field-text);
+    background-color: var(--color-text-field);
+    border: none;
+    border: 1px solid transparent !mportant; 
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    font-family:"fuente-contenido";
+}
+  
+#SearchDrawer .search-bar__submit {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    padding: 0 12px;
+    height: 100%;
+    vertical-align: middle;
+    background-color: #ff0000;
+    border: 0;
+    margin: 0;
+    color: var(--color-text-field-text);
+    fill: #fff;
+    border-radius: 0px 6px 6px 0px;!important;
+}
+  
+
+#SearchDrawer .search-bar__submit .icon {
+    position: relative;
+    top: -1px;
+    width: 1.2rem;
+    height: auto;
+    fill: #fff;
+}
+  
+#SearchDrawer .btn--link {
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    color: #ffffff;
+    text-align: left;
+  
+}
+  
+#SearchDrawer h1 {
+   position:relative; z-index: 8; color: #fff; position: absolute; top:0; padding-top: 200px; text-transform: uppercase;
+}
+</style>
+
+
+<div id="SearchDrawer" class="search-bar drawer drawer--top critical-hidden" role="dialog" aria-modal="true" aria-label="{{ 'general.search.placeholder' | t }}" data-predictive-search-drawer>
+ 
+  <div class="search-bar__interior">
+     
+    <div class="search-form__container" data-search-form-container>
+      <h1 style=""> Search</h1>
+      <form class="search-form search-bar__form" action="{{ routes.search_url }}" method="get" role="search">
+        <div class="search-form__input-wrapper">
+          <input
+            type="text"
+            name="q"
+            placeholder="{{ 'general.search.placeholder' | t }}"
+            role="combobox"
+            aria-autocomplete="list"
+            aria-owns="predictive-search-results"
+            aria-expanded="false"
+            aria-label="{{ 'general.search.placeholder' | t }}"
+            aria-haspopup="listbox"
+            class="search-form__input search-bar__input"
+            data-predictive-search-drawer-input
+            data-base-url="{{ routes.search_url }}"
+          />
+          <input type="hidden" name="options[prefix]" value="last" aria-hidden="true" />
+          <div class="predictive-search-wrapper predictive-search-wrapper--drawer" data-predictive-search-mount="drawer"></div>
+        </div>
+
+        <button class="search-bar__submit search-form__submit"
+          type="submit"
+          data-search-form-submit>
+          {% include 'icon-search' %}
+          <span class="icon__fallback-text">{{ 'general.search.submit' | t }}</span>
+        </button>
+      </form>
+
+      <div class="search-bar__actions">
+        <button type="button" class="btn--link search-bar__close js-drawer-close">
+          {% include 'icon-close' %}
+          <span class="icon__fallback-text">{{ 'general.search.close' | t }}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

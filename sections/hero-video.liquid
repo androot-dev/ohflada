@@ -1,0 +1,619 @@
+<style>
+/* ===================================================================
+ * #02. SECCION HERO
+ * ------------------------------------------------------------------- */
+
+#hero{
+ position: relative;
+ margin-top: -55px;
+ display: flex;
+ flex-direction: column;
+ align-items: left;
+ justify-content: center;
+ text-align: bottom;
+ color: #fff;
+ height: 100vh;
+ min-height: 25rem;
+ width: 100%;
+ overflow: hidden;
+  z-index: 3; 
+}
+
+#hero::before{
+ content: '';
+ background: rgba(0, 0, 0, 0.45); /*OVERLAY*/
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ z-index: 1;
+}
+
+#hero .video-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+
+
+
+ #hero .video-container video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+  
+
+  
+  
+#hero h1 {
+    position: relative;
+    font-size: 2.3rem; 
+    z-index: 2;
+    color: #fff !important;
+    text-transform: uppercase;
+   
+}
+
+
+
+
+#hero span{
+  position: relative; 
+  font-size: 1rem; 
+  color: #fff;
+  z-index: 2;
+  font-family: "fuente-contenido";
+  left: 0;
+}
+  
+
+
+@media (min-width: 767.98px) {
+  
+  #hero h1{
+  font-size: 3rem;
+  font-weight: 500 !important;
+  margin-top: 0px;
+  }
+  
+  #hero span{
+  font-weight: 500 !important;
+  font-size: 2rem;
+  
+  }
+  
+   #hero .video-container video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+}
+
+.color-text-button a{
+    font-size: 22px;
+    color:  #31200a !important;
+    font-weight: 700; 
+     transition: 0.5s;
+} 
+  
+.color-text-button a:hover{
+    color:  #d6b76c !important;
+    font-weight: 700;
+    transition: 0.5s;
+}  
+
+
+/* HIGHLIGHT */
+.highlight {
+		display: inline-block;
+		color: #d6b76c;
+		background: #fff;
+		margin: 20px;
+		width: 180px;
+		height: 46px;
+		line-height: 40px;
+		border-radius: 25px;
+		position: relative;
+		overflow: hidden;
+        z-index: 3;
+        font-family: "Bodinsm";
+        text-align:center;
+        border: 3px solid #d6b76c;
+}
+
+.highlight:before {
+		content: "";
+		position: absolute;
+		top: -30px;
+		left: -80px;
+		height: 100px;
+		width: 70px;
+		background: rgba(0, 0, 0, .3);
+		transform: rotate(20deg);
+}
+
+.highlight:hover:before {
+		left: 200px;
+		transition: all .4s;
+}
+  
+.highlight:hover{
+		color: #fff;
+}
+.highlight {margin-bottom:100px;}
+  
+
+.icons-contact{
+   font-size: 20px;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    /* right: -20px; */
+    /* background: rgb(255, 255, 255, 0.9); */
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 80px;
+   
+    width: 100vw;
+    text-align: center !important;
+}
+  
+.icons-contact i{
+   margin-right: 15px;
+   margin-left :15px;
+   color: #fff;
+  transition: 0.6s;
+}
+.icons-contact i:hover{
+  color: #ff0000;
+  transition: 0.6s;
+}
+  
+@media only screen and (max-width: 449px) {
+ .icons-contact{
+   font-size: 16px;
+   position: absolute;
+   z-index: 3;
+   bottom: 10px;
+   padding: 10px;
+   padding-left: 10px;
+   padding-right: 30px;
+  
+}
+  
+.icons-contact i{
+   margin-right: 10px;
+   margin-left :10px;
+   color: #fff;
+  transition: 0.6s;
+}
+  
+}
+  
+.border-left {
+    border-left: 1px solid #fff!important;
+}
+  
+.tooltip-inner {
+  background-color: white;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+  color: grey;
+}
+
+
+.bs-tooltip-top .arrow::before {
+  border-top-color: white;
+}
+ 
+.div1 { 
+    background-color: white; 
+    border: 20px solid white; 
+} 
+.div2 { 
+    float: right; 
+    border-top: 20px solid red; 
+    border-right: 20px solid red; 
+    border-left: 20px solid transparent; 
+} 
+.div3 { 
+    float: right; 
+    margin: 10px -20px; 
+    border-bottom: 20px solid red; 
+    border-right: 20px solid transparent; 
+    border-left: 20px solid transparent; 
+} 
+.div4 { 
+    border-top: 20px solid red; 
+    border-right: 20px solid transparent; 
+    margin-right: 40px; 
+} 
+  
+/*ADORNOS DEL LADO IZQUIERDO*/
+  
+#hero .adorno-1{
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 100%;
+  bottom:0;
+  right:-40px;
+  background-image: linear-gradient(to right top, #ff0000, #d60006, #ae0008, #870007, #620000);
+  z-index: 3;
+  transform: skewX(-35deg);
+  opacity: 0.3;
+}
+
+#hero .adorno-2{
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 500px;
+  top:-200px;
+  right:-30px;
+  background:#620000;
+  z-index: 2;
+  transform: skewX(-35deg);
+  opacity: 0.4;
+}
+
+#hero .adorno-3{
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 500px;
+  bottom:-200px;
+  right:150px;
+  background:#000;
+  z-index: 2;
+  transform: skewX(-35deg);
+  opacity: 0.7;
+}
+
+#hero .adorno-4{
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 400px;
+  bottom: -200px;
+  right:150px;
+  background:#fff;
+  z-index: 3;
+  transform: skewX(-35deg); 
+  opacity: 0.2;
+}
+
+#hero .adorno-5{
+  position: absolute;
+    z-index: 3;
+  opacity: 0.2;
+  
+}
+/*TRIANGULOS ADORNOS
+  
+.container-triangle {
+    width: 188px;
+    height: 195px;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    border-top: 4px solid red;
+    z-index: 300;
+  transform: rotate(-30deg);
+  opacity: 0.2;
+}
+
+.triangle {
+    position: absolute;
+    margin: auto;
+    top: -70px;
+    left: 0;
+    right: 0;
+    width: 137px;
+    height: 137px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-right: 4px solid red;
+    border-bottom: 4px solid red;
+}
+  
+.triangle-right {
+    width: 0;
+    height: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 5%;
+    left: 1%;
+    transform: rotate(25deg);
+    z-index: 30;
+}
+.triangle-right:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top:-500px;
+    margin-left: -500px;
+    opacity: 0.1;
+    border-top: 500px solid transparent;
+    border-bottom: 500px solid transparent;
+    border-left: 500px solid #fff;
+}
+  
+.triangle-4 {
+  width: 60px;
+  height: 30px;
+  border-bottom: solid 30px rgb(200,30,50);
+  border-left: solid 30px transparent;
+  border-right: solid 30px transparent;
+  position: absolute;
+  z-index: 30;
+  top: 70%;
+  left: -80%;
+  transform: rotate(-20deg);
+  opacity: 0.2;
+  
+}
+
+  
+.container-triangle-2 {
+    width: 23px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    border-top: 3px solid white;
+    z-index: 300;
+  transform: rotate(-10deg);
+  opacity: 0.2;
+}
+
+.triangle-2 {
+    position: absolute;
+    margin: auto;
+    top: -10px;
+    left: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+}
+  
+.triangle-5 {
+    width: 60px;
+    height: 50px;
+    border-bottom: solid 50px rgb(255,255,255);
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+    position: absolute;
+    z-index: 30;
+    top: 30%;
+    left: %;
+    transform: rotate(-95deg);
+    opacity: 0.1;
+  
+}
+  
+.container-triangle-3 {
+    width: 188px;
+    height: 195px;
+    position: absolute;
+    top: 55%;
+    left: -3%;
+    border-top: 4px solid red;
+    z-index: 300;
+  transform: rotate(-40deg);
+  opacity: 0.2;
+}
+
+.triangle-3 {
+    position: absolute;
+    margin: auto;
+    top: -70px;
+    left: 0;
+    right: 0;
+    width: 137px;
+    height: 137px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-right: 4px solid red;
+    border-bottom: 4px solid red;
+}
+  
+FIN TRIANGULOS ADORNOS*/ 
+</style>
+
+
+<section id="hero">
+  <img src="https://cdn.shopify.com/s/files/1/0611/2473/9300/files/hero-2.png?v=1637991099" style="position: absolute; z-index: 2; opacity: 0.2">
+  <!--<div class="adorno-1"></div>
+  <div class="adorno-2"></div>
+  <div class="adorno-3"></div>
+  <div class="adorno-4"></div>
+  <div class="container-triangle">
+    <div class="triangle"></div>
+  </div>
+  <div class="triangle-right"></div>
+  <div class="triangle triangle-4"></div>
+  <div class="container-triangle-2">
+    <div class="triangle-2"></div>
+  </div>
+  <div class="triangle-5"></div>
+  <div class="container-triangle-3">
+    <div class="triangle-3"></div>
+  </div>-->
+	  <!-- INICIO VIDEO DE FONDO -->
+	   <div class="video-container">
+	     <video autoplay="" muted="" loop="" playsinline >
+	    	 <source src="{{ section.settings.video_link }}" type="video/mp4">
+	     </video>
+         
+	   </div>
+	   <!--FIN VIDEO DE FONDO--> 	
+	<div class="container">
+    <div class="row align-items-center">
+     <div class="col-md-12 text-lg-left text-center ">        
+        <h1>{{ section.settings.title }}</h1> 
+        <span class="mb-2">{{ section.settings.sub-title }}</span>
+       <div class="mt-5">
+       <a href="{{ section.settings.button_link }}" class="scanfcode">
+          {{ section.settings.button_label }} 
+       </a>
+       </div>
+    </div>
+</div>    
+</div>
+ <div class="icons-contact text-right">        
+    <a href="{{ settings.social_facebook_link }}" target="_blank" >
+      <i class="fab fa-facebook-f" aria-hidden="true"></i>   
+    </a>    
+    <a href="{{ settings.social_instagram_link }}" target="_blank">
+	 <i class="fab fa-instagram" aria-hidden="true"></i>   
+   </a> 
+   <a href="{{ settings.social_facebook_link }}" target="_blank" >
+      <i class="fab fa-twitter" aria-hidden="true"></i>   
+    </a>    
+    <a href="{{ settings.social_instagram_link }}" target="_blank">
+	 <i class="fab fa-youtube" aria-hidden="true"></i>   
+   </a>
+    <a target="_blank" href="{{ section.settings.hour-link}}" class="border-left">&nbsp;<i class="fas fa-clock" data-toggle="tooltip" data-placement="top" title="{{ section.settings.hour}}"></i></a>
+    <a target="_blank" href="{{ section.settings.email-link}}"><i class="fa fa-envelope" data-toggle="tooltip" data-placement="top" title="{{ section.settings.email}}"></i></a>
+    <a target="_blank" href="{{ section.settings.telephone-link}}"><i class="fa fa-phone" data-toggle="tooltip" data-placement="top" title="{{ section.settings.telephone}}"></i></a>
+    <a target="_blank" href="{{ section.settings.location-link}}"><i class="fa fa-map-marker-alt" data-toggle="tooltip" data-placement="top" title="{{ section.settings.location}}"></i></a>
+                
+  </div>
+  
+ 
+
+	
+</section>
+
+<div class="div2"></div> 
+<div class="div3"></div> 
+<div class="div4"></div>
+
+{% schema %}
+    {
+    "name": "Hero",
+    "settings": [
+    {
+	 "type": "url",
+     "id": "video_link",
+     "label": "Video background"
+
+	},
+  {
+	 "type": "url",
+     "id": "video_link-2",
+     "label": "Video background Movil"
+
+	},
+	{
+		"type": "text",
+        "id": "title",
+		"label": "Title",
+        "default": "Insert your title"        
+     },  	 
+	 {
+		"type": "text",
+        "id": "sub-title",
+		"label": "Subtitle",
+        "default": "Insert your Subtitle"
+        
+     },
+     {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"      
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },	
+	{
+      "type": "html",
+      "id": "hour",
+      "label": "Hour",
+	  "default": "Hour"
+    },
+	{
+      "type": "text",
+      "id": "hour-link",
+      "label": "Hour Link"
+    },
+	{
+      "type": "text",
+      "id": "email",
+      "label": "Email",
+	  "default": "Email"
+    },
+	{
+      "type": "text",
+      "id": "email-link",
+      "label": "Email Link"
+    }
+	,
+	{
+      "type": "text",
+      "id": "telephone",
+      "label": "Telephone",
+	   "default": "Telephone"
+    },
+	{
+      "type": "text",
+      "id": "telephone-link",
+      "label": "Telephone Link"
+    },
+	{
+      "type": "text",
+      "id": "location",
+      "label": "Location",
+	  "default": "Location"
+    },
+	{
+      "type": "text",
+      "id": "location-link",
+      "label": "Location Link"
+    }
+    ],
+   
+  	"presets": [
+      {
+        "category": "Hero",
+        "name": "Hero Video"     
+        
+      }
+    ]
+  }
+{% endschema %}
+

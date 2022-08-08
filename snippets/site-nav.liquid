@@ -1,0 +1,28 @@
+{% comment %}
+    Renders a list of menu items
+    Accepts:
+    - linklist: {Object} Linklist Liquid object (required)
+    - wrapper_class: {String} CSS wrapper class for the navigation (optional)
+
+    Usage:
+    {% include 'site-nav', linklist: section.settings.main_linklist, wrapper_class: 'site-nav--centered' %}
+{% endcomment %}
+{% for link in linklists[linklist].links %}
+  <li><a href= "{{ link.url }}">{{ link.title }} {% if link.links != blank %} {% endif %}  </a>
+    {% if link.links != blank %}
+      <ul class="child dropdown">
+        {% for child_link in link.links %}  
+           <li><a href= "{{ child_link.url }}">-{{ child_link.title }}</a>
+               {% if child_link.links != blank %}
+                   <ul class="grandchild dropdown">
+                         {% for grandchild_link in child_link.links %}  
+                            <li><a href= "{{ grandchild_link.url }}">{{ grandchild_link.title }}</a></li>
+                          {% endfor %}
+                   </ul>
+                 {% endif %}   
+             </li>
+          {% endfor %}
+         </ul> 
+        {% endif %}                                       
+   </li>
+{% endfor %}

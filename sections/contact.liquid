@@ -1,0 +1,489 @@
+
+<style>
+/*===================================================================
+ * #00 SECCION CONTAC US
+ -------------------------------------------------------------------/*/
+.contact-us{
+ position:relative;
+ overflow: hidden;
+ padding: 50px 0px;
+
+}
+.info-wrap {
+  color: rgba(255, 255, 255, 0.8);
+  background:#000;
+  border-radius: 6px;
+}
+  
+  
+
+
+.info-wrap h3 {
+     color: #fff;
+    background: red;
+    padding: 15px;
+    text-align: center;
+    border-radius: 6px;
+    transition: all 0.6s;
+}
+  
+  .info-wrap:hover  h3{
+ transform: scale(1.1)
+
+}
+  
+.info-wrap p {
+     color: #fff;
+}
+  
+.info-wrap .dbox {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 25px;
+  font-family: "fuente-contenido", sans-serif;
+
+}
+    
+.info-wrap .dbox:last-child {
+  margin-bottom: 0; 
+}
+    
+.info-wrap .dbox p {
+  margin-bottom: 0;
+  font-size: 14px; 
+}
+      
+.info-wrap .dbox p span {
+  font-weight: 500;
+  color: #fff; 
+}
+
+.info-wrap .dbox p a {
+  color: #fff; 
+  transition: all 0.6s;
+}
+  
+.info-wrap .dbox p a:hover {
+  color: #ff0000; 
+}
+    
+.info-wrap .dbox .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2); 
+}
+      
+.info-wrap .dbox .icon span {
+  font-size: 20px;
+  color: #fff; 
+}
+
+.info-wrap .dbox .text {
+  width: calc(100% - 50px); 
+}
+
+
+.contact-wrap {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+  z-index: 2;
+  overflow: hidden;
+}
+
+
+
+.contact-wrap h3 {    
+  font-weight: 300;
+  font-size: 30px;
+  color: #F53939; 
+  font-family: 'montserrat-bold', serif;
+  border-radius: 6px;
+}
+  
+.contact-wrap .form-group {
+  position: relative;
+  margin-bottom: 10px; 
+}
+
+.contact-wrap p {    
+font-weight: 700;
+font-size: 20px;
+color: #Fff; 
+font-family: 'montserrat-bold', serif;
+}
+    
+
+
+
+.contact-wrap .form-control {
+  height: 40px;
+  background: #fff;
+  color: #000000;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid transparent !important;
+  font-family:"fuente-contenido" !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+}
+
+    
+.contact-wrap .form-control:focus, .contact-wrap .form-control:active {
+  outline: none !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #ff0000 !important; 
+}
+  
+.contact textarea.form-control {
+    height: inherit !important; 
+}
+
+.contact select.form-control {
+    height: inherit !important; 
+}
+  
+.contact-us .scanfcode {
+    margin: 20px 0px;
+}
+  
+  
+/*.contact-us .container-triangle {
+    width: 188px;
+    height: 195px;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    border-top: 4px solid red;
+    z-index: 300;
+  transform: rotate(-30deg);
+  opacity: 0.2;
+   z-index: 1;
+}
+
+.contact-us .triangle {
+    position: absolute;
+    margin: auto;
+    top: -70px;
+    left: 0;
+    right: 0;
+    width: 137px;
+    height: 137px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-right: 4px solid red;
+    border-bottom: 4px solid red;
+    z-index: 1;
+  
+}
+  
+.contact-us .triangle-right {
+    width: 0;
+    height: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 5%;
+    left: 1%;
+    transform: rotate(25deg);
+    z-index: 1;
+}
+.contact-us .triangle-right:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top:-500px;
+    margin-left: -500px;
+    opacity: 0.1;
+    border-top: 500px solid transparent;
+    border-bottom: 500px solid transparent;
+    border-left: 500px solid #000;
+    z-index: 1;
+}
+  
+.contact-us .triangle-4 {
+  width: 60px;
+  height: 30px;
+  border-bottom: solid 30px rgb(200,30,50);
+  border-left: solid 30px transparent;
+  border-right: solid 30px transparent;
+  position: absolute;
+  z-index: 1;
+  top: 70%;
+  left: -80%;
+  transform: rotate(-20deg);
+  opacity: 0.2;
+  
+}
+
+  
+.contact-us .container-triangle-2 {
+    width: 23px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    border-top: 3px solid black;
+    z-index: 300;
+  transform: rotate(-10deg);
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.contact-us .triangle-2 {
+    position: absolute;
+    margin: auto;
+    top: -10px;
+    left: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    z-index: 1;
+}
+  
+.contact-us .triangle-5 {
+    width: 60px;
+    height: 50px;
+    border-bottom: solid 50px rgb(255,255,255);
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+    position: absolute;
+    z-index: 30;
+    top: 30%;
+    left: %;
+    transform: rotate(-95deg);
+    opacity: 0.1;
+    z-index: 1;
+  
+}
+  
+.contact-us .container-triangle-3 {
+    width: 188px;
+    height: 195px;
+    position: absolute;
+    top: 55%;
+    left: -3%;
+    border-top: 4px solid red;
+    z-index: 300;
+  transform: rotate(-40deg);
+  opacity: 0.2;
+   z-index: 1;
+}
+
+.contact-us .triangle-3 {
+    position: absolute;
+    margin: auto;
+    top: -70px;
+    left: 0;
+    right: 0;
+    width: 137px;
+    height: 137px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-right: 4px solid red;
+    border-bottom: 4px solid red;
+    z-index: 1;
+}*/
+ 
+</style>
+
+<!-- ================================================== 
+	      SECCION CONTACT
+================================================== -->
+<section class="contact-us">
+      <img src="https://cdn.shopify.com/s/files/1/0611/2473/9300/files/products-2.png?v=1637991440" style="position: absolute; z-index: 0; opacity: 0.2; top:0">
+
+ <!-- <div class="container-triangle d-lg-block d-none">
+    <div class="triangle"></div>
+  </div>
+  <div class="triangle-right"></div>
+  <div class="triangle triangle-4"></div>
+  <div class="container-triangle-2">
+    <div class="triangle-2"></div>
+  </div>
+  <div class="triangle-5"></div>
+  <div class="container-triangle-3">
+    <div class="triangle-3"></div>
+  </div>-->
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters">
+							<div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3 class="mb-4">Get in touch</h3>
+								 {%- assign formId = 'ContactForm' -%}
+                                  {% form 'contact', id: formId %}
+                                    {% include 'form-status', form: form, form_id: formId %}
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Name" id="{{ formId }}-name" name="contact[{{ 'contact.form.name' | t }}]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}">
+
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div class="form-group">
+                                                  <input type="email"
+                                                    id="{{ formId }}-email"
+                                                    name="contact[email]"
+                                                    autocorrect="off"
+                                                    autocapitalize="off"
+                                                    value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                                                    aria-required="true"
+                                                    class="form-control"
+                                                    {%- if form.errors contains 'email' -%}
+                                                      class="input--error"
+                                                      aria-invalid="true"
+                                                      aria-describedby="{{ formId }}-email-error"                                                      
+                                                    {%- endif -%}
+                                                    placeholder="Email"
+                                                    >
+                                                  {%- if form.errors contains 'email' -%}
+                                                    <span id="{{ formId}}-email-error" class="input-error-message">
+                                                      <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+                                                      {% include 'icon-error' %}
+                                                      <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+                                                    </span>
+                                                  {%- endif -%}
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+                                                    <input type="tel" class="form-control" placeholder="phone" id="{{ formId }}-phone" name="contact[{{ 'contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+                                                    <textarea placeholder="Message" class="form-control" rows="4" id="{{ formId }}-message" name="contact[{{ 'contact.form.message' | t }}]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+                                                     <button type="submit" class="scanfcode" value=""> {{ 'contact.form.submit' | t }}</button>
+												
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									{% endform %}
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-5 d-flex align-items-stretch">
+								<div class="info-wrap w-100 p-md-5 p-4">
+									<h3>Let's get in touch</h3>
+									<p class="mb-4">We're open for any suggestion or just to have a chat</p>									
+									<div class="dbox w-100 d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<span class="fa fa-phone"></span>
+										</div>
+										<div class="text pl-3">
+											<p><span>Phone:</span> <br>
+												<a href="tel:{{ section.settings.telephone-link}}"> {{ section.settings.telephone}}</a> 
+												
+											</p>
+										</div>
+									</div>
+									<div class="dbox w-100 d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<span class="fa fa-paper-plane"></span>
+										</div>
+										<div class="text pl-3">
+											<p><span>Email:</span><br> 
+                                              <a href="mailto:{{ section.settings.email-link}}">
+                                              {{ section.settings.email}}</a></p>
+										</div>
+									</div>
+									<div class="dbox w-100 d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<span class="fa fa-globe"></span>
+										</div>
+										<div class="text pl-3">
+											<p><span>Website</span> <a href="{{ section.settings.siteweb}}" target="_blank">{{ section.settings.siteweb}}</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-12 mt-5">
+					<div id="map" class="bg-white"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- #FIN DE SECCION CONTACT -->
+
+{% schema %}
+  {
+    "name": "contact",
+    "settings": [
+    {
+      "type": "text",
+      "id": "email",
+      "label": "Email",
+	  "default": "Email"
+    },
+	{
+      "type": "text",
+      "id": "email-link",
+      "label": "Email Link"
+    }
+	,
+	{
+      "type": "text",
+      "id": "telephone",
+      "label": "Telephone",
+	   "default": "Telephone"
+    },
+	{
+      "type": "text",
+      "id": "telephone-link",
+      "label": "Telephone Link"
+    },
+	{
+      "type": "text",
+      "id": "siteweb",
+      "label": "site-web"
+	  
+    },
+	{
+      "type": "text",
+      "id": "location-link",
+      "label": "Location Link"
+    }
+ ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
