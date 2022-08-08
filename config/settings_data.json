@@ -1,1 +1,907 @@
-{"current":{"primary":"#bf6363","primary-dark":"#ac4747","primary-light":"#f3dbdb","hover-primary":"#ffffff","primary-gradient":"linear-gradient(to right bottom, #bf6363, #ce8180, #dc9f9e, #e8bdbc, #f3dbdb)","secondary":"#ffffff","hover-secondary":"#bf6363","secondary-dark":"#d9d9d9","secondary-light":"#efefef","secondary-gradient":"linear-gradient(245deg, #ffffff 0, #fdffff 25%, #f0f0f0 50%, #e2d9dc 75%, #d6c6cd 100%)","tertiary":"#744414","hover-tertiary":"#ffffff","tertiary-dark":"#452f03","tertiary-light":"#b49877","tertiary-gradient":"linear-gradient(180deg, #cfc0a5 0, #c3ae90 25%, #b49877 50%, #a6825f 75%, #9b714d 100%)","paragrah-color":"#686868","paragrah-size":"16","paragrah-weight":500,"heading1-color":"#bf6363","heading1-size":"25","heading1-weight":900,"heading2-color":"#694109","heading2-size":"19","heading-weight":498,"social_instagram_link":"https:\/\/www.instagram.com\/ek_12138\/","sections":{"header":{"type":"header","settings":{}},"feature-row":{"type":"feature-row","settings":{"layout":"left","title":"Imagen con texto","text":"<p>Vincula un texto largo con una imagen para dar visibilidad a tu producto, colección o artículo de blog seleccionados. Agrega detalles sobre disponibilidad, estilo, o incluso ofrece una reseña.<\/p>","button_label":"","button_link":""}},"feature-columns":{"type":"feature-columns","blocks":{"feature-columns-0":{"type":"text_block","settings":{"enable_image":true,"title":"Agregar un título o eslogan","text":"<p>Comparte entradas de blogs, productos o promociones con tus clientes. Usa este texto para describir productos, compartir detalles sobre la disponibilidad y el estilo, o como un espacio para mostrar reseñas recientes o preguntas frecuentes.<\/p>","button_label":"","button_link":""}},"feature-columns-1":{"type":"text_block","settings":{"enable_image":true,"title":"Agregar un título o eslogan","text":"<p>Comparte entradas de blogs, productos o promociones con tus clientes. Usa este texto para describir productos, compartir detalles sobre la disponibilidad y el estilo, o como un espacio para mostrar reseñas recientes o preguntas frecuentes.<\/p>","button_label":"","button_link":""}},"feature-columns-2":{"type":"text_block","settings":{"enable_image":true,"title":"Agregar un título o eslogan","text":"<p>Comparte entradas de blogs, productos o promociones con tus clientes. Usa este texto para describir productos, compartir detalles sobre la disponibilidad y el estilo, o como un espacio para mostrar reseñas recientes o preguntas frecuentes.<\/p>","button_label":"","button_link":""}}},"block_order":["feature-columns-0","feature-columns-1","feature-columns-2"],"settings":{"title":"","align_text":"left"}},"collection":{"type":"collection","settings":{"title":"Colección destacada","collection":"","grid":4,"rows":2,"show_vendor":false,"show_view_all":false}},"quotes":{"type":"quotes","blocks":{"quotes-0":{"type":"quote","settings":{"quote":"<p>Agrega reseñas y testimonios de los clientes satisfechos con tu tienda para mostrarlos.<\/p>","author":"Nombre del autor"}},"quotes-1":{"type":"quote","settings":{"quote":"<p>Agrega reseñas y testimonios de los clientes satisfechos con tu tienda para mostrarlos.<\/p>","author":"Nombre del autor"}},"quotes-2":{"type":"quote","settings":{"quote":"<p>Agrega reseñas y testimonios de los clientes satisfechos con tu tienda para mostrarlos.<\/p>","author":"Nombre del autor"}}},"block_order":["quotes-0","quotes-1","quotes-2"],"settings":{"title":""}},"image-bar":{"type":"image-bar","blocks":{"image-bar-0":{"type":"image","settings":{"alignment":"center","link":"","cta_label":""}},"image-bar-1":{"type":"image","settings":{"alignment":"center","link":"","cta_label":""}},"image-bar-2":{"type":"image","settings":{"alignment":"center","link":"","cta_label":""}}},"block_order":["image-bar-0","image-bar-1","image-bar-2"],"settings":{"section_height":"medium"}},"footer":{"type":"footer","settings":{"show_payment_icons":true,"color_footer_bg":"#f6f6f6","color_footer_text":"#333232","show_currency_selector":true,"show_locale_selector":true}},"header-ek":{"type":"header-ek","settings":{"logo_max_width":50,"main_linklist":"main-menu","message":false,"home_page_only":false,"message_text":"Announce something here","message_link":""}},"16375965479b9ea31b":{"type":"hero-video","settings":{"video_link":"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/2c5fe400e9d14ed990dc864cac28abe5.mp4","video_link-2":"","title":"Only choose the best for you","sub-title":"Life is a Change","button_label":"Get now","button_link":"shopify:\/\/collections\/all","hour":"Hour","hour-link":"24\/7","email":"al.i.t.llc@hotmail.com","email-link":"al.i.t.llc@hotmail.com","telephone":"3239260829","telephone-link":"+13239260829","location":"Location","location-link":"CHINA"}},"1637642233c40e31c3":{"type":"latest-products","blocks":{"8a7bd123-b3c4-4fd8-abd5-74c5f78b2041":{"type":"product","settings":{"featured_product":"airpods-3rd-generation","button_label":"Add To Cart"}},"5d2f3882-ee40-44ab-bc66-259f2ccff1a2":{"type":"product","settings":{"featured_product":"airpods-pro","button_label":"Add To Cart"}}},"block_order":["8a7bd123-b3c4-4fd8-abd5-74c5f78b2041","5d2f3882-ee40-44ab-bc66-259f2ccff1a2"],"settings":{"title":"Latest Products","subtitle":"We have the best for you","button_label":"View More","button_link":"shopify:\/\/collections\/all"}},"1637649980c9a97d7a":{"type":"about","settings":{"title":"About","subtitle":"Discover what we do for you","block_text":"<p>We are a unique company in the market, which offers products to satisfy our customers, offering products of the highest quality that adapt to the needs of our customers, with an immense variety of items that will leave you wanting to want more.We want to offer a great service through an excellent work team in order to satisfy the needs of our clients.<br\/><br\/>Our goal is to anticipate the needs of our clients, and satisfy them quickly, courteously, courteously, and comprehensively.<\/p>","button_label":"Read More","button_link":"shopify:\/\/pages\/about-us"}},"163767578637edbf32":{"type":"benefits","settings":{"title_channels":"Benefits","channel_1":"Customer service","channel_2":"Quality of service","channel_3":"Engagement","channel_4":"Innovation"}},"16376805410edcd386":{"type":"categories","settings":{"title":"Shop By Category","subtitle":"We have what you are looking for","featured-collection":"headphones","featured-collection-2":"phone-accessories","featured-collection-3":"used-item","featured-collection-4":"scented-candles","featured-collection-5":"cups","button_label":"View More","button_link":"shopify:\/\/collections"}},"footer-ek":{"type":"footer-ek","settings":{"phone":"(323)-926-0829","email":"al.i.t.llc@hotmail.com","location":"9245 BRANFORD HILL ST","link_location":"","text_newsletter":"Subscribe to our mailing list to get the latest updates."}},"hero-subpages":{"type":"hero-subpages","settings":{"image-bg-1":"shopify:\/\/shop_images\/pexels-helena-lopes-708392.jpg"}},"benefits":{"type":"benefits","settings":{"title_channels":"Benefits","image_channel_1":"shopify:\/\/shop_images\/cliente.png","channel_1":"Customer service","image_channel_2":"shopify:\/\/shop_images\/control-de-calidad.png","channel_2":"Quality of service","image_channel_3":"shopify:\/\/shop_images\/compromiso_aa971243-a31b-4e03-9ef2-6e1e3cb0e209.png","channel_3":"Engagement","image_channel_4":"shopify:\/\/shop_images\/gestion-de-proyectos.png","channel_4":"Innovation"}},"reviews":{"type":"reviews","blocks":{"c4e49e32-1670-4449-b0a3-2217408c6d4d":{"type":"text","settings":{"text":"Jhon Smith","image-customer":"shopify:\/\/shop_images\/pexels-oleg-magni-2058128.jpg","block_text":"The articles they offer are incredible, they have a huge quality and above all you get it at an excellent price, without a doubt one of the best stores I have bought in, I totally recommend them"}},"cdedce70-dae2-46d0-9245-62d60914e00d":{"type":"text","settings":{"text":"Sonia Williams","image-customer":"shopify:\/\/shop_images\/pexels-hudson-marques-3435318.jpg","block_text":"The store has the most recent articles and presents a level of innovation that is too incredible, everything you are looking for you get here, also their attention and service is one of the best I have seen, without a doubt the ideal place to do your shoppin"}}},"block_order":["c4e49e32-1670-4449-b0a3-2217408c6d4d","cdedce70-dae2-46d0-9245-62d60914e00d"],"settings":{"image-fondo":"shopify:\/\/shop_images\/pexels-oleg-magni-2058128.jpg","title":"Reviews","subtitle":"What do our customers say"}},"about-individual":{"type":"about-individual","settings":{"title":"About","subtitle":"Discover what we do for you","block_text":"<p>Welcome to our company website EK’S NEW LIFE Parent company AL OKAIBI International Trade Service Company. <\/p><p>AL OKAIBI International Trade Service Company was established in 2020. From then until today, the company is engaged in the business of sourcing and exporting various commodities from China to importers all over the world，Gulf countries and the entire Arab world and other places. <\/p><p>AL OKAIBI International Trade Service Company relies on highly skilled experts in marketing, purchasing, signing contracts with Chinese companies, inspecting goods, and delivering goods to their destinations...etc. In this profession, the company has developed, so the company can complete all of these with the greatest ease and speed. <\/p><p>The characteristic of AL OKAIBI International Trade Co., Ltd. is that it enjoys a good reputation among customers, and the cooperation between the company and customers reaches the limit. <\/p><p>AL OKAIBI International Trade Service Company welcomes you and warmly welcomes you to visit the company office. <\/p><p>The particularity of the company puts all arrangements and saves time and money and provides and protects their customers from the troubles and risks of travel. <\/p><p> No matter where you are, we welcome you.\t <\/p><p> Bring you the best quality at the best price. <\/p><p> For a better day tomorrow. <\/p>","block_text-2":"<p> من نحن؟ <\/p><p>مرحبًا بكم في موقع الشركة EK’S NEW LIFE الشركة الأم العقيبي التجارة الدولية <\/p><p>شركة خدمات. <\/p><p>تأسست شركة العقيبي للتجارة الدولية في عام 2020. منذ ذلك الحين وحتى اليوم ، <\/p><p>تعمل الشركة في مجال توريد وتصدير السلع المختلفة من الصين إلى <\/p><p>المستوردين في جميع أنحاء العالم ， دول الخليج والعالم العربي بأسره وأماكن أخرى. <\/p><p>تعتمد شركة العقيبي لخدمات التجارة الدولية على خبراء ذوي مهارات عالية في التسويق ، <\/p><p>شراء وتوقيع العقود مع الشركات الصينية وتفتيش البضائع وتسليم البضائع إليها <\/p><p>وجهات ... الخ.  في هذه المهنة ، تطورت الشركة ، بحيث يمكن للشركة إكمال كل <\/p><p>هذه مع أكبر قدر من السهولة والسرعة. <\/p><p>ما يميز شركة العقيبي للتجارة الدولية المحدودة أنها تتمتع بسمعة طيبة <\/p><p>بين العملاء ، ويصل التعاون بين الشركة والعملاء إلى الحد الأقصى. <\/p><p>ترحب بكم شركة العقيبي لخدمات التجارة الدولية وترحب بكم ترحيباً حاراً <\/p><p>قم بزيارة مكتب الشركة. <\/p><p>خصوصية الشركة تضع كل الترتيبات وتوفر الوقت والمال وتوفر <\/p><p>وتحمي عملائها من متاعب ومخاطر السفر. <\/p><p>أينما كنت ، نحن نرحب بك. <\/p><p>نقدم لك أفضل جودة بأفضل سعر. <\/p><p>ليوم أفضل غدا <\/p>","block_text-3":"<p><strong>我们是谁? <\/strong><\/p><p><strong> 欢迎访问我们公司网站 EK’S NEW LIFE 母公司AL OKAIBI 国际贸易服务公司 <\/strong><\/p><p><strong> AL OKAIBI 国际贸易服务公司成立于 2020 年，从那时起直到今天，该公司从事从中国采购和出口各种商品到世界各地的进口商的业务，海湾国家以及整个阿拉伯世界和其他地方。 <\/strong><\/p><p><strong>AL OKAIBI 国际贸易服务公司依赖于营销、采购、与中国公司签订合同、检查货物、将货物运送到目的地......等方面的高技能专家。在这个专业中，公司已经发展，因此公司能够以最大的轻松和速度完成所有这些。 <\/strong><\/p><p><strong>AL OKAIBI 国际贸易有限责公司的特点是在客户中享有良好的声誉，公司与客户合作达到极致。 <\/strong><\/p><p><strong>AL OKAIBI 国际贸易服务公司欢迎您来，并热烈欢迎您参观公司办公室。 <\/strong><\/p><p><strong>公司的特殊性把所有的安排和节省时间和金钱，并为他们的客户提供并保护他们免受旅行的麻烦，风险。 <\/strong><\/p><p><strong> 无论您身在何处，我们都欢迎您。 <\/strong><\/p><p><strong> 以最优惠的价格为您带来最好的品质。 <\/strong><\/p><p><strong> 为了明天更好的一天。 <\/strong><\/p>","button_label":"Contact Us","button_link":"shopify:\/\/pages\/contact-us","image-1":"shopify:\/\/shop_images\/pexels-yan-krukov-7314038.jpg"}},"product-template":{"type":"product-template","settings":{"image-bg-1":"shopify:\/\/shop_images\/pexels-drew-williams-3143791.jpg","image-bg-2":"shopify:\/\/shop_images\/headphones.jpg","show_quantity_selector":false,"show_vendor":false,"enable_payment_button":true,"show_share_buttons":true,"media_size":"medium","enable_image_zoom":true,"enable_video_looping":false}},"product-recommendations":{"type":"product-recommendations","settings":{"image-bg-1":"shopify:\/\/shop_images\/pexels-josh-sorenson-1714208.jpg","show_product_recommendations":true,"heading":"You may also like","show_vendor":false}},"cart-template":{"type":"cart-template","settings":{"image-bg-1":"shopify:\/\/shop_images\/pexels-helena-lopes-708392.jpg","cart_ajax_enable":true,"cart_notes_enable":false}},"collection-template":{"type":"collection-template","settings":{"image-bg-1":"shopify:\/\/shop_images\/pexels-helena-lopes-708392.jpg","image-bg-2":"shopify:\/\/shop_images\/headphones.jpg","title":"","layout":"grid","grid":4,"rows":2,"show_collection_image":true,"show_vendor":false,"sort_enable":true,"tags_enable":true}},"list-collections-template":{"type":"list-collections-template","settings":{"image-bg-1":"shopify:\/\/shop_images\/pexels-helena-lopes-708392.jpg","title":"","display_type":"all","sort":"alphabetical","grid":3}},"contact":{"type":"contact","settings":{"email":"al.i.t.llc@hotmail.com","email-link":"al.i.t.llc@hotmail.com","telephone":"(323)-926-0829","telephone-link":"(323)-926-0829","siteweb":"www.eknewlife.com","location-link":""}},"1637994307955440a5":{"type":"reviews-2","blocks":{"781d24f9-d86c-4fe2-b759-4f191570c5c0":{"type":"text","settings":{"text":"Jhon Smith","block_text":"The articles they offer are incredible, they have a huge quality and above all you get it at an excellent price, without a doubt one of the best stores I have bought in, I totally recommend them"}},"17e23630-4b63-40df-ad53-972f43c3a18d":{"type":"text","settings":{"text":"Sonia Williams","block_text":"The store has the most recent articles and presents a level of innovation that is too incredible, everything you are looking for you get here, also their attention and service is one of the best I have seen, without a doubt the ideal place to do your shopping"}}},"block_order":["781d24f9-d86c-4fe2-b759-4f191570c5c0","17e23630-4b63-40df-ad53-972f43c3a18d"],"settings":{"title":"Reviews","subtitle":"What do our customers say","button_label":"Google","button_link":"","button_label-2":"instagram","button_link-2":"https:\/\/www.instagram.com\/ek_12138\/"}},"reviews-2":{"type":"reviews-2","blocks":{"f2125769-6b09-4569-ae4a-53a94147c5d7":{"type":"text","settings":{"text":"Jhon Smith","image-customer":"shopify:\/\/shop_images\/pexels-helena-lopes-708392.jpg","block_text":"The articles they offer are incredible, they have a huge quality and above all you get it at an excellent price, without a doubt one of the best stores I have bought in, I totally recommend them"}},"8afae858-0abf-4e49-807f-2f84ef0caa50":{"type":"text","settings":{"text":"Sonia Williams","image-customer":"shopify:\/\/shop_images\/pexels-helena-lopes-708392.jpg","block_text":"The store has the most recent articles and presents a level of innovation that is too incredible, everything you are looking for you get here, also their attention and service is one of the best I have seen, without a doubt the ideal place to do your shopping"}}},"block_order":["f2125769-6b09-4569-ae4a-53a94147c5d7","8afae858-0abf-4e49-807f-2f84ef0caa50"],"settings":{"image-fondo":"shopify:\/\/shop_images\/review-2_25f6e204-79a2-4804-abbe-e097fcacf4df.jpg","title":"Reviews","subtitle":"What do our customers say","button_label":"Google","button_link":"","button_label-2":"instagram","button_link-2":"https:\/\/www.instagram.com\/ek_12138"}},"hero-contact-us":{"type":"hero-contact-us","settings":{"image-bg-1":"shopify:\/\/shop_images\/contact-us_3024caae-7229-4bcb-8d78-64c560c04b7e.jpg"}}},"content_for_index":["16375965479b9ea31b","1637642233c40e31c3","1637649980c9a97d7a","163767578637edbf32","16376805410edcd386","1637994307955440a5"]},"presets":{"Default":{"sections":{"header":{"type":"header","settings":{}},"hero-1":{"type":"hero","settings":{"hero_size":"large","text_size":"large"}},"feature-row":{"type":"feature-row","settings":{}},"feature-columns":{"type":"feature-columns","blocks":{"feature-columns-0":{"type":"text_block","settings":{}},"feature-columns-1":{"type":"text_block","settings":{}},"feature-columns-2":{"type":"text_block","settings":{}}},"block_order":["feature-columns-0","feature-columns-1","feature-columns-2"],"settings":{"title":""}},"collection":{"type":"collection","settings":{"grid":4}},"hero-2":{"type":"hero","settings":{"text_size":"large"}},"quotes":{"type":"quotes","blocks":{"quotes-0":{"type":"quote","settings":{}},"quotes-1":{"type":"quote","settings":{}},"quotes-2":{"type":"quote","settings":{}}},"block_order":["quotes-0","quotes-1","quotes-2"],"settings":{"title":""}},"image-bar":{"type":"image-bar","blocks":{"image-bar-0":{"type":"image","settings":{}},"image-bar-1":{"type":"image","settings":{}},"image-bar-2":{"type":"image","settings":{}}},"block_order":["image-bar-0","image-bar-1","image-bar-2"],"settings":{}},"footer":{"type":"footer","blocks":{"footer-0":{"type":"link_list","settings":{}},"footer-1":{"type":"newsletter","settings":{}}},"block_order":["footer-0","footer-1"],"settings":{"show_payment_icons":true}}},"content_for_index":["hero-1","feature-row","feature-columns","collection","hero-2","quotes","image-bar"]},"Light":{"color_text":"#162950","color_body_text":"#6d6d6d","color_sale_text":"#DA2F0C","color_borders":"#e4e4e4","color_button":"#DA2F0C","color_button_text":"#ffffff","color_small_button_text_border":"#162950","color_text_field":"#ffffff","color_text_field_text":"#162950","color_text_field_border":"#909090","color_image_overlay_text":"#ffffff","color_image_overlay":"#3d3d3d","image_overlay_opacity":40,"color_body_bg":"#f8f8f8","type_header_font":"muli_n6","type_header_base_size":26,"type_base_font":"muli_n4","type_base_size":18,"share_facebook":true,"share_twitter":true,"share_pinterest":true,"social_twitter_link":"","social_facebook_link":"","social_pinterest_link":"","social_instagram_link":"","social_tumblr_link":"","social_snapchat_link":"","social_youtube_link":"","social_vimeo_link":"","favicon":"","checkout_header_image":"","checkout_logo_image":"","checkout_logo_position":"left","checkout_logo_size":"small","checkout_body_background_image":"","checkout_body_background_color":"#ffffff","checkout_input_background_color_mode":"white","checkout_sidebar_background_image":"","checkout_sidebar_background_color":"#e8f3f6","checkout_heading_font":"Roboto","checkout_body_font":"Source Sans Pro","checkout_accent_color":"#1990c6","checkout_button_color":"#23314e","checkout_error_color":"#ff6d6d","sections":{"header":{"type":"header","settings":{"align_logo":"left","logo":"","logo_max_width":135,"main_linklist":"main-menu","message":true,"color_bg":"#162950","color_text":"#ffffff"}},"hero":{"type":"hero","settings":{"alignment":"center","hero_size":"x-large","text_size":"large"}},"slideshow":{"type":"slideshow","blocks":{"slideshow-0":{"type":"image","settings":{"image":"","alignment":"center center"}},"1492095993817":{"type":"image","settings":{"image":"","alignment":"center"}}},"block_order":["slideshow-0","1492095993817"],"settings":{"slideshow_height":"medium","text_size":"medium","autorotate":false,"autorotate_speed":5}},"featured-collections":{"type":"collection","settings":{"grid":3,"rows":1,"show_vendor":true,"show_view_all":true}},"product-template":{"type":"product-template","settings":{"show_quantity_selector":false,"show_vendor":false,"show_share_buttons":true,"media_size":"medium","enable_image_zoom":true,"enable_video_looping":false}},"collection-template":{"type":"collection-template","settings":{"layout":"grid","grid":2,"rows":2,"show_collection_image":true,"show_vendor":false,"sort_enable":true,"tags_enable":true}},"1492033809691":{"type":"map","settings":{}},"1492033877875":{"type":"quotes","blocks":{"1492033877875-0":{"type":"quote","settings":{}}},"block_order":["1492033877875-0"],"settings":{}},"1492033924902":{"type":"custom-content","blocks":{"1492033924902-0":{"type":"text","settings":{"width":"100%","alignment":"center","align_text":"center"}}},"block_order":["1492033924902-0"],"settings":{"title":""}},"1492096252560":{"type":"collection-list","blocks":{"1492096252560-0":{"type":"featured_collection","settings":{}},"1492096252560-1":{"type":"featured_collection","settings":{}},"1492096252560-2":{"type":"featured_collection","settings":{}}},"block_order":["1492096252560-0","1492096252560-1","1492096252560-2"],"settings":{"grid":3}},"blog-template":{"type":"blog-template","settings":{"layout":"grid","blog_show_author":true,"blog_show_date":false}},"article-template":{"type":"article-template","settings":{"blog_show_author":true,"blog_show_date":true,"show_share_buttons":true}},"cart-template":{"type":"cart-template","settings":{"cart_notes_enable":false}},"footer":{"type":"footer","blocks":{"link_list":{"type":"link_list","settings":{}},"text":{"type":"text","settings":{}},"newsletter":{"type":"newsletter","settings":{}}},"block_order":["link_list","text","newsletter"],"settings":{"color_footer_bg":"#f8f8f8","color_footer_text":"#6d6d6d"}}},"content_for_index":["hero","featured-collections","slideshow","1492033924902","1492096252560","1492033877875","1492033809691"]}}}
+{
+  "current": {
+    "primary": "#bf6363",
+    "primary-dark": "#ac4747",
+    "primary-light": "#f3dbdb",
+    "hover-primary": "#ffffff",
+    "primary-gradient": "linear-gradient(to right bottom, #bf6363, #ce8180, #dc9f9e, #e8bdbc, #f3dbdb)",
+    "secondary": "#ffffff",
+    "hover-secondary": "#bf6363",
+    "secondary-dark": "#d9d9d9",
+    "secondary-light": "#efefef",
+    "secondary-gradient": "linear-gradient(245deg, #ffffff 0, #fdffff 25%, #f0f0f0 50%, #e2d9dc 75%, #d6c6cd 100%)",
+    "tertiary": "#744414",
+    "hover-tertiary": "#ffffff",
+    "tertiary-dark": "#452f03",
+    "tertiary-light": "#b49877",
+    "tertiary-gradient": "linear-gradient(180deg, #cfc0a5 0, #c3ae90 25%, #b49877 50%, #a6825f 75%, #9b714d 100%)",
+    "paragrah-color": "#686868",
+    "paragrah-size": "16",
+    "paragrah-weight": 500,
+    "heading1-color": "#bf6363",
+    "heading1-size": "25",
+    "heading1-weight": 900,
+    "heading2-color": "#694109",
+    "heading2-size": "19",
+    "heading-weight": 498,
+    "social_instagram_link": "https:\/\/www.instagram.com\/ek_12138\/",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      },
+      "feature-row": {
+        "type": "feature-row",
+        "settings": {
+          "layout": "left",
+          "title": "Imagen con texto",
+          "text": "<p>Vincula un texto largo con una imagen para dar visibilidad a tu producto, colección o artículo de blog seleccionados. Agrega detalles sobre disponibilidad, estilo, o incluso ofrece una reseña.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "feature-columns": {
+        "type": "feature-columns",
+        "blocks": {
+          "feature-columns-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "title": "Agregar un título o eslogan",
+              "text": "<p>Comparte entradas de blogs, productos o promociones con tus clientes. Usa este texto para describir productos, compartir detalles sobre la disponibilidad y el estilo, o como un espacio para mostrar reseñas recientes o preguntas frecuentes.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "feature-columns-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "title": "Agregar un título o eslogan",
+              "text": "<p>Comparte entradas de blogs, productos o promociones con tus clientes. Usa este texto para describir productos, compartir detalles sobre la disponibilidad y el estilo, o como un espacio para mostrar reseñas recientes o preguntas frecuentes.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "feature-columns-2": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "title": "Agregar un título o eslogan",
+              "text": "<p>Comparte entradas de blogs, productos o promociones con tus clientes. Usa este texto para describir productos, compartir detalles sobre la disponibilidad y el estilo, o como un espacio para mostrar reseñas recientes o preguntas frecuentes.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "feature-columns-0",
+          "feature-columns-1",
+          "feature-columns-2"
+        ],
+        "settings": {
+          "title": "",
+          "align_text": "left"
+        }
+      },
+      "collection": {
+        "type": "collection",
+        "settings": {
+          "title": "Colección destacada",
+          "collection": "",
+          "grid": 4,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "quotes": {
+        "type": "quotes",
+        "blocks": {
+          "quotes-0": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Agrega reseñas y testimonios de los clientes satisfechos con tu tienda para mostrarlos.<\/p>",
+              "author": "Nombre del autor"
+            }
+          },
+          "quotes-1": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Agrega reseñas y testimonios de los clientes satisfechos con tu tienda para mostrarlos.<\/p>",
+              "author": "Nombre del autor"
+            }
+          },
+          "quotes-2": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Agrega reseñas y testimonios de los clientes satisfechos con tu tienda para mostrarlos.<\/p>",
+              "author": "Nombre del autor"
+            }
+          }
+        },
+        "block_order": [
+          "quotes-0",
+          "quotes-1",
+          "quotes-2"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "image-bar": {
+        "type": "image-bar",
+        "blocks": {
+          "image-bar-0": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "image-bar-1": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "image-bar-2": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "image-bar-0",
+          "image-bar-1",
+          "image-bar-2"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "show_payment_icons": true,
+          "color_footer_bg": "#f6f6f6",
+          "color_footer_text": "#333232",
+          "show_currency_selector": true,
+          "show_locale_selector": true
+        }
+      },
+      "header-ek": {
+        "type": "header-ek",
+        "settings": {
+          "logo_max_width": 50,
+          "main_linklist": "main-menu",
+          "message": false,
+          "home_page_only": false,
+          "message_text": "Announce something here",
+          "message_link": ""
+        }
+      },
+      "16375965479b9ea31b": {
+        "type": "hero-video",
+        "settings": {
+          "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/2c5fe400e9d14ed990dc864cac28abe5.mp4",
+          "video_link-2": "",
+          "title": "Only choose the best for you",
+          "sub-title": "Life is a Change",
+          "button_label": "Get now",
+          "button_link": "shopify:\/\/collections\/all",
+          "hour": "Hour",
+          "hour-link": "24\/7",
+          "email": "al.i.t.llc@hotmail.com",
+          "email-link": "al.i.t.llc@hotmail.com",
+          "telephone": "3239260829",
+          "telephone-link": "+13239260829",
+          "location": "Location",
+          "location-link": "CHINA"
+        }
+      },
+      "1637642233c40e31c3": {
+        "type": "latest-products",
+        "blocks": {
+          "8a7bd123-b3c4-4fd8-abd5-74c5f78b2041": {
+            "type": "product",
+            "settings": {
+              "featured_product": "cheese-flan",
+              "button_label": "Add To Cart"
+            }
+          },
+          "5d2f3882-ee40-44ab-bc66-259f2ccff1a2": {
+            "type": "product",
+            "settings": {
+              "featured_product": "custom-cakes",
+              "button_label": "Add To Cart"
+            }
+          },
+          "2e893c19-d580-44ba-bf1d-37ec0c9f81d2": {
+            "type": "product",
+            "settings": {
+              "featured_product": "pastelillo-de-guayaba",
+              "button_label": "Add To Cart"
+            }
+          }
+        },
+        "block_order": [
+          "8a7bd123-b3c4-4fd8-abd5-74c5f78b2041",
+          "5d2f3882-ee40-44ab-bc66-259f2ccff1a2",
+          "2e893c19-d580-44ba-bf1d-37ec0c9f81d2"
+        ],
+        "settings": {
+          "title": "Latest Products",
+          "subtitle": "We have the best for you",
+          "button_label": "View More",
+          "button_link": "shopify:\/\/collections\/all"
+        }
+      },
+      "1637649980c9a97d7a": {
+        "type": "about",
+        "settings": {
+          "title": "About",
+          "subtitle": "Discover what we do for you",
+          "block_text": "<p>We are a unique company in the market, which offers products to satisfy our customers, offering products of the highest quality that adapt to the needs of our customers, with an immense variety of items that will leave you wanting to want more.We want to offer a great service through an excellent work team in order to satisfy the needs of our clients.<br\/><br\/>Our goal is to anticipate the needs of our clients, and satisfy them quickly, courteously, courteously, and comprehensively.<\/p>",
+          "button_label": "Read More",
+          "button_link": "shopify:\/\/pages\/about-us"
+        }
+      },
+      "163767578637edbf32": {
+        "type": "benefits",
+        "settings": {
+          "title_channels": "Benefits",
+          "channel_1": "Customer service",
+          "channel_2": "Quality of service",
+          "channel_3": "Engagement",
+          "channel_4": "Innovation"
+        }
+      },
+      "16376805410edcd386": {
+        "type": "categories",
+        "settings": {
+          "title": "Shop By Category",
+          "subtitle": "We have what you are looking for",
+          "featured-collection": "headphones",
+          "featured-collection-2": "phone-accessories",
+          "featured-collection-3": "used-item",
+          "featured-collection-4": "scented-candles",
+          "featured-collection-5": "cups",
+          "button_label": "View More",
+          "button_link": "shopify:\/\/collections"
+        }
+      },
+      "footer-ek": {
+        "type": "footer-ek",
+        "settings": {
+          "phone": "(323)-926-0829",
+          "email": "al.i.t.llc@hotmail.com",
+          "location": "9245 BRANFORD HILL ST",
+          "link_location": "",
+          "text_newsletter": "Subscribe to our mailing list to get the latest updates."
+        }
+      },
+      "hero-subpages": {
+        "type": "hero-subpages",
+        "settings": {
+          "image-bg-1": "shopify:\/\/shop_images\/pexels-helena-lopes-708392.jpg"
+        }
+      },
+      "benefits": {
+        "type": "benefits",
+        "settings": {
+          "title_channels": "Benefits",
+          "image_channel_1": "shopify:\/\/shop_images\/cliente.png",
+          "channel_1": "Customer service",
+          "image_channel_2": "shopify:\/\/shop_images\/control-de-calidad.png",
+          "channel_2": "Quality of service",
+          "image_channel_3": "shopify:\/\/shop_images\/compromiso_aa971243-a31b-4e03-9ef2-6e1e3cb0e209.png",
+          "channel_3": "Engagement",
+          "image_channel_4": "shopify:\/\/shop_images\/gestion-de-proyectos.png",
+          "channel_4": "Innovation"
+        }
+      },
+      "reviews": {
+        "type": "reviews",
+        "blocks": {
+          "c4e49e32-1670-4449-b0a3-2217408c6d4d": {
+            "type": "text",
+            "settings": {
+              "text": "Jhon Smith",
+              "image-customer": "shopify:\/\/shop_images\/pexels-oleg-magni-2058128.jpg",
+              "block_text": "The articles they offer are incredible, they have a huge quality and above all you get it at an excellent price, without a doubt one of the best stores I have bought in, I totally recommend them"
+            }
+          },
+          "cdedce70-dae2-46d0-9245-62d60914e00d": {
+            "type": "text",
+            "settings": {
+              "text": "Sonia Williams",
+              "image-customer": "shopify:\/\/shop_images\/pexels-hudson-marques-3435318.jpg",
+              "block_text": "The store has the most recent articles and presents a level of innovation that is too incredible, everything you are looking for you get here, also their attention and service is one of the best I have seen, without a doubt the ideal place to do your shoppin"
+            }
+          }
+        },
+        "block_order": [
+          "c4e49e32-1670-4449-b0a3-2217408c6d4d",
+          "cdedce70-dae2-46d0-9245-62d60914e00d"
+        ],
+        "settings": {
+          "image-fondo": "shopify:\/\/shop_images\/pexels-oleg-magni-2058128.jpg",
+          "title": "Reviews",
+          "subtitle": "What do our customers say"
+        }
+      },
+      "about-individual": {
+        "type": "about-individual",
+        "settings": {
+          "title": "About",
+          "subtitle": "Discover what we do for you",
+          "block_text": "<p>Welcome to our company website EK’S NEW LIFE Parent company AL OKAIBI International Trade Service Company. <\/p><p>AL OKAIBI International Trade Service Company was established in 2020. From then until today, the company is engaged in the business of sourcing and exporting various commodities from China to importers all over the world，Gulf countries and the entire Arab world and other places. <\/p><p>AL OKAIBI International Trade Service Company relies on highly skilled experts in marketing, purchasing, signing contracts with Chinese companies, inspecting goods, and delivering goods to their destinations...etc. In this profession, the company has developed, so the company can complete all of these with the greatest ease and speed. <\/p><p>The characteristic of AL OKAIBI International Trade Co., Ltd. is that it enjoys a good reputation among customers, and the cooperation between the company and customers reaches the limit. <\/p><p>AL OKAIBI International Trade Service Company welcomes you and warmly welcomes you to visit the company office. <\/p><p>The particularity of the company puts all arrangements and saves time and money and provides and protects their customers from the troubles and risks of travel. <\/p><p> No matter where you are, we welcome you.\t <\/p><p> Bring you the best quality at the best price. <\/p><p> For a better day tomorrow. <\/p>",
+          "block_text-2": "<p> من نحن؟ <\/p><p>مرحبًا بكم في موقع الشركة EK’S NEW LIFE الشركة الأم العقيبي التجارة الدولية <\/p><p>شركة خدمات. <\/p><p>تأسست شركة العقيبي للتجارة الدولية في عام 2020. منذ ذلك الحين وحتى اليوم ، <\/p><p>تعمل الشركة في مجال توريد وتصدير السلع المختلفة من الصين إلى <\/p><p>المستوردين في جميع أنحاء العالم ， دول الخليج والعالم العربي بأسره وأماكن أخرى. <\/p><p>تعتمد شركة العقيبي لخدمات التجارة الدولية على خبراء ذوي مهارات عالية في التسويق ، <\/p><p>شراء وتوقيع العقود مع الشركات الصينية وتفتيش البضائع وتسليم البضائع إليها <\/p><p>وجهات ... الخ.  في هذه المهنة ، تطورت الشركة ، بحيث يمكن للشركة إكمال كل <\/p><p>هذه مع أكبر قدر من السهولة والسرعة. <\/p><p>ما يميز شركة العقيبي للتجارة الدولية المحدودة أنها تتمتع بسمعة طيبة <\/p><p>بين العملاء ، ويصل التعاون بين الشركة والعملاء إلى الحد الأقصى. <\/p><p>ترحب بكم شركة العقيبي لخدمات التجارة الدولية وترحب بكم ترحيباً حاراً <\/p><p>قم بزيارة مكتب الشركة. <\/p><p>خصوصية الشركة تضع كل الترتيبات وتوفر الوقت والمال وتوفر <\/p><p>وتحمي عملائها من متاعب ومخاطر السفر. <\/p><p>أينما كنت ، نحن نرحب بك. <\/p><p>نقدم لك أفضل جودة بأفضل سعر. <\/p><p>ليوم أفضل غدا <\/p>",
+          "block_text-3": "<p><strong>我们是谁? <\/strong><\/p><p><strong> 欢迎访问我们公司网站 EK’S NEW LIFE 母公司AL OKAIBI 国际贸易服务公司 <\/strong><\/p><p><strong> AL OKAIBI 国际贸易服务公司成立于 2020 年，从那时起直到今天，该公司从事从中国采购和出口各种商品到世界各地的进口商的业务，海湾国家以及整个阿拉伯世界和其他地方。 <\/strong><\/p><p><strong>AL OKAIBI 国际贸易服务公司依赖于营销、采购、与中国公司签订合同、检查货物、将货物运送到目的地......等方面的高技能专家。在这个专业中，公司已经发展，因此公司能够以最大的轻松和速度完成所有这些。 <\/strong><\/p><p><strong>AL OKAIBI 国际贸易有限责公司的特点是在客户中享有良好的声誉，公司与客户合作达到极致。 <\/strong><\/p><p><strong>AL OKAIBI 国际贸易服务公司欢迎您来，并热烈欢迎您参观公司办公室。 <\/strong><\/p><p><strong>公司的特殊性把所有的安排和节省时间和金钱，并为他们的客户提供并保护他们免受旅行的麻烦，风险。 <\/strong><\/p><p><strong> 无论您身在何处，我们都欢迎您。 <\/strong><\/p><p><strong> 以最优惠的价格为您带来最好的品质。 <\/strong><\/p><p><strong> 为了明天更好的一天。 <\/strong><\/p>",
+          "button_label": "Contact Us",
+          "button_link": "shopify:\/\/pages\/contact-us",
+          "image-1": "shopify:\/\/shop_images\/pexels-yan-krukov-7314038.jpg"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "image-bg-1": "shopify:\/\/shop_images\/pexels-drew-williams-3143791.jpg",
+          "image-bg-2": "shopify:\/\/shop_images\/headphones.jpg",
+          "show_quantity_selector": false,
+          "show_vendor": false,
+          "enable_payment_button": true,
+          "show_share_buttons": true,
+          "media_size": "medium",
+          "enable_image_zoom": true,
+          "enable_video_looping": false
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "image-bg-1": "shopify:\/\/shop_images\/pexels-josh-sorenson-1714208.jpg",
+          "show_product_recommendations": true,
+          "heading": "You may also like",
+          "show_vendor": false
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "image-bg-1": "shopify:\/\/shop_images\/pexels-helena-lopes-708392.jpg",
+          "cart_ajax_enable": true,
+          "cart_notes_enable": false
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "image-bg-1": "shopify:\/\/shop_images\/pexels-helena-lopes-708392.jpg",
+          "image-bg-2": "shopify:\/\/shop_images\/headphones.jpg",
+          "title": "",
+          "layout": "grid",
+          "grid": 4,
+          "rows": 2,
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": true,
+          "tags_enable": true
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "image-bg-1": "shopify:\/\/shop_images\/pexels-helena-lopes-708392.jpg",
+          "title": "",
+          "display_type": "all",
+          "sort": "alphabetical",
+          "grid": 3
+        }
+      },
+      "contact": {
+        "type": "contact",
+        "settings": {
+          "email": "al.i.t.llc@hotmail.com",
+          "email-link": "al.i.t.llc@hotmail.com",
+          "telephone": "(323)-926-0829",
+          "telephone-link": "(323)-926-0829",
+          "siteweb": "www.eknewlife.com",
+          "location-link": ""
+        }
+      },
+      "1637994307955440a5": {
+        "type": "reviews-2",
+        "blocks": {
+          "781d24f9-d86c-4fe2-b759-4f191570c5c0": {
+            "type": "text",
+            "settings": {
+              "text": "Jhon Smith",
+              "block_text": "The articles they offer are incredible, they have a huge quality and above all you get it at an excellent price, without a doubt one of the best stores I have bought in, I totally recommend them"
+            }
+          },
+          "17e23630-4b63-40df-ad53-972f43c3a18d": {
+            "type": "text",
+            "settings": {
+              "text": "Sonia Williams",
+              "block_text": "The store has the most recent articles and presents a level of innovation that is too incredible, everything you are looking for you get here, also their attention and service is one of the best I have seen, without a doubt the ideal place to do your shopping"
+            }
+          }
+        },
+        "block_order": [
+          "781d24f9-d86c-4fe2-b759-4f191570c5c0",
+          "17e23630-4b63-40df-ad53-972f43c3a18d"
+        ],
+        "settings": {
+          "title": "Reviews",
+          "subtitle": "What do our customers say",
+          "button_label": "Google",
+          "button_link": "",
+          "button_label-2": "instagram",
+          "button_link-2": "https:\/\/www.instagram.com\/ek_12138\/"
+        }
+      },
+      "reviews-2": {
+        "type": "reviews-2",
+        "blocks": {
+          "f2125769-6b09-4569-ae4a-53a94147c5d7": {
+            "type": "text",
+            "settings": {
+              "text": "Jhon Smith",
+              "image-customer": "shopify:\/\/shop_images\/pexels-helena-lopes-708392.jpg",
+              "block_text": "The articles they offer are incredible, they have a huge quality and above all you get it at an excellent price, without a doubt one of the best stores I have bought in, I totally recommend them"
+            }
+          },
+          "8afae858-0abf-4e49-807f-2f84ef0caa50": {
+            "type": "text",
+            "settings": {
+              "text": "Sonia Williams",
+              "image-customer": "shopify:\/\/shop_images\/pexels-helena-lopes-708392.jpg",
+              "block_text": "The store has the most recent articles and presents a level of innovation that is too incredible, everything you are looking for you get here, also their attention and service is one of the best I have seen, without a doubt the ideal place to do your shopping"
+            }
+          }
+        },
+        "block_order": [
+          "f2125769-6b09-4569-ae4a-53a94147c5d7",
+          "8afae858-0abf-4e49-807f-2f84ef0caa50"
+        ],
+        "settings": {
+          "image-fondo": "shopify:\/\/shop_images\/review-2_25f6e204-79a2-4804-abbe-e097fcacf4df.jpg",
+          "title": "Reviews",
+          "subtitle": "What do our customers say",
+          "button_label": "Google",
+          "button_link": "",
+          "button_label-2": "instagram",
+          "button_link-2": "https:\/\/www.instagram.com\/ek_12138"
+        }
+      },
+      "hero-contact-us": {
+        "type": "hero-contact-us",
+        "settings": {
+          "image-bg-1": "shopify:\/\/shop_images\/contact-us_3024caae-7229-4bcb-8d78-64c560c04b7e.jpg"
+        }
+      }
+    },
+    "content_for_index": [
+      "16375965479b9ea31b",
+      "1637642233c40e31c3",
+      "1637649980c9a97d7a",
+      "163767578637edbf32",
+      "16376805410edcd386",
+      "1637994307955440a5"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+          }
+        },
+        "hero-1": {
+          "type": "hero",
+          "settings": {
+            "hero_size": "large",
+            "text_size": "large"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {
+          }
+        },
+        "feature-columns": {
+          "type": "feature-columns",
+          "blocks": {
+            "feature-columns-0": {
+              "type": "text_block",
+              "settings": {
+              }
+            },
+            "feature-columns-1": {
+              "type": "text_block",
+              "settings": {
+              }
+            },
+            "feature-columns-2": {
+              "type": "text_block",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "feature-columns-0",
+            "feature-columns-1",
+            "feature-columns-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "grid": 4
+          }
+        },
+        "hero-2": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "quotes": {
+          "type": "quotes",
+          "blocks": {
+            "quotes-0": {
+              "type": "quote",
+              "settings": {
+              }
+            },
+            "quotes-1": {
+              "type": "quote",
+              "settings": {
+              }
+            },
+            "quotes-2": {
+              "type": "quote",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "quotes-0",
+            "quotes-1",
+            "quotes-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "image-bar": {
+          "type": "image-bar",
+          "blocks": {
+            "image-bar-0": {
+              "type": "image",
+              "settings": {
+              }
+            },
+            "image-bar-1": {
+              "type": "image",
+              "settings": {
+              }
+            },
+            "image-bar-2": {
+              "type": "image",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "image-bar-0",
+            "image-bar-1",
+            "image-bar-2"
+          ],
+          "settings": {
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "link_list",
+              "settings": {
+              }
+            },
+            "footer-1": {
+              "type": "newsletter",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1"
+          ],
+          "settings": {
+            "show_payment_icons": true
+          }
+        }
+      },
+      "content_for_index": [
+        "hero-1",
+        "feature-row",
+        "feature-columns",
+        "collection",
+        "hero-2",
+        "quotes",
+        "image-bar"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#6d6d6d",
+      "color_sale_text": "#DA2F0C",
+      "color_borders": "#e4e4e4",
+      "color_button": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "color_small_button_text_border": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_text_field_border": "#909090",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#f8f8f8",
+      "type_header_font": "muli_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "muli_n4",
+      "type_base_size": 18,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": 135,
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "slideshow_height": "medium",
+            "text_size": "medium",
+            "autorotate": false,
+            "autorotate_speed": 5
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_vendor": false,
+            "show_share_buttons": true,
+            "media_size": "medium",
+            "enable_image_zoom": true,
+            "enable_video_looping": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": 2,
+            "rows": 2,
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {
+          }
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {
+          }
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "link_list": {
+              "type": "link_list",
+              "settings": {
+              }
+            },
+            "text": {
+              "type": "text",
+              "settings": {
+              }
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "link_list",
+            "text",
+            "newsletter"
+          ],
+          "settings": {
+            "color_footer_bg": "#f8f8f8",
+            "color_footer_text": "#6d6d6d"
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}
