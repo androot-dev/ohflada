@@ -7291,3 +7291,78 @@ html {
 
 
 
+/* Adaptaciones OH BLADA */
+
+
+.py-element {
+  padding-top: var(--element-separation);
+  padding-bottom: var(--element-separation);
+}
+
+.py-section {
+  padding-top: var(--section-separation);
+  padding-bottom: var(--section-separation);
+}
+
+.py-section-2 {
+  padding-top: calc(var(--section-separation) * 2);
+  padding-bottom: calc(var(--section-separation) * 2);
+}
+
+.my-element {
+  margin-top: var(--element-separation);
+  margin-bottom: var(--element-separation);
+}
+
+.my-section {
+  margin-top: var(--section-separation);
+  margin-bottom: var(--section-separation);
+}
+
+.pt-element {
+  padding-top: var(--element-separation);
+}
+
+.pb-element {
+  padding-bottom: var(--element-separation);
+}
+
+.pt-section {
+  padding-top: var(--section-separation);
+}
+
+.pb-section {
+  padding-bottom: var(--section-separation);
+}
+
+.pt-section-2 {
+  padding-top: calc(var(--section-separation) * 2);
+}
+
+.pb-section-2 {
+  padding-bottom: calc(var(--section-separation) * 2);
+}
+
+.mt-element {
+  margin-top: var(--element-separation);
+}
+
+.mb-element {
+  margin-bottom: var(--element-separation);
+}
+
+.mt-section {
+  margin-top: var(--section-separation);
+}
+
+.mb-section {
+  margin-bottom: var(--section-separation);
+}
+
+.mt-section-2 {
+  margin-top: calc(var(--section-separation) * 2);
+}
+
+.mb-section-2 {
+  margin-bottom: calc(var(--section-separation) * 2);
+}
