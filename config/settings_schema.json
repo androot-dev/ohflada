@@ -151,12 +151,16 @@
                 "content": "Others"
             },
             {
-                "type": "shodow",
+                "type": "text",
                 "label": "shadow",
-                "default": "0px 0px 0px 0px rgba(0,0,0,0.2)"
+                "default": "0px 0px 0px 0px"
             },
             {
-                "type": "radius",
+                "type": "color",
+                "label": "shadow color"
+            },
+            {
+                "type": "text",
                 "label": "radius",
                 "default": "60px"
             }
