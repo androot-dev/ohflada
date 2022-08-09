@@ -209,8 +209,8 @@
             "type": "social_links",
             "settings": {
               "icon": "fa-brands fa-facebook",
-              "url": "",
-              "tooltip-more-item": ""
+              "url": "https:\/\/www.facebook.com\/ohfladabakery",
+              "tooltip-more-item": "@ohfladabakery"
             }
           }
         },
