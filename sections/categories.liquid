@@ -379,7 +379,15 @@
   bottom: -1px;
   width: 210%;
 } 
-
+.description-category{
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: end;
+  font-size: 22px;
+  padding: 24px;
+}
 
 </style>
 
@@ -418,7 +426,7 @@
                       </div>
                   </div>
                   <div class="description-category position-absolute">
-                    <h5 class="m-0">{{ collection.title }}</h5>
+                    <h5 class="text-primary m-0">{{ collection.title }}</h5>
                     <a  class="btn btn-circle" href="{{collection.url}}"><i class="fa fa-angle-right"></i></a>
                   </div>
               </div>
