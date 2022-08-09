@@ -212,6 +212,14 @@
               "url": "https:\/\/www.facebook.com\/ohfladabakery",
               "tooltip-more-item": "@ohfladabakery"
             }
+          },
+          "23f3e5c7-9c7f-4848-b200-4505cfb7753e": {
+            "type": "social_links",
+            "settings": {
+              "icon": "fab fa-instagram",
+              "url": "https:\/\/www.instagram.com\/ohflada_bakery\/",
+              "tooltip-more-item": "@ohflada_bakery"
+            }
           }
         },
         "block_order": [
@@ -219,7 +227,8 @@
           "9cb25b4d-81f1-4ea0-a003-0efb6d40a6bd",
           "dfaf917f-1e25-4340-8ea1-4161016d717f",
           "7512b812-3d73-4714-a8ac-bfc14f026806",
-          "ec7adf00-5023-4aab-92e0-05ed0f77ec74"
+          "ec7adf00-5023-4aab-92e0-05ed0f77ec74",
+          "23f3e5c7-9c7f-4848-b200-4505cfb7753e"
         ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/272410440_109519301647319_5118707330302706591_n-removebg-preview.png",
