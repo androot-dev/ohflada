@@ -478,9 +478,9 @@
   {% for block in blocks %}
   {% if block.type == "product" %}
   <div class="item-best-sellers" >
-     <h1 class='selected l'>{{block.settings.featured_product.title}}</h1>
+     <h1 class='mb-0 selected l'>{{block.settings.featured_product.title}}</h1>
      <h3>{{block.settings.featured_product.price | money}}</span></h3>
-     <p>{{block.settings.featured_product.description}}</p>
+     <p class="py-4">{{block.settings.featured_product.description}}</p>
      <div class="container-img">
         <img class="radius" src='{{ block.settings.featured_product.featured_image | image_url }}' />
      </div>
