@@ -7080,7 +7080,6 @@ input:focus{
     -webkit-box-shadow: none;
 }
 
-
 textarea:focus{
     outline:none !important;
     outline-width: 0 !important;
@@ -7413,16 +7412,6 @@ a, .a{
   font-weight: var(--paragraph-weight);
   color: var(--primary);
   text-decoration: none;
-  transition: color .3s linear;
-}
-a, .a {
-  color: var(--secondary-dark);
-  text-decoration: none !important;
-  transition: color 0.2s ease-in-out;
-}
-
-i, li, span {
-  transition: color 0.2s linear;
 }
 .shadow{
   box-shadow: var(--shadow);
@@ -7437,9 +7426,4 @@ i, li, span {
 }
 .font-title{
   font-family: "fuente-titulo" !important;
-}
-a, .a {
-  color: var(--secondary-dark);
-  text-decoration: none !important;
-  transition: color 0.2s ease-in-out;
 }
