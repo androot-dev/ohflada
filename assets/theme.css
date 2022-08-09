@@ -7175,7 +7175,9 @@ textarea:focus{
 animation: pulse 1s ease infinite;
  
 }
-  
+img{
+  object-fit: cover;
+}
 
 @keyframes pulse {
   0% {
