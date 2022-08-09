@@ -399,12 +399,16 @@
         {% if section.settings.image-1 != blank %}
           <div class="col-lg-4 col-md-6">
               {%- assign collection = collections[section.settings.featured-collection]-%}
-              <div class="class-item">
+              <div class="class-item position-relative">
                   <div class="ci-pic">
                       <a href="{{collection.url}}">
                           <img class="img-1" src="{{ section.settings.image-1 | img_url: 'master' }}" alt="" />
                       </a>
                   </div>
+                  <div class="description-category ">
+                    <h5>{{ collection.title }}</h5>
+                    <a href="{{collection.url}}"><i class="fa fa-angle-right"></i></a>
+                </div>
                   <div class="new-ci-text position-relative">
                       <div class="custom-shape-divider-bottom-1660074041">
                           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -413,10 +417,6 @@
                                   class="shape-fill"
                               ></path>
                           </svg>
-                      </div>
-                      <div class="description-category ">
-                          <h5>{{ collection.title }}</h5>
-                          <a href="{{collection.url}}"><i class="fa fa-angle-right"></i></a>
                       </div>
                   </div>
               </div>
