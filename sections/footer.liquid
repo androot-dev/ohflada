@@ -41,6 +41,7 @@
 		--links-font-size: {{section.settings.links-font-size}}px;
 		--icons-size: {{section.settings.icons-font-size}}px;
         --separation-icon-text: {{section.settings.separation-icon}}px;
+		
     }
      
     .myfooter ul li>button {
@@ -96,8 +97,8 @@
         grid-gap: var(--separation-icon-text);
     }
   .container-social-icons a{
-    padding-right: var(--separation-icon-text);
-    padding-left: var(--separation-icon-text);
+    padding-right: calc(var(--separation-icon-text) / 2 );
+    padding-left: calc(var(--separation-icon-text) / 2 );
   }
     .myfooter .container-more-information i{
       margin-top: 4px;
