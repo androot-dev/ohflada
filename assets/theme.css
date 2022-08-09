@@ -7179,6 +7179,8 @@ img{
   object-fit: cover;
 }
 
+
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -7617,3 +7619,4 @@ body {
   font-weight: var(--font-body-weight);
   min-width: var(--min-width);
 }
+
