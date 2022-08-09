@@ -7157,7 +7157,7 @@ textarea:focus{
   color: white;
   border-radius: 50px;
   padding: 12px 48px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "fuente-titulos", sans-serif;
   font-size: 16px;
   font-weight: 200;
   text-decoration: none;
