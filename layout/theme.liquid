@@ -25,7 +25,8 @@
   <link rel="preload" href="{{ 'lazysizes.js' | asset_url }}" as="script">
   <link href="https://cdn.shopify.com/s/files/1/0611/2473/9300/files/EK_s_New_Life_Logo_Black.png?v=1637594001" rel="icon">
 
-  {{ 'https://use.fontawesome.com/releases/v5.8.1/css/all.css' | stylesheet_tag }}
+    <link rel="preload" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css?ver=6.1.1" as="style"
+    onload="this.onload=null;this.rel='stylesheet';" />
   {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
   {{ 'owl.carousel.min.css' | asset_url | stylesheet_tag}}
   {{ 'classy-nav.css' | asset_url | stylesheet_tag}}
