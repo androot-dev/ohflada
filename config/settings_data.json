@@ -15,7 +15,7 @@
     "tertiary-dark": "#452f03",
     "tertiary-light": "#b49877",
     "tertiary-gradient": "linear-gradient(180deg, #cfc0a5 0, #c3ae90 25%, #b49877 50%, #a6825f 75%, #9b714d 100%)",
-    "paragrah-color": "#686868",
+    "paragrah-color": "#5c4646",
     "paragrah-size": "17px",
     "paragrah-weight": 500,
     "heading1-color": "#bf6363",
@@ -23,8 +23,9 @@
     "heading1-weight": 150,
     "heading2-color": "#694109",
     "heading2-size": "20px",
-    "heading-weight": 600,
+    "heading2-weight": 600,
     "social_instagram_link": "https:\/\/www.instagram.com\/ek_12138\/",
+    "heading-weight": 600,
     "sections": {
       "header": {
         "type": "header",
