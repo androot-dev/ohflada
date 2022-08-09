@@ -360,27 +360,6 @@
  {% assign products = [""] %}
 
 
-      <div class='ui_fruit d-none d-md-block'>
-      
-        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/treats.png'>
-      </div>
-     
-            <div class='ui_inner__selection '>
-
-              {% for block in blocks %}
-                {% if block.type == "product" %}
-                  
-                  {% assign products = products | concat: block.settings.featured_product %}
-                {% endif %}
-              {% endfor %}
-
-
-            </div>
-
-    </div>
-
-
-
 
 
 
@@ -392,94 +371,122 @@
         </div>
   
         <div class='ui_inner__selection'>
-          <input checked='checked' id='lovely' name='selection' type='radio'>
-          <label for='lovely'>
-            <div class='selected l'>{{ products }}</div>
-            <div class='ui_inner__slider'>
-              <div class='sb'>
-                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/starburst2.png'>
-              </div>
-              <div class='slide'>
-                <div class='slide_inner'>
-                  <div class='slide_inner__left'>
-                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cupcake1.png'>
-                    
-                  </div>
-                  <div class='slide_inner__right'>
-                    <h2>Lovely cupcake</h2>
-                    <h3>$4.99 <span> Pack of 10</span></h3>
-                    <p>Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.</p>
+          {% assign newElemen = 0 %}
+          {% for block in blocks %}
+           
+            {% if block.type == "product" %}
               
-                  </div>
-                </div>
-              </div>
-            </div>
-          </label>
-          <input id='super' name='selection' type='radio'>
-          <label for='super'>
-            <div class='selected s'>Super cupcake</div>
-            <div class='ui_inner__slider'>
-              <div class='sb'>
-                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/starburst2.png'>
-              </div>
-              <div class='slide'>
-                <div class='slide_inner'>
-                  <div class='slide_inner__left'>
-                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cupcake2.png'>
-                  </div>
-                  <div class='slide_inner__right'>
-                    <h2>Super cupcake</h2>
-                    <h3>$4.99 <span> Pack of 10</span></h3>
-                    <p>Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.</p>
-  
-                  </div>
-                </div>
-              </div>
-            </div>
-          </label>
-          <input id='mega' name='selection' type='radio'>
-          <label for='mega'>
-            <div class='selected m'>Mega cupcake</div>
-            <div class='ui_inner__slider'>
-              <div class='sb'>
-                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/starburst2.png'>
-              </div>
-              <div class='slide'>
-                <div class='slide_inner'>
-                  <div class='slide_inner__left'>
-                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cupcake3.png'>
-                  </div>
-                  <div class='slide_inner__right'>
-                    <h2>Mega cupcake</h2>
-                    <h3>$4.99 <span> Pack of 10</span></h3>
-                    <p>Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </label>
-          <input id='huge' name='selection' type='radio'>
-          <label for='huge'>
-            <div class='selected h'>Huge cupcake</div>
-            <div class='ui_inner__slider'>
-              <div class='sb'>
-                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/starburst2.png'>
-              </div>
-              <div class='slide'>
-                <div class='slide_inner'>
-                  <div class='slide_inner__left'>
-                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cupcake4.png'>
+              
+                {% if newElemen == 0 %}
+                <!-- 1ER ELEMENTO -->
+                <input checked='checked' id='lovely' name='selection' type='radio'>
+                <label for='lovely'>
+                  <div class='selected l'>{{ products }}</div>
+                  <div class='ui_inner__slider'>
+                    <div class='sb'>
+                      <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/starburst2.png'>
+                    </div>
+                    <div class='slide'>
+                      <div class='slide_inner'>
+                        <div class='slide_inner__left'>
+                          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cupcake1.png'>
+                          
+                        </div>
+                        <div class='slide_inner__right'>
+                          <h2>Lovely cupcake</h2>
+                          <h3>$4.99 <span> Pack of 10</span></h3>
+                          <p>Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.</p>
                     
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class='slide_inner__right'>
-                    <h2>Huge cupcake</h2>
-                    <h3>$9.99 <span> Pack of 10</span></h3>
-                    <p>Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.</p>
+                </label>
+                {% assign newElemen = 1 %}
+                {% elsif newElemen == 1 %}
+
+
+                <!-- 2DO ELEMENTO -->
+                <input id='super' name='selection' type='radio'>
+                <label for='super'>
+                  <div class='selected s'>Super cupcake</div>
+                  <div class='ui_inner__slider'>
+                    <div class='sb'>
+                      <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/starburst2.png'>
+                    </div>
+                    <div class='slide'>
+                      <div class='slide_inner'>
+                        <div class='slide_inner__left'>
+                          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cupcake2.png'>
+                        </div>
+                        <div class='slide_inner__right'>
+                          <h2>Super cupcake</h2>
+                          <h3>$4.99 <span> Pack of 10</span></h3>
+                          <p>Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.</p>
+        
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </label>
+                </label>
+
+
+
+                {% assign newElemen = 2 %}
+                {% elsif newElemen == 2 %}
+                <!-- 3ER ELEMENTO -->
+                  <!-- 3ER ELEMENTO -->
+                  <input id='mega' name='selection' type='radio'>
+                  <label for='mega'>
+                    <div class='selected m'>Mega cupcake</div>
+                    <div class='ui_inner__slider'>
+                      <div class='sb'>
+                        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/starburst2.png'>
+                      </div>
+                      <div class='slide'>
+                        <div class='slide_inner'>
+                          <div class='slide_inner__left'>
+                            <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cupcake3.png'>
+                          </div>
+                          <div class='slide_inner__right'>
+                            <h2>Mega cupcake</h2>
+                            <h3>$4.99 <span> Pack of 10</span></h3>
+                            <p>Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                  {% assign newElemen = 3 %}
+                  {% elsif newElemen == 3 %}
+                  
+                <!-- 4TO ELEMENTO -->
+                <input id='huge' name='selection' type='radio'>
+                <label for='huge'>
+                  <div class='selected h'>Huge cupcake</div>
+                  <div class='ui_inner__slider'>
+                    <div class='sb'>
+                      <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/starburst2.png'>
+                    </div>
+                    <div class='slide'>
+                      <div class='slide_inner'>
+                        <div class='slide_inner__left'>
+                          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cupcake4.png'>
+                          
+                        </div>
+                        <div class='slide_inner__right'>
+                          <h2>Huge cupcake</h2>
+                          <h3>$9.99 <span> Pack of 10</span></h3>
+                          <p>Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </label>
+
+                {% endif %}
+            {% endif %}
+          {% endfor %}
         </div>
       </div>
     </div>
