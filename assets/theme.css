@@ -7397,6 +7397,9 @@ html {
   .title-section.align-items-end h1, .title-section.align-items-end h2{
     text-align: center;
   }
+  h1, h2, h3, h4, h5, p, .p{
+    text-align: center;
+  }
 }
 p, .p{
   font-size: var(--paragraph-size);
