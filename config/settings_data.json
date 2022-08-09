@@ -170,12 +170,64 @@
       },
       "footer": {
         "type": "footer",
+        "blocks": {
+          "891e4c13-5c4c-4471-a2c1-5be403892578": {
+            "type": "more_information",
+            "settings": {
+              "url": "tel:+18638049400",
+              "label": "(863) 804 9400",
+              "icon": "fa fa-phone",
+              "new_tab": false
+            }
+          },
+          "9cb25b4d-81f1-4ea0-a003-0efb6d40a6bd": {
+            "type": "more_information",
+            "settings": {
+              "url": "mailto:Jeannyvizcaino@ohfladacreations.com",
+              "label": "jeannyvizcaino@ohfladacreations.com",
+              "icon": "fa fa-envelope",
+              "new_tab": false
+            }
+          },
+          "dfaf917f-1e25-4340-8ea1-4161016d717f": {
+            "type": "more_information",
+            "settings": {
+              "url": "",
+              "label": "",
+              "icon": "",
+              "new_tab": true
+            }
+          }
+        },
+        "block_order": [
+          "891e4c13-5c4c-4471-a2c1-5be403892578",
+          "9cb25b4d-81f1-4ea0-a003-0efb6d40a6bd",
+          "dfaf917f-1e25-4340-8ea1-4161016d717f"
+        ],
         "settings": {
-          "show_payment_icons": true,
-          "color_footer_bg": "#f6f6f6",
-          "color_footer_text": "#333232",
-          "show_currency_selector": true,
-          "show_locale_selector": true
+          "logo": "shopify:\/\/shop_images\/272410440_109519301647319_5118707330302706591_n-removebg-preview.png",
+          "background_color": "linear-gradient(89.71deg, rgba(56, 56, 56, 1) 23.22%, rgba(87, 87, 87, 1) 92.95%)",
+          "color-heading": "#FFFFFF",
+          "color-links": "#FFFFFF",
+          "color-links-hover": "#FFFFFF",
+          "background-copyright": "#FFFFFF",
+          "text-copyright": "#FFFFFF",
+          "bullet-point": "#FFFFFF",
+          "radius_border": 76,
+          "back_color_footer": "#FFFFFF",
+          "heading-font-size": 18,
+          "copyright-font-size": 14,
+          "links-font-size": 14,
+          "icons-font-size": 20,
+          "margin_top": 0,
+          "padding_top": 36,
+          "padding_bottom": 36,
+          "lateral-compress": 10,
+          "padding_center_column": 9,
+          "logo_width": 100,
+          "logo_height": 100,
+          "logo_mobile_width": 100,
+          "logo_mobile_height": 100
         }
       },
       "header-ek": {
