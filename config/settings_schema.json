@@ -95,18 +95,18 @@
       },
       {
         "type": "color",
-        "label": "paragrah",
-        "id": "paragrah-color"
+        "label": "paragraph",
+        "id": "paragraph-color"
       },
       {
         "type": "text",
-        "label": "Paragrah size",
-        "id": "paragrah-size"
+        "label": "paragraph size",
+        "id": "paragraph-size"
       },
       {
         "type": "number",
-        "label": "Paragrah Weight",
-        "id": "paragrah-weight"
+        "label": "paragraph Weight",
+        "id": "paragraph-weight"
       },
       {
         "type": "header",
