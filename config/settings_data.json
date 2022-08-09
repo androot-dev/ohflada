@@ -338,7 +338,6 @@
       },
       "163767578637edbf32": {
         "type": "benefits",
-        "disabled": true,
         "settings": {
           "title_channels": "Benefits",
           "channel_1": "Customer service",
@@ -354,7 +353,8 @@
           "subtitle": "We have what you are looking for",
           "featured-collection": "bakery-supply",
           "image-1": "shopify:\/\/shop_images\/110929856_2779636425598286_7092539730078596542_n.jpg",
-          "featured-collection-2": "",
+          "featured-collection-2": "desserts",
+          "image-2": "shopify:\/\/shop_images\/110252651_1547604758743959_6487110186303890821_n.jpg",
           "featured-collection-3": "",
           "featured-collection-4": "",
           "featured-collection-5": "",
@@ -579,8 +579,8 @@
       "16375965479b9ea31b",
       "1637642233c40e31c3",
       "1637649980c9a97d7a",
-      "163767578637edbf32",
       "16376805410edcd386",
+      "163767578637edbf32",
       "1637994307955440a5"
     ]
   },
