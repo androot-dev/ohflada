@@ -355,10 +355,18 @@
               "category": "bakery-supply",
               "expanded": false
             }
+          },
+          "9644d32d-1567-46cf-9a7e-d11caf65dd8a": {
+            "type": "collection",
+            "settings": {
+              "category": "desserts",
+              "expanded": false
+            }
           }
         },
         "block_order": [
-          "c4614e2e-bbb3-42bd-b007-6fc72ba35a99"
+          "c4614e2e-bbb3-42bd-b007-6fc72ba35a99",
+          "9644d32d-1567-46cf-9a7e-d11caf65dd8a"
         ],
         "settings": {
           "title": "Shop By Category",
