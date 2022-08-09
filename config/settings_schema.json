@@ -153,6 +153,7 @@
             {
                 "type": "text",
                 "label": "shadow",
+                "id": "shadow",
                 "default": "0px 0px 0px 0px"
             },
             {
@@ -163,6 +164,7 @@
             {
                 "type": "text",
                 "label": "radius",
+                "id": "radius",
                 "default": "60px"
             }
         ]
