@@ -211,16 +211,18 @@
       -webkit-transition: all 0.5s 0s cubic-bezier(0.175, 1.605, 0.455, 0.92);
     }
     body .ui_inner .ui_inner__slider .slide_inner__left img {
-        width: 250px;
-        height: 250px;
-        z-index: 8;
-        position: relative;
-        filter: drop-shadow(-4px 6px 6px rgba(0, 0, 0, 0.2));
-        object-fit: scale-down;
-        position: absolute;
-        left: -40px;
-        top: 35px;
-    
+ 
+      width: 250px;
+      height: 250px;
+      z-index: 8;
+      position: relative;
+      filter: drop-shadow(-4px 6px 6px rgba(0, 0, 0, 0.2));
+      object-fit: cover;
+      position: absolute;
+      left: clamp(-40px, -3vw, 4px);
+      top: 35px;
+      border-radius: 55px;
+      min-width: 236px;
     }
     body .ui_inner .ui_inner__slider .slide_inner__left .firework {
       position: relative;
