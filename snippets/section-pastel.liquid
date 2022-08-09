@@ -363,12 +363,12 @@
 </style>
 
  
-<div class='ui page-width-md '>
+<div class='ui page-width-md d-none d-md-block'>
   <div class='ui_inner'>
      <div class='ui_fruit'>
         <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/treats.png'>
      </div>
-     <div class='ui_inner__selection  d-none d-md-block'>
+     <div class='ui_inner__selection  '>
         {% assign newElemen = 0 %}
         {% for block in blocks %}
         {% if block.type == "product" %}
