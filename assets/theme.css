@@ -7394,7 +7394,7 @@ html {
   .title-section.align-items-end, .title-section.align-items-start{
     align-items: center !important;
   }
-  .title-section.align-items-end h1, .title-section.align-items-end h2{
+  .title-section.align-items-end h1, .title-section.align-items-end h2, p{
     text-align: center;
   }
 }
