@@ -7386,6 +7386,9 @@ html {
   color: var(--heading2-color);
   margin-bottom: 0;
 }
+.title-section.align-items-center{
+  text-align: center;
+}
 p, .p{
   font-size: var(--paragraph-size);
   font-weight: var(--paragraph-weight);
