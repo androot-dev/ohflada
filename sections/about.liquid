@@ -295,8 +295,10 @@ text-align: center;
        <div class="col-md-6 d-flex align-items-center justify-content-center">
          <div class="">
          <div class="col-12 text-left ">
-         <h2> {{ section.settings.title }}</h2>
-         <p class="subtitle"> {{ section.settings.subtitle }}</p>              
+          <div class="title-section">
+         <h1> {{ section.settings.title }}</h1>
+         <h2 class="subtitle"> {{ section.settings.subtitle }}</h2>  
+          </div>            
          </div>
          <div class=" py-4 content-text">
            {{ section.settings.block_text }}
