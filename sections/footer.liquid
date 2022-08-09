@@ -277,7 +277,19 @@
     {% if section.settings.logo %}
           <div  data-aos="fade-up" class="col-md-4 
             order-1 container-column-logo 
-            {{section.settings.logo_position}}
+            {% if section.settings.logo_position == "start" %}
+        
+    		order-md-1
+    
+            {% elsif section.settings.logo_position == "center" %}
+    
+            order-md-2
+    
+             {% elsif section.settings.logo_position == "end" %}
+    
+             order-md-3
+    
+            {% endif; %}
             col-12 
             f-center flex-wrap 
             flex-column ">
@@ -304,15 +316,15 @@
     
     <div data-aos-delay="100" data-aos="fade-up" class="
 		col-md-4
-        {% if logo_position == "start" %}
+        {% if section.settings.logo_position == "start" %}
         
 		order-md-2
 
-        {% elsif logo_position == "center" %}
+        {% elsif section.settings.logo_position == "center" %}
 
         order-md-1
 
-         {% elsif logo_position == "end" %}
+         {% elsif section.settings.logo_position == "end" %}
 
          order-md-2
 
