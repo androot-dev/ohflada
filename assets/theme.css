@@ -7386,7 +7386,7 @@ html {
   color: var(--heading2-color);
   margin-bottom: 0;
 }
-.title-section.align-items-center h2{
+.title-section.align-items-center h2, .title-section.align-items-center h1{
   text-align: center;
 }
 p, .p{
