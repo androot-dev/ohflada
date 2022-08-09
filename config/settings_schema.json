@@ -145,6 +145,20 @@
                 "type": "number",
                 "label": "heading 2 Weight",
                 "id": "heading2-weight"
+            },
+            {
+                "type": "header",
+                "content": "Others"
+            },
+            {
+                "type": "shodow",
+                "label": "shadow",
+                "default": "0px 0px 0px 0px rgba(0,0,0,0.2)"
+            },
+            {
+                "type": "radius",
+                "label": "radius",
+                "default": "60px"
             }
         ]
     },
