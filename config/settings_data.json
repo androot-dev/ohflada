@@ -192,9 +192,9 @@
           "dfaf917f-1e25-4340-8ea1-4161016d717f": {
             "type": "more_information",
             "settings": {
-              "url": "",
-              "label": "",
-              "icon": "",
+              "url": "https:\/\/www.google.com\/maps\/place\/Winter+Haven,+Florida,+EE.+UU.\/@28.0110855,-81.7558307,13z\/data=!4m5!3m4!1s0x88dd12c9ab273d23:0x866665fba892005a!8m2!3d28.0222435!4d-81.7328567",
+              "label": "Winter Haven, FL, United States, Florida",
+              "icon": "fa fa-location-dot",
               "new_tab": true
             }
           }
