@@ -111,7 +111,10 @@
         color: var(--text-color);
         font-weight: 100;
     }
-
+       .myfooter .container-logo-section{
+          width: -moz-fit-content;
+          width: fit-content;
+       }
     .myfooter a:hover,
     .myfooter button:hover,
     .myfooter span:hover,
@@ -293,7 +296,7 @@
             col-12 
             f-center flex-wrap 
             flex-column ">
-              <div class="container-logo-section">
+              <div class="container-logo-section" >
 			
 				<div class="row justify-content-center">
 					<a href="{{routes.root_url}}" class="my-logo"> </a>
@@ -364,17 +367,17 @@
 			order-2
 			 {% if section.settings.logo_position == "start" %}
         
-		order-md-3
-
-        {% elsif section.settings.logo_position == "center" %}
-
-        order-md-3
-
-         {% elsif section.settings.logo_position == "end" %}
-
-         order-md-2
-
-        {% endif; %}
+        		order-md-3
+        
+                {% elsif section.settings.logo_position == "center" %}
+        
+                order-md-3
+        
+                 {% elsif section.settings.logo_position == "end" %}
+        
+                 order-md-2
+        
+                {% endif; %}
 
 			col-md-4
 			col-12
