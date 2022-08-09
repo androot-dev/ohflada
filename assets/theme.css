@@ -7389,6 +7389,15 @@ html {
 .title-section.align-items-center h2, .title-section.align-items-center h1{
   text-align: center;
 }
+
+@media screen and (max-width: 767px){
+  .title-section.align-items-end, .title-section.align-items-start{
+    align-items: center !important;
+  }
+  .title-section.align-items-end h1, .title-section.align-items-end h2{
+    text-align: center;
+  }
+}
 p, .p{
   font-size: var(--paragraph-size);
   font-weight: var(--paragraph-weight);
