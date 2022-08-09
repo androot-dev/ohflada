@@ -7059,6 +7059,15 @@ font-display: swap;
 src: url("PlayfairDisplay-VariableFont_wght.ttf");
 }
 
+h1,h2,h3,h4,h5 { 
+  font-family: "fuente-titulos" !important;
+  text-transform: capitalize;
+}
+
+p { 
+  font-family: "fuente-contenido" !important;
+}
+
 a:hover, a:active, a:focus {
   outline: none;
   text-decoration: none;
