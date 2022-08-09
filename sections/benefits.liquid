@@ -137,9 +137,11 @@
   display: block;
   width: calc(100% + 1.3px);
   /* ejecutar una sola vez */
-  animation: derrame 1s ease-in-out;
+  animation-name: derrame;
+  animation-duration: 1s;
   animation-iteration-count: 1;
-  animation-fill-mode: both;
+ 
+  animation-fill-mode: forwards;
   
 }
 
