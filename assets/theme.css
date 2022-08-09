@@ -7420,6 +7420,27 @@ a, .a{
 .radius{
   border-radius: var(--radius);
 }
+.list-none {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.list li::before {
+  content: "";
+  background: var(--primary);
+  display: inline-block;
+  font-size: 50px;
+  width: 11px;
+  height: 11px;
+  margin-right: 8px;
+  border-radius: 5px;
+}
 
 .font-content{
   font-family: "fuente-contenido" !important;
