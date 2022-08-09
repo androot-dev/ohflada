@@ -357,7 +357,7 @@
     <div class='ui_inner'>
      
           
-
+ {% assign products = [""] %}
 
 
       <div class='ui_fruit d-none d-md-block'>
@@ -369,6 +369,12 @@
 
               {% for block in blocks %}
                 {% if block.type == "product" %}
+                  
+                  {% assign products = products | push: block.products %}
+                {% endif %}
+              {% endfor %}
+
+
 
               <input checked='checked' id='lovely' name='selection' type='radio'>
               <label for='lovely'>
