@@ -472,21 +472,22 @@
         {% endfor %}
      </div>
   </div>
-  <div class="ui_inner owl-carousel d-flex d-md-none ">
-    {% assign newElemen = 0 %}
-    {% for block in blocks %}
-    {% if block.type == "product" %}
-    <div class="item-best-sellers" >
-       <h1 class='selected l'>{{block.settings.featured_product.title}}</h1>
-       <h3>{{block.settings.featured_product.price | money}}</span></h3>
-       <p>{{block.settings.featured_product.description}}</p>
-       <div class="container-img">
-          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cupcake1.png' />
-       </div>
-    </div>
-    {% endif; %}
-    {% endfor; %}
- </div>
+</div>
+<div class=" owl-carousel d-flex d-md-none ">
+  {% assign newElemen = 0 %}
+  {% for block in blocks %}
+  {% if block.type == "product" %}
+  <div class="item-best-sellers" >
+     <h1 class='selected l'>{{block.settings.featured_product.title}}</h1>
+     <h3>{{block.settings.featured_product.price | money}}</span></h3>
+     <p>{{block.settings.featured_product.description}}</p>
+     <div class="container-img">
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cupcake1.png' />
+     </div>
+  </div>
+  {% endif; %}
+  {% endfor; %}
+</div>
  <style>
     .ui_inner.owl-carousel .container-img {
     width: 150px;
@@ -500,7 +501,7 @@
  </style>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    $('.ui_inner.owl-carousel').owlCarousel({
+    $('.owl-carousel').owlCarousel({
       loop:true,
       margin:10,
       nav:false,
