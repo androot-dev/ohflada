@@ -7149,20 +7149,20 @@ textarea:focus{
 
 .btn
 {
-  --size: 1.5rem;
- background-color: var(--primary-dark);
-  background-image: linear-gradient(45deg, var(--primary-light) 0%, var(--primary-light) 55%, var(--primary-dark) 90%);
+  background-color: var(--primary-dark);
+  background-image: linear-gradient(219deg, #e9b0b0 0%, #db7777 55%, #e19999 90%);
   background-position: 100% 0;
   background-size: 200% 200%;
-  color: white;
+  color: white !important;
   border-radius: 50px;
   padding: 12px 48px;
   font-family: "fuente-titulos", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 200;
   text-decoration: none;
-  box-shadow: 0 16px 32px 0 rgba(253, 127, 127, 0.35);
+  box-shadow: 0px 8px 32px 0 rgb(253 127 127 / 35%);
   transition: all 0.5s ease;
+
 }
 .btn:hover {
   box-shadow: 0 0px 0px 0 rgba(255, 93, 93, 0.35);
