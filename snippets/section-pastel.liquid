@@ -480,7 +480,7 @@
                         </div>
                         <div class='slide_inner__right'>
                           <h2>{{block.settings.featured_product.title}}</h2>
-                          <h3>{{block.settings.featured_product.price}}</h3>
+                          <h3>{{block.settings.featured_product.price | money}}</h3>
                           <p>{{block.settings.featured_product.description}}</p>
                     
                         </div>
@@ -503,8 +503,8 @@
       {% if block.type == "product" %}
     <div class="item-best-sellers">
 
-      <h1 class='selected l'>Lovely cupcake</h1>
-      <h3>$4.99 <span> Pack of 10</span></h3>
+      <h1 class='selected l'>{{block.settings.featured_product.title}}</h1>
+      <h3>{{block.settings.featured_product.price | money}}</span></h3>
       <p>Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.</p>
       <div class="container-img">
         <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cupcake1.png' />
