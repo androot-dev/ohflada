@@ -7427,3 +7427,25 @@ a, .a{
 .font-title{
   font-family: "fuente-titulo" !important;
 }
+.scrollbar {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+..scrollbar::-webkit-scrollbar {
+  width: 6.5px !important;
+  height: 6.5px !important;
+  margin-left: -19px !important;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background: var(--secondary-dark) !important;
+  border-radius: 0px !important;
+  margin-left: -9px !important;
+}
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-dark) !important;
+  box-shadow: 0 0 2px 1px rgba(56, 56, 56, 0) !important;
+}
+.scrollbar::-webkit-scrollbar-thumb:active {
+  background-color: var(--secondary-dark) !important;
+}
