@@ -136,21 +136,24 @@
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  /* ejecutar una sola vez */
-  animation-name: derrame;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
- 
-  animation-fill-mode: forwards;
+
   
 }
 
 .custom-shape-divider-top-1660083344 .shape-fill {
   fill: var(--tertiary);
 }
+
+[data-aos=derrame] {
+  height: 92px;
+}
+[data-aos=derrame].aos-animate {
+  height: 252px;
+}
+
 </style>
 
-  <section data-my-scroll class="channels fix py-section">
+  <section data-aos="derrame" class="channels fix py-section">
 
     <div class="custom-shape-divider-top-1660083344">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
