@@ -7080,6 +7080,7 @@ input:focus{
     -webkit-box-shadow: none;
 }
 
+
 textarea:focus{
     outline:none !important;
     outline-width: 0 !important;
@@ -7412,7 +7413,9 @@ a, .a{
   font-weight: var(--paragraph-weight);
   color: var(--primary);
   text-decoration: none;
+  transition: color .3s linear;
 }
+
 .shadow{
   box-shadow: var(--shadow);
 
