@@ -220,24 +220,7 @@ function getParameterByName() {
 } 
 
 
-dispatch_scroll_events(){
-    let scroll = window.scrollY;
-    let channels = document.querySelectorAll('[data-my-scroll]');
-    if (scroll <= this.params.scroll.top ) {
-        this.emit("scroll:channels");
-    }
 
-    window.addEventListener("scroll", () => {
-        let scroll = window.scrollY;
-        let top = ""
-
-        if (scroll <= this.params.scroll.top && header) {
-                this.emit("scroll:header");
-        }
-            
-    });
-    
-}
 document.addEventListener('DOMContentLoaded', function () { 
     page.scroll_tracking = ".scroll-tracking";
     page.lazy_backgrounds = ".lazy-background";
