@@ -7421,3 +7421,10 @@ a, .a{
 .radius{
   border-radius: var(--radius);
 }
+
+.font-content{
+  font-family: "fuente-contenido" !important;
+}
+.font-title{
+  font-family: "fuente-titulo" !important;
+}
