@@ -321,8 +321,17 @@ body .ui_inner{
     </div>
   </div>
 
-  <div class="row page-width ">
+  <div class="row page-width container-section-pastel">
     {% render "section-pastel" blocks: section.blocks %}
+    <style>
+      @media screen and (max-width: 575px){
+        .container-section-pastel{
+          padding-left: 0;
+          padding-right:0;
+        }
+      }
+      
+    </style>
   </div>
 
 </section>
