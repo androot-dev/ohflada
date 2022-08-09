@@ -432,7 +432,7 @@
                   <!-- 3ER ELEMENTO -->
                   <input id='mega' name='selection' type='radio'>
                   <label for='mega'>
-                    <div class='selected m'>Mega cupcake</div>
+                    <div class='selected m'>{{ block.settings.featured_product.title }}</div>
                     <div class='ui_inner__slider'>
                       <div class='sb'>
                         <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/starburst2.png'>
@@ -443,9 +443,10 @@
                             <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cupcake3.png'>
                           </div>
                           <div class='slide_inner__right'>
-                            <h2>Mega cupcake</h2>
-                            <h3>$4.99 <span> Pack of 10</span></h3>
-                            <p>Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.</p>
+                            <h2>{{block.settings.featured_product.title}}</h2>
+                            <h3>{{block.settings.featured_product.price}}</h3>
+                            <p>{{block.settings.featured_product.description}}</p>
+                      
                           </div>
                         </div>
                       </div>
@@ -457,7 +458,7 @@
                 <!-- 4TO ELEMENTO -->
                 <input id='huge' name='selection' type='radio'>
                 <label for='huge'>
-                  <div class='selected h'>Huge cupcake</div>
+                  <div class='selected h'>{{ block.settings.featured_product.title }}</div>
                   <div class='ui_inner__slider'>
                     <div class='sb'>
                       <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/starburst2.png'>
@@ -469,9 +470,10 @@
                           
                         </div>
                         <div class='slide_inner__right'>
-                          <h2>Huge cupcake</h2>
-                          <h3>$9.99 <span> Pack of 10</span></h3>
-                          <p>Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.</p>
+                          <h2>{{block.settings.featured_product.title}}</h2>
+                          <h3>{{block.settings.featured_product.price}}</h3>
+                          <p>{{block.settings.featured_product.description}}</p>
+                    
                         </div>
                       </div>
                     </div>
