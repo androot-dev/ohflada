@@ -348,16 +348,21 @@
       },
       "16376805410edcd386": {
         "type": "categories",
+        "blocks": {
+          "c4614e2e-bbb3-42bd-b007-6fc72ba35a99": {
+            "type": "collection",
+            "settings": {
+              "category": "bakery-supply",
+              "expanded": false
+            }
+          }
+        },
+        "block_order": [
+          "c4614e2e-bbb3-42bd-b007-6fc72ba35a99"
+        ],
         "settings": {
           "title": "Shop By Category",
           "subtitle": "We have what you are looking for",
-          "featured-collection": "bakery-supply",
-          "image-1": "shopify:\/\/shop_images\/110929856_2779636425598286_7092539730078596542_n.jpg",
-          "featured-collection-2": "desserts",
-          "image-2": "shopify:\/\/shop_images\/110252651_1547604758743959_6487110186303890821_n.jpg",
-          "featured-collection-3": "",
-          "featured-collection-4": "",
-          "featured-collection-5": "",
           "button_label": "View More",
           "button_link": "shopify:\/\/collections"
         }
