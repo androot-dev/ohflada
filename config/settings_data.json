@@ -349,15 +349,14 @@
       },
       "16376805410edcd386": {
         "type": "categories",
-        "disabled": true,
         "settings": {
           "title": "Shop By Category",
           "subtitle": "We have what you are looking for",
-          "featured-collection": "headphones",
-          "featured-collection-2": "phone-accessories",
-          "featured-collection-3": "used-item",
-          "featured-collection-4": "scented-candles",
-          "featured-collection-5": "cups",
+          "featured-collection": "",
+          "featured-collection-2": "",
+          "featured-collection-3": "",
+          "featured-collection-4": "",
+          "featured-collection-5": "",
           "button_label": "View More",
           "button_link": "shopify:\/\/collections"
         }
