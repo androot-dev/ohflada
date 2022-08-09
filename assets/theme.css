@@ -7432,7 +7432,7 @@ a, .a{
   overflow-x: hidden;
   overflow-y: auto;
 }
-..scrollbar::-webkit-scrollbar {
+.scrollbar::-webkit-scrollbar {
   width: 6.5px !important;
   height: 6.5px !important;
   margin-left: -19px !important;
