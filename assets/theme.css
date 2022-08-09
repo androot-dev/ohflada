@@ -7151,7 +7151,7 @@ textarea:focus{
 {
   --size: 1.5rem;
  background-color: var(--primary-dark);
-  background-image: linear-gradient(45deg, var(--primary-light) 0%, var(--primary) 55%, var(--primary-dark) 90%);
+  background-image: linear-gradient(45deg, var(--primary-light) 0%, var(--primary-light) 55%, var(--primary-dark) 90%);
   background-position: 100% 0;
   background-size: 200% 200%;
   color: white;
