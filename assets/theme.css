@@ -7161,7 +7161,7 @@ textarea:focus{
   font-size: 16px;
   font-weight: 200;
   text-decoration: none;
-  box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+  box-shadow: 0 16px 32px 0 rgba(253, 127, 127, 0.35);
   transition: all 0.5s ease;
 }
 .btna:hover {
