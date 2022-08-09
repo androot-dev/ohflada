@@ -90,7 +90,7 @@
     {{ base_font_bolder | font_face: font_display: 'swap' }}
     {{ base_font_italic | font_face: font_display: 'swap' }}
     {{ base_font_bold_italic | font_face: font_display: 'swap' }}
-
+       :root{
     --primary: {{settings.primary}};
       --primary-light: {{settings.primary-light}};
       --primary-dark: {{settings.primary-dark}};
@@ -133,6 +133,7 @@
         --font-body-scale: 1.0;
         --font-heading-scale: 1.0;
         --page-width: 120rem;
+}
   </style>
 
   <script>
