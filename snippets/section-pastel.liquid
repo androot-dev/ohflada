@@ -500,16 +500,16 @@
       {% assign newElemen = 0 %}
       {% for block in blocks %}
       
-        {% if block.type == "product" %}
-      <div class="item-best-sellers">
+      {% if block.type == "product" %}
+        <div class="item-best-sellers" style="height: 500px;">
 
-        <h1 class='selected l'>{{block.settings.featured_product.title}}</h1>
-        <h3>{{block.settings.featured_product.price | money}}</span></h3>
-        <p>{{block.settings.featured_product.description}}</p>
-        <div class="container-img">
-          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cupcake1.png' />
+          <h1 class='selected l'>{{block.settings.featured_product.title}}</h1>
+          <h3>{{block.settings.featured_product.price | money}}</span></h3>
+          <p>{{block.settings.featured_product.description}}</p>
+          <div class="container-img">
+            <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cupcake1.png' />
+          </div>
         </div>
-      </div>
       {% endif; %}
       {% endfor; %}
     </div>
