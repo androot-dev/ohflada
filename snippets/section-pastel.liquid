@@ -476,7 +476,7 @@
     {% assign newElemen = 0 %}
     {% for block in blocks %}
     {% if block.type == "product" %}
-    <div class="item-best-sellers" style="height: 500px;">
+    <div class="item-best-sellers" >
        <h1 class='selected l'>{{block.settings.featured_product.title}}</h1>
        <h3>{{block.settings.featured_product.price | money}}</span></h3>
        <p>{{block.settings.featured_product.description}}</p>
