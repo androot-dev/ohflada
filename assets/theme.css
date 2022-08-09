@@ -7415,7 +7415,15 @@ a, .a{
   text-decoration: none;
   transition: color .3s linear;
 }
+a, .a {
+  color: var(--secondary-dark);
+  text-decoration: none !important;
+  transition: color 0.2s ease-in-out;
+}
 
+i, li, span {
+  transition: color 0.2s linear;
+}
 .shadow{
   box-shadow: var(--shadow);
 
