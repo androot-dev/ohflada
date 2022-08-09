@@ -136,7 +136,8 @@
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-
+  height: 92px;
+  transition-property: height;
   
 }
 
@@ -144,12 +145,8 @@
   fill: var(--tertiary);
 }
 
-[data-aos=derrame] {
-  height: 92px;
-  transition-property: height;
-}
 [data-aos=derrame].aos-animate {
-  height: 252px;
+  animation: derrame 1s ease-in-out forwards;
 }
 
 </style>
