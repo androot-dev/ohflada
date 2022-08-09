@@ -396,6 +396,7 @@
           </div>
       </div>
       <div class="row">
+        {% if collections[section.settings.featured-collection] %}
           <div class="col-lg-4 col-md-6">
               {%- assign collection = collections[section.settings.featured-collection]-%}
               <div class="class-item">
@@ -420,8 +421,10 @@
                   </div>
               </div>
           </div>
+        {% endif %}
 
-          <div class="col-lg-4 col-md-6">
+        {% if  collections[section.settings.featured-collection-2] %}
+        <div class="col-lg-4 col-md-6">
             {%- assign collection2 = collections[section.settings.featured-collection-2]-%}
             <div class="class-item">
                 <div class="ci-pic">
@@ -436,6 +439,7 @@
                 </div>
             </div>
         </div>
+      {% endif; %}
         <div class="col-lg-4 col-md-6">
             {%- assign collection3 = collections[section.settings.featured-collection-3]-%}
             <div class="class-item">
@@ -481,6 +485,11 @@
                 </div>
             </div>
         </div>
+
+
+
+
+
         <div class="col-12 my-3 text-center">
             <a href="{{ section.settings.button_link }}" class="btn mt-5">
                 {{ section.settings.button_label }}
