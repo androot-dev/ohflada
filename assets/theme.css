@@ -7150,7 +7150,7 @@ textarea:focus{
 .btn
 {
   --size: 1.5rem;
- background-color: var(--primary);
+ background-color: var(--primary-dark);
   background-image: linear-gradient(45deg, var(--primary) 0%, var(--primary) 55%, var(--primary-dark) 90%);
   background-position: 100% 0;
   background-size: 200% 200%;
