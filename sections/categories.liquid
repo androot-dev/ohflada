@@ -440,6 +440,7 @@
             </div>
         </div>
       {% endif; %}
+      {% if  collections[section.settings.featured-collection-3] %}
         <div class="col-lg-4 col-md-6">
             {%- assign collection3 = collections[section.settings.featured-collection-3]-%}
             <div class="class-item">
@@ -455,6 +456,8 @@
                 </div>
             </div>
         </div>
+      {% endif; %}
+      {% if  collections[section.settings.featured-collection-4] %}
         <div class="col-lg-6 col-md-6">
             {%- assign collection4 = collections[section.settings.featured-collection-4]-%}
             <div class="class-item">
@@ -470,6 +473,8 @@
                 </div>
             </div>
         </div>
+      {% endif; %}
+      {% if  collections[section.settings.featured-collection-5] %}
         <div class="col-lg-6">
             {%- assign collection5 = collections[section.settings.featured-collection-5]-%}
             <div class="class-item">
@@ -485,7 +490,7 @@
                 </div>
             </div>
         </div>
-
+      {% endif; %}
 
 
 
