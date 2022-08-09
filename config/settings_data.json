@@ -208,7 +208,7 @@
           "ec7adf00-5023-4aab-92e0-05ed0f77ec74": {
             "type": "social_links",
             "settings": {
-              "icon": "",
+              "icon": "fa-brands fa-facebook",
               "url": "",
               "tooltip-more-item": ""
             }
