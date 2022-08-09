@@ -353,14 +353,18 @@
             "type": "collection",
             "settings": {
               "category": "bakery-supply",
-              "expanded": false
+              "col-lg": 4,
+              "col-md": 6,
+              "col-sm": 12
             }
           },
           "9644d32d-1567-46cf-9a7e-d11caf65dd8a": {
             "type": "collection",
             "settings": {
               "category": "desserts",
-              "expanded": false
+              "col-lg": 4,
+              "col-md": 6,
+              "col-sm": 12
             }
           }
         },
@@ -517,7 +521,6 @@
       },
       "1637994307955440a5": {
         "type": "reviews-2",
-        "disabled": true,
         "blocks": {
           "781d24f9-d86c-4fe2-b759-4f191570c5c0": {
             "type": "text",
