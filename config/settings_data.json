@@ -245,6 +245,7 @@
       },
       "1637649980c9a97d7a": {
         "type": "about",
+        "disabled": true,
         "settings": {
           "title": "About",
           "subtitle": "Discover what we do for you",
@@ -255,6 +256,7 @@
       },
       "163767578637edbf32": {
         "type": "benefits",
+        "disabled": true,
         "settings": {
           "title_channels": "Benefits",
           "channel_1": "Customer service",
@@ -265,6 +267,7 @@
       },
       "16376805410edcd386": {
         "type": "categories",
+        "disabled": true,
         "settings": {
           "title": "Shop By Category",
           "subtitle": "We have what you are looking for",
@@ -419,6 +422,7 @@
       },
       "1637994307955440a5": {
         "type": "reviews-2",
+        "disabled": true,
         "blocks": {
           "781d24f9-d86c-4fe2-b759-4f191570c5c0": {
             "type": "text",
