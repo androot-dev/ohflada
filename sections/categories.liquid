@@ -399,8 +399,8 @@
         {% if section.settings.image-1 != blank %}
           <div class="col-lg-4 col-md-6">
               {%- assign collection = collections[section.settings.featured-collection]-%}
-              <div class=" position-relative">
-                  <div class="">
+              <div class="class-item position-relative">
+                  <div class="ci-pic">
                       <a href="{{collection.url}}">
                           <img class="img-1" src="{{ section.settings.image-1 | img_url: 'master' }}" alt="" />
                       </a>
