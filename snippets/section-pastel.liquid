@@ -355,8 +355,7 @@
  
  <div class='ui page-width-md d-none d-md-block'>
     <div class='ui_inner'>
-      {% for block in blocks %}
-        {% if block.type == "product" %}
+     
           
 
 
@@ -365,6 +364,8 @@
       
         <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/treats.png'>
       </div>
+      {% for block in blocks %}
+        {% if block.type == "product" %}
       <div class='ui_inner__selection '>
         <input checked='checked' id='lovely' name='selection' type='radio'>
         <label for='lovely'>
@@ -390,8 +391,8 @@
           </div>
         </label> 
       </div>
-      {% endif %}
-    {% endfor %}
+    {% endif %}
+  {% endfor %}
     </div>
   </div>
 
