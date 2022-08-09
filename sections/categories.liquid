@@ -409,7 +409,7 @@
             {% if block.type == 'collection' %}
               {% assign expanded = block.settings.expanded %}
 
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-{{block.settings.col-lg}} col-md-{{block.settings.col-md}} col-sm-{{block.settings.col-sm}}">
                 {%- assign collection = block.settings.category -%}
                 <div class="class-item position-relative">
                     <div class="ci-pic">
