@@ -404,105 +404,47 @@
           </div>
       </div>
       <div class="row">
-        {% if section.settings.image-1 != blank %}
-          <div class="col-lg-4 col-md-6">
-              {%- assign collection = collections[section.settings.featured-collection]-%}
-              <div class="class-item position-relative">
-                  <div class="ci-pic">
-                      <a href="{{collection.url}}">
-                          <img class="img-1" src="{{ section.settings.image-1 | img_url: 'master' }}" alt="" />
-                      </a>
-                  </div>
-                  
-                  <div class="new-ci-text ">
-                      <div class="custom-shape-divider-bottom-1660074041">
-                          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                              <path
-                                  d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                                  class="shape-fill"
-                              ></path>
-                          </svg>
-
-                      </div>
-                  </div>
-                  <div class="description-category position-absolute">
-                    <h5 class="text-primary m-0">{{ collection.title }}</h5>
-                    <a  class="btn btn-circle" href="{{collection.url}}"><i class="fa fa-angle-right"></i></a>
-                  </div>
-              </div>
-          </div>
-        {% endif %}
-
-        {% if  section.settings.image-2 != blank %}
-        <div class="col-lg-4 col-md-6">
-            {%- assign collection2 = collections[section.settings.featured-collection-2]-%}
-            <div class="class-item">
-                <div class="ci-pic">
-                    <a href="{{collection2.url}}">
-                        <img class="img-1" src="{{ section.settings.image-2 | img_url: 'master' }}" alt="" />
-                    </a>
-                </div>
-                <div class="ci-text">
-                    <span>Discover</span>
-                    <h5>{{ collection2.title }}</h5>
-                    <a href="{{collection2.url}}"><i class="fa fa-angle-right"></i></a>
-                </div>
-            </div>
-        </div>
-      {% endif; %}
-      {% if  section.settings.image-3 != blank %}
-        <div class="col-lg-4 col-md-6">
-            {%- assign collection3 = collections[section.settings.featured-collection-3]-%}
-            <div class="class-item">
-                <div class="ci-pic">
-                    <a href="{{collection3.url}}">
-                        <img class="img-1" src="{{ section.settings.image-3 | img_url: 'master' }}" alt="" />
-                    </a>
-                </div>
-                <div class="ci-text">
-                    <span>Discover</span>
-                    <h5>{{ collection3.title }}</h5>
-                    <a href="{{collection3.url}}"><i class="fa fa-angle-right"></i></a>
-                </div>
-            </div>
-        </div>
-      {% endif; %}
-      {% if  section.settings.image-4 != blank %}
-        <div class="col-lg-6 col-md-6">
-            {%- assign collection4 = collections[section.settings.featured-collection-4]-%}
-            <div class="class-item">
-                <div class="ci-pic">
-                    <a href="{{collection4.url}}">
-                        <img class="img-2" src="{{ section.settings.image-4 | img_url: 'master' }}" alt="" />
-                    </a>
-                </div>
-                <div class="ci-text">
-                    <span>Discover</span>
-                    <h4>{{ collection4.title }}</h4>
-                    <a href="{{collection4.url}}"><i class="fa fa-angle-right"></i></a>
-                </div>
-            </div>
-        </div>
-      {% endif; %}
-      {% if  section.settings.image-5  != blank %}
-        <div class="col-lg-6">
-            {%- assign collection5 = collections[section.settings.featured-collection-5]-%}
-            <div class="class-item">
-                <div class="ci-pic">
-                    <a href="{{collection5.url}}">
-                        <img class="img-2" src="{{ section.settings.image-5 | img_url: 'master' }}" alt="" />
-                    </a>
-                </div>
-                <div class="ci-text">
-                    <span>Discover</span>
-                    <h4>{{ collection5.title }}</h4>
-                    <a href="{{collection5.url}}"><i class="fa fa-angle-right"></i></a>
-                </div>
-            </div>
-        </div>
-      {% endif; %}
 
 
+
+          {% for block in section.blocks %}
+            {% if block.type == 'collection' %}
+              {% assign expanded = block.settings.expanded %}
+
+              <div class="col-lg-4 col-md-6">
+                {%- assign collection = section.category -%}
+                <div class="class-item position-relative">
+                    <div class="ci-pic">
+                        <a href="{{collection.url}}">
+                            <img class="img-1" src="{{ collection.image  | img_url: 'master' }}" alt="" />
+                        </a>
+                    </div>
+                    
+                    <div class="new-ci-text ">
+                        <div class="custom-shape-divider-bottom-1660074041">
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                                <path
+                                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                                    class="shape-fill"
+                                ></path>
+                            </svg>
+  
+                        </div>
+                    </div>
+                    <div class="description-category position-absolute">
+                      <h5 class="text-primary m-0">{{ collection.title }}</h5>
+                      <a  class="btn btn-circle" href="{{collection.url}}"><i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+              
+            {% endif %}
+          {% endfor %}
 
 
         <div class="col-12 my-3 text-center">
