@@ -474,7 +474,7 @@
       "type": "text",
       "id": "button_label",
       "label": "Button label",
-	  "default": "View More"
+	    "default": "View More"
       },
       {
       "type": "url",
@@ -495,11 +495,35 @@
              "id": "category",
              "label": "category"
            },
+           {
+            "type": "range",
+            "id": "col-lg",
+            "min": 1,
+            "max": 12,
+            "step": 1,
+            "unit": "col-lg",
+            "label": "Columns in Desktop",
+            "default": 4
+          },
           {
-            "type": "checkbox",
-            "id": "expanded",
-            "label": "Expanded",
-            "default": false
+            "type": "range",
+            "id": "col-md",
+            "min": 1,
+            "max": 12,
+            "step": 1,
+            "unit": "col-md",
+            "label": "Columns in Tablet",
+            "default": 2
+          },
+          {
+            "type": "range",
+            "id": "col-sm",
+            "min": 1,
+            "max": 12,
+            "step": 1,
+            "unit": "col-sm",
+            "label": "Columns in Phone",
+            "default": 2
           }
          ]
        }
