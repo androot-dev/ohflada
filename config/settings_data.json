@@ -233,6 +233,7 @@
         "settings": {
           "logo": "shopify:\/\/shop_images\/272410440_109519301647319_5118707330302706591_n-removebg-preview.png",
           "background_color": "linear-gradient(135deg, rgba(191, 99, 99, 1), rgba(206, 129, 128, 1) 25%, rgba(220, 159, 158, 1) 50%, rgba(232, 189, 188, 1) 75%, rgba(243, 219, 219, 1) 100%)",
+          "logo_position": "center",
           "color-heading": "#ffffff",
           "color-links": "#ffffff",
           "color-links-hover": "#ac4747",
@@ -249,6 +250,7 @@
           "padding_top": 36,
           "padding_bottom": 36,
           "lateral-compress": 10,
+          "separation-icon": 16,
           "padding_center_column": 13,
           "logo_width": 170,
           "logo_height": 170,
