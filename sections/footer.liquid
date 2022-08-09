@@ -266,6 +266,11 @@
 
 {%- endstyle -%}
 
+
+
+
+
+
 <footer class=" section-{{ section.id }} myfooter container-fluid text-white px-0">
 <!--cambiar posicios de columnas moviendo order-md-?-->
 <div class="page-width row align-items-start">
@@ -456,7 +461,26 @@
 			"label": "Background Footer",
 			"default": "linear-gradient(89.71deg, #383838 23.22%, #575757 92.95%)"
 		},
-		
+		{
+          "type": "select",
+          "id": "logo_position",
+          "label": "Logo Position",
+          "options": [
+            {
+              "value": "col-md-1",
+              "label": "Logo Start"
+            },
+            {
+              "value": "col-md-2",
+              "label": "Logo center"
+            },
+            {
+              "value": "col-md-3",
+              "label": "Logo End"
+            }
+          ],
+          "default": "col-md-1"
+        },
 		{
 			"type": "color",
 			"id": "color-heading",
