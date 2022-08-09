@@ -36,10 +36,9 @@
     }
     body .ui_inner {
       height: 340px;
-      background-image: linear-gradient(45deg, #ffffff 0%, var(--primary-light) 100%);
+      background-image: -webkit-linear-gradient(45deg, #ffffff 0%, #f3f3f3 100%);
       padding: 40px;
       box-shadow: 0px 2px 40px 0px transparent, 0px 6px 26px 0px #bf9b59, 0px 3px 0px -2px white inset, 0px 22px 60px 70px #f1f1f1 inset, 0px 8px 18px -7px transparent, 30px 13px 30px 28px #b18f8f inset;
-      border-radius: 80px 0px 80px 80px;
     }
     body .ui_inner .sb {
         overflow: hidden;
@@ -70,7 +69,7 @@
       padding: 20px;
       font-size: 14px;
       z-index: 4;
-      font-family: "fuente-contenidos", cursive;
+      font-family: "Bad Script", cursive;
       top: 0;
       text-align: center;
       transition: all 0.2s;
@@ -153,7 +152,891 @@
       LEFT: -5PX;
       top: 0px;
     }
-
+    body .ui_inner__selection input[type=radio] {
+      display: none;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .selected {
+      background: #d02562 !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .sb img {
+      opacity: 0.3;
+      transition: all 1s 0.2s;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left {
+      opacity: 1;
+      left: -100px;
+      transition: all 0.5s 0.35s cubic-bezier(0.175, 1.605, 0.455, 0.92);
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__right h2 {
+      opacity: 1;
+      left: 0px;
+      transition: all 0.5s 0.4s cubic-bezier(0.175, 1.605, 0.455, 0.92);
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__right h3 {
+      opacity: 1;
+      left: 0px;
+      transition: all 0.5s 0.45s cubic-bezier(0.175, 1.605, 0.455, 0.92);
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider {
+      pointer-events: all;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__right p {
+      opacity: 1;
+      left: 0px;
+      transition: all 0.5s 0.5s cubic-bezier(0.175, 1.605, 0.455, 0.92);
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__right input {
+      position: relative;
+      opacity: 1;
+      left: 0px;
+      transition: all 0.5s 0.55s cubic-bezier(0.175, 1.605, 0.455, 0.92);
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__right .add {
+      position: relative;
+      opacity: 1;
+      left: 0px;
+      transition: all 0.5s 0.6s cubic-bezier(0.175, 1.605, 0.455, 0.92);
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(1) {
+      left: -52px;
+      top: -68px;
+      opacity: 0;
+      transform: rotate(-275deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(2) {
+      left: -48px;
+      top: -98px;
+      opacity: 0;
+      transform: rotate(2deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(3) {
+      left: -107px;
+      top: -100px;
+      opacity: 0;
+      transform: rotate(57deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(4) {
+      left: -37px;
+      top: -19px;
+      opacity: 0;
+      transform: rotate(385deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(5) {
+      left: -188px;
+      top: -100px;
+      opacity: 0;
+      transform: rotate(200deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(6) {
+      left: -173px;
+      top: -179px;
+      opacity: 0;
+      transform: rotate(260deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(7) {
+      left: -204px;
+      top: -43px;
+      opacity: 0;
+      transform: rotate(451deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(8) {
+      left: -64px;
+      top: -151px;
+      opacity: 0;
+      transform: rotate(361deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(9) {
+      left: -148px;
+      top: -13px;
+      opacity: 0;
+      transform: rotate(333deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(10) {
+      left: -182px;
+      top: -15px;
+      opacity: 0;
+      transform: rotate(552deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(11) {
+      left: -138px;
+      top: -155px;
+      opacity: 0;
+      transform: rotate(-67deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(12) {
+      left: -76px;
+      top: -114px;
+      opacity: 0;
+      transform: rotate(305deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(13) {
+      left: -190px;
+      top: -176px;
+      opacity: 0;
+      transform: rotate(-520deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(14) {
+      left: -189px;
+      top: -213px;
+      opacity: 0;
+      transform: rotate(362deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(15) {
+      left: -151px;
+      top: -202px;
+      opacity: 0;
+      transform: rotate(-67deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(16) {
+      left: -66px;
+      top: -154px;
+      opacity: 0;
+      transform: rotate(-72deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(17) {
+      left: -21px;
+      top: -223px;
+      opacity: 0;
+      transform: rotate(-442deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(18) {
+      left: -212px;
+      top: -193px;
+      opacity: 0;
+      transform: rotate(439deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(19) {
+      left: -109px;
+      top: -33px;
+      opacity: 0;
+      transform: rotate(-581deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(20) {
+      left: -98px;
+      top: -85px;
+      opacity: 0;
+      transform: rotate(-458deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(21) {
+      left: -106px;
+      top: -223px;
+      opacity: 0;
+      transform: rotate(-26deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(22) {
+      left: -157px;
+      top: -177px;
+      opacity: 0;
+      transform: rotate(278deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(23) {
+      left: -12px;
+      top: -33px;
+      opacity: 0;
+      transform: rotate(-265deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(24) {
+      left: -132px;
+      top: -77px;
+      opacity: 0;
+      transform: rotate(403deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(25) {
+      left: -119px;
+      top: -51px;
+      opacity: 0;
+      transform: rotate(157deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(26) {
+      left: -219px;
+      top: -44px;
+      opacity: 0;
+      transform: rotate(-326deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(27) {
+      left: -62px;
+      top: -110px;
+      opacity: 0;
+      transform: rotate(583deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(28) {
+      left: -218px;
+      top: -187px;
+      opacity: 0;
+      transform: rotate(479deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(29) {
+      left: -129px;
+      top: -54px;
+      opacity: 0;
+      transform: rotate(116deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(30) {
+      left: -193px;
+      top: -227px;
+      opacity: 0;
+      transform: rotate(-411deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(31) {
+      left: -178px;
+      top: -109px;
+      opacity: 0;
+      transform: rotate(-307deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(32) {
+      left: -160px;
+      top: -150px;
+      opacity: 0;
+      transform: rotate(441deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(33) {
+      left: -98px;
+      top: -89px;
+      opacity: 0;
+      transform: rotate(329deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(34) {
+      left: -126px;
+      top: -100px;
+      opacity: 0;
+      transform: rotate(-108deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(35) {
+      left: -53px;
+      top: -223px;
+      opacity: 0;
+      transform: rotate(-451deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(36) {
+      left: -107px;
+      top: -121px;
+      opacity: 0;
+      transform: rotate(-200deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(37) {
+      left: -8px;
+      top: -83px;
+      opacity: 0;
+      transform: rotate(-376deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(38) {
+      left: 0px;
+      top: -22px;
+      opacity: 0;
+      transform: rotate(24deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(39) {
+      left: -2px;
+      top: -97px;
+      opacity: 0;
+      transform: rotate(348deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(40) {
+      left: -71px;
+      top: -41px;
+      opacity: 0;
+      transform: rotate(591deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(41) {
+      left: -151px;
+      top: -93px;
+      opacity: 0;
+      transform: rotate(351deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(42) {
+      left: -5px;
+      top: -24px;
+      opacity: 0;
+      transform: rotate(-448deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(43) {
+      left: -196px;
+      top: -129px;
+      opacity: 0;
+      transform: rotate(-169deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(44) {
+      left: -205px;
+      top: -169px;
+      opacity: 0;
+      transform: rotate(-108deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(45) {
+      left: -214px;
+      top: -208px;
+      opacity: 0;
+      transform: rotate(-125deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(46) {
+      left: -225px;
+      top: -184px;
+      opacity: 0;
+      transform: rotate(-234deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(47) {
+      left: -218px;
+      top: -54px;
+      opacity: 0;
+      transform: rotate(-231deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(48) {
+      left: -192px;
+      top: -108px;
+      opacity: 0;
+      transform: rotate(306deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(49) {
+      left: -63px;
+      top: -98px;
+      opacity: 0;
+      transform: rotate(228deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(50) {
+      left: -160px;
+      top: -148px;
+      opacity: 0;
+      transform: rotate(-470deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(51) {
+      left: -61px;
+      top: -89px;
+      opacity: 0;
+      transform: rotate(-408deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(52) {
+      left: -193px;
+      top: -144px;
+      opacity: 0;
+      transform: rotate(-234deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(53) {
+      left: -12px;
+      top: -175px;
+      opacity: 0;
+      transform: rotate(-3deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(54) {
+      left: -15px;
+      top: -120px;
+      opacity: 0;
+      transform: rotate(79deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(55) {
+      left: -188px;
+      top: -140px;
+      opacity: 0;
+      transform: rotate(59deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(56) {
+      left: -18px;
+      top: -64px;
+      opacity: 0;
+      transform: rotate(-270deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(57) {
+      left: -119px;
+      top: -65px;
+      opacity: 0;
+      transform: rotate(87deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(58) {
+      left: -108px;
+      top: -106px;
+      opacity: 0;
+      transform: rotate(430deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(59) {
+      left: -2px;
+      top: -81px;
+      opacity: 0;
+      transform: rotate(-445deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(60) {
+      left: -106px;
+      top: -171px;
+      opacity: 0;
+      transform: rotate(586deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(61) {
+      left: -125px;
+      top: -81px;
+      opacity: 0;
+      transform: rotate(430deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(62) {
+      left: -25px;
+      top: -131px;
+      opacity: 0;
+      transform: rotate(581deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(63) {
+      left: -58px;
+      top: -33px;
+      opacity: 0;
+      transform: rotate(-99deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(64) {
+      left: -148px;
+      top: -226px;
+      opacity: 0;
+      transform: rotate(307deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(65) {
+      left: -60px;
+      top: -200px;
+      opacity: 0;
+      transform: rotate(-76deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(66) {
+      left: -109px;
+      top: -159px;
+      opacity: 0;
+      transform: rotate(-237deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(67) {
+      left: -61px;
+      top: -66px;
+      opacity: 0;
+      transform: rotate(584deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(68) {
+      left: -207px;
+      top: -16px;
+      opacity: 0;
+      transform: rotate(350deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(69) {
+      left: -79px;
+      top: -132px;
+      opacity: 0;
+      transform: rotate(168deg) !important;
+    }
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__left .firework .firework_part:nth-of-type(70) {
+      left: -9px;
+      top: -157px;
+      opacity: 0;
+      transform: rotate(330deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(1) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(377deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(2) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-196deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(3) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(450deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(4) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-445deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(5) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-492deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(6) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(529deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(7) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(19deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(8) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(394deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(9) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(283deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(10) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-220deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(11) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(51deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(12) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-536deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(13) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-205deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(14) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(7deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(15) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(415deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(16) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-592deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(17) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(469deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(18) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-446deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(19) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(365deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(20) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-187deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(21) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-145deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(22) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(511deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(23) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(65deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(24) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-251deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(25) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(144deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(26) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-124deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(27) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(166deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(28) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(366deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(29) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(358deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(30) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-435deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(31) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-288deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(32) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-331deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(33) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-107deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(34) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-408deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(35) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-327deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(36) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-257deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(37) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(348deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(38) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-132deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(39) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(596deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(40) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-315deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(41) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-271deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(42) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-251deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(43) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(567deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(44) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-223deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(45) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-425deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(46) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(14deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(47) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(383deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(48) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-265deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(49) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-368deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(50) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-277deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(51) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(461deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(52) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(404deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(53) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(268deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(54) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-394deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(55) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(387deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(56) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(475deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(57) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(579deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(58) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-327deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(59) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-455deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(60) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-413deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(61) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-4deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(62) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-384deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(63) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-414deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(64) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-362deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(65) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(112deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(66) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(420deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(67) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-560deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(68) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-25deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(69) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(-450deg) !important;
+    }
+    body .ui_inner__selection input[type=checkbox]:checked + label .add .firework_part:nth-of-type(70) {
+      left: 277px;
+      top: -186px;
+      opacity: 1;
+      transform: rotate(177deg) !important;
+    }
     body .ui_inner .ui_inner__slider {
       pointer-events: none;
     }
