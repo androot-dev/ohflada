@@ -275,7 +275,12 @@
 <!--cambiar posicios de columnas moviendo order-md-?-->
 <div class="page-width row align-items-start">
     {% if section.settings.logo %}
-          <div  data-aos="fade-up" class="col-md-4 order-1 container-column-logo order-md-1 col-12 f-center flex-wrap flex-column ">
+          <div  data-aos="fade-up" class="col-md-4 
+            order-1 container-column-logo 
+            {{section.settings.logo_position}}
+            col-12 
+            f-center flex-wrap 
+            flex-column ">
               <div class="container-logo-section">
 			
 				<div class="row justify-content-center">
@@ -298,8 +303,21 @@
     
     
     <div data-aos-delay="100" data-aos="fade-up" class="
-		col-md-4 
+		col-md-4
+        {% if logo_position == "start" %}
+        
 		order-md-2
+
+        {% elsif logo_position == "center" %}
+
+        order-md-1
+
+         {% elsif logo_position == "end" %}
+
+         order-md-2
+
+        {% endif; %}
+
 		order-3
 		col-12 
 		d-flex
@@ -332,7 +350,20 @@
 
 		<div data-aos-delay="150" data-aos="fade-up" class="
 			order-2
-			order-md-3
+			 {% if logo_position == "start" %}
+        
+        		order-md-3
+        
+                {% elsif logo_position == "center" %}
+        
+                order-md-3
+        
+                 {% elsif logo_position == "end" %}
+        
+                 order-md-2
+        
+              {% endif; %}
+
 			col-md-4
 			col-12
 			container-quick-links
@@ -467,19 +498,19 @@
           "label": "Logo Position",
           "options": [
             {
-              "value": "order-md-1",
+              "value": "start",
               "label": "Logo Start"
             },
             {
-              "value": "order-md-2",
+              "value": "center",
               "label": "Logo center"
             },
             {
-              "value": "col-md-3",
+              "value": "end",
               "label": "Logo End"
             }
           ],
-          "default": "order-md-1"
+          "default": "start"
         },
 		{
 			"type": "color",
