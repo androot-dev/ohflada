@@ -7394,7 +7394,7 @@ html {
   .title-section.align-items-end, .title-section.align-items-start{
     align-items: center !important;
   }
-  .title-section.align-items-end h1, .title-section.align-items-end h2, p, .p{
+  .title-section.align-items-end h1, .title-section.align-items-end h2{
     text-align: center;
   }
 }
@@ -7403,6 +7403,11 @@ p, .p{
   font-weight: var(--paragraph-weight);
   color: var(--paragraph);
   margin-bottom: 0;
+}
+@media screen and (max-width: 767px){
+  p, .p{
+    text-align: center;
+  }
 }
 a, .a{
   font-weight: var(--paragraph-weight);
