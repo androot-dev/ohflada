@@ -354,10 +354,9 @@
  
  
  <div class='ui page-width-md d-none d-md-block'>
-  {% for block in blocks %}
-    {% if block.type == "product" %}
     <div class='ui_inner'>
-     
+      {% for block in blocks %}
+        {% if block.type == "product" %}
           
 
 
@@ -391,9 +390,9 @@
           </div>
         </label> 
       </div>
+      {% endif %}
+    {% endfor %}
     </div>
-  {% endif %}
-{% endfor %}
   </div>
 
   <div class="ui_inner owl-carousel d-flex d-md-none">
