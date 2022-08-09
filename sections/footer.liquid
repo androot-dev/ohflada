@@ -362,19 +362,19 @@
 
 		<div data-aos-delay="150" data-aos="fade-up" class="
 			order-2
-			 {% if logo_position == "start" %}
+			 {% if section.settings.logo_position == "start" %}
         
-        		order-md-3
-        
-                {% elsif logo_position == "center" %}
-        
-                order-md-3
-        
-                 {% elsif logo_position == "end" %}
-        
-                 order-md-2
-        
-              {% endif; %}
+		order-md-3
+
+        {% elsif section.settings.logo_position == "center" %}
+
+        order-md-3
+
+         {% elsif section.settings.logo_position == "end" %}
+
+         order-md-2
+
+        {% endif; %}
 
 			col-md-4
 			col-12
