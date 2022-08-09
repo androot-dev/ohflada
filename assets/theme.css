@@ -7448,3 +7448,25 @@ a, .a{
 .font-title{
   font-family: "fuente-titulo" !important;
 }
+
+
+a, .a {
+  color: var(--secondary-dark);
+  text-decoration: none !important;
+  transition: color 0.2s ease-in-out;
+}
+
+i, li, span {
+  transition: color 0.2s linear;
+}
+
+a:hover, .a:hover {
+  color: var(--primary);
+}
+a:hover i, .a:hover i {
+  color: var(--primary);
+}
+
+li:hover > i, li:hover > span {
+  color: var(--primary);
+}
