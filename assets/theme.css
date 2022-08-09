@@ -7409,3 +7409,10 @@ a, .a{
   color: var(--primary);
   text-decoration: none;
 }
+.shadow{
+  box-shadow: var(--shadow);
+
+}
+.radius{
+  border-radius: var(--radius);
+}
