@@ -2,9 +2,9 @@
   <div class="container-fluid position-relative py-section" style="background-image:url({{ section.settings.image | image_url }})">
     <div class="title-section align-items-center">
       <h1 class="title-primary">{{ section.settings.title-delivery }}</h1>
-      
+       <h2 class="title-secondary">{{ section.settings.subtitle }}</h2>
     </div>
-    <div class="container-icon w-100 d-flex justify-content-center my-4">
+    <div class="container-icon w-100 d-flex justify-content-center mt-4">
       {%  if section.settings.icon1 != blank %}
       <i class="{{ section.settings.icon1 }}"></i>
         {%  endif %}
@@ -15,9 +15,7 @@
        <i class="{{ section.settings.icon3 }}"></i>
          {%  endif %}
     </div>
-    <div class="title-section align-items-center">
-      <h2 class="title-secondary">{{ section.settings.subtitle }}</h2>
-    </div>
+ 
   </div>
   <style>
     .delivery .container-icon  i:not(:first-child) {
