@@ -18,7 +18,7 @@
 
 .reviews::before{
  content: '';
- background: rgba(0, 0, 0, 0.6); /*OVERLAY*/
+ background: {{section.settings.overlay}}; /*OVERLAY*/
  position: absolute;
  height: 200%;
  width: 100%;
@@ -224,6 +224,11 @@
       "type": "url",
       "id": "button_link-2",
       "label": "Button Link"
+      },
+       {
+      "type": "color_background",
+      "id": "overlay",
+      "label": "Overlay"
       }
 
     ],
