@@ -681,6 +681,11 @@
           "title-section": "Instagram Feed",
           "subtitle": "Follow us now and don't miss our best works"
         }
+      },
+      "166013673778d6d958": {
+        "type": "instagram_feed_story",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
@@ -692,6 +697,7 @@
       "1637994307955440a5",
       "1660096450bfda049e",
       "16601195097933f7af",
+      "166013673778d6d958",
       "166011570480c04ade"
     ]
   },
