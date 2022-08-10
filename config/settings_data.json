@@ -354,11 +354,19 @@
               "name_benefit": "Economy",
               "icon": "fa fa-coins"
             }
+          },
+          "0cd2bcec-13e3-41ff-bdce-80e316433b88": {
+            "type": "benefits",
+            "settings": {
+              "name_benefit": "Quality",
+              "icon": "fa-solid fa-cake-candles"
+            }
           }
         },
         "block_order": [
           "4acc595d-e543-452f-b032-1371a97279ef",
-          "b563d7d4-ba67-46e9-a7f9-00d980316036"
+          "b563d7d4-ba67-46e9-a7f9-00d980316036",
+          "0cd2bcec-13e3-41ff-bdce-80e316433b88"
         ],
         "settings": {
           "title_channels": "Benefits"
