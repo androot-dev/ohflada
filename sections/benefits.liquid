@@ -136,7 +136,7 @@
                                   <div class="col-md-6 col-6 ">
                                     {% if block.settings.icon != blank %}
                                       <i class="{{block.settings.icon}}">
-                                      <p> {{ section.settings.channel_1 }}</p>
+                                      <p> {{ block.settings.name_benefit }}</p>
                                     {% else %}
                                         <img src="{{ section.settings.image_channel_1 | img_url: 'master' }}" loading="lazy" alt="">  
                                     {% endif %} 
