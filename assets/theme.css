@@ -7647,6 +7647,7 @@ h1{
     justify-content: center;
     align-items: center;
     font-size: 75px;
+    cursor:pointer;
 }
 
 .playBtn:hover, .playBtn-off:hover {
