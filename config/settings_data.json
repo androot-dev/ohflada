@@ -671,14 +671,6 @@
           "title-section": "Subscribe",
           "subtitle": "Promotions, new products, and sales. Directly to your inbox"
         }
-      },
-      "1660118209999c3822": {
-        "type": "instafeed",
-        "settings": {
-          "heading_size": 16,
-          "feed_width": 100,
-          "html_area": ""
-        }
       }
     },
     "content_for_index": [
@@ -689,7 +681,6 @@
       "163767578637edbf32",
       "1637994307955440a5",
       "1660096450bfda049e",
-      "1660118209999c3822",
       "166011570480c04ade"
     ]
   },
