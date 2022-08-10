@@ -7628,3 +7628,23 @@ body {
 h1{
   text-transform: capitalize;
 }
+.playBtn, .playBtn-off {
+  opacity: 0.8;
+  transition: transform 0.2s ease-in-out;
+  position: absolute;
+  width: 60px;
+  height: 70px;
+  /*background-image: url("../playBtn.png");*/
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(1.5);
+  background-position: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  z-index: 4;
+}
+
+.playBtn:hover, .playBtn-off:hover {
+  transform: scale(1.3);
+}
