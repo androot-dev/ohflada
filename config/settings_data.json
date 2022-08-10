@@ -277,7 +277,7 @@
         "type": "hero-video",
         "settings": {
           "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/2c5fe400e9d14ed990dc864cac28abe5.mp4",
-          "overlay": "linear-gradient(284deg, rgba(249, 157, 153, 0.39), rgba(237, 214, 208, 0.6) 99%)",
+          "overlay": "linear-gradient(284deg, rgba(249, 157, 153, 0.19), rgba(245, 228, 224, 0.39) 99%)",
           "video_link-2": "",
           "title": "Only choose the best for you",
           "sub-title": "Life is a Change",
