@@ -575,7 +575,7 @@
             "type": "image-transparency",
             "settings": {
               "image": "shopify:\/\/shop_images\/272410440_109519301647319_5118707330302706591_n-removebg-preview_ce47fd84-6dcf-4ba3-8b4f-b4c3122a654d.png",
-              "top": -4,
+              "top": 24,
               "left": 43,
               "width": 400,
               "height": 350,
