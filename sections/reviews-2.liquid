@@ -17,7 +17,9 @@
  }
 
 .reviews::before{
+{% if section.settings.overlay != blank %}
  content: '';
+{%  endif %}
  background: {{section.settings.overlay}}; /*OVERLAY*/
  position: absolute;
  height: 200%;
