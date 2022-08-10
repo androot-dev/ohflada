@@ -1,3 +1,4 @@
+
 <style>
    
 .reviews{
@@ -90,7 +91,9 @@
   background: white;
   padding: 0 20px;
   border: 1px solid rgba(0, 0, 0, 0.02);
-  box-shadow: var(--shadow);
+  -webkit-box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14);
+  box-shadow: rgba(255,0,0, 0.4) -5px 5px, rgba(255,0,0, 0.3) -10px 10px, rgba(255,0,0, 0.2) -15px 15px, rgba(255,0,0, 0.1) -20px 20px, rgba(255,0,0, 0.05) -25px 25px;  
   -webkit-border-radius: 5px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
@@ -98,8 +101,6 @@
   z-index: 3; 
   margin-left: 20px;
   margin-bottom: 20px;
-  width: 400px;
-  height: 350px;
 
 }
   
@@ -131,13 +132,18 @@
   
 @media (max-width: 768px) {
   .testimony-wrap { 
-    margin-left: 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+   margin-right: 20px;
 
-  }
 }
-
+}
+.scanfcode
+{
+ 
+  margin: 50px 40px;
+ 
+}
 
 </style>
 
@@ -155,46 +161,45 @@
       <div class="col-md-8">
         
         <div class="owl-carousel owl-review">
-           {% for block in section.blocks %}  
-           {% if block.type == "text"%}         
-          <div class="item">      
-                <div class="testimony-wrap py-4 mb-5">
-                    <div class="text">
-                          <p class="star">
-                              <span class="fa fa-star"></span>
-                              <span class="fa fa-star"></span>
-                              <span class="fa fa-star"></span>
-                              <span class="fa fa-star"></span>
-                              <span class="fa fa-star"></span>
-                          </p>
-                          <p class="mb-4">{{  block.settings.block_text}}</p>
-                          <div class="d-flex align-items-center">
-                            <div class="user-img" style="background-image: url({{ block.settings.image-customer | img_url: 'master' }}); background-size: cover"></div>
-                            <div class="pl-3">
-                                <p class="name">{{block.settings.text}}</p>
-                                <span class="position">Customer</span>
-                            </div>
-                        </div>
-                    </div>
+           {% for block in section.blocks %}           
+            <div class="item">      
+         <div class="testimony-wrap py-4 mb-5">
+              <div class="text">
+                 <p class="star">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </p>
+                <p class="mb-4">{{  block.settings.block_text}}</p>
+                <div class="d-flex align-items-center">
+                   <div class="user-img" style="background-image: url({{ block.settings.image-customer | img_url: 'master' }}); background-size: cover"></div>
+                   <div class="pl-3">
+                      <p class="name">{{block.settings.text}}</p>
+                      <span class="position">Customer</span>
                   </div>
+              </div>
           </div>
-        {% endif %}
+      </div>
+          </div>
           {% endfor %}
-        </div>
+                  </div>
+        
+         
       </div>
       <div class="col-md-8 text-center">
-         <a href="{{ section.settings.button_link }}" class="btn mt-5" data-aos="fade-up" target="_blank"  style="margin-bottom: 50px">
+         <a href="{{ section.settings.button_link }}" class="scanfcode mt-5" data-aos="fade-up" target="_blank"  style="margin-bottom: 50px">
           {{ section.settings.button_label }} 
         </a> 
         <div class="col-12 d-lg-none d-block mb-5 "></div>
-        <a href="{{ section.settings.button_link-2 }}" class="btn mt-5" data-aos="fade-up" target="_blank" >
+        <a href="{{ section.settings.button_link-2 }}" class="scanfcode mt-5" data-aos="fade-up" target="_blank" >
           {{ section.settings.button_label-2 }} 
         </a>
       </div>
     </div>
   </div>
 </section>
-
 
 
 
