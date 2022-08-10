@@ -474,7 +474,8 @@ FIN TRIANGULOS ADORNOS*/
     </div>
 </div>    
 </div>
- <div class="icons-contact text-right">        
+ <div class="icons-contact text-right">      
+   
     <a href="{{ settings.social_facebook_link }}" target="_blank" >
       <i class="fab fa-facebook-f" aria-hidden="true"></i>   
     </a>    
@@ -487,8 +488,10 @@ FIN TRIANGULOS ADORNOS*/
     <a href="{{ settings.social_instagram_link }}" target="_blank">
 	 <i class="fab fa-youtube" aria-hidden="true"></i>   
    </a>
+   {% if section.settings.hour-link != blank %}
     <a target="_blank" href="{{ section.settings.hour-link}}" class="border-left">&nbsp;<i class="fas fa-clock" data-toggle="tooltip" data-placement="top" title="{{ section.settings.hour}}"></i></a>
-    <a target="_blank" href="{{ section.settings.email-link}}"><i class="fa fa-envelope" data-toggle="tooltip" data-placement="top" title="{{ section.settings.email}}"></i></a>
+   {%  endif  %}
+     <a target="_blank" href="{{ section.settings.email-link}}"><i class="fa fa-envelope" data-toggle="tooltip" data-placement="top" title="{{ section.settings.email}}"></i></a>
     <a target="_blank" href="{{ section.settings.telephone-link}}"><i class="fa fa-phone" data-toggle="tooltip" data-placement="top" title="{{ section.settings.telephone}}"></i></a>
     <a target="_blank" href="{{ section.settings.location-link}}"><i class="fa fa-map-marker-alt" data-toggle="tooltip" data-placement="top" title="{{ section.settings.location}}"></i></a>
                 
