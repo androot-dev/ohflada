@@ -7406,6 +7406,12 @@ html {
   h1, h2, h3, h4, h5, p, .p{
     text-align: center;
   }
+   .title-section h1{
+     font-size: 30px;
+   }
+   .title-section h2{
+      font-size: 19px;
+   }
 }
 p, .p{
   font-size: var(--paragraph-size);
