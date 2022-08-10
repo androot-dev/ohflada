@@ -1,0 +1,281 @@
+{%- style -%}
+.section-{{ section.id }}-padding {
+  padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+  padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+}
+.section-{{ section.id }} {
+  height:auto;
+}
+
+{% for block in section.blocks %}
+  {% if block.type == "image-transparency" %}
+      .section-{{ section.id }}-img-transparency{
+          position:relative;
+      }
+    .section-{{ section.id }}-img-transparency::before{
+		content: "";
+        width: {{block.settings.width}}px;
+    	height: {{block.settings.height}}px;
+        background-image:url("{{block.settings.image | img_url : "master" }}");
+        position:absolute;
+
+        top: {{block.settings.top}}%;
+        left: {{block.settings.left}}%;
+        z-index: 0;
+        opacity: 0.1;
+        background-size: cover;
+	  }
+	 @media screen and (max-width: 768px) {
+		.section-{{ section.id }}-img-transparency::before{
+
+				width: 90%;
+    			height: 126px;
+				top: 33%;
+				background-size:contain;
+				background-repeat: no-repeat;
+
+		}
+	 }
+	 {% if block.settings.hidden_mobile %}
+	  @media screen and (max-width: 930px) {
+		.section-{{ section.id }}-img-transparency::before{
+			display:none;
+		}
+	  }
+	{% endif %}
+    
+
+  {% endif %}
+{% endfor %}
+
+
+@media screen and (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+}
+.subscribe-form{
+	padding:  {{ section.settings.padding_y }}px 30px  {{ section.settings.padding_y }}px 30px;
+}
+.subscribe-form .btn-secondary{
+	border-radius: 0px;
+    padding: 5px 30px;
+    max-width: 180px;
+    margin-top: 19px;	
+    font-size: 2rem;
+	height: 45px;
+}
+.subscribe-form button{
+	font-weight: 900;
+}
+.subscribe-form #email{
+	width: 50%;
+	max-width:400px;
+	min-width:250px;	
+	height: 50px;	
+}
+.subscribe-form #email::placeholder{
+	font-weight: 400;
+}
+.section-{{ section.id }}{
+{% if section.settings.image_background  %}
+	background-image: url("{{ section.settings.image_background |img_url : "master" }}");
+{% endif %}
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:center;
+	position: relative;
+	z-index: 0;
+}
+.section-{{ section.id }}::after{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	background: {{ section.settings.background-color }};
+	content: ""; 
+	z-index: -1;
+}
+.subscribe .subtitle h2{
+	font-weight: 700;
+    color: var(--gray-color);
+}
+.subscribe .section-title h1{
+	background: {{section.settings.background-title}};
+}
+{%- endstyle -%}
+
+  <section class="section-{{ section.id }}-img-transparency subscribe container-fluid flex-wrap  section-{{ section.id }}-padding section-{{ section.id }}">
+   
+    
+    <div class=" section-title pl-4 row justify-content-center">
+      <h1 class="page-width"> {{ section.settings.title-section }} </h1>
+    </div>
+    <div class="px-5 pt-3 d-flex subtitle row justify-content-center">
+    	  <h2> {{section.settings.subtitle}}</h2>
+    </div>
+   
+    
+    
+   	{%- form 'contact', id: 'ContactForm', class: 'subscribe-form form-inline form-row justify-content-center' -%}
+                    <input type="text" class="d-none" value="New subscribed user" name="contact[body]" >
+                    <input type="email" placeholder="Email" required name="contact[email]" id="email" class=" px-3 page-width col-12 col-sm-8 m-sm-0 m-3 input-primary form-control">
+                    <button type="submit" class="ml-4 btn-secondary col-12 col-sm-4  btn-3d">Subscribe</button>
+                    {%- if form.posted_successfully? -%}
+                        <div class="col-12 text-center d-flex justify-content-center form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</div>
+                      {%- elsif form.errors -%}
+                        <div class="col-12 text-center d-flex justify-content-center form__message">
+                          <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>{% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}</h2>
+                        </div>
+                        <ul class="col-12 text-center d-flex justify-content-center form-status-list caption-large" role="list">
+                          <li>
+                            <a href="#ContactForm-email" class="link">
+                              {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+                            </a>
+                          </li>
+                        </ul>
+                      {%- endif -%}
+                {%- endform -%}
+  </section>
+
+{% schema %}
+{
+  "name": "Custom Subscribe",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+	{
+		"type": "image_picker",
+		"id": "image_background",
+		"label": "bakcground image"
+	},
+    {
+      "type": "header",
+      "content": "Custom Colors"
+    },
+    {
+        "id": "background-color",
+        "type": "color_background",
+        "label": "Background Color"
+    },
+	{
+        "id": "background-title",
+        "type": "color_background",
+        "label": "Background Title"
+    },
+	{
+      "type": "range",
+      "id": "padding_y",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Vertical Padding Form",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    },
+	{
+		"type": "text",
+		"id": "title-section",
+		"label": "Title",
+		"default": "Subscribe"
+	},
+	{
+		"type": "text",
+		"id": "subtitle",
+		"label": "Subtitle",
+		"default": "Promotions, new products, and sales. Directly to your inbox"
+	}
+  ],
+	"blocks": [
+		{
+			"type": "image-transparency",
+			"limit": 1,
+			"name": "Image with transparency",
+			"settings": [
+				{
+				"type" : "image_picker",
+				"id": "image",
+				"label": "Select a image"
+				},
+				{
+                  "type": "range",
+                  "id": "top",
+                  "min": -50,
+                  "max": 100,
+                  "step": 2,
+                  "unit": "%",
+                  "label": "Top Position",
+                  "default": 40
+                },
+				{
+                  "type": "range",
+                  "id": "left",
+                   "min": -50,
+                  "max": 100,
+                  "step": 1.5,
+                  "unit": "%",
+                  "label": "Left Position",
+                  "default": 40
+                },
+				{
+                  "type": "range",
+                  "id": "width",
+                  "min": 10,
+                  "max": 1000,
+                  "step": 10,
+                  "unit": "px",
+                  "label": "Width",
+                  "default": 100
+                },
+				{
+                  "type": "range",
+                  "id": "height",
+                   "min": 10,
+                  "max": 1000,
+                  "step": 10,
+                  "unit": "px",
+                  "label": "Height",
+                  "default": 100
+                },
+				{
+					"type": "checkbox",
+					"id": "hidden_mobile",
+					"label": "Hidden in Mobile",
+					"default": true
+				}
+			]
+		}
+	],
+  "presets": [
+    {
+      "name": "Custom Subscribe"
+    }
+  ]
+}
+{% endschema %}
