@@ -378,130 +378,169 @@ header .site-header__cart-count {
         </div>
     </div>
 
-    <!-- Header Area Start -->
-    <header class="header-area">
-   {% if section.settings.message %}
-    {% if section.settings.home_page_only == false or request.page_type == 'index' %}     
-      <div class="announcement-bar" role="region" aria-label="{{ 'sections.header.announcement_bar_label' | t }}">
-        {%- unless section.settings.message_link == blank -%}
-          <a href="{{ section.settings.message_link }}" class="announcement-bar__link">
-        {%- endunless -%}
-            <p class="announcement-bar__message">{{ section.settings.message_text | escape }}</p>
-        {%- unless section.settings.message_link == blank -%}
-          </a>
-        {%- endunless -%}
+    <header class="scroll-tracking w-100 in-top">
+      <div class="h-100 container-fluid d-flex align-items-center justify-content-between page-width">
+          <a role="logo" href="home" class=" logo-header"></a>
+
+          <ul id="primary-menu" class=" d-none d-md-flex f-center list-none mr-all-2 p-0"><li id="menu-item-1537" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1537"><a href="http://websitetest1.guiwebprogramming.com/about/"><i class="fa bx fa-solid fa-circle-info"></i>About</a></li>
+          <li id="menu-item-1538" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1538"><a href="http://websitetest1.guiwebprogramming.com/services/"><i class="fa bx fa-solid fa-helmet-safety"></i>Services</a></li>
+          <li id="menu-item-1536" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1536"><a href="http://websitetest1.guiwebprogramming.com/gallery/"><i class="fa bx fa-solid fa-images"></i>Gallery</a></li>
+          <li id="menu-item-1535" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1535"><a href="http://websitetest1.guiwebprogramming.com/contact-us/"><i class="fa bx fa-solid fa-envelope-circle-check"></i>Contact Us</a></li>
+          <li class="text-link d-flex "><div class="separator"></div> <a class="d-flex align-items-center" href="tel:+17042549907" title="" data-bs-toggle="tooltip" data-bs-placement="bottom" target="" aria-label="(704) 254 9907" data-bs-original-title="(704) 254 9907"> 
+                      <i class="me-2 fa-solid fa-phone text-link-icon">
+                      
+                      </i>
+
+                      Call Now                            
+                  </a> </li></ul>
+                                                                                          <script>
+          document.addEventListener('DOMContentLoaded', function() {
+              var elem = document.createElement('li');
+              elem.className = 'text-link d-flex ';
+
+              elem.innerHTML =
+
+                  `<div class="separator"></div> <a class="d-flex align-items-center" 
+                      href="tel:+17042549907" title="(704) 254 9907" data-bs-toggle="tooltip" 
+                      data-bs-placement="bottom"
+                      target="" aria-label="(704) 254 9907"> 
+                      <i class="me-2 fa-solid fa-phone text-link-icon">
+                      
+                      </i>
+
+                      Call Now                            
+                  </a> `;
+              // insertar despues del ultimo item
+              document.querySelector('#primary-menu').appendChild(elem);
+          });
+          </script>
+
+
+          <ul class="d-flex d-md-none f-center list-none mr-all-1 p-0">
+              <li>
+                  <button onclick="openMenu()" class="bg-transparent" style="border:none;">
+                      <i class="fas fa-bars"></i>
+                      <div class="search-icon">
+                        <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer>
+                         <i class="fas fa-search"></i>
+                        <span class="icon__fallback-text">{{ 'layout.navigation.search' | t }}</span>
+                        </button>
+                      </div>
+                      <div class="cart-icon" >
+                        <a href="{{ routes.cart_url }}" class="site-header__icon site-header__cart text-light" >
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
+                        <div id="CartCount" class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden" data-cart-count-bubble>
+                          <span data-cart-count>{{ cart.item_count }}</span>
+                          <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
+                        </div>
+                        </a>
+                      </div>
+                  </button>
+              </li>
+          </ul>
+          <style>
+          :root {
+              --header-height: 115px;
+          }
+
+          header #primary-menu i:not(.text-link-icon) {
+              display: none;
+          }
+
+          header .text-link a {
+              animation: titilar 1.3s infinite;
+          }
+
+          header .separator {
+              background: currentColor;
+              width: 1px;
+              height: auto;
+              opacity: 0.5;
+              margin-right: 17px;
+          }
+
+          header {
+              --logo-width: 150px;
+              --logo-height: 96px;
+              --logo-width-fixed: 150px;
+              --logo-height-fixed: 96px;
+              --shadow-header: 0px -20px 20px 9px #898989 !important;
+              --header-text-size: 18px;
+              z-index: 10;
+
+          }
+
+          header.in-top .logo-header {
+               background-image: url("http://websitetest1.guiwebprogramming.com/wp-content/uploads/2022/07/NEW-MILLENNIALS-LOGO-PDF_page-0001-removebg-preview.png");
+                              }
+
+          header .logo-header {
+               background-image:url("http://websitetest1.guiwebprogramming.com/wp-content/uploads/2022/07/NEW-MILLENNIALS-LOGO-PDF_page-0001-removebg-preview.png");
+                              }
+
+          header.in-top .logo-header {
+              width: var(--logo-width);
+              height: var(--logo-height);
+          }
+
+          header * {
+              color: var(--primary-dark);
+              font-family: var(--font-heading-family);
+              font-size: var(--header-text-size);
+              font-weight: 400;
+
+          }
+
+          header a:hover {
+              color: var(--primary);
+          }
+
+
+
+          header.in-top {
+              bottom: 0;
+              top: auto;
+              position: absolute;
+              box-shadow: none;
+          }
+
+          header {
+              height: var(--header-height);
+              background: var(--secondary);
+              position: fixed;
+              top: 0;
+              border-top: solid 4.5px var(--primary);
+              font-size: 16px;
+              box-shadow: var(--shadow-header);
+          }
+
+
+          .logo-header {
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+              width: var(--logo-width-fixed);
+              height: var(--logo-height-fixed);
+              transition: all 0.2s ease-in-out;
+              /*position: absolute;*/
+          }
+
+          @media screen and (max-width: 767px) {
+              header {
+                  top: 34px;
+              }
+          }
+          </style>
+
+
+
+
+
       </div>
 
-    {% endif %}
-  {% endif %}
-
-        <!-- Main Header Start -->
-        <div class="main-header-area">
-            <div class="classy-nav-container breakpoint-off">
-                <div class="container">
-                    <!-- Classy Menu -->
-                    <nav class="classy-navbar justify-content-between" id="alimeNav">
-
-                        <!-- Logo -->
-                        <a class="nav-brand" href="{{ routes.root_url }}"><img src="{{ section.settings.logo | img_url: 'master' }}" alt="" style="max-width: {{ section.settings.logo_max_width }}px"></a>
-
-                        <!-- Navbar Toggler -->
-                        <div class="classy-navbar-toggler">
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
-                        </div>
-
-                        <!-- Menu -->
-                        <div class="classy-menu">
-                            <!-- Menu Close Button -->
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                            </div>
-                            <!-- Nav Start -->
-                            <div class="classynav">
-                                <ul id="nav">
-                                   
-                                  {% include 'site-nav', linklist: section.settings.main_linklist, wrapper_class: 'site-nav--centered' %}
-
-                                   <li class="ml-5 pl-5"></li>
-                                   <li class="ml-5"></li>
-                                  
-                                  
-                                  
-                                    <!--<li><a href="">About Us</a></li>
-                                    <li><a href="#">Shop By Category</a>
-                                        <ul class="dropdown">
-                                            
-                                            <li><a href="./about.html">- About</a></li>
-                                            <li><a href="./gallery.html">- Gallery</a></li>
-                                            <li><a href="./blog.html">- Blog</a></li>
-                                            <li><a href="./single-blog.html">- Blog Details</a></li>
-                                            <li><a href="./contact.html">- Contact</a></li>
-                                            <li><a href="#">- Dropdown</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    
-                                    <li><a href="./gallery.html">Products</a></li>                                   
-                                    <li><a href="./contact.html">Contact Us</a></li>-->
-                                </ul>
-
-                                <!-- Search Icon 
-                              <div class="search-icon">
-                                <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer>
-                                 <i class="fas fa-search"></i>
-                                <span class="icon__fallback-text">{{ 'layout.navigation.search' | t }}</span>
-                                </button>
-                              </div>
-                              <div class="cart-icon" >
-                                <a href="{{ routes.cart_url }}" class="site-header__icon site-header__cart text-light" >
-                                <i class="fas fa-shopping-cart"></i>
-                                <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
-                                <div id="CartCount" class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden" data-cart-count-bubble>
-                                  <span data-cart-count>{{ cart.item_count }}</span>
-                                  <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
-                                </div>
-                                </a>
-                              </div>-->
-                            </div>
-                            <!-- Nav End -->
-                        </div>
-                    </nav>
-                      <!-- Search Icon -->
-                              <div class="search-icon">
-                                <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer>
-                                 <i class="fas fa-search"></i>
-                                <span class="icon__fallback-text">{{ 'layout.navigation.search' | t }}</span>
-                                </button>
-                              </div>
-                              <div class="cart-icon" >
-                                <a href="{{ routes.cart_url }}" class="site-header__icon site-header__cart text-light" >
-                                <i class="fas fa-shopping-cart"></i>
-                                <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
-                                <div id="CartCount" class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden" data-cart-count-bubble>
-                                  <span data-cart-count>{{ cart.item_count }}</span>
-                                  <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
-                                </div>
-                                </a>
-                              </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- Header Area End -->
-<div data-section-id="{{ section.id }}" data-section-type="header-section" data-header-section>
-  <header  role="banner">     
-        <nav class="grid__item medium-up--one-half small--hide" id="AccessibleNav" role="navigation">
-          <!--{% include 'site-nav', linklist: section.settings.main_linklist %}-->
-        </nav>
-      
   </header>
-</div>
+
 
 {% schema %}
   {
