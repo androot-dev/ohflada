@@ -554,7 +554,6 @@
             "type": "text",
             "settings": {
               "text": "Jhon Smith",
-              "image-customer": "shopify:\/\/shop_images\/272410440_109519301647319_5118707330302706591_n-removebg-preview.png",
               "block_text": "The articles they offer are incredible, they have a huge quality and above all you get it at an excellent price, without a doubt one of the best stores I have bought in, I totally recommend them"
             }
           },
@@ -562,7 +561,6 @@
             "type": "text",
             "settings": {
               "text": "Sonia Williams",
-              "image-customer": "shopify:\/\/shop_images\/272410440_109519301647319_5118707330302706591_n-removebg-preview.png",
               "block_text": "The store has the most recent articles and presents a level of innovation that is too incredible, everything you are looking for you get here, also their attention and service is one of the best I have seen, without a doubt the ideal place to do your shopping"
             }
           },
@@ -636,7 +634,9 @@
           "subtitle": "Place an order and receive it at the door of your house!",
           "image": "shopify:\/\/shop_images\/cake-icing-decoration.jpg",
           "overlay": "linear-gradient(180deg, rgba(255, 254, 254, 0.82) 2%, rgba(241, 239, 237, 0.79) 100%)",
-          "icon": "fa fa-home"
+          "icon1": "fa fa-cake",
+          "icon2": "fa-solid fa-people-carry-box",
+          "icon3": "fa-regular fa-face-laugh-beam"
         }
       },
       "166011570480c04ade": {
