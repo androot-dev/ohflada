@@ -7624,3 +7624,6 @@ body {
   justify-content: center;
   align-items: center;
 }
+h1{
+  text-transform: capitalize;
+}
