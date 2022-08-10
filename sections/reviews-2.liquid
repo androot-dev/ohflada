@@ -123,9 +123,12 @@
 
 
 <section class="reviews">
+ {%  if section.settings.image-fondo != blank  %}
   <div class="image-container">
+    
 	  <img class="img-fluid" src="{{ section.settings.image-fondo | img_url: 'master' }}"/>
    </div>
+   {% endif %}
   <div class="container">
     <div class="title-section col-12">
          <h1> {{ section.settings.title }}</h1>
