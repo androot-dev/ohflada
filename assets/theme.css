@@ -7657,7 +7657,7 @@ h1{
 }
 
 .tooltip-inner{
-  font-size: 15px;
+  font-size: 13px;
   color: white !important;
   background: #603813 !important;
       padding: 10px;
@@ -7666,6 +7666,7 @@ h1{
     align-items: center;
     justify-content: center;
   border-radius: 10px;
+  font-family:"fuente-contenido";
 }
 .bs-tooltip-top .arrow::before{
   border-top-color:#603813 !important;
