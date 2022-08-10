@@ -7659,7 +7659,7 @@ h1{
 .tooltip-inner{
   font-size: 13px;
   color: white !important;
-  background: #603813 !important;
+  background: var(--primary) !important;
       padding: 10px;
     line-height: 1;
     display: flex;
