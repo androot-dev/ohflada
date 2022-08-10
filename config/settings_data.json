@@ -639,7 +639,8 @@
         "type": "delivery",
         "settings": {
           "title-delivery": "We Have Delivery",
-          "subtitle": "Benefits"
+          "subtitle": "Benefits",
+          "image": "shopify:\/\/shop_images\/pexels-jerald-mira-6493067.jpg"
         }
       }
     },
