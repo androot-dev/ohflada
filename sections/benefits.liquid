@@ -131,10 +131,8 @@
                       {% for block in section.blocks %}
                           {% if block.type == 'benefits' %}
                             {% for channel in block.channels %}
-
                               <div class="col-md-2">
                                 <div class="row">
-
                                   <div class="col-md-6 col-6 ">
                                     {% if block.settings.icon != blank %}
                                       <i class="{{block.settings.icon}}">
