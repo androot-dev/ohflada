@@ -7643,6 +7643,10 @@ h1{
   outline: none;
   background-color: transparent;
   z-index: 4;
+  display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
 }
 
 .playBtn:hover, .playBtn-off:hover {
