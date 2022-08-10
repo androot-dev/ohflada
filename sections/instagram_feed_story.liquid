@@ -1,5 +1,26 @@
+<section class="section-{{ section.id }}">
+
+
 <div id="instagram-stories-box"></div>
 <div id="instagram-feed-box"></div>
+
+
+</section>
+
+<style>
+#instagram-feed-box > p{
+  display:none;
+}
+  .section-{{ section.id }}-padding {
+  padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+  padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+}
+.section-{{ section.id }} {
+  height:auto;
+}
+
+
+  </style>
 <script async src="https://d12oh2gzettinl.cloudfront.net/instagram-story/shopify-script-glider-local.js"></script>
 {% schema %}
 {
