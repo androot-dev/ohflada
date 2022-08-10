@@ -24,6 +24,8 @@
     "heading2-size": "20px",
     "heading2-weight": 600,
     "shadow": "rgb(255 154 154 \/ 17%) -8px -4px 14px 7px, rgb(0 0 0 \/ 23%) 0px 3px 6px",
+    "share_twitter": false,
+    "share_pinterest": false,
     "social_facebook_link": "https:\/\/www.facebook.com\/ohfladabakery",
     "social_instagram_link": "https:\/\/www.instagram.com\/ohflada_bakery\/",
     "favicon": "shopify:\/\/shop_images\/272410440_109519301647319_5118707330302706591_n-removebg-preview.png",
