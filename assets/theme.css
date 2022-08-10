@@ -7656,6 +7656,30 @@ h1{
     cursor:pointer;
 }
 
+.tooltip-inner{
+  font-size: 15px;
+  color: white !important;
+  background: #603813 !important;
+      padding: 10px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  border-radius: 10px;
+}
+.bs-tooltip-top .arrow::before{
+  border-top-color:#603813 !important;
+}
+.bs-tooltip-bottom .arrow::before{
+  border-bottom-color:#603813 !important;
+}
+.bs-tooltip-right .arrow::before{
+  border-right-color:#603813 !important;
+}
+.bs-tooltip-left .arrow::before{
+  border-left-color:#603813 !important;
+}
+
 .playBtn:hover, .playBtn-off:hover {
   transform: scale(1.3);
 }
