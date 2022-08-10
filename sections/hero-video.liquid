@@ -476,22 +476,22 @@ FIN TRIANGULOS ADORNOS*/
 </div>
  <div class="icons-contact text-right">      
     {% if settings.social_facebook_link != blank %}
-    <a href="{{ settings.social_facebook_link }}" target="_blank" >
+    <a href="{{ settings.social_facebook_link }}" target="_blank" data-toggle="tooltip" data-placement="top" title="{{ settings.user-facebook}}">
       <i class="fab fa-facebook-f" aria-hidden="true"></i>   
     </a> 
       {%  endif %}
        {% if settings.social_instagram_link != blank %}
-          <a href="{{ settings.social_instagram_link }}" target="_blank">
+          <a href="{{ settings.social_instagram_link }}" target="_blank"  data-toggle="tooltip" data-placement="top" title="{{ settings.user-instagram}}">
       	 <i class="fab fa-instagram" aria-hidden="true"></i>   
          </a> 
          {%  endif  %}
       {%  if  settings.social_twitter_link != blank  %}
-     <a href="{{ settings.social_twitter_link }}" target="_blank" >
+     <a href="{{ settings.social_twitter_link }}" target="_blank"  data-toggle="tooltip" data-placement="top" title="{{ settings.user-twitter}}">
         <i class="fab fa-twitter" aria-hidden="true"></i>   
       </a>    
     {% endif %}
     {%  if  settings.social_youtube_link != blank  %}
-    <a href="{{ settings.social_youtube_link }}" target="_blank">
+    <a href="{{ settings.social_youtube_link }}" target="_blank"  data-toggle="tooltip" data-placement="top" title="{{ section.settings.user-youtube}}">
 	 <i class="fab fa-youtube" aria-hidden="true"></i>   
    </a>
       {%  endif %}
