@@ -98,9 +98,9 @@
   
 @media (max-width: 768px) {
   .testimony-wrap { 
-  margin-left: 20px;
+  padding: 0 10px;
   margin-bottom: 20px;
-   margin-right: 20px;
+  
 
 }
 }
@@ -140,7 +140,7 @@
                      <div class="d-flex align-items-center">
                         <div class="user-img" style="background-image: url({{ block.settings.image-customer | img_url: 'master' }}); background-size: cover"></div>
                         <div class="pl-3">
-                           <p class="name">{{block.settings.text}}</p>
+                           <p class="scrollbar-0 name">{{block.settings.text}}</p>
                            <span class="position">Customer</span>
                         </div>
                      </div>
