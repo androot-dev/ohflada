@@ -14,62 +14,16 @@
     padding-bottom: {{ section.settings.padding_bottom }}px;
   }
 }
-.insta-feed-form{
-	padding:  {{ section.settings.padding_y }}px 30px  {{ section.settings.padding_y }}px 30px;
-}
-.insta-feed-form .btn-secondary{
-	border-radius: 0px;
-    padding: 5px 30px;
-    max-width: 180px;
-    margin-top: 19px;	
-    font-size: 2rem;
-	height: 45px;
-}
-.insta-feed-form button{
-	font-weight: 900;
-}
-.insta-feed-form #email{
-	width: 50%;
-	max-width:400px;
-	min-width:250px;	
-	height: 50px;	
-}
-.insta-feed-form #email::placeholder{
-	font-weight: 400;
-}
-.section-{{ section.id }}{
-{% if section.settings.image_background  %}
-	background-image: url("{{ section.settings.image_background |img_url : "master" }}");
-{% endif %}
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position:center;
-	position: relative;
-	z-index: 0;
-}
-.section-{{ section.id }}::after{
-	position:absolute;
-	width:100%;
-	height:100%;
-	top:0;
-	left:0;
-	background: {{ section.settings.background-color }};
-	content: ""; 
-	z-index: -1;
-}
-.insta-feed .subtitle h2{
-	font-weight: 700;
-    color: var(--gray-color);
-}
-.insta-feed .section-title h1{
-	background: {{section.settings.background-title}};
-}
+
 {%- endstyle -%}
 
   <section class=" insta-feed container-fluid 
     flex-wrap  section-{{ section.id }}-padding section-{{ section.id }}">
    
-
+    <div class="title-section align-items-start">
+      <h1>{{ section.settings.title-section }}</h1>
+      <h2>{{ section.settings.subtitle }}</h2>
+    </div>
 
     
   </section>
