@@ -135,7 +135,7 @@
                                 <div class="row">
                                   <div class="d-flex justify-content-center align-items-center flex-column col-md-6 col-6 px-0">
                                     {% if block.settings.icon != blank %}
-                                      <i class="{{block.settings.icon}}">
+                                      <i class="{{block.settings.icon}}"></i>
                                       <p> {{ block.settings.name_benefit }}</p>
                                     {% else %}
                                         <img src="{{ block.settings.image | img_url: 'master' }}" loading="lazy" alt="">  

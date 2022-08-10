@@ -347,10 +347,18 @@
               "image": "shopify:\/\/shop_images\/272410440_109519301647319_5118707330302706591_n-removebg-preview_ce47fd84-6dcf-4ba3-8b4f-b4c3122a654d.png",
               "icon": ""
             }
+          },
+          "b563d7d4-ba67-46e9-a7f9-00d980316036": {
+            "type": "benefits",
+            "settings": {
+              "name_benefit": "Economy",
+              "icon": "fa fa-coins"
+            }
           }
         },
         "block_order": [
-          "4acc595d-e543-452f-b032-1371a97279ef"
+          "4acc595d-e543-452f-b032-1371a97279ef",
+          "b563d7d4-ba67-46e9-a7f9-00d980316036"
         ],
         "settings": {
           "title_channels": "Benefits"
