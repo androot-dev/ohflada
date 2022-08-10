@@ -145,7 +145,7 @@
   background-color: transparent;
   padding: 0;
   height:  auto;
-  padding: 25px 0px;
+  padding: 5px 0px;
   position: relative;
   
 }
@@ -473,11 +473,35 @@ header .site-header__cart-count {
                         </div>
                     </nav>
                       <!-- Search Icon -->
-                              
+                              <div class="search-icon">
+                                <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer>
+                                 <i class="fas fa-search"></i>
+                                <span class="icon__fallback-text">{{ 'layout.navigation.search' | t }}</span>
+                                </button>
+                              </div>
+                              <div class="cart-icon" >
+                                <a href="{{ routes.cart_url }}" class="site-header__icon site-header__cart text-light" >
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
+                                <div id="CartCount" class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden" data-cart-count-bubble>
+                                  <span data-cart-count>{{ cart.item_count }}</span>
+                                  <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
+                                </div>
+                                </a>
+                              </div>
                 </div>
             </div>
         </div>
     </header>
+    <!-- Header Area End -->
+<div data-section-id="{{ section.id }}" data-section-type="header-section" data-header-section>
+  <header  role="banner">     
+        <nav class="grid__item medium-up--one-half small--hide" id="AccessibleNav" role="navigation">
+          <!--{% include 'site-nav', linklist: section.settings.main_linklist %}-->
+        </nav>
+      
+  </header>
+</div>
 
 {% schema %}
   {
@@ -515,7 +539,7 @@ header .site-header__cart-count {
         "zh-TW": "自訂商標寬度"
       },
       "min": 50,
-      "max": 150,
+      "max": 85,
       "step": 5,
       "unit": "px",
       "default": 50
