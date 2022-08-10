@@ -644,6 +644,18 @@
           "image": "shopify:\/\/shop_images\/pexels-jerald-mira-6493067.jpg",
           "overlay": "linear-gradient(180deg, rgba(239, 174, 174, 0.66), rgba(255, 255, 255, 0.85) 100%)"
         }
+      },
+      "166011570480c04ade": {
+        "type": "subscribe",
+        "settings": {
+          "background-color": "",
+          "background-title": "",
+          "padding_y": 40,
+          "padding_top": 40,
+          "padding_bottom": 52,
+          "title-section": "Subscribe",
+          "subtitle": "Promotions, new products, and sales. Directly to your inbox"
+        }
       }
     },
     "content_for_index": [
@@ -653,7 +665,8 @@
       "16376805410edcd386",
       "163767578637edbf32",
       "1637994307955440a5",
-      "1660096450bfda049e"
+      "1660096450bfda049e",
+      "166011570480c04ade"
     ]
   },
   "presets": {
