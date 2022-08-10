@@ -265,7 +265,7 @@
         "type": "header-ek",
         "settings": {
           "logo": "shopify:\/\/shop_images\/272410440_109519301647319_5118707330302706591_n-removebg-preview.png",
-          "logo_max_width": 85,
+          "logo_max_width": 125,
           "main_linklist": "main-menu",
           "message": false,
           "home_page_only": false,
