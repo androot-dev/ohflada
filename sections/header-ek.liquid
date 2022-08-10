@@ -446,9 +446,25 @@ header .site-header__cart-count {
                                             </li>
                                         </ul>
                                     </li>
-                                    
+                              
                                     <li><a href="./gallery.html">Products</a></li>                                   
                                     <li><a href="./contact.html">Contact Us</a></li>-->
+                                    <div class="search-icon">
+                                      <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer>
+                                       <i class="fas fa-search"></i>
+                                      <span class="icon__fallback-text">{{ 'layout.navigation.search' | t }}</span>
+                                      </button>
+                                    </div>
+                                    <div class="cart-icon" >
+                                      <a href="{{ routes.cart_url }}" class="site-header__icon site-header__cart text-light" >
+                                      <i class="fas fa-shopping-cart"></i>
+                                      <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
+                                      <div id="CartCount" class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden" data-cart-count-bubble>
+                                        <span data-cart-count>{{ cart.item_count }}</span>
+                                        <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
+                                      </div>
+                                      </a>
+                                    </div>
                                 </ul>
 
                                 <!-- Search Icon 
@@ -473,22 +489,7 @@ header .site-header__cart-count {
                         </div>
                     </nav>
                       <!-- Search Icon -->
-                              <div class="search-icon">
-                                <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer>
-                                 <i class="fas fa-search"></i>
-                                <span class="icon__fallback-text">{{ 'layout.navigation.search' | t }}</span>
-                                </button>
-                              </div>
-                              <div class="cart-icon" >
-                                <a href="{{ routes.cart_url }}" class="site-header__icon site-header__cart text-light" >
-                                <i class="fas fa-shopping-cart"></i>
-                                <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
-                                <div id="CartCount" class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden" data-cart-count-bubble>
-                                  <span data-cart-count>{{ cart.item_count }}</span>
-                                  <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
-                                </div>
-                                </a>
-                              </div>
+                              
                 </div>
             </div>
         </div>
@@ -539,7 +540,7 @@ header .site-header__cart-count {
         "zh-TW": "自訂商標寬度"
       },
       "min": 50,
-      "max": 85,
+      "max": 150,
       "step": 5,
       "unit": "px",
       "default": 50
