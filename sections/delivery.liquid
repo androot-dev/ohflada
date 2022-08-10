@@ -5,9 +5,15 @@
       <h2 class="title-secondary">{{ section.settings.subtitle }}</h2>
     </div>
     <div class="container-icon w-100 d-flex justify-content-center mt-4">
+      {%  if section.settings.icon1 %}
       <i class="{{ section.settings.icon }}"></i>
-       <i class="{{ section.settings.icon }}"></i>
-       <i class="{{ section.settings.icon }}"></i>
+        {%  endif %}
+      {%  if section.settings.icon2 %}
+       <i class="{{ section.settings.icon2 }}"></i>
+        {%  endif %} 
+       {%  if section.settings.icon3 %}
+       <i class="{{ section.settings.icon3 }}"></i>
+         {%  endif %}
     </div>
     
   </div>
