@@ -475,19 +475,26 @@ FIN TRIANGULOS ADORNOS*/
 </div>    
 </div>
  <div class="icons-contact text-right">      
-   
+    {% if section.settings.social_facebook_link != blank %}
     <a href="{{ settings.social_facebook_link }}" target="_blank" >
       <i class="fab fa-facebook-f" aria-hidden="true"></i>   
-    </a>    
-    <a href="{{ settings.social_instagram_link }}" target="_blank">
-	 <i class="fab fa-instagram" aria-hidden="true"></i>   
-   </a> 
-   <a href="{{ settings.social_facebook_link }}" target="_blank" >
-      <i class="fab fa-twitter" aria-hidden="true"></i>   
-    </a>    
-    <a href="{{ settings.social_instagram_link }}" target="_blank">
+    </a> 
+      {%  endif %}
+       {% if section.settings.social_instagram_link != blank %}
+          <a href="{{ settings.social_instagram_link }}" target="_blank">
+      	 <i class="fab fa-instagram" aria-hidden="true"></i>   
+         </a> 
+         {%  endif  %}
+      {%  if  section.settings.social_twitter_link != blank  %}
+     <a href="{{ settings.social_twitter_link }}" target="_blank" >
+        <i class="fab fa-twitter" aria-hidden="true"></i>   
+      </a>    
+    {% endif %}
+    {%  if  section.settings.social_youtube_link != blank  %}
+    <a href="{{ settings.social_youtube_link }}" target="_blank">
 	 <i class="fab fa-youtube" aria-hidden="true"></i>   
    </a>
+      {%  endif %}
    {% if section.settings.hour-link != blank %}
     <a target="_blank" href="{{ section.settings.hour-link}}" class="border-left">&nbsp;<i class="fas fa-clock" data-toggle="tooltip" data-placement="top" title="{{ section.settings.hour}}"></i></a>
    {%  endif  %}
