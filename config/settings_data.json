@@ -647,12 +647,28 @@
       },
       "166011570480c04ade": {
         "type": "subscribe",
+        "blocks": {
+          "badb8f52-68c8-4d56-85d4-fa6d8f41b105": {
+            "type": "image-transparency",
+            "settings": {
+              "top": 40,
+              "left": 40,
+              "width": 100,
+              "height": 100,
+              "hidden_mobile": true
+            }
+          }
+        },
+        "block_order": [
+          "badb8f52-68c8-4d56-85d4-fa6d8f41b105"
+        ],
         "settings": {
-          "background-color": "",
-          "background-title": "",
-          "padding_y": 40,
-          "padding_top": 40,
-          "padding_bottom": 52,
+          "image_background": "shopify:\/\/shop_images\/pexels-jerald-mira-6493067.jpg",
+          "background-color": "linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 6.115%, rgba(255, 255, 255, 0.96) 18%, rgba(255, 255, 255, 0.46) 100%)",
+          "background-title": "linear-gradient(54deg, rgba(114, 255, 179, 0) 14%, rgba(NaN, NaN, NaN, 1) 85%)",
+          "padding_y": 26,
+          "padding_top": 64,
+          "padding_bottom": 24,
           "title-section": "Subscribe",
           "subtitle": "Promotions, new products, and sales. Directly to your inbox"
         }
