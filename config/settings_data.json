@@ -580,6 +580,7 @@
           "514776df-a1db-402d-afa1-176929b54a6e"
         ],
         "settings": {
+          "image-fondo": "shopify:\/\/shop_images\/pexels-jerald-mira-6493067.jpg",
           "title": "Reviews",
           "subtitle": "What do our customers say",
           "button_label": "View More",
