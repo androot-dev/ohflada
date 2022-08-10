@@ -1,5 +1,48 @@
 
 <style>
+
+
+{% for block in section.blocks %}
+  {% if block.type == "image-transparency" %}
+      .section-{{ section.id }}-img-transparency{
+          position:relative;
+      }
+    .section-{{ section.id }}-img-transparency::before{
+		content: "";
+        width: {{block.settings.width}}px;
+    	height: {{block.settings.height}}px;
+        background-image:url("{{block.settings.image | img_url : "master" }}");
+        position:absolute;
+
+        top: {{block.settings.top}}%;
+        left: {{block.settings.left}}%;
+        z-index: 0;
+        opacity: 0.1;
+        background-size: cover;
+	  }
+	 @media screen and (max-width: 768px) {
+		.section-{{ section.id }}-img-transparency::before{
+
+				width: 90%;
+    			height: 126px;
+				top: 33%;
+				background-size:contain;
+				background-repeat: no-repeat;
+
+		}
+	 }
+	 {% if block.settings.hidden_mobile %}
+	  @media screen and (max-width: 930px) {
+		.section-{{ section.id }}-img-transparency::before{
+			display:none;
+		}
+	  }
+	{% endif %}
+    
+
+  {% endif %}
+{% endfor %}
+
    
 .reviews{
  position: relative;
@@ -117,7 +160,7 @@
 </style>
 
 
-<section class="reviews position-relative">
+<section class="reviews position-relative section-{{ section.id }}-img-transparency">
  {%  if section.settings.image-fondo != blank  %}
   <div class="image-container imgs">
     
@@ -181,7 +224,7 @@
         </div>
       </div>
       <div class="col-md-8 text-center">
-         <a href="{{ section.settings.button_link }}" class="btn mt-5" data-aos="fade-up" target="_blank" >
+         <a href="{{ section.settings.button_link }}" class="btn mt-5" data-aos="fade-up" target="_blank"  style="margin-bottom: 50px">
           {{ section.settings.button_label }} 
         </a> 
 
