@@ -634,6 +634,13 @@
         "settings": {
           "image-bg-1": "shopify:\/\/shop_images\/contact-us_3024caae-7229-4bcb-8d78-64c560c04b7e.jpg"
         }
+      },
+      "1660096450bfda049e": {
+        "type": "delivery",
+        "settings": {
+          "title-delivery": "We Have Delivery",
+          "subtitle": "Benefits"
+        }
       }
     },
     "content_for_index": [
@@ -642,7 +649,8 @@
       "1637649980c9a97d7a",
       "16376805410edcd386",
       "163767578637edbf32",
-      "1637994307955440a5"
+      "1637994307955440a5",
+      "1660096450bfda049e"
     ]
   },
   "presets": {
