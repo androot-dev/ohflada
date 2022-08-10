@@ -20,17 +20,7 @@
         opacity: 0.1;
         background-size: cover;
 	  }
-	 @media screen and (max-width: 768px) {
-		.section-{{ section.id }}-img-transparency::before{
 
-				width: 90%;
-    			height: 126px;
-				top: 33%;
-				background-size:contain;
-				background-repeat: no-repeat;
-
-		}
-	 }
 	 {% if block.settings.hidden_mobile %}
 	  @media screen and (max-width: 930px) {
 		.section-{{ section.id }}-img-transparency::before{
