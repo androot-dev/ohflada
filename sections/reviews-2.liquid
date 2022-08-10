@@ -147,7 +147,7 @@
                      <p style="max-height: 25ex;" class="scrollbar-0  mb-4">{{  block.settings.block_text}}</p>
                      <div class="d-flex align-items-center">
                         <div class="user-img " {%  if block.settings.image-customer !=blank  %}style="background-image: url({{ block.settings.image-customer | img_url: 'master' }}); background-size: cover;" {%  endif %} %}>
-                           {%  if block.settings.image-customer ==blank  %} <i class="fa fa-user d-flex justify-content-cneter align-items-center" style="width:100%;height:100%;"></i> {% endif %}
+                           {%  if block.settings.image-customer ==blank  %} <i class="fa fa-user d-flex justify-content-center align-items-center" style="width:100%;height:100%;"></i> {% endif %}
                           </div>
                         <div class="pl-3">
                            <p  class="name">{{block.settings.text}}</p>
