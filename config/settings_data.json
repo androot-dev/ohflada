@@ -575,10 +575,11 @@
             "type": "image-transparency",
             "settings": {
               "image": "shopify:\/\/shop_images\/272410440_109519301647319_5118707330302706591_n-removebg-preview_ce47fd84-6dcf-4ba3-8b4f-b4c3122a654d.png",
-              "top": 40,
-              "left": 40,
-              "width": 100,
-              "height": 100,
+              "top": -4,
+              "left": 43,
+              "width": 400,
+              "height": 350,
+              "overlay_before": "radial-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 100%)",
               "hidden_mobile": true
             }
           }
