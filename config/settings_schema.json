@@ -8,7 +8,7 @@
     "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
-    "name": "Custom Colors",
+    "name": "Custom",
     "settings": [
       {
         "type": "header",
@@ -161,6 +161,26 @@
         "label": "radius",
         "id": "radius",
         "default": "60px"
+      },
+      {
+        "type": "text",
+        "label": "user facebook",
+        "id": "user facebook"
+      },
+      {
+        "type": "text",
+        "label": "user instagram",
+        "id": "user instagram"
+      },
+      {
+        "type": "text",
+        "label": "user youtube",
+        "id": "user youtube"
+      },
+      {
+        "type": "text",
+        "label": "user twitter",
+        "id": "user twitter"
       }
     ]
   },
