@@ -422,36 +422,10 @@ header .site-header__cart-count {
                                    
                                   {% include 'site-nav', linklist: section.settings.main_linklist, wrapper_class: 'site-nav--centered' %}
 
-                                   <li class="ml-5 pl-5"></li>
-                                   <li class="ml-5"></li>
-                                  
-                                  
-                                  
-                                    <!--<li><a href="">About Us</a></li>
-                                    <li><a href="#">Shop By Category</a>
-                                        <ul class="dropdown">
-                                            
-                                            <li><a href="./about.html">- About</a></li>
-                                            <li><a href="./gallery.html">- Gallery</a></li>
-                                            <li><a href="./blog.html">- Blog</a></li>
-                                            <li><a href="./single-blog.html">- Blog Details</a></li>
-                                            <li><a href="./contact.html">- Contact</a></li>
-                                            <li><a href="#">- Dropdown</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    
-                                    <li><a href="./gallery.html">Products</a></li>                                   
-                                    <li><a href="./contact.html">Contact Us</a></li>-->
+
                                 </ul>
 
-                                <!-- Search Icon 
+                       
                               <div class="search-icon">
                                 <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer>
                                  <i class="fas fa-search"></i>
@@ -467,29 +441,12 @@ header .site-header__cart-count {
                                   <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
                                 </div>
                                 </a>
-                              </div>-->
+                              </div>
                             </div>
                             <!-- Nav End -->
                         </div>
                     </nav>
-                      <!-- Search Icon -->
-                      <div class="search-icon">
-                        <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer>
-                         <i class="fas fa-search"></i>
-                       
-                        </button>
-                      </div>
-
-
-                      <div class="cart-icon" >
-                        <a href="{{ routes.cart_url }}" class="site-header__icon site-header__cart text-light" >
-                        <i class="fas fa-shopping-cart"></i>
-                       
-                            <div id="CartCount" class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden" data-cart-count-bubble>
-                              <span data-cart-count>{{ cart.item_count }}</span>
-                            </div>
-                        </a>
-                      </div>        
+                          
                 </div>
             </div>
         </div>
