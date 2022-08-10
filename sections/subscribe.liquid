@@ -119,7 +119,7 @@
    	{%- form 'contact', id: 'ContactForm', class: 'subscribe-form form-inline form-row justify-content-center' -%}
                     <input type="text" class="d-none" value="New subscribed user" name="contact[body]" >
                     <input type="email" placeholder="Email" required name="contact[email]" id="email" class=" px-3 page-width col-12 col-sm-8 m-sm-0 m-3 input-primary form-control">
-                    <button type="submit" class="ml-4 btn-secondary col-12 col-sm-4  btn-3d">Subscribe</button>
+                    <button type="submit" class="ml-4 btn col-12 col-sm-4  btn-3d">Subscribe</button>
                     {%- if form.posted_successfully? -%}
                         <div class="col-12 text-center d-flex justify-content-center form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</div>
                       {%- elsif form.errors -%}
