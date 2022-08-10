@@ -570,12 +570,24 @@
               "name_costumer": "Jhon Doe",
               "link_video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/2c5fe400e9d14ed990dc864cac28abe5.mp4"
             }
+          },
+          "1157819c-acc0-4ed0-9a4b-5fa4eb05c4d1": {
+            "type": "image-transparency",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/272410440_109519301647319_5118707330302706591_n-removebg-preview_ce47fd84-6dcf-4ba3-8b4f-b4c3122a654d.png",
+              "top": 40,
+              "left": 40,
+              "width": 100,
+              "height": 100,
+              "hidden_mobile": true
+            }
           }
         },
         "block_order": [
           "781d24f9-d86c-4fe2-b759-4f191570c5c0",
           "17e23630-4b63-40df-ad53-972f43c3a18d",
-          "514776df-a1db-402d-afa1-176929b54a6e"
+          "514776df-a1db-402d-afa1-176929b54a6e",
+          "1157819c-acc0-4ed0-9a4b-5fa4eb05c4d1"
         ],
         "settings": {
           "title": "Reviews",
