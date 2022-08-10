@@ -675,12 +675,18 @@
       },
       "16601195097933f7af": {
         "type": "instafeed-custom",
+        "disabled": true,
         "settings": {
           "background-color": "",
           "padding_top": 40,
           "padding_bottom": 52,
           "title-section": "Instagram Feed",
           "subtitle": "Follow us now and don't miss our best works"
+        }
+      },
+      "16601376245bd0e012": {
+        "type": "instagram_feed_story",
+        "settings": {
         }
       }
     },
@@ -693,6 +699,7 @@
       "1637994307955440a5",
       "1660096450bfda049e",
       "16601195097933f7af",
+      "16601376245bd0e012",
       "166011570480c04ade"
     ]
   },
