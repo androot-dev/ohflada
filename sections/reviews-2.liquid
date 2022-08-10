@@ -82,8 +82,8 @@
  border-radius: var(--radius);
  
  } 
- reviews .owl-item{
- padding:20px;
+ .reviews .owl-item{
+ padding:10px;
  } 
 .testimony-wrap .user-img {
     width: 80px;
@@ -162,8 +162,8 @@
                </div>
             </div>
               {% elsif block.type == "Video" %}
-                <div class="item">
-                    <div class="testimony-wrap py-4 mb-5  position-relative">
+                <div class="item position-relative">
+                    <div class="testimony-wrap py-4 mb-5  "  style="width:100%;height:100%;">
    
                          <div class="radius d-flex align-items-center" style="width:100%;height:100%;">
                             <video style="object-fit:cover; width:100%;height:100%;" playsinline src="{{ block.settings.link_video }}" />
