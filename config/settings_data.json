@@ -642,7 +642,8 @@
           "title-delivery": "We Have Delivery",
           "subtitle": "Place an order and receive it at the door of your house!",
           "image": "shopify:\/\/shop_images\/cake-icing-decoration.jpg",
-          "overlay": "linear-gradient(180deg, rgba(255, 254, 254, 0.82) 2%, rgba(241, 239, 237, 0.79) 100%)"
+          "overlay": "linear-gradient(180deg, rgba(255, 254, 254, 0.82) 2%, rgba(241, 239, 237, 0.79) 100%)",
+          "icon": "fa fa-home"
         }
       },
       "166011570480c04ade": {
@@ -687,6 +688,10 @@
       "16601376245bd0e012": {
         "type": "instagram_feed_story",
         "settings": {
+          "padding_top": 40,
+          "padding_bottom": 52,
+          "title-section": "Instagram Feed",
+          "subtitle": "Follow us now and don't miss our best works"
         }
       }
     },
