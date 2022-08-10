@@ -7657,6 +7657,7 @@ h1{
 }
 
 .tooltip-inner{
+  max-width:300px;
   font-size: 13px;
   color: white !important;
   background: var(--primary) !important;
