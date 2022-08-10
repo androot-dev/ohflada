@@ -566,13 +566,6 @@
               "block_text": "The store has the most recent articles and presents a level of innovation that is too incredible, everything you are looking for you get here, also their attention and service is one of the best I have seen, without a doubt the ideal place to do your shopping"
             }
           },
-          "e2c7b101-13e3-4d8b-89ad-ad1060ddf8ee": {
-            "type": "text",
-            "settings": {
-              "text": "Review",
-              "block_text": ""
-            }
-          },
           "514776df-a1db-402d-afa1-176929b54a6e": {
             "type": "Video",
             "settings": {
@@ -584,7 +577,6 @@
         "block_order": [
           "781d24f9-d86c-4fe2-b759-4f191570c5c0",
           "17e23630-4b63-40df-ad53-972f43c3a18d",
-          "e2c7b101-13e3-4d8b-89ad-ad1060ddf8ee",
           "514776df-a1db-402d-afa1-176929b54a6e"
         ],
         "settings": {
@@ -593,7 +585,8 @@
           "button_label": "Google",
           "button_link": "",
           "button_label-2": "instagram",
-          "button_link-2": "https:\/\/www.instagram.com\/ek_12138\/"
+          "button_link-2": "https:\/\/www.instagram.com\/ek_12138\/",
+          "overlay": ""
         }
       },
       "reviews-2": {
