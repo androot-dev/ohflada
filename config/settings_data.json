@@ -339,12 +339,21 @@
       },
       "163767578637edbf32": {
         "type": "benefits",
+        "blocks": {
+          "4acc595d-e543-452f-b032-1371a97279ef": {
+            "type": "benefits",
+            "settings": {
+              "name_benefit": "Creativity",
+              "image": "shopify:\/\/shop_images\/272410440_109519301647319_5118707330302706591_n-removebg-preview_ce47fd84-6dcf-4ba3-8b4f-b4c3122a654d.png",
+              "icon": ""
+            }
+          }
+        },
+        "block_order": [
+          "4acc595d-e543-452f-b032-1371a97279ef"
+        ],
         "settings": {
-          "title_channels": "Benefits",
-          "channel_1": "Customer service",
-          "channel_2": "Quality of service",
-          "channel_3": "Engagement",
-          "channel_4": "Innovation"
+          "title_channels": "Benefits"
         }
       },
       "16376805410edcd386": {
@@ -399,15 +408,7 @@
       "benefits": {
         "type": "benefits",
         "settings": {
-          "title_channels": "Benefits",
-          "image_channel_1": "shopify:\/\/shop_images\/cliente.png",
-          "channel_1": "Customer service",
-          "image_channel_2": "shopify:\/\/shop_images\/control-de-calidad.png",
-          "channel_2": "Quality of service",
-          "image_channel_3": "shopify:\/\/shop_images\/compromiso_aa971243-a31b-4e03-9ef2-6e1e3cb0e209.png",
-          "channel_3": "Engagement",
-          "image_channel_4": "shopify:\/\/shop_images\/gestion-de-proyectos.png",
-          "channel_4": "Innovation"
+          "title_channels": "Benefits"
         }
       },
       "reviews": {
