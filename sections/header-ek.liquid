@@ -445,13 +445,13 @@ header .site-header__cart-count {
                               
                                     <li><a href="./gallery.html">Products</a></li>                                   
                                     <li><a href="./contact.html">Contact Us</a></li>-->
-                                    <li class="search-icon d-none d-lg-flex">
+                                    <li class="search-icon ">
                                       <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer>
                                        <i class="fas fa-search"></i>
                                     
                                       </button>
                                     </li>
-                                    <li class="cart-icon d-none d-lg-flex" >
+                                    <li class="cart-icon d-none" >
                                       <a href="{{ routes.cart_url }}" class="site-header__icon site-header__cart text-light" >
                                       <i class="fas fa-shopping-cart"></i>
                                       
@@ -463,24 +463,7 @@ header .site-header__cart-count {
                                     </li>
 
 
-                                  <li class="d-flex d-lg-none">
-                                    <div class="cart-icon" >
-                                      <a href="{{ routes.cart_url }}" class="site-header__icon site-header__cart text-light" >
-                                      <i class="fas fa-shopping-cart"></i>
-                                      
-                                      <div id="CartCount" class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden" data-cart-count-bubble>
-                                        <span data-cart-count>{{ cart.item_count }}</span>
-                                        <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
-                                      </div>
-                                      </a>
-                                    </div>
-                                    <div class="search-icon ">
-                                        <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer>
-                                         <i class="fas fa-search"></i>
-                                      
-                                        </button>
-                                    </div>
-                                  </li>
+                                  
                                 </ul>
 
                                 <!-- Search Icon 
