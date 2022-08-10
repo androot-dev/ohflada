@@ -640,9 +640,9 @@
         "type": "delivery",
         "settings": {
           "title-delivery": "We Have Delivery",
-          "subtitle": "Subtitle",
-          "image": "shopify:\/\/shop_images\/pexels-jerald-mira-6493067.jpg",
-          "overlay": "linear-gradient(180deg, rgba(239, 174, 174, 0.66), rgba(255, 255, 255, 0.85) 100%)"
+          "subtitle": "Place an order and receive it at the door of your house!",
+          "image": "shopify:\/\/shop_images\/cake-icing-decoration.jpg",
+          "overlay": "linear-gradient(180deg, rgba(255, 254, 254, 0.82) 2%, rgba(241, 239, 237, 0.79) 100%)"
         }
       },
       "166011570480c04ade": {
