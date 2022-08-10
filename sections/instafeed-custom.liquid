@@ -14,7 +14,9 @@
     padding-bottom: {{ section.settings.padding_bottom }}px;
   }
 }
-
+#instagram-feed-box > p{
+  display:none;
+}
 {%- endstyle -%}
 
   <section class=" insta-feed container-fluid 
@@ -25,12 +27,9 @@
       <h2>{{ section.settings.subtitle }}</h2>
     </div>
 
-    <div class="row page-width">
-    
-      
-    </div>
-    <div id="instagram-stories-box"></div>
-    <div id="instagram-feed-box"></div>
+   
+    <div id="instagram-stories-box page-width"></div>
+ 
 
      <script async src="https://d12oh2gzettinl.cloudfront.net/instagram-story/shopify-script-glider-local.js"></script> 
   </section>
