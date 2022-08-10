@@ -365,8 +365,8 @@
           "3faf87d1-32c4-46a4-87e2-dbb1597b98d8": {
             "type": "benefits",
             "settings": {
-              "name_benefit": "",
-              "icon": ""
+              "name_benefit": "Experience",
+              "icon": "fa-solid fa-calendar-check"
             }
           }
         },
