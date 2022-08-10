@@ -1,7 +1,43 @@
+<section class="delivery">
+  <div class="container-fluid" style="background-image:url({{ section.settings.image | image_url }})">
+    <div class="title-section">
+      <h1 class="title-primary">{{ section.settings.title-delivery }}</h1>
+      <h2 class="title-secondary">{{ section.settings.subtitle }}</h2>
+    </div>
+  </div>
+</section>
+
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Delivery",
+    "settings": [ 
+    {
+	"type": "text",
+     "id": "title-delivery",
+     "label": "Title",
+     "default": "We Have Delivery"
+	 },
+    {
+	 "type": "text",
+     "id": "subtitle",
+      "label": "Subtitle",
+     "default": "Benefits"
+    },
+      {
+	 "type": "image_picker",
+     "id": "image",
+      "label": "Select a Image"
+    }
+    ],
+  	"presets": [
+      {
+        "category": "Home",
+        "name": "Delivery"     
+        
+      }
+    ]
   }
 {% endschema %}
 
