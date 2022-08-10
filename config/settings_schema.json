@@ -170,17 +170,17 @@
       {
         "type": "text",
         "label": "user instagram",
-        "id": "user instagram"
+        "id": "user-instagram"
       },
       {
         "type": "text",
         "label": "user youtube",
-        "id": "user youtube"
+        "id": "user-youtube"
       },
       {
         "type": "text",
         "label": "user twitter",
-        "id": "user twitter"
+        "id": "user-twitter"
       }
     ]
   },
