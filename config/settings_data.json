@@ -5,7 +5,7 @@
     "primary-light": "#f3dbdb",
     "hover-primary": "#ffffff",
     "primary-gradient": "linear-gradient(135deg, rgba(191, 99, 99, 1), rgba(206, 129, 128, 1) 25%, rgba(220, 159, 158, 1) 50%, rgba(232, 189, 188, 1) 75%, rgba(243, 219, 219, 1) 100%)",
-    "secondary": "#de467c",
+    "secondary": "#744414",
     "hover-secondary": "#f9f9f9",
     "secondary-dark": "#ba5269",
     "secondary-light": "#efefef",
