@@ -21,7 +21,7 @@
 
 #hero::before{
  content: '';
- background: rgba(0, 0, 0, 0.45); /*OVERLAY*/
+ background:{{section.settings.overlay}} /*OVERLAY*/
  position: absolute;
  height: 100%;
  width: 100%;
@@ -511,6 +511,12 @@ FIN TRIANGULOS ADORNOS*/
 	 "type": "url",
      "id": "video_link",
      "label": "Video background"
+
+	},
+       {
+	 "type": "color_background",
+     "id": "overlay",
+     "label": "overlay"
 
 	},
   {
