@@ -640,7 +640,8 @@
         "settings": {
           "title-delivery": "We Have Delivery",
           "subtitle": "Benefits",
-          "image": "shopify:\/\/shop_images\/pexels-jerald-mira-6493067.jpg"
+          "image": "shopify:\/\/shop_images\/pexels-jerald-mira-6493067.jpg",
+          "overlay": "linear-gradient(180deg, rgba(210, 161, 161, 0.66), rgba(255, 255, 255, 0.85) 100%)"
         }
       }
     },
