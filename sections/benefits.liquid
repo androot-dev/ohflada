@@ -26,6 +26,7 @@
   position: relative;
   z-index: 7;
   transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
 }
 
 
@@ -38,9 +39,9 @@
   margin-bottom: 0;
 }
 
-.channels img:hover {
+.channels img:hover, .channels i:hover {
     transform: rotateY(180deg);
-    transition: all ease-in-out .3s;
+    
 }
   
  .channels .adorno {
@@ -107,7 +108,15 @@
   animation: derrame 3s ease-in-out;
   animation-fill-mode: forwards;
 }
-
+.icon-benefit{
+  width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+  transition: all ease-in-out .3s;
+}
 </style>
 
   <section data-aos="derrame" class="channels fix py-section">
@@ -130,20 +139,21 @@
 
                       {% for block in section.blocks %}
                           {% if block.type == 'benefits' %}
-                            {% for channel in block.channels %}
-                              <div class="col-md-2">
-                                <div class="row">
-                                  <div class="col-md-6 col-6 px-0">
+                            
+                              <div class="col-md-2 col-6 justify-content-center d-flex align-items-center">
+                                <div class="row justify-content-center">
+                                  <div class="d-flex justify-content-center align-items-center flex-column col-md-6 col-6 px-0">
                                     {% if block.settings.icon != blank %}
-                                      <i class="{{block.settings.icon}}">
+                                      <i class="icon-benefit {{block.settings.icon}}"></i>
                                       <p> {{ block.settings.name_benefit }}</p>
                                     {% else %}
                                         <img src="{{ block.settings.image | img_url: 'master' }}" loading="lazy" alt="">  
+                                        <p> {{ block.settings.name_benefit }}</p>
                                     {% endif %} 
                                   </div>
                                 </div>     
                               </div>
-                            {% endfor %}
+                         
                           {% endif %}
                         {% endfor %}
 
