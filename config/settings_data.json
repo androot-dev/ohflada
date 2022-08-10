@@ -671,6 +671,16 @@
           "title-section": "Subscribe",
           "subtitle": "Promotions, new products, and sales. Directly to your inbox"
         }
+      },
+      "16601195097933f7af": {
+        "type": "instafeed-custom",
+        "settings": {
+          "background-color": "",
+          "padding_top": 40,
+          "padding_bottom": 52,
+          "title-section": "Instagram Feed",
+          "subtitle": "Follow us now and don't miss our best works"
+        }
       }
     },
     "content_for_index": [
@@ -681,7 +691,8 @@
       "163767578637edbf32",
       "1637994307955440a5",
       "1660096450bfda049e",
-      "166011570480c04ade"
+      "166011570480c04ade",
+      "16601195097933f7af"
     ]
   },
   "presets": {
