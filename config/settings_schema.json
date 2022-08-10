@@ -157,11 +157,6 @@
         "default": "0px 0px 0px 0px"
       },
       {
-        "type": "color",
-        "id": "shadow-color",
-        "label": "shadow color"
-      },
-      {
         "type": "text",
         "label": "radius",
         "id": "radius",
