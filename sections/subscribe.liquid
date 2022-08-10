@@ -127,7 +127,11 @@
                     <input type="email" placeholder="Email" required name="contact[email]" id="email" class=" px-3 page-width col-12 col-sm-8 m-sm-0 m-3 input-primary form-control">
                     <button style="max-width:180px;" type="submit" class="ml-4 btn col-12 col-sm-4  btn-3d">Subscribe</button>
                     {%- if form.posted_successfully? -%}
-                        <div class="col-12 text-center d-flex justify-content-center form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %}   {{ 'general.newsletter_form.confirmation' | t }}</div>
+                        <div style="
+                          align-items: center;
+                          display: flex;
+                          color: var(--primary);"
+                      class="col-12 text-center d-flex justify-content-center form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %}   {{ 'general.newsletter_form.confirmation' | t }}</div>
                       {%- elsif form.errors -%}
                         <div class="col-12 text-center d-flex justify-content-center form__message">
                           <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>{% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}</h2>
