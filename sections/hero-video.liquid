@@ -496,10 +496,10 @@ FIN TRIANGULOS ADORNOS*/
    </a>
       {%  endif %}
    {% if section.settings.hour-link != blank %}
-    <a target="_blank" href="{{ section.settings.hour-link}}" class="border-left">&nbsp;<i class="fas fa-clock" data-toggle="tooltip" data-placement="top" title="{{ section.settings.hour}}"></i></a>
+    <a class="border-left">&nbsp;<i class="fas fa-clock" data-toggle="tooltip" data-placement="top" title="{{ section.settings.hour}}"></i></a>
    {%  endif  %}
-     <a target="_blank" href="{{ section.settings.email-link}}"><i class="fa fa-envelope" data-toggle="tooltip" data-placement="top" title="{{ section.settings.email}}"></i></a>
-    <a target="_blank" href="{{ section.settings.telephone-link}}"><i class="fa fa-phone" data-toggle="tooltip" data-placement="top" title="{{ section.settings.telephone}}"></i></a>
+     <a  href="{{ section.settings.email-link}}"><i class="fa fa-envelope" data-toggle="tooltip" data-placement="top" title="{{ section.settings.email}}"></i></a>
+    <a  href="{{ section.settings.telephone-link}}"><i class="fa fa-phone" data-toggle="tooltip" data-placement="top" title="{{ section.settings.telephone}}"></i></a>
     <a target="_blank" href="{{ section.settings.location-link}}"><i class="fa fa-map-marker-alt" data-toggle="tooltip" data-placement="top" title="{{ section.settings.location}}"></i></a>
                 
   </div>	
