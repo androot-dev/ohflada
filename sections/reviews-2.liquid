@@ -185,7 +185,7 @@
               </div>
             {% else %}
             <div class="item">      
-            <div class="testimony-wrap py-4 mb-5">
+            <div class="testimony-wrap position-relative py-4 mb-5">
                   <div class="text">
                     <p class="star">
                         <span class="fa fa-star"></span>
@@ -198,7 +198,7 @@
                     
                     <p class="mb-4">{{  block.settings.name_costumer}}</p>
                     <div class="d-flex align-items-center">
-                      <div class="container-video">
+                      <div class="container-video ">
                         <video playsinline="playsinline" src="{{ block.settings.link_video }}"> </video>
                       </div>
                       <div class="pl-3">
@@ -216,11 +216,11 @@
          
       </div>
       <div class="col-md-8 text-center">
-         <a href="{{ section.settings.button_link }}" class="scanfcode mt-5" data-aos="fade-up" target="_blank"  style="margin-bottom: 50px">
+         <a href="{{ section.settings.button_link }}" class="btn mt-5" data-aos="fade-up" target="_blank"  style="margin-bottom: 50px">
           {{ section.settings.button_label }} 
         </a> 
         <div class="col-12 d-lg-none d-block mb-5 "></div>
-        <a href="{{ section.settings.button_link-2 }}" class="scanfcode mt-5" data-aos="fade-up" target="_blank" >
+        <a href="{{ section.settings.button_link-2 }}" class="btn mt-5" data-aos="fade-up" target="_blank" >
           {{ section.settings.button_label-2 }} 
         </a>
       </div>
