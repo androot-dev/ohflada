@@ -458,6 +458,26 @@ header .site-header__cart-count {
                                       </div>
                                       </a>
                                     </li>
+
+
+                                  <li>
+                                    <div class="cart-icon d-none d-lg-flex" >
+                                      <a href="{{ routes.cart_url }}" class="site-header__icon site-header__cart text-light" >
+                                      <i class="fas fa-shopping-cart"></i>
+                                      
+                                      <div id="CartCount" class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden" data-cart-count-bubble>
+                                        <span data-cart-count>{{ cart.item_count }}</span>
+                                        <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
+                                      </div>
+                                      </a>
+                                    </div>
+                                    <div class="search-icon d-none d-lg-flex">
+                                        <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer>
+                                         <i class="fas fa-search"></i>
+                                      
+                                        </button>
+                                    </div>
+                                  </li>
                                 </ul>
 
                                 <!-- Search Icon 
