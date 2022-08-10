@@ -586,7 +586,7 @@
               "width": 400,
               "height": 350,
               "overlay_before": "radial-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 100%)",
-              "hidden_mobile": true
+              "hidden_mobile": false
             }
           }
         },
