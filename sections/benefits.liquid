@@ -129,16 +129,24 @@
 
 
                       {% for block in section.blocks %}
-                          {% if block.type == 'channels' %}
+                          {% if block.type == 'benefits' %}
                             {% for channel in block.channels %}
 
                               <div class="col-md-2">
                                 <div class="row">
 
                                   <div class="col-md-6 col-6 ">
-                                    <img src="{{ section.settings.image_channel_1 | img_url: 'master' }}" loading="lazy" alt="">  
-                                    <p> {{ section.settings.channel_1 }}</p>
+                                    {% if block.settings.icon != blank %}
+                                      <i class="{{block.settings.icon}}">
+                                      <p> {{ section.settings.channel_1 }}</p>
+                                    {% else %}
+                                        <img src="{{ section.settings.image_channel_1 | img_url: 'master' }}" loading="lazy" alt="">  
+                                    {% endif %}
+                                   
                                   </div>
+
+
+
 
                                 </div>     
                               </div>
@@ -149,26 +157,12 @@
                         {% endfor %}
 
                     
-                     <div class="col-md-4">
-                            
-                     </div>
-                    <div class="col-md-4 ">
-                       <div class="row">
-                         <div class="col-md-6 col-6 ">
-                         <img src="{{ section.settings.image_channel_3 | img_url: 'master' }}" loading="lazy" alt="">  
-                         <p> {{ section.settings.channel_3 }}</p>
-                         </div>
-                         <div class="col-md-6 col-6 ">
-                         <img   src="{{ section.settings.image_channel_4 | img_url: 'master' }}" loading="lazy" alt="">  
-                         <p> {{ section.settings.channel_4 }}</p>
-                         </div>
-                       </div>           
-                     </div>
+                    
                    
                    
                                          
                   </div>                                  
-                </div>
+          </div>
                 
                    
         </section> 
@@ -188,7 +182,7 @@
   ],
     "blocks": [
       {
-        "type": "beneifit",
+        "type": "benefits",
         "name": "Benefits",
         "limit": 4,
         "settings":[
@@ -203,8 +197,8 @@
               "label": "image benefit"  
             },
             {
-              "type": "icon",
-              "id": "text",
+              "type": "text",
+              "id": "icon",
               "label": "Icon Font Awesome",
               "info": "Replace the image with an icon" 
             }
