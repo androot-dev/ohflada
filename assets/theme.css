@@ -7670,16 +7670,16 @@ h1{
   font-family:"fuente-contenido";
 }
 .bs-tooltip-top .arrow::before{
-  border-top-color:#603813 !important;
+  border-top-color:var(--primary) !important;
 }
 .bs-tooltip-bottom .arrow::before{
-  border-bottom-color:#603813 !important;
+  border-bottom-color:var(--primary) !important;
 }
 .bs-tooltip-right .arrow::before{
-  border-right-color:#603813 !important;
+  border-right-color:var(--primary) !important;
 }
 .bs-tooltip-left .arrow::before{
-  border-left-color:#603813 !important;
+  border-left-color:var(--primary) !important;
 }
 
 .playBtn:hover, .playBtn-off:hover {
