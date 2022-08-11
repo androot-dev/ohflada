@@ -13,7 +13,7 @@
   color: rgba(255, 255, 255, 0.8);
   background: var(--primary);
   border-radius: var(--radius) 0 0 var(--radius);
-
+  transform: translateX(275px);
 }
   
   
@@ -149,7 +149,9 @@ position: relative;
     margin: 20px 0px;
 }
   
-  
+  [data-aos=left-translate].aos-animate{
+    transform: translateX(0);
+  }
  
 </style>
 
@@ -226,7 +228,7 @@ position: relative;
 								</div>
 							</div>
 							<div class="col-lg-4 col-md-5 d-flex align-items-stretch">
-								<div class="info-wrap w-100 p-md-5 p-4">
+								<div data-aos="left-translate" class="info-wrap w-100 p-md-5 p-4">
 									<h3>Let's get in touch</h3>
 									<p class="mb-4">We're open for any suggestion or just to have a chat</p>									
 									<div class="dbox w-100 d-flex align-items-center">
