@@ -12,24 +12,23 @@
     "settings": [
       {
         "type": "header",
-        "content": "Subpages"
+        "content": "Subpages",
+        "info": "Video or Imagen "
       },
       {
         "type": "color_background",
         "id": "subpage_hero_overlay_color",
-        "label": "Subpage hero overlay color"
+        "label": "hero subpage overlay "
       },
       {
         "type": "image_picker",
         "id": "subpage_hero_background",
-        "label": "Subpage hero background",
-        "info": "Video || Imagen"
+        "label": "Global image subpage hero"
       },
       {
         "type": "url",
         "id": "subpage_hero_background_video",
-        "label": "Subpage hero background",
-        "info": "Video || Imagen"
+        "label": "Global video subpage hero"
       },
       {
         "type": "header",
