@@ -7711,3 +7711,7 @@ h1{
     transform: scale(1);
   } 
 }
+
+span[data-cart-count]{
+  color:white;
+}
