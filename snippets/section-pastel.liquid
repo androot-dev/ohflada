@@ -414,7 +414,7 @@
  
   </div>
 </div>
-<div class=" owl-carousel d-flex d-md-none ">
+<div class=" owl-carousel d-flex d-md-none carousel-best ">
   {% assign newElemen = 0 %}
   {% for block in blocks %}
   {% if block.type == "product" %}
@@ -452,7 +452,9 @@
       font-size: 23px;
     color: var(--secondary);
     }
-    
+    .carousel-best .owl-item{
+    display: flex;
+    justify-content: center;}
  </style>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
