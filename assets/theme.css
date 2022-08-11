@@ -187,7 +187,7 @@
   background-size: cover; 
 }
 
-.breadcrumb-area.bg-overlay-hero::after {
+.breadcrumb-area.bg-overlay::after {
   background: var(--subpage-overlay);
   position: absolute;
   z-index: -1;
