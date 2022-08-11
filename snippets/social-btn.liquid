@@ -4,7 +4,7 @@
 
                
          
-        {% if user_facebook != blank  and facebook_link != blank  %}
+        {% if facebook_user != blank  and facebook_link != blank  %}
         <a title="@{{user_facebook}}" data-bs-toggle="tooltip" data-bs-placement="right"
             href="{{ facebook_link }}" target="_blank"
             class="float-element tooltip-left " style="
@@ -12,7 +12,7 @@
             <i class="fa-brands fa-facebook-f" style="color:{{text_color}};"></i>
         </a>
     {% endif %}
-        {% if user_instagram != blank  and instagram_link != blank  %}
+        {% if instagram_user != blank  and instagram_link != blank  %}
 
         <a title="@{{user_instagram}}" data-toggle="tooltip" data-placement="right"
             href="{{ instagram_link }}" target="_blank"
