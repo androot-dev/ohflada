@@ -25,6 +25,7 @@
     "heading2-size": "20px",
     "heading2-weight": 600,
     "shadow": "rgb(255 154 154 \/ 17%) -8px -4px 14px 7px, rgb(0 0 0 \/ 23%) 0px 3px 6px",
+    "radius": "20px",
     "user-facebook": "@ohfladabakery",
     "user-instagram": "@ohflada_bakery",
     "share_twitter": false,
