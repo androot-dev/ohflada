@@ -4,7 +4,7 @@
 
                
          
-        {% if user_facebook and facebook_link %}
+        {% if user_facebook != blank  and facebook_link != blank  %}
         <a title="@{{user_facebook}}" data-bs-toggle="tooltip" data-bs-placement="right"
             href="{{ facebook_link }}" target="_blank"
             class="float-element tooltip-left " style="
@@ -12,7 +12,7 @@
             <i class="fa-brands fa-facebook-f" style="color:{{text_color}};"></i>
         </a>
     {% endif %}
-        {% if user_instagram and instagram_link %}
+        {% if user_instagram != blank  and instagram_link != blank  %}
 
         <a title="@{{user_instagram}}" data-bs-toggle="tooltip" data-bs-placement="right"
             href="{{ instagram_link }}" target="_blank"
@@ -22,7 +22,7 @@
         </a>                                  
     {% endif %}
         
-        {% if email %}
+        {% if email != blank  %}
             <a title="{{email}}" data-bs-toggle="tooltip" data-bs-placement="right"
                 href="mailto:{{ email }}" 
                 class="float-element tooltip-left " style="
@@ -31,7 +31,7 @@
             </a>
             {% endif %} 
 
-        {% if phone %}
+        {% if phone != blank  %}
             <a title="{{phone}}" data-bs-toggle="tooltip" data-bs-placement="right"
                 href="tel:{{ phone }}" 
                 class="float-element tooltip-left " style="
@@ -40,7 +40,7 @@
             </a>
             {% endif %}
 
-        {% if location and location_tooltip %}
+        {% if location != blank  and location_tooltip != blank  %}
             <a title="{{location_tooltip}}" data-bs-toggle="tooltip" data-bs-placement="right"
                 href="{{ location }}" target="_blank"
                 class="float-element tooltip-left " style="
