@@ -4,15 +4,15 @@
 
                
          
-
+        {% if user_facebook and facebook_link %}
         <a title="@{{user_facebook}}" data-bs-toggle="tooltip" data-bs-placement="right"
             href="{{ facebook_link }}" target="_blank"
             class="float-element tooltip-left " style="
             background: {{background}};">
             <i class="fa-brands fa-facebook-f" style="color:{{text_color}};"></i>
         </a>
-
-
+    {% endif %}
+        {% if user_instagram and instagram_link %}
 
         <a title="@{{user_instagram}}" data-bs-toggle="tooltip" data-bs-placement="right"
             href="{{ instagram_link }}" target="_blank"
@@ -20,7 +20,7 @@
             background: {{background}};">
             <i class="fa-brands fa-instagram" style="color:{{text_color}};"></i>
         </a>                                  
-
+    {% endif %}
         
         {% if email %}
             <a title="{{email}}" data-bs-toggle="tooltip" data-bs-placement="right"
