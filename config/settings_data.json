@@ -260,7 +260,7 @@
           "39946ee9-3f84-40eb-a654-c45c75534011": {
             "type": "policies",
             "settings": {
-              "url": "",
+              "url": "shopify:\/\/policies\/shipping-policy",
               "label": "Shipping Policy",
               "new_tab": false
             }
