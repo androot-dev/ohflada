@@ -308,7 +308,7 @@
           "2e893c19-d580-44ba-bf1d-37ec0c9f81d2": {
             "type": "product",
             "settings": {
-              "featured_product": "pastelillo-de-guayaba"
+              "featured_product": "cheese-flan"
             }
           },
           "8a7bd123-b3c4-4fd8-abd5-74c5f78b2041": {
@@ -322,12 +322,19 @@
             "settings": {
               "featured_product": "custom-cakes"
             }
+          },
+          "6fa0b9b5-6154-4e65-bbec-4d38e64e8a96": {
+            "type": "product",
+            "settings": {
+              "featured_product": "pastelillo-de-guayaba"
+            }
           }
         },
         "block_order": [
           "2e893c19-d580-44ba-bf1d-37ec0c9f81d2",
           "8a7bd123-b3c4-4fd8-abd5-74c5f78b2041",
-          "5d2f3882-ee40-44ab-bc66-259f2ccff1a2"
+          "5d2f3882-ee40-44ab-bc66-259f2ccff1a2",
+          "6fa0b9b5-6154-4e65-bbec-4d38e64e8a96"
         ],
         "settings": {
           "title": "Best Sellers",
