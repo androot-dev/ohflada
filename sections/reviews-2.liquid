@@ -85,6 +85,13 @@
   transform: translateY(-50%);
   z-index: 20;
 }
+{% if section.settings.hidden_mobile_background %}
+@media screen and (max-width: 767px) {
+  .reviews .image-container img {
+    display: none;
+  }
+}
+{% endif %}
 
 .testimony-wrap {
      display: flex;
@@ -238,6 +245,12 @@
 			"id": "image-fondo",            
             "label": "Image Background"
 	  },
+    {
+      "type": "checkbox",
+      "id": "hidden_mobile_background",
+      "label": "Hidden in Mobile",
+      "default": true
+    },
     {
       "type": "text",
           "id": "left_image",
