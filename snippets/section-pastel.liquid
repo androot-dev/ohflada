@@ -186,7 +186,7 @@
     body .ui_inner .ui_inner__slider .slide_inner__left img {
       
       height: 340px;
-      max-width: 340px;
+      max-width: none;
       z-index: 8;
       position: relative;
       box-shadow: var(--shadow);
@@ -358,29 +358,32 @@
                          </a>
                      </div>
                  </div>
-             </div>
-         </div>
-     </label>
- 
-     {% assign newElemen = 2 %} {% elsif newElemen == 2 %}
-     <!-- 3ER ELEMENTO -->
-     <input id="mega" name="selection" type="radio" />
-     <label for="mega">
-         <div class="selected m">{{ block.settings.featured_product.title }}</div>
-         <div class="ui_inner__slider">
-             <div class="sb">
-                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/starburst2.png" />
-             </div>
-             <div class="slide">
-                 <div class="slide_inner">
-                     <a href="{{block.settings.featured_product.url}}" class="slide_inner__left">
-                         <img src="{{block.settings.featured_product.featured_image | image_url}}" />
-                     </a>
-                     <div class="slide_inner__right">
-                         <h2>{{block.settings.featured_product.title}}</h2>
-                         <h3>{{block.settings.featured_product.price | money}}</h3>
-                         <p>{{block.settings.featured_product.description}}</p>
-                     </div>
+              </div>
+           </div>
+        </label>
+
+
+        
+        {% assign newElemen = 2 %}
+        {% elsif newElemen == 2 %}
+        <!-- 3ER ELEMENTO -->
+        <input id='mega' name='selection' type='radio'>
+        <label for='mega'>
+           <div class='selected m'>{{ block.settings.featured_product.title }}</div>
+           <div class='ui_inner__slider'>
+              <div class='sb'>
+                 <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/starburst2.png'>
+              </div>
+              <div class='slide'>
+                 <div class='slide_inner'>
+                    <a href="{{block.settings.featured_product.url}}" class='slide_inner__left'>
+                       <img src='{{block.settings.featured_product.featured_image | image_url}}'>
+                    </a>
+                    <div class='slide_inner__right'>
+                       <h2>{{block.settings.featured_product.title}}</h2>
+                       <h3>{{block.settings.featured_product.price | money}}</h3>
+                       <p>{{block.settings.featured_product.description}}</p>
+                    </div>
                  </div>
              </div>
          </div>
