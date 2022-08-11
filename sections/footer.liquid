@@ -347,7 +347,7 @@
 			<ul class="list-none">
                 {% for block in section.blocks %}
                   {% if block.type == 'more_information' %}
-                  <li class="d-flex pt-3 justify-content-center justify-content-md-start  align-items-center">
+                  <li class="d-flex pt-3 justify-content-center justify-content-lg-start  align-items-center">
                     
                     <a  {% if block.settings.new_tab %} target="_blank" {% endif %} {% if block.settings.url != blank %} 
                       href="{{ block.settings.url }}" {% else %} style="pointer-events:none;" {% endif %}">
@@ -395,7 +395,7 @@
 				<div class="menu-quick-links-container">
 					<ul class="quick-links list" id="quick-links">
 						{% for link in linklists[block.settings.menu].links %}
-							<li class="d-flex pr-md-5 pt-3 justify-content-center justify-content-md-start  align-items-center">
+							<li class="d-flex pr-lg-5 pt-3 justify-content-center justify-content-lg-start  align-items-center">
 								<a href="{{link.url}}">{{link.title}}</a>
 							</li>
 					{% endfor %}
@@ -412,7 +412,7 @@
 		<ul class="list" style="padding-left:0;">
 			{% for block in section.blocks %}
 			  {% if block.type == 'policies' %}
-			  <li class="d-flex pt-3 justify-content-center justify-content-md-start  align-items-center">
+			  <li class="d-flex pt-3 justify-content-center justify-content-lg-start  align-items-center">
 				
 				<a  {% if block.settings.new_tab %} target="_blank" {% endif %} {% if block.settings.url != blank %} 
 				  href="{{ block.settings.url }}" {% else %} style="pointer-events:none;" {% endif %}">
@@ -431,10 +431,10 @@
 <div class="container-fluid copyright-container px-0 position-relative">
 	<div class="row copyright page-width justify-content-between align-items-center">
 		<span
-			class="col-lg-10 col-12 d-flex justify-content-md-start justify-content-center text-md-start text-center ">Copyright
+			class="col-lg-10 col-12 d-flex justify-content-lg-start justify-content-center text-lg-start text-center ">Copyright
 			© 2022 All rights reserved | This Website Was Designed And
 			Developed by</span>
-		<a class="col-lg-2 col-12 d-flex justify-content-md-end justify-content-center"
+		<a class="col-lg-2 col-12 d-flex justify-content-lg-end justify-content-center"
 			href="https://josesilvera.com/" target="_blank">
 			<img width="95" height="30" class="logoSilvera" alt="author page logo"
 				src="{{ "silvera.png" | asset_url }}" loading="lazy"></a>
