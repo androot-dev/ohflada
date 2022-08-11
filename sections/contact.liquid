@@ -335,8 +335,8 @@ font-family: 'montserrat-bold', serif;
 					<div class="wrapper">
 						<div class="row no-gutters">
 							<div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
-								<div class="contact-wrap w-100 p-md-5 p-4">
-									<h3 class="mb-4">Get in touch</h3>
+								<div class="contact-wrap w-100 p-md-5 p-4 title-section">
+									<h1 class="mb-4">Get in touch</h1>
 								 {%- assign formId = 'ContactForm' -%}
                                   {% form 'contact', id: formId %}
                                     {% include 'form-status', form: form, form_id: formId %}
@@ -385,7 +385,7 @@ font-family: 'montserrat-bold', serif;
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
-                                                     <button type="submit" class="scanfcode" value=""> {{ 'contact.form.submit' | t }}</button>
+                                                     <button type="submit" class="btn" value=""> {{ 'contact.form.submit' | t }}</button>
 												
 													<div class="submitting"></div>
 												</div>
