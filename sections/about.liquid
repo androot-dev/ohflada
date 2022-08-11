@@ -102,7 +102,7 @@ text-align: center;
   <div class="container">
     <div class="row">
      
-       <div class="col-md-6 d-flex align-items-center justify-content-center">
+       <div style="z-index:1;" class="col-md-6 d-flex align-items-center justify-content-center">
          <div class="">
          <div class="col-12 text-left px-0">
           <div class="title-section">
@@ -113,7 +113,7 @@ text-align: center;
          <p class=" py-4 content-text">
            {{ section.settings.block_text }}
          </p>
-         <div class=" col-12 mt-5 text-lg-left text-center d-md-block d-none">
+         <div style="z-index:1;" class=" col-12 mt-5 text-lg-left text-center d-md-block d-none">
         <a href="{{ section.settings.button_link }}" class="btn trasition-all mt-5 " data-aos="fade-up" >
           {{ section.settings.button_label }}
         </a>
@@ -121,7 +121,7 @@ text-align: center;
        </div>
         </div>
       </div>
-       <div class="col-md-6 d-flex justify-content-center align-items-center flex-column">
+       <div style="z-index:1;" class="col-md-6 d-flex justify-content-center align-items-center flex-column">
         <img class="img-fluid img-1 my-5" src="{{ section.settings.image-1 | img_url: 'master' }}" data-aos="fade-up" />
         <a href="{{ section.settings.button_link }}" class="btn trasition-all   d-md-none d-block" data-aos="fade-up" >
           {{ section.settings.button_label }}
