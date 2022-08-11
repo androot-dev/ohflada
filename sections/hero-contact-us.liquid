@@ -1,92 +1,206 @@
-
-{% assign heroImageLocal = section.settings.image-bg-1 %}
-{% assign heroImageGlobal = settings.subpage_hero_background  %}
-{% assign heroVideoGlobal = settings.subpage_hero_background_video %}
-
-{% assign video = false  %}
-{% assign hero = "" %}
-
-{%  if heroImageLocal == blank %}
-
-{% if heroVideoGlobal == blank %}
+<style>
   
-
-{% assign hero = heroImageGlobal %}
+.breadcrumb-area {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 400px;
+  margin-top: -55px; 
+  overflow: hidden;
+}
+  
+@media only screen and (max-width: 767px) {
+  .breadcrumb-area {
+    height: 180px;
+    text-align: center;
+  } 
+  
+  .spad {
+    padding-top: 200px!important;
+    padding-bottom: 170px !important;
+}
+  
+.breadcrumb-area .breadcrumb-content .breadcrumb {
+   justify-content: center;
+}
+  
+}
+  
+.breadcrumb-area .breadcrumb-content{
+   margin-left: 70px;
+   position: relative;
+   z-index: 30;
+}
+ 
+  
+.breadcrumb-area .breadcrumb-content h2 {
+  color: #ffffff;
+  font-size: 3rem; 
+  display: block;
+  text-transform: none !important;
+  font-weight: 300;
+  letter-spacing: 0;
+   position: relative;
+  z-index: 30;
+}
+  
  
 
+@media only screen and (max-width: 767px) {
+  .breadcrumb-area .breadcrumb-content h2 {
+     font-size: 3rem;
+  }
   
-{% else %}
+  .breadcrumb-area .breadcrumb-content{
+   margin-left: 0px;
+}
   
-    {% assign hero = heroVideoGlobal %}
-    {% assign video = true %}
+  .breadcrumb-area .breadcrumb-content h2::before{
+  display: none;
+  
+}
+ 
+}
 
-  
-{% endif %}
-{% else  %}
-  {% assign hero = heroImageLocal %}
- {% endif %}
+.breadcrumb-area .breadcrumb-content .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 0;
+}
 
- <section class="site-hero inner-page overlay section-{{ section.id }}" >
+.breadcrumb-area .breadcrumb-content .breadcrumb .breadcrumb-item::before {
+   color: #ffffff;
+}
+    
+.breadcrumb-area .breadcrumb-content .breadcrumb .breadcrumb-item.active {
+   color:  #fff;
+   font-size: 18px;
+   font-weight: 300;
+   font-family: "fuente-contenido" !important;
+}
+
+.breadcrumb-area .breadcrumb-content .breadcrumb .breadcrumb-item a {
+   font-size: 18px;
+   color: #ffffff;
+   font-weight: 300;
+   transition: 0.6s;
+   font-family: "fuente-contenido" !important;
+}
       
-   
-   
-     {% if video %}
-      <video autoplay="" muted="" loop="" playsinline>
-	    	 <source src="{{ hero }}" type="video/mp4">
-	  </video>
-  <style>
-    .section-{{ section.id }} video{
-      object-fit:cover;
-      object-position:center;
-      width:100%;
-      height:100%;
-      position:absolute;
-      top:0;
-      left:0;
-      z-index:-1;
-    }
-  </style>
-  {% else %}
+.breadcrumb-area .breadcrumb-content .breadcrumb .breadcrumb-item a:hover {
+   color: #ff0000;
+   transition: 0.6s;
+}
+  
+ 
+.bg-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+  
+.bg-overlay {
+  position: relative;
+  z-index: 2;
+  background-position: center center;
+  background-size: cover; 
+}
 
-  <style>
-    .section-{{ section.id }}{
-      background-image: url({{ hero | img_url: 'master' }});
-      background-size: cover;
-      background-position:center;
-      background-repeat: no-repeat;
-    }
-  </style>
+.bg-overlay::after {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+ 
+  
+.spad {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+  
+.div1 { 
+    background-color: white; 
+    border: 20px solid white; 
+} 
+.div2 { 
+    float: right; 
+    border-top: 20px solid red; 
+    border-right: 20px solid red; 
+    border-left: 20px solid transparent; 
+} 
+.div3 { 
+    float: right; 
+    margin: 10px -20px; 
+    border-bottom: 20px solid red; 
+    border-right: 20px solid transparent; 
+    border-left: 20px solid transparent; 
+} 
+.div4 { 
+    border-top: 20px solid red; 
+    border-right: 20px solid transparent; 
+    margin-right: 40px; 
+} 
 
-  {% endif %} 
-   
-   
-   
-   
-   <div class="container">
-        <div class="row site-hero-inner justify-content-center align-items-center">
-          <div class="col-md-10 text-center" data-aos="fade">
-            <h1 class="heading mb-3">{{ page.title }}</h1>
-            <ul class="custom-breadcrumbs mb-4">
-              <li><a href="{{ routes.root_url }}">{{ settings.home-name }}</a></li>
-              <li>&bullet;</li>
-              <li>{{ page.title }}</li>
-            </ul>
-          </div>
+  
+</style>
+
+
+
+
+ <!--==========================
+      SECCION HERO SUBPAGINAS
+ ============================-->
+<section class="breadcrumb-area spad bg-img bg-overlay" style="background-image: url('{{ section.settings.image-bg-1 | img_url: 'master' }}');">
+    <img src="https://cdn.shopify.com/s/files/1/0611/2473/9300/files/hero-subpages.png?v=1638040332" style="position: absolute; z-index: 2; opacity: 0.2; top: 0">
+
+  <!--<div class="adorno-1"></div>
+  <div class="adorno-2"></div>-->
+  <!--<div class="adorno-3"></div>-->
+  <div class="adorno-4"></div>
+  
+  <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content" data-aos="fade-up">
+                        <h2>
+                          {{ page.title }}
+                        </h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="{{ routes.root_url }}">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                 {{ page.title }}
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
 </section>
+<div class="div2"></div> 
+<div class="div3"></div> 
+<div class="div4"></div>
+
 
 {% schema %}
   {
-    "name": "Hero Services",
+    "name": "Hero Subpages",
     "settings": [
-     {
+   {
 	"type": "image_picker",
      "id": "image-bg-1",
      "label": "Image Background"
 	 }
+    
 
-    ]
+]
+
   }
 {% endschema %}
 
