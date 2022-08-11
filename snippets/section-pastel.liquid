@@ -154,7 +154,7 @@
     body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider {
       pointer-events: all;
     }
-    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__right p {
+    body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__right p, body .ui_inner__selection input[type=radio]:checked + label .ui_inner__slider .slide_inner__right a {
       opacity: 1;
       left: 0px;
       transition: all 0.5s 0.5s cubic-bezier(0.175, 1.605, 0.455, 0.92);
@@ -247,7 +247,7 @@
     body .ui_inner .ui_inner__slider .slide_inner__right h3 span {
       font-size: 11px;
     }
-    body .ui_inner .ui_inner__slider .slide_inner__right p {
+    body .ui_inner .ui_inner__slider .slide_inner__right p, body .ui_inner .ui_inner__slider .slide_inner__right a {
       margin: 0;
       line-height: 22px;
       position: relative;
@@ -393,10 +393,11 @@
                        <h3>{{block.settings.featured_product.price | money}}</h3>
                        <p>{{block.settings.featured_product.description}}
                       
-                       <a style="z-index: 5;" class="mt-5  btn-small" href="{{routes.cart_add_url}}?id={{ block.settings.featured_product.variants.first.id }}&quantity=1" class="container-img sb">
+                      
+                      </p>
+                      <a style="z-index: 5;" class="mt-5  btn-small" href="{{routes.cart_add_url}}?id={{ block.settings.featured_product.variants.first.id }}&quantity=1" class="container-img sb">
                         <i class="fa fa-shopping-cart"></i> Add to cart
                         </a>
-                      </p>
                     </div>
                  </div>
              </div>
@@ -420,10 +421,11 @@
                          <h2>{{block.settings.featured_product.title}}</h2>
                          <h3>{{block.settings.featured_product.price | money}}</h3>
                          <p>{{block.settings.featured_product.description}}
-                         <a style="z-index: 5;" class="mt-5 btn-small" href="{{routes.cart_add_url}}?id={{ block.settings.featured_product.variants.first.id }}&quantity=1" class="container-img sb">
+                         
+                        </p>
+                        <a style="z-index: 5;" class="mt-5 btn-small" href="{{routes.cart_add_url}}?id={{ block.settings.featured_product.variants.first.id }}&quantity=1" class="container-img sb">
                           <i class="fa fa-shopping-cart"></i> Add to cart
                           </a>
-                        </p>
                      </div>
                  </div>
              </div>
