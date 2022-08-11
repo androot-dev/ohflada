@@ -1,4 +1,4 @@
-<div class="d-none d-md-block floating-container float-button btn-social scroll-tracking">
+<div class="d-none d-md-block floating-container-{{id}} float-button btn-social scroll-tracking">
     <div class="floating-button">+</div>
     <div class="element-container">
 
@@ -75,7 +75,7 @@
 
 
 
-    .floating-container {
+    .floating-container-{{id}} {
         position: fixed;
         width: 100px;
         height: 100px;
@@ -86,33 +86,33 @@
 
     }
 
-    .floating-container:hover {
+    .floating-container-{{id}}:hover {
         height: calc(55px + (70px * {{nr_items}})); 
     }
 
-    .floating-container:hover .floating-button {
+    .floating-container-{{id}}:hover .floating-button {
         -webkit-transform: translatey(5px);
         transform: translatey(5px);
         -webkit-transition: all 0.2s;
         transition: all 0.2s;
     }
 
-    .floating-container:hover .element-container .float-element:nth-child(1) {
+    .floating-container-{{id}}:hover .element-container .float-element:nth-child(1) {
         -webkit-animation: come-in 0.2s forwards 0.2s;
         animation: come-in 0.2s forwards 0.2s;
     }
 
-    .floating-container:hover .element-container .float-element:nth-child(2) {
+    .floating-container-{{id}}:hover .element-container .float-element:nth-child(2) {
         -webkit-animation: come-in 0.2s forwards 0.2s;
         animation: come-in 0.2s forwards 0.3s;
     }
 
-    .floating-container:hover .element-container .float-element:nth-child(3) {
+    .floating-container-{{id}}:hover .element-container .float-element:nth-child(3) {
         -webkit-animation: come-in 0.2s forwards 0.4s;
         animation: come-in 0.2s forwards 0.5s;
     }
 
-    .floating-container .floating-button {
+    .floating-container-{{id}} .floating-button {
         --size: 1.4rem;
         height: calc(var(--size) * 4);
         width: calc(var(--size) * 4);
@@ -138,7 +138,7 @@
         transition: all 0.2s;
     }
 
-    .floating-container .float-element {
+    .floating-container-{{id}} .float-element {
         position: relative;
         display: block;
         border-radius: 50%;
@@ -155,7 +155,7 @@
         transform: translateY(100px);
     }
 
-    .floating-container .float-element i {
+    .floating-container-{{id}} .float-element i {
         font-size: 19px;
         width: 100%;
         height: 100%;
@@ -164,7 +164,7 @@
         align-items: center;
     }
 
-    .floating-container .float-element .material-icons {
+    .floating-container-{{id}} .float-element .material-icons {
         vertical-align: middle;
         font-size: 16px;
     }
