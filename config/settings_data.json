@@ -240,6 +240,22 @@
               "label": "Privacy Policy",
               "new_tab": false
             }
+          },
+          "87ef5bec-049e-4d6f-9225-ae06ec402045": {
+            "type": "policies",
+            "settings": {
+              "url": "shopify:\/\/pages\/about-us",
+              "label": "Refund Policy",
+              "new_tab": false
+            }
+          },
+          "39c58005-55cc-4e12-a857-22b98767eb68": {
+            "type": "policies",
+            "settings": {
+              "url": "",
+              "label": "",
+              "new_tab": true
+            }
           }
         },
         "block_order": [
@@ -249,7 +265,9 @@
           "7512b812-3d73-4714-a8ac-bfc14f026806",
           "ec7adf00-5023-4aab-92e0-05ed0f77ec74",
           "23f3e5c7-9c7f-4848-b200-4505cfb7753e",
-          "53e2e058-20ca-40b7-9dbe-e6ee978b0f93"
+          "53e2e058-20ca-40b7-9dbe-e6ee978b0f93",
+          "87ef5bec-049e-4d6f-9225-ae06ec402045",
+          "39c58005-55cc-4e12-a857-22b98767eb68"
         ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/272410440_109519301647319_5118707330302706591_n-removebg-preview.png",
