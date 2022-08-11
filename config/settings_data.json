@@ -647,13 +647,12 @@
           "1157819c-acc0-4ed0-9a4b-5fa4eb05c4d1"
         ],
         "settings": {
+          "image-fondo": "shopify:\/\/shop_images\/pexels-pavel-danilyuk-7180857_1.jpg",
           "title": "Reviews",
           "subtitle": "What do our customers say",
           "button_label": "View More",
           "button_link": "https:\/\/www.google.com\/intl\/es\/business\/sign-up\/",
-          "button_label-2": "",
-          "button_link-2": "",
-          "overlay": "radial-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 100%)"
+          "overlay": "linear-gradient(91deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 55%, rgba(255, 255, 255, 0) 100%)"
         }
       },
       "reviews-2": {
@@ -704,8 +703,6 @@
           "subtitle": "What do our customers say",
           "button_label": "View More",
           "button_link": "https:\/\/www.google.com\/intl\/es\/business\/sign-up\/",
-          "button_label-2": "",
-          "button_link-2": "",
           "overlay": ""
         }
       },
