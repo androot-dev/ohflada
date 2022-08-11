@@ -453,7 +453,14 @@ header .site-header__cart-count {
   text_color: "white",
   instagram_link: settings.social_instagram_link,
   instagram_user: settings.user-instagram,
-  nr_items: "social"
+  nr_items: 2
+  
+%}
+{% render 'social-btn' 
+  background: "var(--primary)",
+  text_color: "white",
+  nr_items: 3,
+  email: section.settings.email,
   
 %}
 
@@ -620,11 +627,6 @@ header .site-header__cart-count {
       "type": "text",
       "id": "phone",
       "label": "Phone"
-    },
-    {
-      "type": "text",
-      "id": "email",
-      "label": "Email"
     },
     {
       "type": "text",
