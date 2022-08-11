@@ -317,8 +317,8 @@
         {% if block.type == "product" %}
         {% if newElemen == 0 %}
         <!-- 1ER ELEMENTO -->
-        <input checked='checked' id='super' name='selection' type='radio'>
-        <label for='super'>
+        <input checked='checked' id='lovely' name='selection' type='radio'>
+        <label for='lovely'>
            <div class='selected l'>{{ block.settings.featured_product.title }}</div>
            <div class='ui_inner__slider'>
               <div class='sb'>
@@ -341,29 +341,31 @@
         </label>
         {% assign newElemen = 1 %}
         {% elsif newElemen == 1 %}
-       <!-- 1ER ELEMENTO -->
-       <input checked='checked' id='lovely' name='selection' type='radio'>
-       <label for='lovely'>
-          <div class='selected l'>{{ block.settings.featured_product.title }}</div>
-          <div class='ui_inner__slider'>
-             <div class='sb'>
-                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/starburst2.png'>
-             </div>
-             <div class='slide'>
-                <div class='slide_inner'>
-                   <a href="{{block.settings.featured_product.url}}" class='slide_inner__left'>
-                      <img src='{{ block.settings.featured_product.featured_image | image_url }}'>
-                   </a>
-                   <div class='slide_inner__right'>
-                      <h2>{{block.settings.featured_product.title}}</h2>
-                      <h3>{{block.settings.featured_product.price | money }}</h3>
-                      <p>{{block.settings.featured_product.description}}</p>
-                      
-                   </div>
-                </div>
-             </div>
-          </div>
-       </label>
+        <!-- 2DO ELEMENTO -->
+        <input id='super' name='selection' type='radio'>
+        <label for='super'>
+           <div class='selected s'>{{ block.settings.featured_product.title }}</div>
+           <div class='ui_inner__slider'>
+              <div class='sb'>
+                 <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/starburst2.png'>
+              </div>
+              <div class='slide'>
+                 <div class='slide_inner'>
+                    <a class='slide_inner__left' href="{{ block.settings.featured_product.url }}">
+                       <img src='{{ block.settings.featured_product.featured_image | image_url }}'>
+                    </a>
+                    <div class='slide_inner__right'>
+                       <h2>{{block.settings.featured_product.title}}</h2>
+                       <h3>{{block.settings.featured_product.price}}</h3>
+                       <p>{{block.settings.featured_product.description}}</p>
+                       <a style="z-index:5;" class="btn-circle btn" href="{{routes.cart_add_url}}?id={{ block.settings.featured_product.variants.first.id }}&quantity=1" class="container-img sb">
+                        <i class="fa fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </label>
 
 
         
