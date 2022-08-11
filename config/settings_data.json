@@ -633,12 +633,20 @@
               "overlay_before": "radial-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 100%)",
               "hidden_mobile": true
             }
+          },
+          "8773c0eb-9a77-4e28-af99-1555de32fd42": {
+            "type": "Video",
+            "settings": {
+              "name_costumer": "Jhon Doe",
+              "link_video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/2c5fe400e9d14ed990dc864cac28abe5.mp4"
+            }
           }
         },
         "block_order": [
           "f2125769-6b09-4569-ae4a-53a94147c5d7",
           "8afae858-0abf-4e49-807f-2f84ef0caa50",
-          "04a7b110-96ee-49b6-8525-a4728b971f60"
+          "04a7b110-96ee-49b6-8525-a4728b971f60",
+          "8773c0eb-9a77-4e28-af99-1555de32fd42"
         ],
         "settings": {
           "title": "Reviews",
