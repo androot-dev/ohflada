@@ -236,7 +236,7 @@
           "53e2e058-20ca-40b7-9dbe-e6ee978b0f93": {
             "type": "policies",
             "settings": {
-              "url": "shopify:\/\/pages\/about-us",
+              "url": "shopify:\/\/policies\/privacy-policy",
               "label": "Privacy Policy",
               "new_tab": false
             }
