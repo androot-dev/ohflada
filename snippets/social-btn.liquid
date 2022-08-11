@@ -2,7 +2,8 @@
     <div class="floating-button">+</div>
     <div class="element-container">
 
-                                 
+               
+         
 
         <a title="@{{user_facebook}}" data-bs-toggle="tooltip" data-bs-placement="right"
             href="{{ facebook_link }}" target="_blank"
@@ -20,6 +21,39 @@
             <i class="fa-brands fa-instagram" style="color:{{text_color}};"></i>
         </a>                                  
 
+        
+        {% if email %}
+            <a title="{{email}}" data-bs-toggle="tooltip" data-bs-placement="right"
+                href="mailto:{{ email }}" 
+                class="float-element tooltip-left " style="
+                background: {{background}};">
+                <i class="fa-brands fa-instagram" style="color:{{text_color}};"></i>
+            </a>
+            {% endif %} 
+
+        {% if phone %}
+            <a title="{{phone}}" data-bs-toggle="tooltip" data-bs-placement="right"
+                href="tel:{{ phone }}" 
+                class="float-element tooltip-left " style="
+                background: {{background}};">
+                <i class="fa-brands fa-instagram" style="color:{{text_color}};"></i>
+            </a>
+            {% endif %}
+
+        {% if location and location_tooltip %}
+            <a title="{{location_tooltip}}" data-bs-toggle="tooltip" data-bs-placement="right"
+                href="{{ location }}" target="_blank"
+                class="float-element tooltip-left " style="
+                background: {{background}};">
+                <i class="fa-solid fa-map-marker-alt" style="color:{{text_color}};"></i>
+           
+        {% endif %}
+           
+
+        {% endif %}
+
+
+        
       
 
                                 
