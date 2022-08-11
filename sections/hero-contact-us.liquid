@@ -185,7 +185,7 @@
  <!--==========================
       SECCION HERO SUBPAGINAS
  ============================-->
-<section class="breadcrumb-area spad bg-img bg-overlay bg-img-hero">
+<section class="breadcrumb-area spad bg-img bg-overlay bg-img-hero section-{{ section.id }}">
      {% if video %}
       <video autoplay="" muted="" loop="" playsinline>
 	    	 <source src="{{ hero }}" type="video/mp4">
@@ -207,12 +207,12 @@
         {% else %}
              
         <style>
-             .bg-img-hero{
+             .section-{{ section.id }}{
                background-image:  url('{{ section.settings.image-bg-1 | img_url: 'master' }}');
              }
         </style>
       
-      {%  endif %}
+      {% endif %}
        
        
   <div class="container">
