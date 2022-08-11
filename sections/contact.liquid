@@ -149,11 +149,16 @@ position: relative;
 .contact-us .scanfcode {
     margin: 20px 0px;
 }
-  @media screen and(max-width: 767px){
+  @media screen and(min-width: 767px){
      [data-aos=left-translate].aos-animate{
       transform: translateX(0);
     }
   }
+   @media screen and(max-width: 767px){
+      .info-wrap{
+      transform: translateX(275px);
+    }
+   }
  
  .contact-us .h3.form-message__title{
    display:none;
