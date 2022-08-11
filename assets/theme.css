@@ -2081,6 +2081,10 @@ textarea {
     width: 100%;
     border-radius: var(--radius);
   }
+.input-error-message *{
+  color:var(--primary);
+  fill: var(--primary);
+}
   .form-message--error li {
     list-style-type: disc;
     list-style-position: inside; }
