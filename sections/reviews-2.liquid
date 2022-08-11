@@ -76,11 +76,12 @@
 
 .reviews .image-container img {
   min-height: 100%;
-  min-width: 100%;
+  width: {{section.settings.width_image}};
   object-fit: cover;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: {{section.settings.left_image}};
+  right: {{section.settings.right_image}};
   transform: translate(-50%, -50%);
   z-index: 20;
 }
@@ -237,8 +238,26 @@
 			"id": "image-fondo",            
             "label": "Image Background"
 	  },
+    {
+      "type": "text",
+          "id": "left_image",
+          "label": "left image",
+          "default": "0"
+       },
+       {
+        "type": "text",
+            "id": "right_image",
+            "label": "right image",
+            "default": "auto"
+         },
+         {
+          "type": "text",
+              "id": "width_image",
+              "label": "width image",
+              "default": "100%"
+           },
       {
-		"type": "text",
+		  "type": "text",
         "id": "title",
 		"label": "Title Section",
         "default": "Reviews"
