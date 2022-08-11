@@ -256,6 +256,14 @@
               "label": "Terms of Services",
               "new_tab": false
             }
+          },
+          "39946ee9-3f84-40eb-a654-c45c75534011": {
+            "type": "policies",
+            "settings": {
+              "url": "",
+              "label": "Shipping Policy",
+              "new_tab": false
+            }
           }
         },
         "block_order": [
@@ -267,7 +275,8 @@
           "23f3e5c7-9c7f-4848-b200-4505cfb7753e",
           "53e2e058-20ca-40b7-9dbe-e6ee978b0f93",
           "87ef5bec-049e-4d6f-9225-ae06ec402045",
-          "39c58005-55cc-4e12-a857-22b98767eb68"
+          "39c58005-55cc-4e12-a857-22b98767eb68",
+          "39946ee9-3f84-40eb-a654-c45c75534011"
         ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/272410440_109519301647319_5118707330302706591_n-removebg-preview.png",
