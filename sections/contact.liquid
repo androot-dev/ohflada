@@ -269,7 +269,11 @@ position: relative;
 				</div>
 
 				<div class="col-md-12 mt-5">
-					<div id="map" class="bg-white"></div>
+					<div id="map" class="bg-white">
+
+                            {{   section.settings.iframe-google-map    }}     
+                      
+                    </div>
 				</div>
 			</div>
 		</div>
@@ -305,15 +309,20 @@ position: relative;
     },
 	{
       "type": "text",
-      "id": "siteweb",
-      "label": "site-web"
+      "id": "address",
+      "label": "Address"
 	  
     },
 	{
       "type": "text",
       "id": "location-link",
       "label": "Location Link"
-    }
+    },
+      {
+        "type": "text",
+        "id": "iframe",
+        "label": "iframe-google-map"
+      }
  ]
   }
 {% endschema %}
