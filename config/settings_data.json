@@ -629,6 +629,7 @@
           },
           "1157819c-acc0-4ed0-9a4b-5fa4eb05c4d1": {
             "type": "image-transparency",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/272410440_109519301647319_5118707330302706591_n-removebg-preview_ce47fd84-6dcf-4ba3-8b4f-b4c3122a654d.png",
               "top": 24,
