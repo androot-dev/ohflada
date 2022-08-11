@@ -5,7 +5,7 @@
                
          
         {% if facebook_user != blank  and facebook_link != blank  %}
-        <a title="@{{user_facebook}}" data-bs-toggle="tooltip" data-bs-placement="right"
+        <a title="@{{facebook_user}}" data-bs-toggle="tooltip" data-bs-placement="right"
             href="{{ facebook_link }}" target="_blank"
             class="float-element tooltip-left " style="
             background: {{background}};">
@@ -14,7 +14,7 @@
     {% endif %}
         {% if instagram_user != blank  and instagram_link != blank  %}
 
-        <a title="@{{user_instagram}}" data-toggle="tooltip" data-placement="right"
+        <a title="@{{instagram_user}}" data-toggle="tooltip" data-placement="right"
             href="{{ instagram_link }}" target="_blank"
             class="float-element tooltip-left " style="
             background: {{background}};">
