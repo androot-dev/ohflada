@@ -7713,5 +7713,5 @@ h1{
 }
 
 span[data-cart-count]{
-  color:white;
+  color:white!important;
 }
