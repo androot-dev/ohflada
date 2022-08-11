@@ -93,7 +93,7 @@
     text-align: center;
   } 
   
-  .spad {
+  .breadcrumb-area.spad {
     padding-top: 200px!important;
     padding-bottom: 170px !important;
 }
@@ -174,21 +174,21 @@
 }
   
  
-.bg-img {
+.breadcrumb-area.bg-img {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat; 
 }
   
-.bg-overlay {
+.breadcrumb-area.bg-overlay {
   position: relative;
   z-index: 2;
   background-position: center center;
   background-size: cover; 
 }
 
-.bg-overlay::after {
-  background: {{ settings.subpage_hero_overlay_color }};
+.breadcrumb-area.bg-overlay-hero::after {
+  
   position: absolute;
   z-index: -1;
   top: 0;
@@ -199,9 +199,9 @@
 }
  
   
-.spad {
+.breadcrumb-area.spad {
  display: flex;
-    align-items: center;
+ align-items: center;
 }
   
 
