@@ -7176,7 +7176,7 @@ textarea:focus{
   box-shadow: 0px 8px 32px 0 rgb(253 127 127 / 35%);
   transition: all 0.5s ease;
 }
-.btn:hover, .btn-small {
+.btn:hover, .btn-small:hover {
   box-shadow: 0 0px 0px 0 rgba(255, 93, 93, 0.35);
   background-position: 0 0;
 }
