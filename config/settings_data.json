@@ -15,6 +15,7 @@
     "tertiary-dark": "#452f03",
     "tertiary-light": "#b49877",
     "tertiary-gradient": "linear-gradient(180deg, #cfc0a5 0, #c3ae90 25%, #b49877 50%, #a6825f 75%, #9b714d 100%)",
+    "paragraph-color": "#503232",
     "paragraph-size": "15px",
     "paragraph-weight": 500,
     "heading1-color": "#bf6363",
