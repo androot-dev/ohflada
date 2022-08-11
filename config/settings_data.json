@@ -1,5 +1,7 @@
 {
   "current": {
+    "subpage_hero_overlay_color": "linear-gradient(180deg, rgba(177, 86, 96, 0.25), rgba(186, 178, 179, 0.4) 100%)",
+    "subpage_hero_background": "shopify:\/\/shop_images\/pexels-pavel-danilyuk-7180857_1.jpg",
     "primary": "#bf6363",
     "primary-dark": "#ac4747",
     "primary-light": "#f3dbdb",
@@ -755,7 +757,6 @@
       "hero-contact-us": {
         "type": "hero-contact-us",
         "settings": {
-          "image-bg-1": "shopify:\/\/shop_images\/contact-us_3024caae-7229-4bcb-8d78-64c560c04b7e.jpg"
         }
       },
       "1660096450bfda049e": {
