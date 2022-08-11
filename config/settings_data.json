@@ -299,7 +299,7 @@
           "padding_bottom": 52,
           "lateral-compress": 0,
           "separation-icon": 16,
-          "padding_center_column": 0,
+          "padding_center_column": 3,
           "logo_width": 170,
           "logo_height": 170,
           "logo_mobile_width": 100,
