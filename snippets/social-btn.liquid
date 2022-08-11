@@ -118,7 +118,11 @@
         z-index: 10;
 
     }
-
+    .floating-container-{{id}} .float-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .floating-container-{{id}}:hover {
         height: calc(55px + (70px * {{nr_items}})); 
     }
