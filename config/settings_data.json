@@ -305,12 +305,6 @@
       "1637642233c40e31c3": {
         "type": "latest-products",
         "blocks": {
-          "2e893c19-d580-44ba-bf1d-37ec0c9f81d2": {
-            "type": "product",
-            "settings": {
-              "featured_product": "cheese-flan"
-            }
-          },
           "8a7bd123-b3c4-4fd8-abd5-74c5f78b2041": {
             "type": "product",
             "settings": {
@@ -331,7 +325,6 @@
           }
         },
         "block_order": [
-          "2e893c19-d580-44ba-bf1d-37ec0c9f81d2",
           "8a7bd123-b3c4-4fd8-abd5-74c5f78b2041",
           "5d2f3882-ee40-44ab-bc66-259f2ccff1a2",
           "6fa0b9b5-6154-4e65-bbec-4d38e64e8a96"
@@ -417,11 +410,21 @@
               "col-md": 6,
               "col-sm": 12
             }
+          },
+          "36d132a1-c023-4bb6-9299-2ab5a09ddf05": {
+            "type": "collection",
+            "settings": {
+              "category": "cupcakes",
+              "col-lg": 4,
+              "col-md": 6,
+              "col-sm": 12
+            }
           }
         },
         "block_order": [
           "c4614e2e-bbb3-42bd-b007-6fc72ba35a99",
-          "9644d32d-1567-46cf-9a7e-d11caf65dd8a"
+          "9644d32d-1567-46cf-9a7e-d11caf65dd8a",
+          "36d132a1-c023-4bb6-9299-2ab5a09ddf05"
         ],
         "settings": {
           "title": "Shop By Category",
