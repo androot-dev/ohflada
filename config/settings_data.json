@@ -236,7 +236,7 @@
           "53e2e058-20ca-40b7-9dbe-e6ee978b0f93": {
             "type": "policies",
             "settings": {
-              "url": "shopify:\/\/pages\/about-us",
+              "url": "shopify:\/\/policies\/privacy-policy",
               "label": "Privacy Policy",
               "new_tab": false
             }
@@ -244,7 +244,7 @@
           "87ef5bec-049e-4d6f-9225-ae06ec402045": {
             "type": "policies",
             "settings": {
-              "url": "shopify:\/\/pages\/about-us",
+              "url": "shopify:\/\/policies\/refund-policy",
               "label": "Refund Policy",
               "new_tab": false
             }
@@ -252,7 +252,7 @@
           "39c58005-55cc-4e12-a857-22b98767eb68": {
             "type": "policies",
             "settings": {
-              "url": "",
+              "url": "shopify:\/\/policies\/terms-of-service",
               "label": "Terms of Services",
               "new_tab": false
             }
@@ -260,7 +260,7 @@
           "39946ee9-3f84-40eb-a654-c45c75534011": {
             "type": "policies",
             "settings": {
-              "url": "",
+              "url": "shopify:\/\/policies\/shipping-policy",
               "label": "Shipping Policy",
               "new_tab": false
             }
@@ -299,7 +299,7 @@
           "padding_bottom": 52,
           "lateral-compress": 0,
           "separation-icon": 16,
-          "padding_center_column": 0,
+          "padding_center_column": 3,
           "logo_width": 170,
           "logo_height": 170,
           "logo_mobile_width": 100,
