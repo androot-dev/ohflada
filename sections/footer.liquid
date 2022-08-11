@@ -194,7 +194,7 @@
     .myfooter li {
         padding: 5px 0;
     }
-    .myfooter .row>.order-md-2:not(.flex-column) {
+    .myfooter .row>.order-lg-2:not(.flex-column) {
         padding-left: var(--center-padding-column);
         justify-content: center;
     }
@@ -203,17 +203,17 @@
         justify-content: flex-end;
     }
 
-    .myfooter .row>.order-md-1:not(.flex-column) {
+    .myfooter .row>.order-lg-1:not(.flex-column) {
         justify-content: flex-start;
     }
-	.myfooter .row>.order-md-2.flex-column {
+	.myfooter .row>.order-lg-2.flex-column {
 		padding-left: var(--center-padding-column);
 		align-items: center;
 	}
-	.myfooter .row>.order-md-3.flex-column {
+	.myfooter .row>.order-lg-3.flex-column {
 		align-items: flex-end;
 	}
-	.myfooter .row>.order-md-1.flex-column {
+	.myfooter .row>.order-lg-1.flex-column {
 		align-items: flex-start;
 	}
     @media screen and (max-width: 767px) {
@@ -276,25 +276,25 @@
 
 
 <footer class=" section-{{ section.id }} myfooter container-fluid text-white px-0">
-<!--cambiar posicios de columnas moviendo order-md-?-->
+<!--cambiar posicios de columnas moviendo order-lg-?-->
 <div class="page-width row align-items-start">
 
 
   
     {% if section.settings.logo %}
-          <div  data-aos="fade-up" class="col-md-3 
+          <div  data-aos="fade-up" class="col-lg-3 
             order-1 container-column-logo 
             {% if section.settings.logo_position == "start" %}
         
-    		order-md-1
+    		order-lg-1
     
             {% elsif section.settings.logo_position == "center" %}
     
-            order-md-2
+            order-lg-2
     
              {% elsif section.settings.logo_position == "end" %}
     
-             order-md-3
+             order-lg-3
     
             {% endif; %}
             col-12 
@@ -322,18 +322,18 @@
     
     
     <div data-aos-delay="100" data-aos="fade-up" class="
-		col-md-3
+		col-lg-3
         {% if section.settings.logo_position == "start" %}
         
-		order-md-2
+		order-lg-2
 
         {% elsif section.settings.logo_position == "center" %}
 
-        order-md-1
+        order-lg-1
 
          {% elsif section.settings.logo_position == "end" %}
 
-         order-md-2
+         order-lg-2
 
         {% endif; %}
 
@@ -371,19 +371,19 @@
 			order-2
 			 {% if section.settings.logo_position == "start" %}
         
-        		order-md-3
+        		order-lg-3
         
                 {% elsif section.settings.logo_position == "center" %}
         
-                order-md-3
+                order-lg-3
         
                  {% elsif section.settings.logo_position == "end" %}
         
-                 order-md-2
+                 order-lg-2
         
                 {% endif; %}
 
-			col-md-3
+			col-lg-3
 			col-12
 			container-quick-links
 			d-flex
@@ -406,7 +406,7 @@
 		{% endif %}
 	{% endfor %}
 
-  <div class="col-md-3 order-4 d-flex ">
+  <div class="col-lg-3 order-4 d-flex ">
     <div class="container-menu-footer">
 		<h2 class="text-md-left ">Policies</h2>
 		<ul class="list-none" style="padding-left:0;">
@@ -431,10 +431,10 @@
 <div class="container-fluid copyright-container px-0 position-relative">
 	<div class="row copyright page-width justify-content-between align-items-center">
 		<span
-			class="col-md-10 col-12 d-flex justify-content-md-start justify-content-center text-md-start text-center ">Copyright
+			class="col-lg-10 col-12 d-flex justify-content-md-start justify-content-center text-md-start text-center ">Copyright
 			© 2022 All rights reserved | This Website Was Designed And
 			Developed by</span>
-		<a class="col-md-2 col-12 d-flex justify-content-md-end justify-content-center"
+		<a class="col-lg-2 col-12 d-flex justify-content-md-end justify-content-center"
 			href="https://josesilvera.com/" target="_blank">
 			<img width="95" height="30" class="logoSilvera" alt="author page logo"
 				src="{{ "silvera.png" | asset_url }}" loading="lazy"></a>
