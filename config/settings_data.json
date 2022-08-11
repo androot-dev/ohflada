@@ -366,14 +366,6 @@
               "icon": ""
             }
           },
-          "b563d7d4-ba67-46e9-a7f9-00d980316036": {
-            "type": "benefits",
-            "settings": {
-              "name_benefit": "Economy",
-              "image": "shopify:\/\/shop_images\/bank.png",
-              "icon": ""
-            }
-          },
           "3faf87d1-32c4-46a4-87e2-dbb1597b98d8": {
             "type": "benefits",
             "settings": {
@@ -381,13 +373,21 @@
               "image": "shopify:\/\/shop_images\/schedule.png",
               "icon": ""
             }
+          },
+          "b563d7d4-ba67-46e9-a7f9-00d980316036": {
+            "type": "benefits",
+            "settings": {
+              "name_benefit": "Economy",
+              "image": "shopify:\/\/shop_images\/bank.png",
+              "icon": ""
+            }
           }
         },
         "block_order": [
           "4acc595d-e543-452f-b032-1371a97279ef",
           "0cd2bcec-13e3-41ff-bdce-80e316433b88",
-          "b563d7d4-ba67-46e9-a7f9-00d980316036",
-          "3faf87d1-32c4-46a4-87e2-dbb1597b98d8"
+          "3faf87d1-32c4-46a4-87e2-dbb1597b98d8",
+          "b563d7d4-ba67-46e9-a7f9-00d980316036"
         ],
         "settings": {
           "title_channels": "Benefits"
