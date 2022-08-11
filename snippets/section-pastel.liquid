@@ -184,15 +184,16 @@
       -webkit-transition: all 0.5s 0s cubic-bezier(0.175, 1.605, 0.455, 0.92);
     }
     body .ui_inner .ui_inner__slider .slide_inner__left img {
-      width: 310px;
-      height: 350px;
+      width: clamp(250px, 32vw ,490px);
+      height: 332px;
+      max-width: none;
       z-index: 8;
       position: relative;
       box-shadow: var(--shadow);
       object-fit: cover;
       position: absolute;
-      left: clamp(-95px, -6vw, 79px);
-      top: -19px;
+      left: clamp(-421px, -45%, 84px);
+      top: -11px;
       border-radius: var(--radius);
       min-width: 236px;
     }
@@ -313,7 +314,7 @@
     @media screen and (min-width: 767px){
      
       body .ui_inner .ui_inner__slider .slide_inner__right{
-        padding-left: 140px;
+        padding-left: clamp(115px, 15vw, 245px);
       }
       .slide_inner__right p{
         padding-right: 60px;
