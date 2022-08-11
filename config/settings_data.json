@@ -439,6 +439,42 @@
       },
       "benefits": {
         "type": "benefits",
+        "blocks": {
+          "16f4b69d-f4fc-4c99-9ed1-09ef9f0282e1": {
+            "type": "benefits",
+            "settings": {
+              "name_benefit": "Creativity",
+              "icon": ""
+            }
+          },
+          "4e76dd8a-2889-4718-ae32-7e4748724527": {
+            "type": "benefits",
+            "settings": {
+              "name_benefit": "",
+              "icon": ""
+            }
+          },
+          "72395530-d312-4d9d-a0d4-cbc065e089c8": {
+            "type": "benefits",
+            "settings": {
+              "name_benefit": "",
+              "icon": ""
+            }
+          },
+          "3b26ac7c-e21b-4645-830f-0c7646f80000": {
+            "type": "benefits",
+            "settings": {
+              "name_benefit": "",
+              "icon": ""
+            }
+          }
+        },
+        "block_order": [
+          "16f4b69d-f4fc-4c99-9ed1-09ef9f0282e1",
+          "4e76dd8a-2889-4718-ae32-7e4748724527",
+          "72395530-d312-4d9d-a0d4-cbc065e089c8",
+          "3b26ac7c-e21b-4645-830f-0c7646f80000"
+        ],
         "settings": {
           "title_channels": "Benefits"
         }
