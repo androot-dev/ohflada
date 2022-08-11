@@ -305,16 +305,16 @@
       "1637642233c40e31c3": {
         "type": "latest-products",
         "blocks": {
-          "8a7bd123-b3c4-4fd8-abd5-74c5f78b2041": {
-            "type": "product",
-            "settings": {
-              "featured_product": "cheese-flan"
-            }
-          },
           "2e893c19-d580-44ba-bf1d-37ec0c9f81d2": {
             "type": "product",
             "settings": {
               "featured_product": "pastelillo-de-guayaba"
+            }
+          },
+          "8a7bd123-b3c4-4fd8-abd5-74c5f78b2041": {
+            "type": "product",
+            "settings": {
+              "featured_product": "cheese-flan"
             }
           },
           "5d2f3882-ee40-44ab-bc66-259f2ccff1a2": {
@@ -325,8 +325,8 @@
           }
         },
         "block_order": [
-          "8a7bd123-b3c4-4fd8-abd5-74c5f78b2041",
           "2e893c19-d580-44ba-bf1d-37ec0c9f81d2",
+          "8a7bd123-b3c4-4fd8-abd5-74c5f78b2041",
           "5d2f3882-ee40-44ab-bc66-259f2ccff1a2"
         ],
         "settings": {
