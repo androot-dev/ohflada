@@ -151,18 +151,70 @@
 
 
 
+{% assign heroImageLocal = section.settings.image-bg-1 %}
+{% assign heroImageGlobal = settings.subpage_hero_background  %}
+{% assign heroVideoGlobal = settings.subpage_hero_background_video %}
+
+{% assign video = false  %}
+{% assign hero = "" %}
+
+{%  if heroImageLocal == blank %}
+
+{% if heroVideoGlobal == blank %}
+  
+
+{% assign hero = heroImageGlobal %}
+ 
+
+  
+{% else %}
+  
+    {% assign hero = heroVideoGlobal %}
+    {% assign video = true %}
+
+  
+{% endif %}
+{% else  %}
+  {% assign hero = heroImageLocal %}
+ {% endif %}
+
+
+
+
 
  <!--==========================
       SECCION HERO SUBPAGINAS
  ============================-->
-<section class="breadcrumb-area spad bg-img bg-overlay" style="background-image: url('{{ section.settings.image-bg-1 | img_url: 'master' }}');">
-    <img src="https://cdn.shopify.com/s/files/1/0611/2473/9300/files/hero-subpages.png?v=1638040332" style="position: absolute; z-index: 2; opacity: 0.2; top: 0">
+<section class="breadcrumb-area spad bg-img bg-overlay bg-img-hero">
+     {% if video %}
+      <video autoplay="" muted="" loop="" playsinline>
+	    	 <source src="{{ hero }}" type="video/mp4">
+	  </video>
+      <style>
+        .section-{{ section.id }} video{
+          object-fit:cover;
+          object-position:center;
+          width:100%;
+          height:100%;
+          position:absolute;
+          top:0;
+          left:0;
+          z-index:-1;
+        }
+      </style>
 
-  <!--<div class="adorno-1"></div>
-  <div class="adorno-2"></div>-->
-  <!--<div class="adorno-3"></div>-->
-  <div class="adorno-4"></div>
-  
+       
+        {% else %}
+             
+        <style>
+             .bg-img-hero{
+               background-image:  url('{{ section.settings.image-bg-1 | img_url: 'master' }}');
+             }
+        </style>
+      
+      {%  endif %}
+       
+       
   <div class="container">
             <div class="row align-items-center">
                 <div class="col-12">
@@ -183,10 +235,6 @@
             </div>
         </div>
 </section>
-<div class="div2"></div> 
-<div class="div3"></div> 
-<div class="div4"></div>
-
 
 {% schema %}
   {
