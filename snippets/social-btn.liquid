@@ -33,7 +33,7 @@
 
         {% if phone != blank  %}
             <a title="{{phone_tooltip}}" data-toggle="tooltip" data-placement="right"
-                href="tel:+1{{ phone }}" 
+                href="{{ phone }}" 
                 class="float-element tooltip-left " style="
                 background: {{background}};">
                 <i class="fa fa-phone" style="color:{{text_color}};"></i>
