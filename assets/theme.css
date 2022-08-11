@@ -2072,13 +2072,15 @@ textarea {
   display: block;
   width: 100%; }
 
-.form-message--error {
-  color: #651818;
-  border: 1px solid #d20000;
-  background-color: #fff8f8;
-  padding: 1rem 1.3rem;
-  text-align: left;
-  width: 100%; }
+.form-message--error{
+    color: #651818; 
+    border: 1px solid #d2000045;
+    background-color: #fff3f3;
+    padding: 1rem 1.3rem;
+    text-align: left;
+    width: 100%;
+    border-radius: var(--radius);
+  }
   .form-message--error li {
     list-style-type: disc;
     list-style-position: inside; }
