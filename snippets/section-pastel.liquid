@@ -297,7 +297,7 @@
     @media screen and (min-width: 767px){
      
       body .ui_inner .ui_inner__slider .slide_inner__right{
-        padding-left: 33%;
+        padding-left: clamp(221px, 11vw, 300px);;
       }
       .slide_inner__right p{
         padding-right: 60px;
@@ -306,7 +306,7 @@
 </style>
 
  
-<div class='ui page-width-md d-none d-md-block'>
+<div class='ui page-width-md d-none d-lg-block'>
   <div class='ui_inner'>
      <div class='ui_fruit'>
         <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/treats.png'>
@@ -414,7 +414,7 @@
  
   </div>
 </div>
-<div class=" owl-carousel d-flex d-md-none carousel-best ">
+<div class=" owl-carousel d-flex d-lg-none carousel-best ">
   {% assign newElemen = 0 %}
   {% for block in blocks %}
   {% if block.type == "product" %}
