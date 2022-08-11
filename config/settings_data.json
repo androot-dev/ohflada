@@ -649,6 +649,9 @@
         ],
         "settings": {
           "image-fondo": "shopify:\/\/shop_images\/pexels-pavel-danilyuk-7180857_1.jpg",
+          "left_image": "auto",
+          "right_image": "0px",
+          "width_image": "50%",
           "title": "Reviews",
           "subtitle": "What do our customers say",
           "button_label": "View More",
