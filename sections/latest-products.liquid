@@ -334,8 +334,16 @@
       }
       
     </style>
-  </div>
 
+
+  </div>
+<div class="d-flex justify-content-center">
+  {% if section.settings.button_link != blank %}
+    <a href="{{section.settings.button_link}}">
+      {{section.settings.button_label}}
+    </a>
+  {% endif %}
+</div>
 </section>
 {% schema %}
   {
