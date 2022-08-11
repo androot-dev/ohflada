@@ -350,6 +350,14 @@
       "163767578637edbf32": {
         "type": "benefits",
         "blocks": {
+          "4acc595d-e543-452f-b032-1371a97279ef": {
+            "type": "benefits",
+            "settings": {
+              "name_benefit": "Creativity",
+              "image": "shopify:\/\/shop_images\/cake.png",
+              "icon": ""
+            }
+          },
           "0cd2bcec-13e3-41ff-bdce-80e316433b88": {
             "type": "benefits",
             "settings": {
@@ -370,24 +378,16 @@
             "type": "benefits",
             "settings": {
               "name_benefit": "Experience",
-              "image": "shopify:\/\/shop_images\/experience.png",
-              "icon": ""
-            }
-          },
-          "4acc595d-e543-452f-b032-1371a97279ef": {
-            "type": "benefits",
-            "settings": {
-              "name_benefit": "Creativity",
-              "image": "shopify:\/\/shop_images\/cake.png",
+              "image": "shopify:\/\/shop_images\/schedule.png",
               "icon": ""
             }
           }
         },
         "block_order": [
+          "4acc595d-e543-452f-b032-1371a97279ef",
           "0cd2bcec-13e3-41ff-bdce-80e316433b88",
           "b563d7d4-ba67-46e9-a7f9-00d980316036",
-          "3faf87d1-32c4-46a4-87e2-dbb1597b98d8",
-          "4acc595d-e543-452f-b032-1371a97279ef"
+          "3faf87d1-32c4-46a4-87e2-dbb1597b98d8"
         ],
         "settings": {
           "title_channels": "Benefits"
