@@ -357,7 +357,7 @@
                      </a>
                      <div class="slide_inner__right">
                          <h2>{{block.settings.featured_product.title}}</h2>
-                         <h3>{{block.settings.featured_product.price}}</h3>
+                         <h3>{{block.settings.featured_product.price | money}}</h3>
                          <p  class="mb-5">{{block.settings.featured_product.description}}</p>
                         <a  style="z-index: 5;" class=" btn-small" href="{{routes.cart_add_url}}?id={{ block.settings.featured_product.variants.first.id }}&quantity=1" class="container-img sb">
                           <i class="fa fa-shopping-cart"></i> Add to cart
