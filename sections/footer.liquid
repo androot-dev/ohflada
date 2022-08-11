@@ -405,7 +405,22 @@
 	{% endfor %}
 
   <div class="col-md-3 order-4">
-    <h2>Policies</h2>
+    <div class="container-menu-footer">
+		<h2 class="text-md-left ">Policies</h2>
+		<ul class="list-none" style="padding-left:0;">
+			{% for block in section.blocks %}
+			  {% if block.type == 'policies' %}
+			  <li class="d-flex pt-3 justify-content-center justify-content-md-start  align-items-center">
+				
+				<a  {% if block.settings.new_tab %} target="_blank" {% endif %} {% if block.settings.url != blank %} 
+				  href="{{ block.settings.url }}" {% else %} style="pointer-events:none;" {% endif %}">
+				  {{ block.settings.label }}
+				</a>
+			  </li>
+			{% endif %}
+		  {% endfor %}
+		  </ul>
+	</div>
   
   </div>
 </div>
@@ -429,6 +444,28 @@
 {
 	"name": "Footer",
 	"blocks": [
+		{
+			"type": "policies",
+			"name": "Policies",
+			"limit": 4,
+			"settings": [{
+					"type": "url",
+					"id": "url",
+					"label": "Link"
+				},
+				{
+					"type": "text",
+					"id": "label",
+					"label": "label"
+				},  
+				{
+				"type": "checkbox",
+				"id": "new_tab",
+				"label": "Open in new tab",
+				"default": true
+				}
+			]
+		},
 		{
 			"type": "quick_links",
 			"name": "Quick Links",
