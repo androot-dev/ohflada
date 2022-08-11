@@ -1,6 +1,6 @@
 {
   "current": {
-    "subpage_hero_overlay_color": "linear-gradient(180deg, rgba(177, 86, 96, 0.25), rgba(186, 178, 179, 0.4) 100%)",
+    "subpage_hero_overlay_color": "linear-gradient(180deg, rgba(177, 86, 96, 0.73), rgba(186, 178, 179, 0.4) 100%)",
     "subpage_hero_background": "shopify:\/\/shop_images\/pexels-pavel-danilyuk-7180857_1.jpg",
     "primary": "#bf6363",
     "primary-dark": "#ac4747",
