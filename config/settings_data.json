@@ -362,21 +362,24 @@
             "type": "benefits",
             "settings": {
               "name_benefit": "Economy",
-              "icon": "fa fa-coins"
+              "image": "shopify:\/\/shop_images\/bank.png",
+              "icon": ""
             }
           },
           "0cd2bcec-13e3-41ff-bdce-80e316433b88": {
             "type": "benefits",
             "settings": {
               "name_benefit": "Quality",
-              "icon": "fa-solid fa-cake-candles"
+              "image": "shopify:\/\/shop_images\/quality.png",
+              "icon": ""
             }
           },
           "3faf87d1-32c4-46a4-87e2-dbb1597b98d8": {
             "type": "benefits",
             "settings": {
               "name_benefit": "Experience",
-              "icon": "fa-solid fa-calendar-check"
+              "image": "shopify:\/\/shop_images\/experience.png",
+              "icon": ""
             }
           }
         },
