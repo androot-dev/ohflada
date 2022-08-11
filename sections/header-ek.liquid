@@ -446,7 +446,7 @@ header .site-header__cart-count {
 </style>
 
 {% include 'search-drawer' %}
-{% include 'social-btn' %}
+{% render 'social-btn' facebook_link: ettings.social_facebook_link, facebook_user: settings.user-facebook %}
   <!-- Top Search Form Area -->
     <div class="top-search-area">
         <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
