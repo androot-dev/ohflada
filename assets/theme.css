@@ -188,7 +188,7 @@
 }
 
 .breadcrumb-area.bg-overlay-hero::after {
-  
+  background: {{ settings.subpage_hero_overlay_color }};
   position: absolute;
   z-index: -1;
   top: 0;
