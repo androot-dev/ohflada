@@ -297,7 +297,7 @@
           "margin_top": 0,
           "padding_top": 52,
           "padding_bottom": 52,
-          "lateral-compress": 0,
+          "lateral-compress": 10,
           "separation-icon": 16,
           "padding_center_column": 7,
           "logo_width": 170,
