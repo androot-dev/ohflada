@@ -74,6 +74,94 @@
 ==============================================================================*/
 /*================ Slick Slider SCSS ================*/
 
+
+/* HERO SUBPAGES */
+.owl-nav .owl-next, .owl-nav .owl-prev{
+  border:none;
+}
+.site-hero {
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  position: relative; 
+ 
+}
+
+
+
+.site-hero.overlay:before {
+  background: var(--overlay-hero-subpages);
+  content: "";
+  position: absolute;
+  height: 60vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; 
+}
+  
+  
+.site-hero.inner-page {
+  height: 60vh;
+}
+    
+.site-hero.inner-page.overlay:before {
+  height: 60vh;
+}
+
+.site-hero-inner {
+  height: 60vh; 
+}
+  
+.site-hero-inner .heading {
+  font-size: var(--font-size-heading-hero);
+  color: var(--text-color-hero);
+  line-height: 1;
+  font-weight: 500; 
+}
+    
+  
+@media (max-width: 991.98px) {
+   .site-hero-inner .heading {
+     font-size: var(--font-size-heading-hero-mobile); 
+     margin-top: 100px;
+   } 
+}
+
+  
+.custom-breadcrumbs {
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+}
+  
+.custom-breadcrumbs li {
+    display: inline-block;
+    color: #fff;
+    margin: 0 4px;
+    text-transform: none;
+    font-size: var(--font-size-breadcrumb-hero);
+    letter-spacing: .1em;
+    font-weight: bold; 
+    font-family: "fuente-contenido";
+}
+    
+.custom-breadcrumbs li a {
+      font-weight: normal; 
+      color: #fff;
+      transition: all 0.6s;
+      font-weight: bold; 
+      font-family: "fuente-contenido";
+}
+      
+.custom-breadcrumbs li a:hover {
+        color: var(--text-color-hover-hero); 
+}
+
+
+/* END HERO SUBPAGES */
+
+
 :root{
   --section-separation: 50px;
   --element-separation: 25px;

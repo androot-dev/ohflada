@@ -12,6 +12,26 @@
     "settings": [
       {
         "type": "header",
+        "content": "Subpages",
+        "info": "Video or Imagen "
+      },
+      {
+        "type": "color_background",
+        "id": "subpage_hero_overlay_color",
+        "label": "hero subp overlay "
+      },
+      {
+        "type": "image_picker",
+        "id": "subpage_hero_background",
+        "label": "Global image subpage hero"
+      },
+      {
+        "type": "url",
+        "id": "subpage_hero_background_video",
+        "label": "Global video subpage hero"
+      },
+      {
+        "type": "header",
         "content": "Pallete"
       },
       {
