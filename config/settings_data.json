@@ -434,7 +434,7 @@
       "hero-subpages": {
         "type": "hero-subpages",
         "settings": {
-          "image-bg-1": "shopify:\/\/shop_images\/pexels-helena-lopes-708392.jpg"
+          "image-bg-1": "shopify:\/\/shop_images\/pexels-jerald-mira-6493067.jpg"
         }
       },
       "benefits": {
@@ -482,8 +482,7 @@
           "block_text-2": "<p> من نحن؟ <\/p><p>مرحبًا بكم في موقع الشركة EK’S NEW LIFE الشركة الأم العقيبي التجارة الدولية <\/p><p>شركة خدمات. <\/p><p>تأسست شركة العقيبي للتجارة الدولية في عام 2020. منذ ذلك الحين وحتى اليوم ، <\/p><p>تعمل الشركة في مجال توريد وتصدير السلع المختلفة من الصين إلى <\/p><p>المستوردين في جميع أنحاء العالم ， دول الخليج والعالم العربي بأسره وأماكن أخرى. <\/p><p>تعتمد شركة العقيبي لخدمات التجارة الدولية على خبراء ذوي مهارات عالية في التسويق ، <\/p><p>شراء وتوقيع العقود مع الشركات الصينية وتفتيش البضائع وتسليم البضائع إليها <\/p><p>وجهات ... الخ.  في هذه المهنة ، تطورت الشركة ، بحيث يمكن للشركة إكمال كل <\/p><p>هذه مع أكبر قدر من السهولة والسرعة. <\/p><p>ما يميز شركة العقيبي للتجارة الدولية المحدودة أنها تتمتع بسمعة طيبة <\/p><p>بين العملاء ، ويصل التعاون بين الشركة والعملاء إلى الحد الأقصى. <\/p><p>ترحب بكم شركة العقيبي لخدمات التجارة الدولية وترحب بكم ترحيباً حاراً <\/p><p>قم بزيارة مكتب الشركة. <\/p><p>خصوصية الشركة تضع كل الترتيبات وتوفر الوقت والمال وتوفر <\/p><p>وتحمي عملائها من متاعب ومخاطر السفر. <\/p><p>أينما كنت ، نحن نرحب بك. <\/p><p>نقدم لك أفضل جودة بأفضل سعر. <\/p><p>ليوم أفضل غدا <\/p>",
           "block_text-3": "<p><strong>我们是谁? <\/strong><\/p><p><strong> 欢迎访问我们公司网站 EK’S NEW LIFE 母公司AL OKAIBI 国际贸易服务公司 <\/strong><\/p><p><strong> AL OKAIBI 国际贸易服务公司成立于 2020 年，从那时起直到今天，该公司从事从中国采购和出口各种商品到世界各地的进口商的业务，海湾国家以及整个阿拉伯世界和其他地方。 <\/strong><\/p><p><strong>AL OKAIBI 国际贸易服务公司依赖于营销、采购、与中国公司签订合同、检查货物、将货物运送到目的地......等方面的高技能专家。在这个专业中，公司已经发展，因此公司能够以最大的轻松和速度完成所有这些。 <\/strong><\/p><p><strong>AL OKAIBI 国际贸易有限责公司的特点是在客户中享有良好的声誉，公司与客户合作达到极致。 <\/strong><\/p><p><strong>AL OKAIBI 国际贸易服务公司欢迎您来，并热烈欢迎您参观公司办公室。 <\/strong><\/p><p><strong>公司的特殊性把所有的安排和节省时间和金钱，并为他们的客户提供并保护他们免受旅行的麻烦，风险。 <\/strong><\/p><p><strong> 无论您身在何处，我们都欢迎您。 <\/strong><\/p><p><strong> 以最优惠的价格为您带来最好的品质。 <\/strong><\/p><p><strong> 为了明天更好的一天。 <\/strong><\/p>",
           "button_label": "Contact Us",
-          "button_link": "shopify:\/\/pages\/contact-us",
-          "image-1": "shopify:\/\/shop_images\/pexels-yan-krukov-7314038.jpg"
+          "button_link": "shopify:\/\/pages\/contact-us"
         }
       },
       "product-template": {
@@ -613,7 +612,6 @@
             "type": "text",
             "settings": {
               "text": "Jhon Smith",
-              "image-customer": "shopify:\/\/shop_images\/pexels-helena-lopes-708392.jpg",
               "block_text": "The articles they offer are incredible, they have a huge quality and above all you get it at an excellent price, without a doubt one of the best stores I have bought in, I totally recommend them"
             }
           },
@@ -621,23 +619,35 @@
             "type": "text",
             "settings": {
               "text": "Sonia Williams",
-              "image-customer": "shopify:\/\/shop_images\/pexels-helena-lopes-708392.jpg",
               "block_text": "The store has the most recent articles and presents a level of innovation that is too incredible, everything you are looking for you get here, also their attention and service is one of the best I have seen, without a doubt the ideal place to do your shopping"
+            }
+          },
+          "04a7b110-96ee-49b6-8525-a4728b971f60": {
+            "type": "image-transparency",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/272410440_109519301647319_5118707330302706591_n-removebg-preview_ce47fd84-6dcf-4ba3-8b4f-b4c3122a654d.png",
+              "top": 24,
+              "left": 58,
+              "width": 400,
+              "height": 350,
+              "overlay_before": "radial-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 100%)",
+              "hidden_mobile": true
             }
           }
         },
         "block_order": [
           "f2125769-6b09-4569-ae4a-53a94147c5d7",
-          "8afae858-0abf-4e49-807f-2f84ef0caa50"
+          "8afae858-0abf-4e49-807f-2f84ef0caa50",
+          "04a7b110-96ee-49b6-8525-a4728b971f60"
         ],
         "settings": {
-          "image-fondo": "shopify:\/\/shop_images\/review-2_25f6e204-79a2-4804-abbe-e097fcacf4df.jpg",
           "title": "Reviews",
           "subtitle": "What do our customers say",
           "button_label": "Google",
           "button_link": "",
           "button_label-2": "instagram",
-          "button_link-2": "https:\/\/www.instagram.com\/ek_12138"
+          "button_link-2": "https:\/\/www.instagram.com\/ek_12138",
+          "overlay": ""
         }
       },
       "hero-contact-us": {
