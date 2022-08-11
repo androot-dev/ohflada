@@ -322,19 +322,12 @@
             "settings": {
               "featured_product": "custom-cakes"
             }
-          },
-          "a326be81-c3c4-4f3a-adca-cee693bbcfc4": {
-            "type": "product",
-            "settings": {
-              "featured_product": "pastelillo-de-guayaba"
-            }
           }
         },
         "block_order": [
           "2e893c19-d580-44ba-bf1d-37ec0c9f81d2",
           "8a7bd123-b3c4-4fd8-abd5-74c5f78b2041",
-          "5d2f3882-ee40-44ab-bc66-259f2ccff1a2",
-          "a326be81-c3c4-4f3a-adca-cee693bbcfc4"
+          "5d2f3882-ee40-44ab-bc66-259f2ccff1a2"
         ],
         "settings": {
           "title": "Best Sellers",
