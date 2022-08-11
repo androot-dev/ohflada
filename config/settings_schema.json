@@ -18,17 +18,17 @@
       {
         "type": "color_background",
         "id": "subpage_hero_overlay_color",
-        "label": "hero subp overlay "
+        "label": "hero subpages overlay "
       },
       {
         "type": "image_picker",
         "id": "subpage_hero_background",
-        "label": "Global image subpage hero"
+        "label": "Global image subpages hero"
       },
       {
         "type": "url",
         "id": "subpage_hero_background_video",
-        "label": "Global video subpage hero"
+        "label": "Global video subpages hero"
       },
       {
         "type": "header",
