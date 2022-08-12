@@ -1,21 +1,41 @@
-<div  class="popup-cart-ajax">
-  {% for product in cart.items | limit: 1 %}
+<div data-ajax-cart-section class="popup-cart-ajax">
+ {{  cart.items.first.title }}
       Add 1 item
-      {{ product.title }}
-  {% endfor %}
+     
+ {{  cart.items.last.title }}
+ <div data-ajax-cart-bind-state="cart.item_count" > 
+  <!-- Cart item count appears here --> 
+</div>
+
+<button data-ajax-cart-toggle-class-button="item-to-cart | remove">
+  <i class="fa fa-times"></i>
+</button>
 </div>
 
 <style>
   .popup-cart-ajax{
-    position: fixed;
+   position: fixed;
     top: 20px;
     right: 20px;
     width: 300px;
     background: var(--primary-gradient);
     height: 250px;
-    visibility: hidden;
-    pointer-events:none;
-    display:flex;
-    justify-content:center;
+   
+    display: flex;
+    justify-content: center;
+    z-index: 500;
+    border-radius: var(--radius);
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+    transform:translateY(-225%);
+    transition: transform .3s ease-in-out;
   }
+  @media screen and (min-width: 767px){
+    body.item-to-cart .popup-cart-ajax{
+ 
+      transform:translateY(0);
+    }
+  }
+
 </style>
