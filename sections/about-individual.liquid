@@ -78,6 +78,71 @@
         "label": "Image About 1"
 	  }
      
-	]
+	],
+      "blocks": [{
+			"type": "image-transparency",
+			"limit": 1,
+			"name": "Image with transparency",
+			"settings": [
+				{
+				"type" : "image_picker",
+				"id": "image",
+				"label": "Select a image"
+				},
+				{
+                  "type": "range",
+                  "id": "top",
+                  "min": -50,
+                  "max": 100,
+                  "step": 2,
+                  "unit": "%",
+                  "label": "Top Position",
+                  "default": 40
+                },
+				{
+                  "type": "range",
+                  "id": "left",
+                   "min": -50,
+                  "max": 100,
+                  "step": 1.5,
+                  "unit": "%",
+                  "label": "Left Position",
+                  "default": 40
+                },
+				{
+                  "type": "range",
+                  "id": "width",
+                  "min": 10,
+                  "max": 1000,
+                  "step": 10,
+                  "unit": "px",
+                  "label": "Width",
+                  "default": 100
+                },
+              
+				{
+                  "type": "range",
+                  "id": "height",
+                   "min": 10,
+                  "max": 1000,
+                  "step": 10,
+                  "unit": "px",
+                  "label": "Height",
+                  "default": 100
+                },
+              {
+                  "type": "color_background",
+                  "id": "overlay_before",
+                  "label": "overlay",
+                  "default": "radial-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 100%)"
+                },
+				{
+					"type": "checkbox",
+					"id": "hidden_mobile",
+					"label": "Hidden in Mobile",
+					"default": true
+				}
+			]
+		}]
   }
 {% endschema %}
