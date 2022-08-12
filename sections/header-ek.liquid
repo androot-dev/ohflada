@@ -329,20 +329,22 @@
 }
   
 header .site-header__cart-count {
-    display: flex;
+  display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    right: -0.1rem;
+    right: 0.9rem;
     top: 0.2rem;
     font-weight: bold;
-    background-color: var(--primary) !important;
-    color: #fff !important; 
-    border-radius:2px !important; 
+    background: var(--primary-gradient);
+    color: #fff !important;
+    border-radius: 2px !important;
     min-width: 1em;
     height: 1em;
 }
-  
+ header #CartCount .icon__fallback{
+   display:none;
+ }
   @media screen and (max-width: 992px){
     button.btn--link.site-header__icon.site-header__search-toggle.js-drawer-open-top:before {
         content: "Search";
@@ -453,8 +455,7 @@ header .site-header__cart-count {
   text_color: "white",
   instagram_link: settings.social_instagram_link,
   instagram_user: settings.user-instagram,
-  nr_items: 2,
-  id: "social"
+  nr_items: 2
 %}
 {% render 'social-btn' 
   background: "var(--primary)",
