@@ -80,6 +80,7 @@
     font-size: 1.2rem;
     text-decoration: line-through;
     line-height: 12px;
+   z-index:1;
 }
  .tag-price-comparation .price-2 {
     color: #000;
@@ -97,11 +98,13 @@
 }
  .tag-price {
     color: #000;
+    z-index:1;
 }
 .tag-price-comparation {
     padding: 6px 20px;
     display: flex;
     flex-direction: column;
+   z-index:1;
 }
 
 
