@@ -5,8 +5,27 @@
  {{  cart.items.last.title }}
  <div data-ajax-cart-bind-state="cart.item_count" > 
   <!-- Cart item count appears here --> 
+
+
+
+<script>
+  $(document).ready(function(){
+      const initialState = getCartState();
+          if(!initialState){
+            console.log("Error")
+          }else{
+             console.log(initialState)
+          }
+      })
+
+</script>
 </div>
 
+
+
+
+
+  
 <button data-ajax-cart-toggle-class-button="item-to-cart | remove">
   <i class="fa fa-times"></i>
 </button>
