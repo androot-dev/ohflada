@@ -2,23 +2,23 @@
 
  <span ><div data-ajax-cart-bind-state="cart.item_count" > </div>  </span>
 
-    <div class="title-section text-center"> 
+    <div class="mb-2 title-section text-center"> 
        <span clas="p text-center">Was added to cart: </span>
        <h1 class="title-product "></h1>
     </div>
-    <div class="container-image">
+    <div class="mb-2 container-image">
       <img src="" alt="product in cart" />
     </div>
-<a href="{{ routes.cart_url }}" class="btn-small">View My Cart</a>
-  <form action="{{ routes.cart_url }}" method="post" class="my-cart">
-   <button class="checkout" type="submit" name="checkout">
-      Checkout — {{ cart.total_price | money_with_currency }}
-    </button> 
-  </form>
+    <a href="{{ routes.cart_url }}" class="btn-small mb-2">View My Cart</a>
+      <form action="{{ routes.cart_url }}" method="post" class="my-cart">
+       <button class="checkout" type="submit" name="checkout">
+          Checkout — {{ cart.total_price | money_with_currency }}
+        </button> 
+      </form>
 
-<button class="close-popup-cart" data-ajax-cart-toggle-class-button="show-popup-cart | remove">
-  <i class="fa fa-times"></i>
-</button>
+    <button class="close-popup-cart" data-ajax-cart-toggle-class-button="show-popup-cart | remove">
+      <i class="fa fa-times"></i>
+    </button>
 
 
   
