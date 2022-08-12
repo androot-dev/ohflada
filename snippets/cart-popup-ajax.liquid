@@ -1,8 +1,6 @@
 <div  class="popup-cart-ajax">
 
- <div data-ajax-cart-bind-state="cart.item_count" > 
-  <!-- Cart item count appears here --> 
- </div>
+ <span ></span><div data-ajax-cart-bind-state="cart.item_count" > </div>  </span>
 
     <div class="title-section"> 
        <span clas="p">Was added to cart: </span>
@@ -38,31 +36,19 @@
       }
       
     }
-
-
       subscribeToCartAjaxRequests(( requestState, subscribeToResult ) => {
-      
-      
         if ( requestState.requestType === 'add' ) {
-          
-        
           subscribeToResult( requestState => {
-      
-           
             if ( requestState.responseData?.ok ) {
-      
-           
               let product = requestState.responseData.body;
               if ( requestState.responseData.body.items?.length === 1 ) {
                 product = requestState.responseData.body.items[0];
               }
-
               add_poppu_info( product ? product : "Fail");
             }
           });
         }
-      })
-        
+      })      
 </script>
 
 <style>
