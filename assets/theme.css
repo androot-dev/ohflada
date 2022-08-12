@@ -7856,3 +7856,7 @@ h1{
 span[data-cart-count]{
   color:white!important;
 }
+
+body.js-ajax-cart-request-in-progress  {
+  opacity: .7;
+}
