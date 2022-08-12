@@ -20,8 +20,9 @@
  import { subscribeToCartAjaxRequests } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}';
    function add_poppu_info(product, image){
     let popup = document.querySelector(".popup-cart-ajax");
-     console.log(product)
-      popup.querySelector(".title-product").textContent = product.title;
+      if(product != "Fail"){
+        popup.querySelector(".title-product").textContent = product.title;
+      }
       
     }
 
