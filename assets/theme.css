@@ -7857,7 +7857,7 @@ span[data-cart-count]{
   color:white!important;
 }
 
-body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:not(.load-liquid-ajax) *[data-ajax-cart-request-button] {
+body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:not(.dom-load) *[data-ajax-cart-request-button] {
 
   pointer-events:none;
   transition: 0.3 filter ease;
