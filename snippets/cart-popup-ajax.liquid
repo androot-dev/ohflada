@@ -1,6 +1,17 @@
-<div class="popup-cart-ajax d-none">
+<div class="popup-cart-ajax">
   {% for product in cart.items | limit: 1 %}
       Add 1 item
       {{ product.title }}
   {% endfor %}
 </div>
+
+<style>
+  .popup-cart-ajax{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    background: var(--primary-gradient);
+    height: 250px;
+  }
+</style>
