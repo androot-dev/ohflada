@@ -23,37 +23,14 @@ background: var(--primary);
 </style>
 {% paginate collection.products by limit 6 %}
 
- <!--<div class="adorno-1"></div>
-  <div class="adorno-2"></div>
-  <div class="adorno-3"></div>
-  <div class="adorno-4"></div>-->
+
+  
 <div data-section-id="{{ section.id }}" data-section-type="collection-template">
   <header class="collection-header">
     {%- assign is_filter_by_available = false -%}
     {%- if section.settings.tags_enable and collection.all_tags.size > 0 -%}
       {%- assign is_filter_by_available = true -%}
     {%- endif -%}
-
-   {% if section.settings.show_collection_image and collection.image %}
-      <!--<div class="collection-hero">
-        <div class="collection-hero__image ratio-container lazyload js"
-             data-bgset="{% include 'bgset', image: collection.image %}"
-             data-sizes="auto"
-             data-parent-fit="cover"
-             data-image-loading-animation
-        ></div>
-        <noscript>
-          <div class="collection-hero__image" style="background-image: url({{ collection.image | img_url: '2048x600', crop: 'top' }});"></div>
-        </noscript>
-        <div class="collection-hero__title-wrapper">
-          <h1 class="collection-hero__title page-width">
-              <span class="visually-hidden">{{ 'collections.general.collection_label' | t }}: </span>
-              {{ collection.title }}
-          </h1>
-        </div>
-      </div>-->
-   
-    {% endif %}
 
     {% if is_filter_by_available or section.settings.sort_enable %}
       <div class="filters-toolbar-wrapper{% if is_filter_by_available %} filters-toolbar--has-filter{% endif %}">
@@ -145,6 +122,8 @@ background: var(--primary);
     {% else %}
       <ul class="list-view-items">
         {% for product in collection.products %}
+
+
           <li class="list-view-item mb-4">
             {% include 'product-card-list', product: product, show_vendor: section.settings.show_vendor %}
           </li>
