@@ -855,6 +855,19 @@
           "padding_top": 40,
           "padding_bottom": 40
         }
+      },
+      "subscribe": {
+        "type": "subscribe",
+        "settings": {
+          "image_background": "shopify:\/\/shop_images\/pexels-jerald-mira-6493067.jpg",
+          "background-color": "linear-gradient(0deg, rgba(137, 143, 239, 1), rgba(120, 196, 245, 1) 100%)",
+          "background-title": "",
+          "padding_y": 40,
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "title-section": "Subscribe",
+          "subtitle": "Promotions, new products, and sales. Directly to your inbox"
+        }
       }
     },
     "content_for_index": [
