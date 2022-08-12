@@ -6,13 +6,25 @@
 
 
          
- 
-            <div data-ajax-cart-section>
-               {{  cart.items.first.title }}
-                    Add 1 item
-                   
-               {{  cart.items.last.title }}
-            </div>
+{% for item in cart.items %}
+        {% assign item_index = forloop.index %}
+        <hr />  
+        <div><a href="{{ item.url }}">{{ item.title }}</a></div>
+
+        {% for property in item.properties %}
+          <div>
+            {{ property.first }}:
+            {% if property.first == 'Engraving' %}
+              <!-- data-ajax-cart-property-input ajaxifies the line item property input -->
+              <input type="text"
+                value="{{ property.last }}" 
+                data-ajax-cart-property-input="{{ item_index }}[{{ property.first }}]"/>
+              {% else %}
+                {{ property.last }}
+              {% endif %}
+          </div>
+        {% endfor %}
+  {%  endfor %} 
          
 
 
