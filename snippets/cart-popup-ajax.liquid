@@ -22,6 +22,8 @@
     let popup = document.querySelector(".popup-cart-ajax");
       if(product != "Fail"){
         popup.querySelector(".title-product").textContent = product.title;
+      }else{
+        popup.querySelector(".title-product").textContent = "¡Error!"
       }
       
     }
