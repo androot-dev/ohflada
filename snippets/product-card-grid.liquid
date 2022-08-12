@@ -25,7 +25,18 @@
   
 
         <div class="class-item position-relative">
-             <span class="price">{{product.price | money}} </span>
+               {% if product.compare_at_price > product.price and product.available %}
+                  <div class="tag-price-comparation">
+                    <span class="price-1">{{product.compare_at_price | money }}</span>
+                    <span class="price-2">{{product.price | money}}</span>
+                	</div>
+                {% else %}
+                
+                <div class="tag-price">
+                	{{product.price | money}}
+                </div>
+                {% endif %}
+  
                     <div class="ci-pic">
                         <a href="{{ product.url}}">
                             
