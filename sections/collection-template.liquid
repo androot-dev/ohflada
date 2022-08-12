@@ -87,12 +87,9 @@ background: var(--primary);
   <div class="title-section text-center"> 
   {% if  section.settings.title != blank %}
    <h1>{{ section.settings.title }}</h1>
-
-   {% else %}
-        <h1 >The best {{ collection.title }} for you</h1>
   {% endif %}
  {% if  section.settings.subtitle != blank %}
-     <h1>{{ section.settings.subtitle }}</h1>
+     <h2>{{ section.settings.subtitle }}</h2>
   {% endif %}
 
   
@@ -223,13 +220,12 @@ background: var(--primary);
 		"type": "text",
         "id": "title",
 		"label": "Title Section"
-        
      },
      {
 		"type": "text",
         "id": "subtitle",
-		"label": "Subtitle Section"
-        
+		"label": "Subtitle Section",
+        "default":  "Look at all what we offer for you"
      },
     {
       "type": "select",
