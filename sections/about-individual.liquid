@@ -1,4 +1,35 @@
 <style>
+  {% for block in section.blocks %}
+  {% if block.type == "image-transparency" %}
+      .section-{{ section.id }}-img-transparency{
+          position:relative;
+      }
+    .section-{{ section.id }}-img-transparency::before{
+		content: "";
+        width: {{block.settings.width}}px;
+    	height: {{block.settings.height}}px;
+        background-image:url("{{block.settings.image | img_url : "master" }}");
+        position:absolute;
+
+        top: {{block.settings.top}}%;
+        left: {{block.settings.left}}%;
+        z-index: 0;
+        opacity: 0.1;
+        background-size: cover;
+	  }
+
+	 {% if block.settings.hidden_mobile %}
+	  @media screen and (max-width: 767px) {
+		.section-{{ section.id }}-img-transparency::before{
+			display:none;
+		}
+	  }
+	{% endif %}
+    
+
+  {% endif %}
+{% endfor %}
+
   .about-individual .img-1{
         height: 400px;
     border-radius: var(--radius);
@@ -6,7 +37,7 @@
 
   }
 </style>
-<section class="about-individual py-section">
+<section class="about-individual py-section section-{{ section.id }}-img-transparency">
  
   <div class="container ">
     <div class="row ">
