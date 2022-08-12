@@ -68,7 +68,7 @@
        {% if page.title %}
          {%  assign title = page.title %}
   {%  else %}
-         {%  if template.name = "collection" %}
+         {%  if template.name == "collection" %}
          {%  assign title = "Products" %}
            {% else %}
           {%  assign title = template.name %}
