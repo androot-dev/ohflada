@@ -75,6 +75,40 @@
 /*================ Slick Slider SCSS ================*/
 
 
+
+ .tag-price-comparation .price-1 {
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    line-height: 12px;
+}
+ .tag-price-comparation .price-2 {
+    color: #000;
+    line-height: 18px;
+}
+.tag-price,  .tag-price-comparation {
+    position: absolute;
+    background: var(--primary);
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 2px 20px;
+    border-radius: 0;
+    top: 10px;
+    right: 10px;
+}
+ .tag-price {
+    color: #000;
+}
+.tag-price-comparation {
+    padding: 6px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
 /* HERO SUBPAGES */
 .owl-nav .owl-next, .owl-nav .owl-prev{
   border:none;
