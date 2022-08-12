@@ -304,9 +304,7 @@
   
     subscribeToCartSectionsUpdate( sections => {
       let cartCount = document.querySelectorAll('data-card-count');
-      cartCount.forEach( cartCount => {
-        cartCount.innerHTML = sections.cart.items.length;
-      } );
+     
     });
   </script>
 
