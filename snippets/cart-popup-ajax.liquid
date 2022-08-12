@@ -1,8 +1,8 @@
 <div class="popup-cart-ajax">
-  {% for product in cart.items limit: 1 %}
+ {{  cart.items.first.title  }}
       Add 1 item
-      {{ product.title }}
-  {% endfor %}
+     
+ {{  cart.items.last.title }}
 
 <button data-ajax-cart-toggle-class-button="item-to-cart | remove">
   <i class="fa fa-times"></i>
