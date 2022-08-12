@@ -1,0 +1,320 @@
+{%- style -%}
+.section-{{ section.id }}-padding {
+  padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+  padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+}
+.section-{{ section.id }} {
+  background-color: {{ section.settings.background-color }};
+  height:auto;
+}
+@media screen and (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+}
+.faq .bg-primary{
+  background: #ddd1b7 !important;
+}
+.faq i {
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.faq .card-body{
+    font-size: 18px; 
+    color: var(--color-secondary);
+}
+.faq .card {
+  border-radius: 0 !important;
+  background: none;
+  border: none;
+  margin-top: 5px;
+}
+.faq .title-section:before {
+    content: "";
+    background: #FF9900;
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    width: 20%;
+    bottom: 0px;
+    z-index:4;
+
+  }
+  .faq p{
+     color: var(--tertiary-dark);
+    font-size:16px;
+  }
+  @media (max-width: 575px) {
+ .faq .title-section:before {
+    display: none;
+  }
+}
+.faq .card-header {
+    border: 1px solid #e7e7e700;
+    background: var(--primary-light);
+    -webkit-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+    margin: 3px 0px;
+    border-radius: 20px !important;
+  padding: 1rem 1.25rem;
+}
+ 
+.faq .card-header a {
+  cursor: pointer;
+}
+#accordion #headingOne h5 > a{
+
+	font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--tertiary-dark);
+    font-family: var(--font-body-family);
+}
+
+.card-header.bg-primary h5 a {
+    color: var(--tertiary-dark) !important;
+}
+.faq .card-body, .faq .collapse {
+  border-radius: 0 !important;
+  background: none;
+}
+.faq .section-title h1{
+	background-color: {{ section.settings.background-color }};
+}
+
+.faq .hover_a:hover,  .faq .hover_a:hover i {
+  color: var(--secondary) !important;
+}
+#accordion li::before {
+            content: "";
+            background: #D88100;
+            display: inline-block;
+            font-size: 50px;
+            width: 11px;
+            height: 11px;
+            margin-right: 8px;
+        }
+        
+        #accordion li,
+        #accordion p,
+        #accordion a {
+           
+        }
+        
+        #accordion a:hover {
+            color: #FF9900;
+        }
+
+{%- endstyle -%}
+
+  <section class=" section-{{ section.id }}-padding section-{{ section.id }}   m-0 faq my-section container-fluid position-relative">
+    <div class="page-width container-fluid">
+
+      <div class="about_text ">
+           <img class="sheets" src="https://cdn.shopify.com/s/files/1/0655/6916/1461/files/descarga.png?v=1659362616">
+           <img class="sheets2" src="https://cdn.shopify.com/s/files/1/0655/6916/1461/files/descarga.png?v=1659362616">
+          <h5> {{ section.settings.title-section }}</h5>
+          <h2>{{ section.settings.subtitle-section }}</h2>                      
+         </div>
+    </div>
+    	
+
+    <div id="accordion" class="page-width">
+        {% for block in section.blocks %}
+            {% if block.type == "faq-item" %}
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0 text-primary-small">
+                    <a class=" hover_a" data-toggle="collapse"
+                        data-target="#collapse{{forloop.index}}" aria-expanded="true" aria-controls="collapseOne">
+                        <i class=" fa fa-angle-down pr-3"></i> {{block.settings.question}}
+                    </a>
+                </h5>
+            </div>
+
+            <div id="collapse{{forloop.index}}" class="collapse" aria-labelledby="headingOne"
+                data-parent="#accordion">
+                <div class="card-body color-secondary text-primary-small">
+                    {{block.settings.answer}}
+                </div>
+            </div>
+        </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+     {% for block in section.blocks %}
+                    {% if block.type == 'button_action' %}
+                        <div class=" w-100 justify-content-{{block.settings.align}} d-flex">    
+                            <a style="text-transform:capitalize;" class="btn-3d btn btn-section mt-5 mx-0" href="{{ block.settings.link }}">
+                                {{ block.settings.label }}
+                            </a>
+                        </div>
+                    {% endif %}
+                {% endfor %}  
+  </section>
+
+{% javascript %}
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+  $('.collapse').on('hidden.bs.collapse', function(evt) {
+      let header = evt.currentTarget.parentNode.querySelector('.card-header');
+      let i = evt.currentTarget.parentNode.querySelector('i');
+      let a = evt.currentTarget.parentNode.querySelector('a');
+      i.style.transform = "scaleY(1)";
+      header.classList.remove('bg-primary');
+  	//header.querySelector("h5").classList.remove('text-white');
+      //header.classList.add('bg-light');
+  })
+  $('.collapse').on('shown.bs.collapse', function(evt) {
+      let header = evt.currentTarget.parentNode.querySelector('.card-header');
+  
+      let i = evt.currentTarget.parentNode.querySelector('i');
+      let a = evt.currentTarget.parentNode.querySelector('a');
+      i.style.transform = "scaleY(-1)";
+      //header.classList.remove('bg-light');
+  	//header.querySelector("h5").classList.add('text-white');
+      header.classList.add('bg-primary');
+  })
+
+});
+
+{% endjavascript %}
+{% schema %}
+{
+  "name": "Custom FAQs",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+	{
+        "type": "text",
+        "id": "title-section",
+        "label": "Title Section",
+        "default": "Frequent Questions"
+    },
+    {
+        "type": "text",
+        "id": "subtitle-section",
+        "label": "Title Section",
+        "default": "Frequent Questions"
+    },
+	{
+        "id": "align_title",
+        "type": "select",
+        "label": "Align title",
+		"options": [
+      	{
+          "value": "center",
+          "label": "center"
+        },
+        {
+          "value": "end",
+          "label": "right"
+        },
+		{
+          "value": "start",
+          "label": "left"
+        }
+      ]
+    },
+	
+    {
+      "type": "header",
+      "content": "Custom Colors"
+    },
+    {
+        "id": "background-color",
+        "type": "color",
+        "label": "Background Color"
+    },
+    {
+      "type": "header",
+      "content": "padding heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "padding top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "padding bottom",
+      "default": 52
+    }
+  ],
+  "blocks":[
+    {
+        "type": "faq-item",
+		"name": "Question",
+        "settings": [
+            {
+                "type": "text",
+                "id": "question",
+                "label": "Question",
+                "default": "Your question here"
+            },
+            {
+                "type": "richtext",
+                "id": "answer",
+                "label": "Answer"
+            }
+        ]
+    },
+	{
+            "name": "button_action",
+            "type": "button_action",
+			"limit": 1,
+            "settings":[
+                {
+              
+                    "type": "text",
+                    "label": "Label Button",
+                    "id": "label",
+                    "default": "Read More"
+                },
+                {
+     
+                    "type": "url",
+                    "label": "Link Button",
+                    "id": "link"
+                },
+				{
+                "id": "align",
+                "type": "select",
+                "label": "Align title",
+                "options": [
+                  {
+                    "value": "center",
+                    "label": "center"
+                  },
+                  {
+                    "value": "end",
+                    "label": "right"
+                  },
+                  {
+                    "value": "start",
+                    "label": "left"
+                  }
+      			]
+    			}
+            ]
+        }
+ ],
+  "presets": [
+    {
+      "name": "Custom FAQs"
+    }
+  ]
+}
+{% endschema %}
