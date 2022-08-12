@@ -300,7 +300,7 @@
     {{ cart | json }}
   </script>
    
-  <script type="module" onload="document.body.classList.add('load-liquid-ajax')">
+  <script type="module">
     import '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}';
     import { subscribeToCartAjaxRequests } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}';
      subscribeToCartAjaxRequests(( requestState, subscribeToResult ) => {
