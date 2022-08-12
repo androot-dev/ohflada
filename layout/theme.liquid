@@ -300,15 +300,13 @@
     import '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}';
   </script>
   <script type="module">
-   
+    import { subscribeToCartSectionsUpdate } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}'
   
-    import { getCartState, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}'
-
-    const initialState = getCartState();
-    console.log('Initial state: ', initialState);
-  
-    subscribeToCartStateUpdate( state => {
-      console.log('Updated state: ', state);
+    subscribeToCartSectionsUpdate( sections => {
+      let cartCount = document.querySelectorAll('data-card-count');
+      cartCount.forEach( cartCount => {
+        cartCount.innerHTML = sections.cart.items.length;
+      } );
     });
   </script>
 
