@@ -1,17 +1,20 @@
 <div data-ajax-cart-section class="popup-cart-ajax">
- 
+
  <div data-ajax-cart-bind-state="cart.item_count" > 
   <!-- Cart item count appears here --> 
 
 
 
-    <form action="{{ routes.cart_url }}" method="post" class="my-cart">
-      {{  cart.items.first.title }}
-            Add 1 item
-           
-       {{  cart.items.last.title }}
-      
-    </form>
+          <form action="{{ routes.cart_url }}" method="post" class="my-cart">
+            <!-- data-ajax-cart-section makes the element's HTML update
+            when the cart gets changed -->
+            <div data-ajax-cart-section>
+               {{  cart.items.first.title }}
+                    Add 1 item
+                   
+               {{  cart.items.last.title }}
+            </div>
+          </form>
 </div>
 
 
