@@ -23,31 +23,31 @@
       popup.querySelector(".title-product").textContent = title;
       
     }
-  window.onload = function(){
- 
-     console.log("onload")
+
+
       subscribeToCartAjaxRequests(( requestState, subscribeToResult ) => {
       
-        
+      
         if ( requestState.requestType === 'add' ) {
+          
+        
           subscribeToResult( requestState => {
+      
+           
             if ( requestState.responseData?.ok ) {
+      
+           
               let productName = requestState.responseData.body.title;
               if ( requestState.responseData.body.items?.length === 1 ) {
-                productName = requestState.responseData.body.items[0].title; 
-              }else{
-               productName = "Error";
-                console.log(requestState.responseData)
+                productName = requestState.responseData.body.items[0].title;
               }
-               add_poppu_info(productName, null);
-            }else{
-              console.log("error 3")
+
+              add_poppu_info(productName ? productName : "Fail")
             }
-        
           });
         }
-      });
-  }
+      })
+        
 </script>
 
 <style>
