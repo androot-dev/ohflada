@@ -95,17 +95,17 @@ Shopify.AjaxifyCart = (function($) {
             }, _config.howLongTillBtnReturnsToNormal);
             // Update cart count and show cart link.
             $.getJSON(_config.shopifyAjaxCartURL, function(cart) {
-              if (_config.cartCountSelector && $(_config.cartCountSelector).size()) {
+              if (_config.cartCountSelector && $(_config.cartCountSelector).length()) {
                 var value = $(_config.cartCountSelector).html() || '0';
                 $(_config.cartCountSelector).html(value.replace(/[0-9]+/,cart.item_count)).removeClass('hidden-count');
               }
-              if (_config.cartTotalSelector && $(_config.cartTotalSelector).size()) {
+              if (_config.cartTotalSelector && $(_config.cartTotalSelector).length()) {
                 if (typeof Currency !== 'undefined' && typeof Currency.moneyFormats !== 'undefined') {
                   var newCurrency = '';
-                  if ($('[name="currencies"]').size()) {
+                  if ($('[name="currencies"]').length()) {
                     newCurrency = $('[name="currencies"]').val();
                   }
-                  else if ($('#currencies span.selected').size()) {
+                  else if ($('#currencies span.selected').length()) {
                     newCurrency = $('#currencies span.selected').attr('data-currency');
                   }
                   if (newCurrency) {
