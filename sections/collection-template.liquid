@@ -125,8 +125,14 @@ background: var(--primary);
         <div class="row all-product-row mx-auto my-2">
           {% for product in collection.products %}
 
-
-
+  {%- assign current_variant = product.selected_or_first_available_variant -%}
+{% unless section_onboarding %}
+          {%- assign price = current_variant.price -%}
+          {%- assign available = current_variant.available -%}
+        {% else %}
+          {%- assign price = 1999 -%}
+          {%- assign available = true -%}
+        {% endunless %}
 
 {% if section_onboarding %}
             <div class="product-form">
