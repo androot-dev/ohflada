@@ -11,17 +11,21 @@
 
 <style>
   .popup-cart-ajax{
-    position: fixed;
+   position: fixed;
     top: 20px;
     right: 20px;
     width: 300px;
     background: var(--primary-gradient);
     height: 250px;
     visibility: hidden;
-    pointer-events:none;
-    display:flex;
-    justify-content:center;
-    z-index:100;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    z-index: 500;
+    border-radius: var(--radius);
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
   }
   body.item-to-cart .popup-cart-ajax{
     visibility:visible;
