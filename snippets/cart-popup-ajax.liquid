@@ -7,21 +7,13 @@
 
          
 {% for item in cart.items %}
-        {% assign item_index = forloop.index %}
-        <hr />  
-        <div><a href="{{ item.url }}">{{ item.title }}</a></div>
+   {% assign item_index = forloop.index %}
 
-        {% for property in item.properties %}
-          <div>
-            {{ property.first }}:
-            {% if property.first == 'Engraving' %}
-                {{ property.first }}
-              
-              {% else %}
-                {{ property.last }}
-              {% endif %}
-          </div>
-        {% endfor %}
+        
+
+        {% if item_index == 0 %}
+          a1
+               {%  endif %}
   {%  endfor %} 
          
 
