@@ -302,8 +302,8 @@
           "lateral-compress": 0,
           "separation-icon": 16,
           "padding_center_column": 3,
-          "logo_width": 170,
-          "logo_height": 170,
+          "logo_width": 200,
+          "logo_height": 190,
           "logo_mobile_width": 100,
           "logo_mobile_height": 100
         }
