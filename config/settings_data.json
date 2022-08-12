@@ -613,7 +613,8 @@
       "collection-template": {
         "type": "collection-template",
         "settings": {
-          "title": "",
+          "title": "Product Search",
+          "subtitle": "Look at all what we offer for you",
           "layout": "grid",
           "grid": 3,
           "rows": 6,
