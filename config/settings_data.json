@@ -818,10 +818,34 @@
               "link": "shopify:\/\/pages\/contact-us",
               "align": "center"
             }
+          },
+          "85e459bb-3c62-4d4c-8781-c5ed7ac2b794": {
+            "type": "faq-item",
+            "settings": {
+              "question": "Your question here",
+              "answer": ""
+            }
+          },
+          "7c058d19-84ab-43c4-9f4d-e427fcc36fff": {
+            "type": "faq-item",
+            "settings": {
+              "question": "Your question here",
+              "answer": ""
+            }
+          },
+          "8bc87e5f-5a18-48af-81f8-fdd09aba6db4": {
+            "type": "faq-item",
+            "settings": {
+              "question": "Your question here",
+              "answer": ""
+            }
           }
         },
         "block_order": [
-          "f699eca7-4327-4256-8d2e-af6977fb88cc"
+          "f699eca7-4327-4256-8d2e-af6977fb88cc",
+          "85e459bb-3c62-4d4c-8781-c5ed7ac2b794",
+          "7c058d19-84ab-43c4-9f4d-e427fcc36fff",
+          "8bc87e5f-5a18-48af-81f8-fdd09aba6db4"
         ],
         "settings": {
           "title-section": "Frequent Questions",
