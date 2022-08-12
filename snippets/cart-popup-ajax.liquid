@@ -25,9 +25,10 @@
     let popup = document.querySelector(".popup-cart-ajax");
       if(product != "Fail"){
         popup.querySelector(".title-product").textContent = product.title;
-      }else{
-        console.log(product.image)
         popup.querySelector(".container-image img").src = product.image
+      }else{
+        
+       /* Fail */
       }
       
     }
