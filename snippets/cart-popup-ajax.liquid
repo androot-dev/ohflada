@@ -9,9 +9,9 @@
     <div class="mb-2 container-image">
       <img src="" alt="product in cart" />
     </div>
-    <a href="{{ routes.cart_url }}" class="btn-small mb-2">View My Cart</a>
+    <a href="{{ routes.cart_url }}" class="btn-small btn-popup mb-2">View My Cart</a>
       <form action="{{ routes.cart_url }}" method="post" class="my-cart">
-       <button class="checkout" type="submit" name="checkout">
+       <button class=" btn-popup checkout" type="submit" name="checkout">
           Checkout — {{ cart.total_price | money_with_currency }}
         </button> 
       </form>
