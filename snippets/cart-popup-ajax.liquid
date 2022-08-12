@@ -15,10 +15,8 @@
           <div>
             {{ property.first }}:
             {% if property.first == 'Engraving' %}
-              <!-- data-ajax-cart-property-input ajaxifies the line item property input -->
-              <input type="text"
-                value="{{ property.last }}" 
-                data-ajax-cart-property-input="{{ item_index }}[{{ property.first }}]"/>
+                {{ property.first }}
+              
               {% else %}
                 {{ property.last }}
               {% endif %}
