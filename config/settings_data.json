@@ -746,6 +746,10 @@
           "8773c0eb-9a77-4e28-af99-1555de32fd42"
         ],
         "settings": {
+          "hidden_mobile_background": true,
+          "left_image": "0",
+          "right_image": "auto",
+          "width_image": "100%",
           "title": "Reviews",
           "subtitle": "What do our customers say",
           "button_label": "View More",
@@ -756,7 +760,6 @@
       "hero-contact-us": {
         "type": "hero-contact-us",
         "settings": {
-          "image-bg-1": "shopify:\/\/shop_images\/pexels-pavel-danilyuk-7180857_1.jpg"
         }
       },
       "1660096450bfda049e": {
