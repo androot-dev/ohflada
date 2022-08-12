@@ -83,7 +83,7 @@
    z-index:1;
 }
  .tag-price-comparation .price-2 {
-    color: red;
+    color:var(--primary);
     line-height: 18px;
 }
 .tag-price,  .tag-price-comparation {
@@ -101,7 +101,7 @@
     justify-content: center;
 }
  .tag-price {
-    color: #ffffff;
+    color: var(--primary);
     z-index:1;
 }
 .tag-price-comparation {
