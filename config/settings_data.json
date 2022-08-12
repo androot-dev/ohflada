@@ -462,7 +462,7 @@
             "settings": {
               "category": "cupcakes",
               "col-lg": 4,
-              "col-md": 6,
+              "col-md": 12,
               "col-sm": 12
             }
           }
@@ -874,6 +874,11 @@
       },
       "hero-collections": {
         "type": "hero-collections",
+        "settings": {
+        }
+      },
+      "hero-faqs": {
+        "type": "hero-faqs",
         "settings": {
         }
       }
