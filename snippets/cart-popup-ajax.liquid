@@ -17,11 +17,14 @@
   
 </div>
 <script type="module">
-  function add_poppu_info(title, image){
+
+   function add_poppu_info(title, image){
     let popup = document.querySelector(".popup-cart-ajax");
     popup.querySelector(".title-product").textContent = title;
     
-  }
+    }
+  window.onload = function(){
+ 
       import { subscribeToCartAjaxRequests } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}';
       subscribeToCartAjaxRequests(( requestState, subscribeToResult ) => {
       
@@ -38,7 +41,7 @@
           });
         }
       });
-
+  }
 </script>
 
 <style>
