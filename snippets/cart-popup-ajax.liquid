@@ -30,7 +30,7 @@
 
 <script>
   /* se activa esta funcion desde theme.liquid cada vez que se agrega al carrito un item */
-   function add_poppu_info(product, image){
+   function add_poppu_info(product){
     let popup = document.querySelector(".popup-cart-ajax");
       if(product != "Fail"){
         popup.querySelector(".title-product").textContent = product.title;
