@@ -11,7 +11,7 @@
     </div>
 <a href="{{ routes.cart_url }}" class="btn-small">View My Cart</a>
   <form action="{{ routes.cart_url }}" method="post" class="my-cart">
-   <button type="submit" name="checkout">
+   <button class="checkout" type="submit" name="checkout">
       Checkout — {{ cart.total_price | money_with_currency }}
     </button> 
   </form>
@@ -64,7 +64,7 @@
     right: 20px;
     width: 300px;
     background:  linear-gradient(135deg, rgb(233 199 199), rgb(246 224 224) 25%, rgb(241 214 213) 50%, rgba(232, 189, 188, 1) 75%, rgb(217 187 187) 100%);
-    height: 250px; 
+    
     display: flex;
     justify-content: center;
     z-index: 500;
