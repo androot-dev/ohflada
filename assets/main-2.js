@@ -223,6 +223,6 @@ document.addEventListener('DOMContentLoaded', function () {
     page.lazy_backgrounds = ".lazy-background";
     page.videoReproduction = ".playBtn";
     page.scroll_to_section= getParameterByName();
-    document.body.classList.add('load-liquid-ajax');
+    document.body.classList.add('dom-load');
 })
 
