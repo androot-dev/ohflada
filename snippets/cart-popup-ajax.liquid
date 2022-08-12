@@ -3,6 +3,10 @@
       Add 1 item
       {{ product.title }}
   {% endfor %}
+
+<button data-ajax-cart-toggle-class-button="js-my-cart-open | remove">
+  <i class="fa fa-times"></i>
+</button>
 </div>
 
 <style>
@@ -17,6 +21,7 @@
     pointer-events:none;
     display:flex;
     justify-content:center;
+    z-index:100;
   }
   body.item-to-cart .popup-cart-ajax{
     visibility:visible;
