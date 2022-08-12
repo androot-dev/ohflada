@@ -10,7 +10,11 @@
       <img src="" alt="product in cart" />
     </div>
     <a href="{{ routes.cart_url }}" class="btn-small btn-popup mb-2">View My Cart</a>
-      <form action="{{ routes.cart_url }}" method="post" class="my-cart">
+      <form style="
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        " action="{{ routes.cart_url }}" method="post" class="my-cart">
        <button class=" btn-popup checkout" type="submit" name="checkout">
           Checkout — {{ cart.total_price | money_with_currency }}
         </button> 
