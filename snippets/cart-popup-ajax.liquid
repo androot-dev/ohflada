@@ -19,6 +19,7 @@
 <script type="module">
   function add_poppu_info(title, image){
     let popup = document.querySelector(".popup-cart-ajax");
+    let title = popup.querySelector(".title-product").textContent = title;
     
   }
       import { subscribeToCartAjaxRequests } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}';
@@ -32,7 +33,7 @@
               if ( requestState.responseData.body.items?.length === 1 ) {
                 productName = requestState.responseData.body.items[0].title;
               }
-              alert(`${ productName ? '«' + productName + '» is' : 'Products are' } successfully added`);
+             add_poppu_info(productName, null);
             }
           });
         }
