@@ -810,6 +810,19 @@
       },
       "faq": {
         "type": "faq",
+        "blocks": {
+          "f699eca7-4327-4256-8d2e-af6977fb88cc": {
+            "type": "button_action",
+            "settings": {
+              "label": "Contact Us",
+              "link": "shopify:\/\/pages\/contact-us",
+              "align": "center"
+            }
+          }
+        },
+        "block_order": [
+          "f699eca7-4327-4256-8d2e-af6977fb88cc"
+        ],
         "settings": {
           "title-section": "Frequent Questions",
           "subtitle-section": "Find the answers to your questions",
