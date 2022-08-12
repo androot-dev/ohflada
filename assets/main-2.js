@@ -217,13 +217,12 @@ function getParameterByName() {
     } else {
         return false;
     }
-} 
-
-
-
+}
 document.addEventListener('DOMContentLoaded', function () { 
     page.scroll_tracking = ".scroll-tracking";
     page.lazy_backgrounds = ".lazy-background";
     page.videoReproduction = ".playBtn";
     page.scroll_to_section= getParameterByName();
+    document.body.classList.add('load-liquid-ajax');
 })
+
