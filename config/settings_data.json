@@ -492,7 +492,6 @@
       "hero-subpages": {
         "type": "hero-subpages",
         "settings": {
-          "image-bg-1": "shopify:\/\/shop_images\/pexels-jerald-mira-6493067.jpg"
         }
       },
       "benefits": {
@@ -502,27 +501,31 @@
             "type": "benefits",
             "settings": {
               "name_benefit": "Creativity",
+              "image": "shopify:\/\/shop_images\/cake.png",
               "icon": ""
             }
           },
           "4e76dd8a-2889-4718-ae32-7e4748724527": {
             "type": "benefits",
             "settings": {
-              "name_benefit": "",
+              "name_benefit": "Quality",
+              "image": "shopify:\/\/shop_images\/quality.png",
               "icon": ""
             }
           },
           "72395530-d312-4d9d-a0d4-cbc065e089c8": {
             "type": "benefits",
             "settings": {
-              "name_benefit": "",
+              "name_benefit": "Experience",
+              "image": "shopify:\/\/shop_images\/schedule.png",
               "icon": ""
             }
           },
           "3b26ac7c-e21b-4645-830f-0c7646f80000": {
             "type": "benefits",
             "settings": {
-              "name_benefit": "",
+              "name_benefit": "Economy",
+              "image": "shopify:\/\/shop_images\/bank.png",
               "icon": ""
             }
           }
@@ -573,8 +576,6 @@
           "title": "About",
           "subtitle": "Discover what we do for you",
           "block_text": "",
-          "block_text-2": "",
-          "block_text-3": "",
           "button_label": "Contact Us",
           "button_link": "shopify:\/\/pages\/contact-us",
           "image-1": "shopify:\/\/shop_images\/pexels-pavel-danilyuk-7180857_1.jpg"
@@ -880,6 +881,11 @@
       },
       "hero-faqs": {
         "type": "hero-faqs",
+        "settings": {
+        }
+      },
+      "hero-about": {
+        "type": "hero-about",
         "settings": {
         }
       }
