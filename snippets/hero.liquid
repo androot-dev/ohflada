@@ -64,8 +64,12 @@
         </style>
       
       {% endif %}
-       
-       
+      
+       {% if page.title %}
+         {%  assign title = page.title;
+  {%  else %}
+         {%  assign title = template.name %}
+{%  endif %} %}       
   <div class="container">
             <div class="row align-items-center">
                 <div class="col-12">
