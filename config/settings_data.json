@@ -613,16 +613,14 @@
       "collection-template": {
         "type": "collection-template",
         "settings": {
-          "image-bg-1": "shopify:\/\/shop_images\/pexels-helena-lopes-708392.jpg",
-          "image-bg-2": "shopify:\/\/shop_images\/headphones.jpg",
           "title": "",
           "layout": "grid",
-          "grid": 4,
-          "rows": 2,
-          "show_collection_image": true,
+          "grid": 3,
+          "rows": 6,
+          "show_collection_image": false,
           "show_vendor": false,
           "sort_enable": true,
-          "tags_enable": true
+          "tags_enable": false
         }
       },
       "list-collections-template": {
@@ -758,6 +756,7 @@
       "hero-contact-us": {
         "type": "hero-contact-us",
         "settings": {
+          "image-bg-1": "shopify:\/\/shop_images\/pexels-jerald-mira-6493067.jpg"
         }
       },
       "1660096450bfda049e": {
