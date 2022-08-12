@@ -34,16 +34,16 @@
             if ( requestState.responseData?.ok ) {
               let productName = requestState.responseData.body.title;
               if ( requestState.responseData.body.items?.length === 1 ) {
-                productName = requestState.responseData.body.items[0].title;
+                productName = requestState.responseData.body.items[0].title; 
+              }else{
+                console.log("ERRO")
               }
-             add_poppu_info(productName, null);
+               add_poppu_info(productName, null);
             }else{
-              console.log("ERRO")
+              console.log("error 3")
             }
-          }else{
-            console.log("error 3")
-          }
-                           );
+        
+         );
         }
       });
   }
