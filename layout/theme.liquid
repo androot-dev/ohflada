@@ -303,8 +303,10 @@
     import { subscribeToCartSectionsUpdate } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}'
   
     subscribeToCartSectionsUpdate( sections => {
-      console.log('Sections are updated: ', sections);
-      // Place your code here
+      let cartCount = document.querySelectorAll('data-card-count');
+      cartCount.forEach( cartCount => {
+        cartCount.innerHTML = sections.cart.items.length;
+      } );
     });
   </script>
 
