@@ -299,7 +299,14 @@
   <script type="module">
     import '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}';
   </script>
-
+  <script type="module">
+    import { subscribeToCartSectionsUpdate } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}'
+  
+    subscribeToCartSectionsUpdate( sections => {
+      console.log('Sections are updated: ', sections);
+      // Place your code here
+    });
+  </script>
 
 </body>
 </html>
