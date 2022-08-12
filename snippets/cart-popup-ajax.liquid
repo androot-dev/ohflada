@@ -20,7 +20,7 @@
   function add_poppu_info(title, image){
     let popup = document.querySelector(".popup-cart-ajax");
     let a = popup.querySelector(".title-product");
-    console.log(a)
+    console.log(popup)
   }
       import { subscribeToCartAjaxRequests } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}';
       subscribeToCartAjaxRequests(( requestState, subscribeToResult ) => {
