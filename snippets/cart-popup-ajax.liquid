@@ -17,8 +17,7 @@
     width: 300px;
     background: var(--primary-gradient);
     height: 250px;
-    visibility: hidden;
-    pointer-events: none;
+   
     display: flex;
     justify-content: center;
     z-index: 500;
@@ -26,10 +25,15 @@
     padding: 20px;
     align-items: center;
     flex-direction: column;
+    transform:translateY(-225%);
+    transition: transform .5s ease-in;
   }
-  body.item-to-cart .popup-cart-ajax{
-    visibility:visible;
-    pointer-events:all;
+  @meida screen and (min-width: 767px){
+    body.item-to-cart .popup-cart-ajax{
+      visibility:visible;
+      pointer-events:all;
+      transform:translateY(0);
+    }
   }
 
 </style>
