@@ -27,8 +27,9 @@
 
   
 </div>
-<script type="module">
- import { subscribeToCartAjaxRequests } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}';
+
+<script>
+  /* se usa esta funcion desde theme.liquid cada vez que se agrega al carrito un item */
    function add_poppu_info(product, image){
     let popup = document.querySelector(".popup-cart-ajax");
       if(product != "Fail"){
@@ -40,20 +41,8 @@
       }
       
     }
-      subscribeToCartAjaxRequests(( requestState, subscribeToResult ) => {
-        if ( requestState.requestType === 'add' ) {
-          subscribeToResult( requestState => {
-            if ( requestState.responseData?.ok ) {
-              let product = requestState.responseData.body;
-              if ( requestState.responseData.body.items?.length === 1 ) {
-                product = requestState.responseData.body.items[0];
-              }
-              add_poppu_info( product ? product : "Fail");
-            }
-          });
-        }
-      })      
 </script>
+
 
 <style>
    .popup-cart-ajax .checkout{
