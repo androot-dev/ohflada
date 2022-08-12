@@ -860,11 +860,11 @@
         "type": "subscribe",
         "settings": {
           "image_background": "shopify:\/\/shop_images\/pexels-jerald-mira-6493067.jpg",
-          "background-color": "linear-gradient(0deg, rgba(137, 143, 239, 1), rgba(120, 196, 245, 1) 100%)",
+          "background-color": "linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 6.115%, rgba(255, 255, 255, 0.96) 18%, rgba(255, 255, 255, 0.46) 100%)",
           "background-title": "",
-          "padding_y": 40,
-          "padding_top": 40,
-          "padding_bottom": 40,
+          "padding_y": 26,
+          "padding_top": 64,
+          "padding_bottom": 24,
           "title-section": "Subscribe",
           "subtitle": "Promotions, new products, and sales. Directly to your inbox"
         }
