@@ -301,8 +301,7 @@
   </script>
   <script type="module">
    
-  
-<<<<<<< HEAD
+
     import { getCartState, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}'
 
     const initialState = getCartState();
@@ -310,11 +309,10 @@
   
     subscribeToCartStateUpdate( state => {
       console.log('Updated state: ', state);
-=======
+
     subscribeToCartSectionsUpdate( sections => {
     
-     
->>>>>>> 542aaa41c0c586c9d6aecab0a4aa40380cfb6e3a
+    
     });
   </script>
 
