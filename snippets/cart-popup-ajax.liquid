@@ -23,19 +23,19 @@
 </button>
 </div>
 <script type="module">
-  import { getCartState, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}'
+  import { subscribeToCartSectionsUpdate, getCartState } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}'
 
-  
-  subscribeToCartStateUpdate( state => {
-   let product = state.cart.items[state.cart.items.length-1];
-    console.log(
+  subscribeToCartSectionsUpdate( sections => {
+    console.log('Sections are updated: ', sections);
+    let state = getCartState();
+    let product = state.cart.items[state.cart.items.length-1];
+     console.log(
       product
     )
+    
   });
-
-  
-
 </script>
+
 <style>
   .popup-cart-ajax{
    position: fixed;
