@@ -299,7 +299,11 @@
   <script type="module">
     import '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}';
   </script>
-
+  <script type="application/json" data-ajax-cart-configuration >
+    {
+      "addToCartCssClass": "item-add-to-cart"
+    }
+  </script>
 
 </body>
 </html>
