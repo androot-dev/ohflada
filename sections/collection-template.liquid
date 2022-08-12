@@ -91,6 +91,11 @@ background: var(--primary);
    {% else %}
         <h1 >The best {{ collection.title }} for you</h1>
   {% endif %}
+ {% if  section.settings.subtitle != blank %}
+     <h1>{{ section.settings.subtitle }}</h1>
+  {% endif %}
+
+  
    </div>
 
   <div class=" " id="Collection">
@@ -218,6 +223,12 @@ background: var(--primary);
 		"type": "text",
         "id": "title",
 		"label": "Title Section"
+        
+     },
+     {
+		"type": "text",
+        "id": "subtitle",
+		"label": "Subtitle Section"
         
      },
     {
