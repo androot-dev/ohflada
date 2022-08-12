@@ -21,7 +21,7 @@
    function add_poppu_info(title, image){
     let popup = document.querySelector(".popup-cart-ajax");
       popup.querySelector(".title-product").textContent = title;
-    
+      
     }
   window.onload = function(){
  
@@ -53,9 +53,8 @@
     right: 20px;
     width: 300px;
     background: var(--primary-gradient);
-    height: 250px;
-  
-    display: flex;
+    height: 250px; 
+    
     justify-content: center;
     z-index: 500;
     border-radius: var(--radius);
@@ -65,11 +64,10 @@
     transform:translateY(-225%);
     transition: all .3s ease-in-out;
   }
-  @media screen and (min-width: 767px){
+ 
     body.item-to-cart .popup-cart-ajax{
-    transition: all .3s ease-in-out;
       transform:translateY(0);
     }
-  }
+  
 
 </style>
