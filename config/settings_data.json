@@ -328,7 +328,7 @@
       "16375965479b9ea31b": {
         "type": "hero-video",
         "settings": {
-          "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/2c5fe400e9d14ed990dc864cac28abe5.mp4",
+          "video_link": "https:\/\/cdn.sh...opify.com\/videos\/c\/o\/v\/2c5fe400e9d14ed990dc864cac28abe5.mp4",
           "overlay": "linear-gradient(284deg, rgb(119 119 119 \/ 51%), rgb(255 199 199 \/ 39%) 99%)",
           "video_link-2": "",
           "title": "Only choose the best for you",
@@ -870,6 +870,11 @@
           "padding_bottom": 24,
           "title-section": "Subscribe",
           "subtitle": "Promotions, new products, and sales. Directly to your inbox"
+        }
+      },
+      "hero-collections": {
+        "type": "hero-collections",
+        "settings": {
         }
       }
     },
