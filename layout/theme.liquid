@@ -305,6 +305,13 @@
     import '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}';
   </script>
 
+<script type="module">
+  import { getCartState, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}'
 
+  const initialState = getCartState();
+  subscribeToCartStateUpdate( state => {
+    console.log('Updated state: ', state);
+  });
+</script>
 </body>
 </html>
