@@ -308,8 +308,9 @@
 <script type="module">
   import { getCartState, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}'
 
-  const initialState = getCartState();
+  
   subscribeToCartStateUpdate( state => {
+    let popup = document.querySelector(".popup-cart-ajax")
     console.log('Updated state: ', state);
   });
 </script>
