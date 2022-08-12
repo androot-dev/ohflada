@@ -18,9 +18,9 @@
 </div>
 <script type="module">
  import { subscribeToCartAjaxRequests } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}';
-   function add_poppu_info(title, image){
+   function add_poppu_info(product, image){
     let popup = document.querySelector(".popup-cart-ajax");
-      popup.querySelector(".title-product").textContent = title;
+      popup.querySelector(".title-product").textContent = product.title;
       
     }
 
@@ -39,10 +39,10 @@
            
               let productName = requestState.responseData.body.title;
               if ( requestState.responseData.body.items?.length === 1 ) {
-                productName = requestState.responseData.body.items[0].title;
+                product = requestState.responseData.body.items[0];
               }
 
-              add_poppu_info(productName ? productName : "Fail")
+              add_poppu_info( product ? product : "Fail");
             }
           });
         }
