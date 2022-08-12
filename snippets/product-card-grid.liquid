@@ -325,34 +325,33 @@
   
   
 <div class="el-wrapper">
-        <div class="box-up">
-          <a href="{{ product.url }}">
-          <img class="img" src="{{ product.featured_image | img_url: 'large' }}" alt="">
-          </a>
-          <div class="img-info">
-            <div class="info-inner">
-              <span class="p-name">{{ product.title }}</span>
-              <span class="p-company">EK's New Life</span>
-            </div>
-            <!--<div class="a-size">Description : <span class="size">S , M , L , XL</span></div>-->
-          </div>
-        </div>
-
-        <div class="box-down">
-          <div class="h-bg">
-            <div class="h-bg-inner"></div>
-          </div>
-
-          <a class="cart" href="https://eks-new-life.myshopify.com/cart/add?id={{ product.variants.first.id }}&quantity=1">
-            <span class="price">{{product.price | money}} </span>
-            <span class="add-to-cart">
-              <span class="txt">Add to Cart</span>
-            </span>
-          </a>
-        </div>
-      </div>
-    
+        <div class="class-item position-relative">
+             <span class="price">{{product.price | money}} </span>
+                    <div class="ci-pic">
+                        <a href="{{ product.url}}">
+                            <img class="img-1" src="{{ product.image  | img_url: 'master' }}" alt="" />
+                          
+                        </a>
+                    </div>
+                    
+                    <div class="new-ci-text ">
+                        <div class="custom-shape-divider-bottom-1660074041">
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                                <path
+                                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                                    class="shape-fill"
+                                ></path>
+                            </svg>
   
+                        </div>
+                    </div>
+                    <div class="description-category position-absolute">
+                      <h5 class="text-primary m-0">{{ product.title }}</h5>
+                      <a data-ajax-cart-request-button  class="btn btn-circle" href="{{routes.cart_add_url}}?id={{ product.variants.first.id }}&quantity=1"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
 
 </div>
+</div>
+    
+
 </section>
