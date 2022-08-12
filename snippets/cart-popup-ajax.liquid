@@ -37,6 +37,7 @@
                 productName = requestState.responseData.body.items[0].title; 
               }else{
                productName = "Error";
+                console.log(requestState.responseData)
               }
                add_poppu_info(productName, null);
             }else{
