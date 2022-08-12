@@ -4,26 +4,40 @@
   <!-- Cart item count appears here --> 
  </div>
 
-        
- 
+    <div class="title-section">    
+       <h1 class="title-product text-white"></h1>
+    </div>
 
 
 <button data-ajax-cart-toggle-class-button="item-to-cart | remove">
   <i class="fa fa-times"></i>
 </button>
+
+
+  
 </div>
 <script type="module">
-  import { subscribeToCartSectionsUpdate, getCartState } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}'
-
-  subscribeToCartSectionsUpdate( sections => {
-    console.log('Sections are updated: ', sections);
-    let state = getCartState();
-    let product = state.cart.items[0];
-     console.log(
-      product.title
-    )
+  function add_poppu_info(title, image){
+    let popup = document.querySelector(".popup-cart-ajax");
     
-  });
+  }
+      import { subscribeToCartAjaxRequests } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}';
+      subscribeToCartAjaxRequests(( requestState, subscribeToResult ) => {
+      
+        
+        if ( requestState.requestType === 'add' ) {
+          subscribeToResult( requestState => {
+            if ( requestState.responseData?.ok ) {
+              let productName = requestState.responseData.body.title;
+              if ( requestState.responseData.body.items?.length === 1 ) {
+                productName = requestState.responseData.body.items[0].title;
+              }
+              alert(`${ productName ? '«' + productName + '» is' : 'Products are' } successfully added`);
+            }
+          });
+        }
+      });
+
 </script>
 
 <style>
