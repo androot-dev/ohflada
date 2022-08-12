@@ -12,6 +12,9 @@
       <img src="" alt="product in cart" />
     </div>
 <a href="{{ routes.cart_url }}" class="btn">View My Cart</a>
+   <button type="submit" name="checkout">
+      Checkout — {{ cart.total_price | money_with_currency }}
+    </button> 
 
 <button class="close-popup-cart" data-ajax-cart-toggle-class-button="show-popup-cart | remove">
   <i class="fa fa-times"></i>
