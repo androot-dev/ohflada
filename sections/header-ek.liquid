@@ -546,8 +546,8 @@ header .site-header__cart-count {
                                     
                                       </button>
                                     </li>
-                                    <li role="button" class="cart-icon " data-ajax-cart-toggle-class-button="show-popup-cart">
-                                      <a  class="cartgo site-header__icon site-header__cart text-light" >
+                                    <li role="button" class="cart-icon " onclick="document.querySelector('.cartgo').click();">
+                                      <a href="{{ routes.cart_url }}" class="cartgo site-header__icon site-header__cart text-light" >
                                       <i class="fas fa-shopping-cart"></i>
                                       
                                       <div id="CartCount"  data-ajax-cart-section class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden" data-cart-count-bubble>
