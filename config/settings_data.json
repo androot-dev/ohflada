@@ -575,7 +575,7 @@
         "settings": {
           "title": "About",
           "subtitle": "Discover what we do for you",
-          "block_text": "",
+          "block_text": "<p>We have a variety of fresh and delicious desserts, Oh Flada has been created to satisfy the most demanding tastes of our consumers, with the most advanced hygiene and quality control. We specialize in Desserts, cupcakes and bakery supplies. unmatched quality.<\/p>",
           "button_label": "Contact Us",
           "button_link": "shopify:\/\/pages\/contact-us",
           "image-1": "shopify:\/\/shop_images\/pexels-pavel-danilyuk-7180857_1.jpg"
