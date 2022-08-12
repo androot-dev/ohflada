@@ -1,5 +1,6 @@
 <div class="popup-cart-ajax">
   {% for product in cart.items | limit: 1 %}
-
+      Add 1 item
+      {{ product.title }}
   {% endfor %}
 </div>
