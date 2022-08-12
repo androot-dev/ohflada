@@ -362,7 +362,7 @@
              <span class="price">{{product.price | money}} </span>
                     <div class="ci-pic">
                         <a href="{{ product.url}}">
-                            <img class="img-1" src="{{ product.image  | img_url: 'master' }}" alt="" />
+                            <img class="img-1" src="{{ product.featured_image | img_url: 'large' }}" alt="" />
                           
                         </a>
                     </div>
