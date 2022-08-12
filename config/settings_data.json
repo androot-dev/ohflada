@@ -807,6 +807,17 @@
           "title-section": "Instagram Feed",
           "subtitle": "Follow us now and don't miss our best works"
         }
+      },
+      "faq": {
+        "type": "faq",
+        "settings": {
+          "title-section": "Frequent Questions",
+          "subtitle-section": "Find the answers to your questions",
+          "align_title": "center",
+          "background-color": "",
+          "padding_top": 40,
+          "padding_bottom": 40
+        }
       }
     },
     "content_for_index": [
