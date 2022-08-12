@@ -38,7 +38,7 @@
             if ( requestState.responseData?.ok ) {
       
            
-              let product = requestState.responseData.body.title;
+              let product = requestState.responseData.body;
               if ( requestState.responseData.body.items?.length === 1 ) {
                 product = requestState.responseData.body.items[0];
               }
