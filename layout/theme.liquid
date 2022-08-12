@@ -302,10 +302,20 @@
    
   <script type="module">
     import '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}';
-  </script>
-
-
-
-  
+    import { subscribeToCartAjaxRequests } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}';
+     subscribeToCartAjaxRequests(( requestState, subscribeToResult ) => {
+        if ( requestState.requestType === 'add' ) {
+          subscribeToResult( requestState => {
+            if ( requestState.responseData?.ok ) {
+              let product = requestState.responseData.body;
+              if ( requestState.responseData.body.items?.length === 1 ) {
+                product = requestState.responseData.body.items[0];
+              }
+              add_poppu_info( product ? product : "Fail");
+            }
+          });
+        }
+      })  
+  </script>  
 </body>
 </html>
