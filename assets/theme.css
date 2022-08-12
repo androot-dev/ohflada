@@ -7860,7 +7860,8 @@ span[data-cart-count]{
 body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] {
   opacity: .56;
   pointer-events:none;
-  filter: grayscale(50%);
+  filter: grayscale(70%);
+  cursor: none;
 }
 
 
