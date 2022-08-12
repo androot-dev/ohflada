@@ -2,12 +2,11 @@
 
  <div data-ajax-cart-bind-state="cart.item_count" > 
   <!-- Cart item count appears here --> 
-
+ </div>
 
 
           <form action="{{ routes.cart_url }}" method="post" class="my-cart">
-            <!-- data-ajax-cart-section makes the element's HTML update
-            when the cart gets changed -->
+        
             <div data-ajax-cart-section>
                {{  cart.items.first.title }}
                     Add 1 item
