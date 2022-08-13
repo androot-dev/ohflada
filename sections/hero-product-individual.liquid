@@ -1,12 +1,22 @@
+{% render "hero" image-hero-local: section.settings.image-bg-1 %}
+
+
+
+
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Hero Subpages",
+    "settings": [
+   {
+	"type": "image_picker",
+     "id": "image-bg-1",
+     "label": "Image Background"
+	 }
+    
+
+]
+
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
