@@ -439,22 +439,37 @@
   {% assign newElemen = 0 %}
   {% for block in blocks %}
   {% if block.type == "product" %}
+ 
   <div class="item-best-sellers" >
-     <h1 class='selected l text-primary'>{{block.settings.featured_product.title}}</h1>
-     <h3 class="mb-0 ">{{block.settings.featured_product.price | money}}</span></h3>
-     <p class="py-4">{{block.settings.featured_product.description}}</p>
-     <div class="container-img-1 position-relative">
-     <div role="button" onclick="window.location.href=''{{block.settings.featured_product.url}}'" class="container-img sb">
-        <img class="radius" src='{{ block.settings.featured_product.featured_image | image_url }}' />
-     
-        
-     
-      </div>
-      <button data-ajax-cart-request-button style="z-index: 5;bottom:20px; right:20px;border:none;" class="position-absolute btn-small" onclick="window.location.href='{{routes.cart_add_url}}?id={{ block.settings.featured_product.variants.first.id }}&quantity=1'" class="container-img sb">
-        <i class="fa fa-shopping-cart"></i> Add to cart
-      </button>
-    </div>
-  </div>
+    <h1 class='selected l text-primary'>{{block.settings.featured_product.title}}</h1>
+    <h3 class="mb-0 ">{{block.settings.featured_product.price | money}}</span></h3>
+    <p class="py-4">{{block.settings.featured_product.description}}</p>
+    <div class="container-img-1 position-relative">
+    <div role="button" onclick="(evt)=>{
+      goTo(evt, '{{block.settings.featured_product.url}}')
+    }" class="container-img sb">
+       <img class="radius" src='{{ block.settings.featured_product.featured_image | image_url }}' />
+    
+       
+    
+     </div>
+     <a data-ajax-cart-request-button style="z-index: 5;bottom:20px; right:20px;border:none;" class="position-absolute btn-small" href="{{routes.cart_add_url}}?id={{ block.settings.featured_product.variants.first.id }}&quantity=1" class="container-img sb">
+       <i class="fa fa-shopping-cart"></i> Add to cart
+     </a>
+   </div>
+ </div>
+
+<script>
+ function goTo(evt, url){
+    // verificar si hizo click en boton de agregar al carrito, si es asi, no hacer nada
+    if(evt.target.classList.contains('btn-small')){
+      return;
+    }
+    window.location.href = url;
+
+  }
+
+</script>
   {% endif; %}
   {% endfor; %}
 </div>
