@@ -503,10 +503,7 @@ span.flatpickr-weekday {
 
     <div class="grid__item {{ product_description_width }}">
       <div class="product-single__meta">
-        <div class="col-md-12 title-section mb-5">
-        <div class="triangulo  d-lg-block d-none" style = "float: left"></div>
-        <div class="triangulo-2 d-lg-block d-none" style = "float: left"></div>   
-        <div class="triangulo-3 d-lg-block d-none" style = "float: left"></div>
+       
          <h1 class="product-single__title">{{ product.title }}</h1> 
         </div>
        
@@ -597,7 +594,7 @@ span.flatpickr-weekday {
                 <button type="submit" name="add"
                   {% unless current_variant.available %} aria-disabled="true"{% endunless %}
                   aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
-                  class="btn-section product-form__cart-submit d-flex align-items-center justify-content-center{% if section.settings.enable_payment_button and product.selling_plan_groups == empty %} btn-2{% endif %}"
+                  class="btn-section product-form__cart-submit d-flex align-items-center justify-content-center{% if section.settings.enable_payment_button and product.selling_plan_groups == empty %} btn{% endif %}"
                   {% if settings.enable_ajax %}aria-haspopup="dialog"{% endif %}
                   data-add-to-cart>
                   <span data-add-to-cart-text>
