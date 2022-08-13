@@ -445,10 +445,10 @@
     <h3 class="mb-0 ">{{block.settings.featured_product.price | money}}</span></h3>
     <p class="py-4">{{block.settings.featured_product.description}}</p>
     <div class="container-img-1 position-relative">
-    <div role="button" onclick="(evt)=>{
+    <div role="button" class="container-img sb">
+       <img  onclick="(evt)=>{
       goTo(evt, '{{block.settings.featured_product.url}}')
-    }" class="container-img sb">
-       <img class="radius" src='{{ block.settings.featured_product.featured_image | image_url }}' />
+    }" class="radius" src='{{ block.settings.featured_product.featured_image | image_url }}' />
     
        
     
