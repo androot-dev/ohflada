@@ -52,39 +52,34 @@ line-height: 1.25;
 }
   
 
-.btn, .shopify-payment-button__button--unbranded {
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  display: inline-block;
-  width: auto;
-  text-decoration: none;
-  text-align: center;
-  vertical-align: middle;
+.shopify-payment-button__button--unbranded {  
+  margin-top: 50px;
+   color: #fff;
   cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 2px;
-  padding: 8px 15px;
-  background-color: var(--color-btn-primary);
-  color: var(--color-btn-primary-text);
-  font-family: var(--font-stack-header);
-  font-style: var(--font-style-header);
-  font-weight: var(--font-weight-header);
-  text-transform: capitalize;
-  letter-spacing: 0.08em;
-  white-space: normal;
-  font-size: calc(((var(--font-size-base) - 2) / (var(--font-size-base))) * 1em); }
+  font-size: 18px !important;
+  font-weight: 700;
+  background: linear-gradient(to right, #4d2c10, #543011, #5b3412, #623812, #693c13, #724115, #7c4616, #854b18, #92531b, #a05b1e, #ae6422, #bc6c25);
+  border-radius: 25px !important;
+  padding: 10px 35px;
+  border: 1px solid #fff;
+  position: relative;
+  font-family: "fuente-contenido";
+  background-size: 200% auto;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  text-align: center;
+}
 
-  .btn:hover, .shopify-payment-button__button--unbranded:hover{
+
+.shopify-payment-button__button--unbranded:hover {
+  text-decoration: none;
+   background-position: right center;
+}
+
   
-      box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
-      background-position: 0 0;
-    
-  }
 
 
 
