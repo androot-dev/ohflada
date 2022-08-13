@@ -364,7 +364,20 @@ span.flatpickr-weekday {
     -webkit-box-shadow: -5px 0 0 #FFFAED, 5px 0 0 #FFFAED !important;
     box-shadow: -5px 0 0 #FFFAED, 5px 0 0 #FFFAED !important;
 }
-  
+   .product-individual .grid{
+     display: grid;
+      grid-template-columns: 1fr 2fr;
+      width: 100%;
+      justify-items: center;
+   }
+  @media screen (max-width: 767px){
+    .product-individual .grid{
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+      justify-items: center;
+   }
+  }
 
 </style>
 
