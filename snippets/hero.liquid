@@ -62,7 +62,7 @@
       
       {% endif %}
 
-{% if title != blank %}
+{% if title == blank %}
   
        {% if page.title %}
          {%  assign title = page.title %}
@@ -83,7 +83,7 @@
 
 
           {%  assign title = 'cart.general.title' | t  %}
-{%  elsif title == "search" %}
+          {%  elsif title == "search" %}
               {%  assign title =  "Search"  %}
 
           {% endif %}
