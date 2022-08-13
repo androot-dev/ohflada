@@ -61,7 +61,9 @@
         </style>
       
       {% endif %}
-      
+
+{% if empty(title) %}
+  
        {% if page.title %}
          {%  assign title = page.title %}
       
@@ -89,7 +91,8 @@
 
   
            {% endif %}
-{%  endif %}     
+{%  endif %}  
+  {% endif %}
   <div class="container">
             <div class="row align-items-center">
                 <div class="col-12">
