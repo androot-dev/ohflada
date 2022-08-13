@@ -282,7 +282,7 @@
         ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/66fPNG_logo_sin_background_1.png",
-          "brightness-logo": 0,
+          "brightness-logo": 1,
           "background_color": "linear-gradient(135deg, rgba(191, 99, 99, 1), rgba(206, 129, 128, 1) 25%, rgba(220, 159, 158, 1) 50%, rgba(232, 189, 188, 1) 75%, rgba(243, 219, 219, 1) 100%)",
           "logo_position": "start",
           "color-heading": "#ffffff",
