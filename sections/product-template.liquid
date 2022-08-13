@@ -461,7 +461,7 @@ span.flatpickr-weekday {
           </div>
 
           {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
-            <div class="product__policies d-none rte" data-product-policies>
+            <div class="product__policies  rte" data-product-policies>
               {%- if cart.taxes_included -%}
                 {{ 'products.product.include_taxes' | t }}
               {%- endif -%}
