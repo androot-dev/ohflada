@@ -314,90 +314,11 @@
 }
   
 
-   
- /* .product-recomended .adorno-1{
-          position: absolute;
-          content: "";
-          width: 150px;
-          height: 500px;
-          top: -50px;
-          right: 280px;
-          background: #ff0000;
-          z-index: 0;
-          transform: skewX(-35deg);
-          opacity: 0.2;
-        }
-  .product-recomended .adorno-2{
-          position: absolute;
-          content: "";
-          width: 150px;
-          height: 500px;
-          top: -50px;
-          right: 120px;
-          background:#fff;
-          z-index: 0;
-          transform: skewX(-35deg);
-         opacity: 0.2;
-          }
-
-  .product-recomended .adorno-3{
-          position: absolute;
-          content: "";
-          width: 30px;
-          height: 300px;
-          bottom: -150px;
-          left: 0px;
-          background: #fff;
-          z-index: 0;
-          transform: skewX(-35deg);
-          opacity: 1;
-        }
-
-  .product-recomended .adorno-4{
-          position: absolute;
-          content: "";
-          width: 30px;
-          height: 400px;
-          bottom: -200px;
-          left: 40px;
-          background: #ff0000;
-          z-index: 0;
-          transform: skewX(-35deg);          
-        }
-
-
-        @media (max-width: 768px) {            
- .latest-products .adorno-1{          
-          top: -50px;
-          opacity: 0.08;
-          
-        }
-
- .latest-products .adorno-2{          
-          height: 80px;                
-        }
-
- .latest-products .adorno-3{         
-          height: 200px;          
-        }
-
- .latest-products .adorno-4{        
-          height: 250px;
-          bottom: -200px;                   
-        }
-
-
-        }*/
-   
-
   
 </style>
 
-<section class="product-recomended" style="background-image: url('{{ section.settings.image-bg-1 | img_url: 'master' }}'); background-size: cover;">
- <!--<div class="adorno-1"></div>
-  <div class="adorno-2"></div>
-  <div class="adorno-3"></div>
- <div class="adorno-4"></div>-->
+<section class="product-recomended position-relative" style="background-image: url('{{ section.settings.image-bg-1 | img_url: 'master' }}'); background-size: cover;">
+
 {%- if section.settings.show_product_recommendations -%}
   {%- if recommendations.performed -%}
     {%- if recommendations.products_count > 0 -%}
