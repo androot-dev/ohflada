@@ -33,8 +33,9 @@
    function add_poppu_info(product){
     let popup = document.querySelector(".popup-cart-ajax");
       if(product != "Fail"){
-        popup.querySelector(".title-product").textContent = product.title;
-        popup.querySelector(".container-image img").src = product.image
+        popup.querySelector(".title-product").textContent = product.price;
+        popup.querySelector(".container-image img").src = product.image;
+        
       }else{
         
        /* Fail */

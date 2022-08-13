@@ -76,6 +76,10 @@
               {%  for collection in product.collections limit:1 %} 
                 {% assign title = collection.title %}
               {% endfor %}
+
+          {%  elsif title == "cart" %}
+
+          {%  assign title = {{ 'cart.general.title' | t }} %}
           {% endif %}
 
 
