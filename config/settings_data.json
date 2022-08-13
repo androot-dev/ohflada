@@ -335,7 +335,7 @@
         "type": "hero-video",
         "settings": {
           "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/2c5fe400e9d14ed990dc864cac28abe5.mp4",
-          "overlay": "linear-gradient(356deg, rgba(255, 231, 230, 0.47), rgba(255, 244, 244, 0.36) 51%, rgba(255, 255, 255, 1) 100%)",
+          "overlay": "linear-gradient(2deg, rgba(235, 147, 144, 0.47), rgba(255, 255, 255, 0.29) 68%, rgba(255, 255, 255, 1) 100%)",
           "video_link-2": "",
           "title": "Only choose the best for you",
           "sub-title": "Every Flavor Has a Flavor",
