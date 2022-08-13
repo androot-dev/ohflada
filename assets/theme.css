@@ -1631,7 +1631,7 @@ a[href^="tel"] {
       background-position: 0 0;
     
   }
-.btn:hover, .shopify-payment-button .shopify-payment-button__button--unbranded:hover, .btn-small:hover {
+.btn:hover, .shopify-payment-button .shopify-payment-button__button--unbranded:hover {
   box-shadow: 0 0px 0px 0 rgba(255, 93, 93, 0.35);
   background-position: 0 0;
 }
