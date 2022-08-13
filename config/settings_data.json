@@ -621,7 +621,7 @@
         "type": "product-recommendations",
         "settings": {
           "image-bg-1": "shopify:\/\/shop_images\/cake-icing-decoration.jpg",
-          "overlay": "",
+          "overlay": "linear-gradient(180deg, rgba(251, 51, 166, 1), rgba(127, 72, 176, 1) 50%, rgba(48, 145, 211, 1) 100%)",
           "show_product_recommendations": true,
           "heading": "You may also like",
           "show_vendor": false
