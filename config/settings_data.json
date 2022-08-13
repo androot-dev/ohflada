@@ -620,7 +620,8 @@
       "product-recommendations": {
         "type": "product-recommendations",
         "settings": {
-          "image-bg-1": "shopify:\/\/shop_images\/110252651_1547604758743959_6487110186303890821_n.jpg",
+          "image-bg-1": "shopify:\/\/shop_images\/cake-icing-decoration.jpg",
+          "overlay": "",
           "show_product_recommendations": true,
           "heading": "You may also like",
           "show_vendor": false
