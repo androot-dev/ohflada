@@ -81,7 +81,8 @@
 
 
           {%  assign title = 'cart.general.title' | t  %}
-
+{%  elsif title == "search" %}
+              {%  assign title =  "Search"  %}
 
           {% endif %}
 
