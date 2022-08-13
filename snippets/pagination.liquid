@@ -47,14 +47,14 @@
 <ul class="list--inline list--inline-1 pagination d-flex justify-content-center align-items-center">
   {% unless paginate.previous.is_link %}
     <li aria-hidden="true">
-      <button class="btn btn--tertiary btn--narrow" disabled>
+      <button class="btn" disabled>
         {% include 'icon-arrow-left' %}
       
       </button>
     </li>
     {% else %}
     <li>
-      <a href="{{ paginate.previous.url }}" class="btn btn--tertiary btn--narrow">
+      <a href="{{ paginate.previous.url }}" class="btn ">
         {% include 'icon-arrow-left' %}
 
       </a>
@@ -72,7 +72,7 @@
     </li>
   {% else %}
     <li>
-      <a href="{{ paginate.next.url }}" class="btn btn--tertiary btn--narrow">
+      <a href="{{ paginate.next.url }}" class="btn">
         {% include 'icon-arrow-right' %}
        
       </a>
