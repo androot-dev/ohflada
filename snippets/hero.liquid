@@ -62,7 +62,7 @@
       
       {% endif %}
 
-{% if empty(title) %}
+{% if title != blank %}
   
        {% if page.title %}
          {%  assign title = page.title %}
