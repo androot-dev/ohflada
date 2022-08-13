@@ -608,7 +608,6 @@
       "product-template": {
         "type": "product-template",
         "settings": {
-          "image-bg-1": "shopify:\/\/shop_images\/pexels-drew-williams-3143791.jpg",
           "show_quantity_selector": false,
           "show_vendor": false,
           "enable_payment_button": true,
@@ -621,7 +620,7 @@
       "product-recommendations": {
         "type": "product-recommendations",
         "settings": {
-          "image-bg-1": "shopify:\/\/shop_images\/pexels-josh-sorenson-1714208.jpg",
+          "image-bg-1": "shopify:\/\/shop_images\/110252651_1547604758743959_6487110186303890821_n.jpg",
           "show_product_recommendations": true,
           "heading": "You may also like",
           "show_vendor": false
@@ -910,6 +909,11 @@
       },
       "hero-about": {
         "type": "hero-about",
+        "settings": {
+        }
+      },
+      "hero-product-individual": {
+        "type": "hero-product-individual",
         "settings": {
         }
       }
