@@ -15,70 +15,6 @@
 }
  
 
-.section-cart .btn-3 {
-  box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: #ff0000 !important;
-  border-radius: 6px;
-  color: #fff;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1;
-  margin: 20px;
-  padding: 15px 50px;
-  text-decoration: none;
-  text-align: center; 
-  font-family: "fuente-titulos";
-  font-weight: 300;
-  position: relative; 
-  z-index:4;
-  
-  transition: 0.3s
-}
-
-.section-cart .btn-3:before,
-.section-cart .btn-3:after {
-  border-color: #ff5050;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-  border-style: solid;
-  border-width: 0;
-  content:"";
-  height: 24px;
-  position: absolute;
-  width: 24px;
-}
-.section-cart .btn-3:before {
-  border-left-width: 2px;
-  border-top-width: 2px;
-  left: -5px;
-  top: -5px;
-   border-radius: 6px 0px 0px 0px;
-}
-
-.section-cart .btn-3:after {
-  border-bottom-width: 2px;
-  border-right-width: 2px;
-  bottom: -5px;
-  right: -5px;
-  border-radius: 0px 0px 6px 0px;
-}
-.section-cart .btn-3:hover:before,
-.section-cart .btn-3:hover:after
-{
-  height:100%;
-  width:100%;
-}
 
 
   
@@ -502,13 +438,13 @@
               <div class="cart__submit-controls">
                 {%- unless section.settings.cart_ajax_enable -%}
                 <button type="submit" name="update"
-                  class="btn btn-3"
+                  class="btn "
                   value="">
                   {{ 'cart.general.update' | t }}
                 </button>
                 {%- endunless -%}
                 <button type="submit" name="checkout"
-                  class=" btn btn-3"
+                  class=" btn"
                   value="">
                  {{ 'cart.general.checkout' | t }}
                 </button>
