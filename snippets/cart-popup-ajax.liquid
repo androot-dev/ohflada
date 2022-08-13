@@ -34,7 +34,7 @@
     let popup = document.querySelector(".popup-cart-ajax");
       if(product != "Fail"){
         popup.querySelector(".title-product").textContent = product.title;
-        popup.querySelector(".container-image img").src = product.image;
+        popup.querySelector(".container-image img").src = product.image+"&width=90";
         
       }else{
         
