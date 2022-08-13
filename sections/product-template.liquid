@@ -238,7 +238,7 @@
                 <button type="submit" name="add"
                   {% unless current_variant.available %} aria-disabled="true"{% endunless %}
                   aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
-                  class="btn product-form__cart-submit d-flex align-items-center justify-content-center{% if section.settings.enable_payment_button and product.selling_plan_groups == empty %} btn-2{% endif %}"
+                  class="btn-section product-form__cart-submit d-flex align-items-center justify-content-center{% if section.settings.enable_payment_button and product.selling_plan_groups == empty %} btn-2{% endif %}"
                   {% if settings.enable_ajax %}aria-haspopup="dialog"{% endif %}
                   data-add-to-cart>
                   <span data-add-to-cart-text>
@@ -290,22 +290,22 @@
         </div>
        
 
-        {% if section.settings.show_share_buttons %}
-          {% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product.featured_media %}
-        {% endif %}
+      
     </div>
   </div>
   {% if product.description != blank %}
    <div class="product-single__description">
    
-     {% if routes.root_url == "/es"  %}
+                
                    <h3> Descripción</h3> 
                     
-                {% else  %}
-                    <h3> Description</h3>   
-                {% endif  %}
-             
      <p>{{ product.description }}<p>    
+      
+      {% if section.settings.show_share_buttons %}
+        <div class="d-flex justify-content-center">
+          {% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product.featured_media %}
+        </div>
+          {% endif %}
   </div>
   {% endif %}
 </div>
@@ -351,11 +351,6 @@
 	"type": "image_picker",
      "id": "image-bg-1",
      "label": "Image Background"
-	 },
-     {
-	"type": "image_picker",
-     "id": "image-bg-2",
-     "label": "Image Background Headphones"
 	 },
     {
       "type": "checkbox",
