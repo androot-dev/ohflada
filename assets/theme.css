@@ -7421,7 +7421,7 @@ img{
 
 .template-captcha .shopify-challenge__button{
    background-color: var(--primary-dark);
-  background-image: linear-gradient(219deg, #e9b0b0 0%, #db7777 55%, #e19999 90%);
+  background-image: linear-gradient(268deg, #e9b0b0 0%, #db7777 55%, #e19999 90%);
   background-position: 100% 0;
   background-size: 200% 200%;
   color: white !important;
