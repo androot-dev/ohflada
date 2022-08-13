@@ -93,14 +93,14 @@
             <div class="row align-items-center">
                 <div class="col-12">
                     <div class="breadcrumb-content" data-aos="fade-up">
-                        <h2 style="text-transform:uppercase;">
-                          {{ title }}
+                        <h2>
+                          {{ title | capitalize }}
                         </h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="{{ routes.root_url }}">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">
-                                 {{ title }}
+                                 {{ title | capitalize }}
                                 </li>
                             </ol>
                         </nav>
