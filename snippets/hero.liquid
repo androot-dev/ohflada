@@ -64,6 +64,7 @@
       
        {% if page.title %}
          {%  assign title = page.title %}
+         {{ page.title }}
           {% if page.title == "Product" %}
             {% assign title = "product.title" %}
           {%  for collection in product.collections limit:1 %} 
