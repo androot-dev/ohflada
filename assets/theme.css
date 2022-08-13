@@ -7431,6 +7431,7 @@ img{
   text-decoration: none;
   box-shadow: 0px 8px 32px 0 rgb(253 127 127 / 35%);
   transition: all 0.5s ease;
+  margin-top:30px;
 
 }
 .template-captcha .shopify-challenge__button:hover{
