@@ -444,12 +444,12 @@
      <h3 class="mb-0 ">{{block.settings.featured_product.price | money}}</span></h3>
      <p class="py-4">{{block.settings.featured_product.description}}</p>
      <div class="container-img-1 position-relative">
-     <a  href="{{block.settings.featured_product.url}}" class="container-img sb">
+     <div role="button" onclick="window.location.href=''{{block.settings.featured_product.url}}'" class="container-img sb">
         <img class="radius" src='{{ block.settings.featured_product.featured_image | image_url }}' />
      
         
      
-      </a>
+      </div>
       <button data-ajax-cart-request-button style="z-index: 5;bottom:20px; right:20px;border:none;" class="position-absolute btn-small" onclick="window.location.href='{{routes.cart_add_url}}?id={{ block.settings.featured_product.variants.first.id }}&quantity=1'" class="container-img sb">
         <i class="fa fa-shopping-cart"></i> Add to cart
       </button>
