@@ -1267,8 +1267,8 @@ textarea {
   display: inherit; }
 
 /*================ #Basic Styles ================*/
-.page-width {
-  *zoom: 1;
+.page-width *{
+  zoom: 1;
   max-width: 1200px;
   margin: 0 auto; }
   .page-width::after {
