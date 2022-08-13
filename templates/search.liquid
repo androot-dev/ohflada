@@ -39,7 +39,7 @@
 
 .busqueda .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
   background-color: #ff0000 !important;
-  border-radius: 0px 6px 6px 0px;!important;
+  border-radius: 0px var(--radius) var(--radius) 0px;!important;
   padding: 10px 14px; 
   position: relative;
   z-index: 1;
@@ -64,7 +64,7 @@
   height: 24px;
   position: absolute;
   width: 24px;
-  border-radius: 6px 6px 6px 6px;
+  border-radius: var(--radius) var(--radius) var(--radius) var(--radius);
 }
 .busqueda .input-group button:before {
   border-left-width: 2px;
