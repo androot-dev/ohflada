@@ -7418,23 +7418,19 @@ img{
 
 
 .template-captcha .shopify-challenge__button{
-  font-family: "fuente-titulos" !important;
-  position: relative;
-  padding: 0px 20px;
-  background: #FF0000 !important;
-  z-index: 3;
-  display: inline-block;
-  transition: all 400ms linear;
-  text-align: center;
-  color: #000 !important;
-  font-size: 16px !important;  
-  font-weight: 700;
-  line-height: 30px;
-  transition: all 300ms linear 0s;
-  margin-bottom: 50px;
-  margin-top: 20px;
- 
-  border-radius: 0px !important;
+   background-color: var(--primary-dark);
+  background-image: linear-gradient(219deg, #e9b0b0 0%, #db7777 55%, #e19999 90%);
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  color: white !important;
+  border-radius: 50px;
+  padding: 11px 40px;
+  font-family: "fuente-contenido", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  text-decoration: none;
+  box-shadow: 0px 8px 32px 0 rgb(253 127 127 / 35%);
+  transition: all 0.5s ease;
 
 }
 
