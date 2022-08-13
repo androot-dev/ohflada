@@ -64,9 +64,17 @@
       
        {% if page.title %}
          {%  assign title = page.title %}
-  {%  else %}
+          {% if page.title = "product" %}
+          {%  for collection in product.collections limit:1 %} 
+            {% assign title = collection.title %}
+            {% endfor %}
+          {% endif %}
+
+  
+        {%  else %}
          {%  if template.name == "collection" %}
          {%  assign title = "Products" %}
+          
            {% else %}
           {%  assign title = template.name %}
            {% endif %}
