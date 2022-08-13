@@ -1,6 +1,6 @@
 <div  class="popup-cart-ajax">
 
- <!-- <span ><div data-ajax-cart-bind-state="cart.item_count" > </div>  </span> -->
+ <!-- -->
 
     <div class="mb-2 title-section text-center"> 
        <span clas="p text-center">Was added to cart: </span>
@@ -9,7 +9,7 @@
     <div class="mb-2 container-image">
       <img src="" alt="product in cart" />
     </div>
-    <a href="{{ routes.cart_url }}" class="btn-small btn-popup mb-2">View My Cart</a>
+    <a href="{{ routes.cart_url }}" class="btn-small btn-popup mb-2">View My Cart (<span><div data-ajax-cart-bind-state="cart.item_count" > </div>  </span>) </a>
       <form style="
           width: 100%;
           display: flex;
