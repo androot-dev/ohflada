@@ -80,6 +80,7 @@
         background-repeat: no-repeat;
         width: var(--size-logo-width);
         height: var(--size-logo-height);
+        filter:brightness({{section.settings.brightness-logo}});
     }
 
     .myfooter>.row {
@@ -544,6 +545,16 @@
 			"type": "image_picker",
 			"id": "logo",
 			"label": "select your logo"
+		},
+       {
+			"type": "range",
+			"id": "brightness-logo",
+			"min": 0,
+			"max": 1,
+			"step": 0.1,
+			"default": 1,
+			"unit": "l",
+			"label": "brightness"
 		},
 		{
 			"type": "header",
