@@ -65,8 +65,15 @@
         </div>
          <div class="col-md-6 d-flex justify-content-center align-items-center">
           <img class="img-fluid img-1 my-5" src="{{ section.settings.image-1 | img_url: 'master' }}" data-aos="zoom-in" />
-          
+           <a class="btn d-md-none d-block" href="{{ section.settings.button_link }}" >
+            {{ section.settings.button_label }}
+          </a>
         </div>
+
+
+
+
+       
     </div>
   </div>
 </section>
