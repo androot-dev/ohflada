@@ -292,7 +292,7 @@
   top: 0;
   left: 0;
   background-color: {{section.settings.overlay}}
-  z-index: -1; 
+  z-index: 0; 
 }
   
 .product-recomended .section-header{
@@ -312,7 +312,9 @@
   .product-recomended .page-width{
     padding: 0px !important;
 }
-  
+  .product-recomended *:not(.overlay-section-product-recomended){
+    z-index: 1;
+  }
 
   
 </style>
