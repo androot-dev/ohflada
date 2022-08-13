@@ -598,7 +598,7 @@ span.flatpickr-weekday {
      <p>{{ product.description }}<p>    
       
       {% if section.settings.show_share_buttons %}
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center list-none mt-3">
           {% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product.featured_media %}
         </div>
           {% endif %}
