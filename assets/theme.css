@@ -7466,12 +7466,6 @@ img{
   width:100%;
 }
 
-.template-captcha .shopify-challenge__button:hover {
-   background: #FF0000 !important;
-   color: #fff !important;
-   box-shadow: -9px 7px 23px -12px rgba(0,0,0,0.69);
-   border-radius: 0px !important;
-}
 
 .shopify-challenge__container .shopify-challenge__message, .shopify-challenge__container .shopify-challenge__errors {
     text-align: center;
