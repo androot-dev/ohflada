@@ -284,7 +284,7 @@
 }
 
 
-.product-recomended-overlay::after {
+.overlay-section-product-recomended {
   content: '';
   position: absolute;
   width: 100%;
@@ -318,7 +318,10 @@
 </style>
 
 <section class="product-recomended product-recomended-overlay position-relative" style="background-image: url('{{ section.settings.image-bg-1 | img_url: 'master' }}'); background-size: cover;">
+<div class="overlay-section-product-recomended">
 
+  
+</div>
 {%- if section.settings.show_product_recommendations -%}
   {%- if recommendations.performed -%}
     {%- if recommendations.products_count > 0 -%}
