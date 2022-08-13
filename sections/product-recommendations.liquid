@@ -284,7 +284,7 @@
 }
 
 
-.product-recomended::after {
+.product-recomended-overlay::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -317,7 +317,7 @@
   
 </style>
 
-<section class="product-recomended position-relative" style="background-image: url('{{ section.settings.image-bg-1 | img_url: 'master' }}'); background-size: cover;">
+<section class="product-recomended product-recomended-overlay position-relative" style="background-image: url('{{ section.settings.image-bg-1 | img_url: 'master' }}'); background-size: cover;">
 
 {%- if section.settings.show_product_recommendations -%}
   {%- if recommendations.performed -%}
