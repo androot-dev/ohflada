@@ -7415,7 +7415,9 @@ img{
    z-index: 700;
 }
 
-
+.template-captcha .page-container {
+  background: linear-gradient(169deg, #e0d9d9, #e3a1a1d1);
+}
 
 .template-captcha .shopify-challenge__button{
    background-color: var(--primary-dark);
