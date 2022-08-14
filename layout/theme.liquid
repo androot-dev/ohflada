@@ -290,15 +290,17 @@
     <li id="a11y-refresh-page-message">{{ 'general.accessibility.refresh_page' | t }}</li>
     <li id="a11y-selection-message">{{ 'general.accessibility.selection_help' | t }}</li>
   </ul>
-    <script type="application/json" data-ajax-cart-configuration >
+  
+  <script type="application/json" data-ajax-cart-initial-state >
+    {{ cart | json }}
+  </script>
+
+  <!-- copy para cart ajax -->
+     <script type="application/json" data-ajax-cart-configuration >
     {
       "addToCartCssClass": "show-popup-cart"
     }
   </script>
-  <script type="application/json" data-ajax-cart-initial-state >
-    {{ cart | json }}
-  </script>
-   
   <script type="module">
     import '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}';
     import { subscribeToCartAjaxRequests } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}';
@@ -316,5 +318,6 @@
         }
       })  
   </script>  
+  
 </body>
 </html>
