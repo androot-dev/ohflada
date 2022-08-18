@@ -19,7 +19,7 @@
 
         // default options
         var defaultOpt = $.extend({
-            breakpoint: 650,
+            breakpoint: 850,
             openCloseSpeed: 500,
             megaopenCloseSpeed: 800
         }, options);
