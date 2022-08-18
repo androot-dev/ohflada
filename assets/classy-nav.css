@@ -6,6 +6,10 @@
 :: Created: May 16, 2018
 :: Last Updated: Jan 28, 2019
 ---------------------------------------------------------- */
+
+@media screen and(max-width: 575px){
+  
+
 .classy-nav-container {
   position: relative;
   z-index: 1;
@@ -440,5 +444,4 @@
   background-color: #ff0000;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg); }
-
-/*# sourceMappingURL=classy-nav.css.map */
+}
