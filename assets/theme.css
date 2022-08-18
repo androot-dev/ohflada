@@ -157,7 +157,7 @@
  
   
 .breadcrumb-area .breadcrumb-content h2 {
-  color: var(--subpage-color-text);
+  color: var(--subpage-color-title);
   font-size: 45px; 
   display: block;
   text-transform: none !important;
