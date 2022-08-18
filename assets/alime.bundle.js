@@ -40,7 +40,7 @@
 
         // default options
         var defaultOpt = $.extend({
-            breakpoint: 2091,
+            breakpoint: 991,
             openCloseSpeed: 500,
             megaopenCloseSpeed: 800
         }, options);
@@ -89,6 +89,7 @@
             // check browser width in real-time
             function breakpointCheck() {
                 var windoWidth = window.innerWidth;
+              console.log(windoWidth)
                 if (windoWidth <= defaultOpt.breakpoint) {
                     navContainer.removeClass('breakpoint-off').addClass('breakpoint-on');
                 } else {
