@@ -127,7 +127,10 @@
   margin-top: -55px; 
   overflow: hidden;
 }
-  
+.breadcrumb-area {
+  --subpage-color-text:  #bf6363;
+}
+
 @media only screen and (max-width: 767px) {
   .breadcrumb-area {
     height: 180px;
@@ -153,7 +156,7 @@
  
   
 .breadcrumb-area .breadcrumb-content h2 {
-  color: #bf6363;
+  color: var(--subpage-color-text);
   font-size: 45px; 
   display: block;
   text-transform: none !important;
