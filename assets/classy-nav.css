@@ -7,8 +7,6 @@
 :: Last Updated: Jan 28, 2019
 ---------------------------------------------------------- */
 
-@media screen and(max-width: 575px){
-  
 
 .classy-nav-container {
   position: relative;
@@ -341,7 +339,12 @@
   visibility: visible;
   opacity: 1; }
 
+
+  
 /* Mobile/Tablet Nav CSS */
+
+@media screen and(max-width: 575px){
+  
 .breakpoint-on .classycloseIcon {
   display: block; }
 .breakpoint-on .classy-navbar-toggler {
