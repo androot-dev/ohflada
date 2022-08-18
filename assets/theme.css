@@ -153,7 +153,7 @@
  
   
 .breadcrumb-area .breadcrumb-content h2 {
-  color: #ffffff;
+  color: #bf6363;
   font-size: 45px; 
   display: block;
   text-transform: none !important;
@@ -195,7 +195,7 @@
 }
     
 .breadcrumb-area .breadcrumb-content .breadcrumb .breadcrumb-item.active {
-   color:  #fff;
+   color:   #bf6363;
    font-size: 18px;
    font-weight: 300;
    font-family: "fuente-contenido" !important;
