@@ -194,7 +194,7 @@
 }
 
 .breadcrumb-area .breadcrumb-content .breadcrumb .breadcrumb-item::before {
-   color: #ffffff;
+   color:  var(--subpage-color-text);
 }
     
 .breadcrumb-area .breadcrumb-content .breadcrumb .breadcrumb-item.active {
