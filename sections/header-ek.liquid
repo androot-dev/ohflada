@@ -1,655 +1,603 @@
 <style>
 
 
-.breakpoint-off .classynav ul li .dropdown,
-.breakpoint-off .classynav ul li .megamenu {
-  width: 210px;
-  -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
-  box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
-  border-radius: 6px; 
-}
-
-.breakpoint-off .classynav ul li .megamenu {
-  width: 100%; 
-}
-  
-  .breakpoint-on .classy-navbar .classy-menu{
-    left: auto;
-    right: -340px;
-  }
-
-
-
-
-  
-.header-area {
-  position: fixed;
-  z-index: 100;
-  width: 100%;
-  -webkit-transition-duration: 500ms;
-  -o-transition-duration: 500ms;
-  transition-duration: 500ms;
-  background-color: transparent;  
-}
-.header-area .search-icon i {
-      font-size: 18px;
-      color: {{section.settings.color-header-links}};
-      cursor: pointer; 
-}  
-.header-area .cart-icon i {
-      font-size: 18px;
-      color:{{section.settings.color-header-links}};
-      cursor: pointer; 
-}
- @media screen and (max-width: 736px) {
-  .header-area .search-icon i {
-      font-size: 18px !important;
-  }
-    
-
- 
- }
-
-.top-search-area .modal {
-  background-color: rgba(0, 0, 0, 0.7); 
-}
-
-.top-search-area .modal-content .modal-body {
-  padding: 50px; 
-}
-  
-  
-.top-search-area .modal-content .modal-body button.close-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    z-index: 10;
-    font-size: 14px; 
-}
-    
-.top-search-area .modal-content .modal-body button.close-btn.btn {
-      padding: 0;
-      background-color: transparent; 
-}
-
- .top-search-area form {
-  width: 100%;
-  position: relative;
-  z-index: 5; 
-}
-  
-.top-search-area form input {
-    width: 100%;
-    height: 50px;
-    border: none;
-    -webkit-box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.08);
-    box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.08);
-    border-radius: 6px;
-    font-size: 12px;
-    font-style: italic;
-    padding: 0 20px;
-}
-    
-.top-search-area form input:focus {
-      -webkit-box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.08);
-      box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.08); 
-}
-  
-.top-search-area form button {
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    top: 0;
-    right: 0;
-    z-index: 10;
-    border-radius: 0 6px 6px 0;
-    border: none;
-    background-color: #fc6060;
-    font-weight: 600;
-    font-size: 14px;
-    text-align: center;
-    color: #ffffff;
-    cursor: pointer; 
-}
-
-.classy-nav-container {
-  background-color: transparent;
-  padding: 0;
-  height:  auto;
-  padding: 5px 0px;
-  position: relative;
-  
-}
-  .classynav ul li{
-    display: flex;
-    clear: both;
-    position: inherit;
-    z-index: 10;
-    justify-content: center;
-    align-items: center;
-  }
-.classy-nav-container .classy-navbar {
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
-    transition-duration: 500ms;
-    
-    padding: 0; 
-}
-
-@media only screen and (max-width: 575px) {
-   .classy-nav-container .classy-navbar .nav-brand {
-        max-width: 90px;
-        margin-right: 15px; 
-   }
-}
-  
- .classy-nav-container .classy-navbar .nav-brand img{
-        max-width: 60px;
-        margin-right: 15px; 
-      
-   }
-
-.classy-nav-container .classy-navbar .classynav ul li a {
-      font-size: 18px;
-      text-transform: capitalize;
-      color: {{section.settings.color-header-links}};
-      font-weight: 500;
-      padding: 0 20px; 
-      font-family: "fuente-contenido"
-}
-      
-.classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
-        color: var(--primary);
-}
-     
-  
-  
-@media only screen and (min-width: 575px) and (max-width: 1199px) {
-   .classy-nav-container .classy-navbar .classynav ul li a {
-          font-size: 16px; 
-    } 
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .classy-nav-container .classy-navbar .classynav ul li a {
-          font-size: 16px;
-          color: #252525; 
+    .breakpoint-off .classynav ul li .dropdown,
+    .breakpoint-off .classynav ul li .megamenu {
+      width: 210px;
+      -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+      box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+      border-radius: 6px;
     }
-     
+
+    .breakpoint-off .classynav ul li .megamenu {
+      width: 100%;
+    }
+
+      .breakpoint-on .classy-navbar .classy-menu{
+        left: auto;
+        right: -340px;
+      }
+
+
+
+
+
+    .header-area {
+      position: fixed;
+      z-index: 100;
+      width: 100%;
+      -webkit-transition-duration: 500ms;
+      -o-transition-duration: 500ms;
+      transition-duration: 500ms;
+      background-color: transparent;
+    }
+    .header-area .search-icon i {
+          font-size: 18px;
+          color: {{section.settings.color-header-links}};
+          cursor: pointer;
+    }
+    .header-area .cart-icon i {
+          font-size: 18px;
+          color:{{section.settings.color-header-links}};
+          cursor: pointer;
+    }
+     @media screen and (max-width: 736px) {
+      .header-area .search-icon i {
+          font-size: 18px !important;
+      }
+
+
+
+     }
+
+    .top-search-area .modal {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .top-search-area .modal-content .modal-body {
+      padding: 50px;
+    }
+
+
+    .top-search-area .modal-content .modal-body button.close-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 10;
+        font-size: 14px;
+    }
+
+    .top-search-area .modal-content .modal-body button.close-btn.btn {
+          padding: 0;
+          background-color: transparent;
+    }
+
+     .top-search-area form {
+      width: 100%;
+      position: relative;
+      z-index: 5;
+    }
+
+    .top-search-area form input {
+        width: 100%;
+        height: 50px;
+        border: none;
+        -webkit-box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.08);
+        border-radius: 6px;
+        font-size: 12px;
+        font-style: italic;
+        padding: 0 20px;
+    }
+
+    .top-search-area form input:focus {
+          -webkit-box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .top-search-area form button {
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        border-radius: 0 6px 6px 0;
+        border: none;
+        background-color: #fc6060;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: center;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .classy-nav-container {
+      background-color: transparent;
+      padding: 0;
+      height:  auto;
+      padding: 5px 0px;
+      position: relative;
+
+    }
+      .classynav ul li{
+        display: flex;
+        clear: both;
+        position: inherit;
+        z-index: 10;
+        justify-content: center;
+        align-items: center;
+      }
+    .classy-nav-container .classy-navbar {
+        -webkit-transition-duration: 500ms;
+        -o-transition-duration: 500ms;
+        transition-duration: 500ms;
+
+        padding: 0;
+    }
+
+    @media only screen and (max-width: 575px) {
+       .classy-nav-container .classy-navbar .nav-brand {
+            max-width: 90px;
+            margin-right: 15px;
+       }
+    }
+
+     .classy-nav-container .classy-navbar .nav-brand img{
+            max-width: 60px;
+            margin-right: 15px;
+
+       }
+
+    .classy-nav-container .classy-navbar .classynav ul li a {
+          font-size: 18px;
+          text-transform: capitalize;
+          color: {{section.settings.color-header-links}};
+          font-weight: 500;
+          padding: 0 20px;
+          font-family: "fuente-contenido"
+    }
+
     .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
             color: var(--primary);
-    } 
-}
-     
-@media only screen and (max-width: 575px) {
-   .classy-nav-container .classy-navbar .classynav ul li a {
-          font-size: 16px;
-          color: var(--primary); 
-     }
-         
-  .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
-            color: var(--primary); 
-  } 
-}
-    
-.classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a {
-      font-size: 14px;
-      text-transform: capitalize;
-      
-      line-height: 42px;
-      padding: 0 30px;
-      color: #252525; 
-}
-      
-.classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:hover {
-        color: var(--primary);
-}
+    }
 
-.classynav ul li.active a {
-  position: relative;
-  z-index: 1; 
-}
- 
-  
-.classynav ul li.active a::before {
-    width: calc(100% - 40px);
-    height: 2px;
-    background-color: var(--primary);
-    position: absolute;
-    bottom: 7px;
-    left: 0;
-    z-index: 1;
-    content: '';
-    left: 50%;
-    transform: translateX(-50%); 
-}
-    
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+    @media only screen and (min-width: 575px) and (max-width: 1199px) {
+       .classy-nav-container .classy-navbar .classynav ul li a {
+              font-size: 16px;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .classy-nav-container .classy-navbar .classynav ul li a {
+              font-size: 16px;
+              color: #252525;
+        }
+
+        .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
+                color: var(--primary);
+        }
+    }
+
+    @media only screen and (max-width: 575px) {
+       .classy-nav-container .classy-navbar .classynav ul li a {
+              font-size: 16px;
+              color: var(--primary);
+         }
+
+      .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
+                color: var(--primary);
+      }
+    }
+
+    .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a {
+          font-size: 14px;
+          text-transform: capitalize;
+
+          line-height: 42px;
+          padding: 0 30px;
+          color: #252525;
+    }
+
+    .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:hover {
+            color: var(--primary);
+    }
+
+    .classynav ul li.active a {
+      position: relative;
+      z-index: 1;
+    }
+
+
+    .classynav ul li.active a::before {
+        width: calc(100% - 40px);
+        height: 2px;
+        background-color: var(--primary);
+        position: absolute;
+        bottom: 7px;
+        left: 0;
+        z-index: 1;
+        content: '';
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .classynav ul li.active a::before {
+            display: none;
+          }
+    }
+
+    @media only screen and (max-width: 575px) {
       .classynav ul li.active a::before {
-        display: none; 
-      } 
-}
-    
-@media only screen and (max-width: 575px) {
-  .classynav ul li.active a::before {
-        display: none; 
-    } 
-}
+            display: none;
+        }
+    }
 
-.classynav ul li.has-down > a::after,
-.classynav ul li.has-down.active > a::after,
-.classynav ul li.megamenu-item > a::after {
-  color: var(--primary); 
-}
-
-
-
-
-
-  
-.classy-navbar-toggler .navbarToggler span {
-  background-color: #252525; 
-}
-@media screen and (min-width: 575px){
-
-
-
-
-/* HOVER MODO DESKTOP DE LOS ICONOS DEL HEADER */
-
-  /* HOVER STICKY */
-                        
-  .main-header-area.sticky .classynav *,
-  .main-header-area.sticky .classy-nav-container .classy-navbar .classynav ul li a,
-  .main-header-area.sticky .classy-nav-container .classy-navbar .classynav ul li button i
-  .header-area .main-header-area.sticky .search-icon i,
-  .header-area .main-header-area.sticky .cart-icon i
-  {
-    color:var(--primary);
-  }
-  .main-header-area.sticky .classy-nav-container .classy-navbar .classynav ul li:hover a,
-  .main-header-area.sticky .classy-nav-container .classy-navbar .classynav ul li:hover button i,
-  .header-area .main-header-area.sticky .search-icon i:hover,
-  .header-area .main-header-area.sticky .cart-icon:hover i{
-    color:var(--primary-light) !important;
-  }
-  .main-header-area.sticky .classy-nav-container .classy-navbar .classynav ul li a:hover{
-    color:var(--primary-light);
-  }
-   
-
-  /* HOVER SIN STICKY */
-
-
- 
-  .main-header-area .classy-nav-container .classy-navbar .classynav ul li:hover a,
-  .main-header-area .classy-nav-container .classy-navbar .classynav ul li:hover button i,
-  .header-area .main-header-area .search-icon i:hover,
-  .header-area .main-header-area .cart-icon:hover i{
-    color:var(--primary-light) !important;
-  }
-  .main-header-area .classy-nav-container .classy-navbar .classynav ul li a:hover{
-    color:var(--primary-light);
-  }
-
-
-
-
-
-                        
-}
-
-@media screen and (max-width: 575px){
- .classycloseIcon .cross-wrap span{
-   background: var(--primary);
- } 
-}                        
-.main-header-area {
-  position: relative;
-  z-index: 1;
-  background: {{section.settings.color-header}};
-  -webkit-transition-duration: 500ms;
-  -o-transition-duration: 500ms;
-  transition-duration: 500ms;
-   padding-top: 15px;
-    padding-bottom: 15px;
-   height:  auto;
-  
-}
-  .main-header-area.sticky {
-    background: {{section.settings.color-header-sticky}};
-    height: auto;
-   
-    box-shadow: -3px -6px 6px 7px #37363638;
-   
-
-  }
-
-.classy-navbar-toggler .navbarToggler span {
-    position: relative;
-    background-color: #707070;
-    border-radius: 3px;
-    display: block;
-    height: 2.5px;
-    margin-top: 5px;
-    padding: 0;
-    -webkit-transition-duration: .3s;
-    transition-duration: .3s;
-    width: 20px;
-    cursor: pointer;
-
-
-}
-  
-.classy-navbar-toggler .navbarToggler span{
-  background: var(--primary);
-}
-  
-header .site-header__cart-count {
-  display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: 0.9rem;
-    top: 0.2rem;
-    font-weight: bold;
-    background: var(--primary-gradient);
-    color: #fff !important;
-    border-radius: 2px !important;
-    min-width: 1em;
-    height: 1em;
-}
- header #CartCount .icon__fallback-text{
-   display:none;
- }
-  @media screen and (max-width: 575px){
-    
-    li .btn--link.site-header__icon.site-header__search-toggle.js-drawer-open-top:before {
-        content: "Search";
-        margin-right: 10px;
+    .classynav ul li.has-down > a::after,
+    .classynav ul li.has-down.active > a::after,
+    .classynav ul li.megamenu-item > a::after {
       color: var(--primary);
     }
-    .cart-icon {
-      display:flex !important;
-      justify-content: space-between !important;
-      padding-left:20px;
-      cursor:pointer;
-                         border-bottom: 1px solid #bf63631a;
+
+
+
+
+
+
+    .classy-navbar-toggler .navbarToggler span {
+      background-color: #252525;
     }
-    .search-icon button{
-      width: 100%;
-      justify-content: space-between;
-      display: flex;
-      padding-right: 20px;
-      border-bottom: 1px solid #bf63631a;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    }
-    
-                        
-     li.cart-icon:before {
-          content: "Cart";
+    @media screen and (min-width: 575px){
+
+
+
+
+    /* HOVER MODO DESKTOP DE LOS ICONOS DEL HEADER */
+
+      /* HOVER STICKY */
+
+      .main-header-area.sticky .classynav *,
+      .main-header-area.sticky .classy-nav-container .classy-navbar .classynav ul li a,
+      .main-header-area.sticky .classy-nav-container .classy-navbar .classynav ul li button i
+      .header-area .main-header-area.sticky .search-icon i,
+      .header-area .main-header-area.sticky .cart-icon i
+      {
         color:var(--primary);
       }
-    .classy-menu .classynav ul{
-       flex-direction:column;
+      .main-header-area.sticky .classy-nav-container .classy-navbar .classynav ul li:hover a,
+      .main-header-area.sticky .classy-nav-container .classy-navbar .classynav ul li:hover button i,
+      .header-area .main-header-area.sticky .search-icon i:hover,
+      .header-area .main-header-area.sticky .cart-icon:hover i{
+        color:var(--primary-light) !important;
+      }
+      .main-header-area.sticky .classy-nav-container .classy-navbar .classynav ul li a:hover{
+        color:var(--primary-light);
+      }
+
+
+      /* HOVER SIN STICKY */
+
+
+
+      .main-header-area .classy-nav-container .classy-navbar .classynav ul li:hover a,
+      .main-header-area .classy-nav-container .classy-navbar .classynav ul li:hover button i,
+      .header-area .main-header-area .search-icon i:hover,
+      .header-area .main-header-area .cart-icon:hover i{
+        color:var(--primary-light) !important;
+      }
+      .main-header-area .classy-nav-container .classy-navbar .classynav ul li a:hover{
+        color:var(--primary-light);
+      }
+
+
+
+
+
+
+    }
+
+    @media screen and (max-width: 575px){
+     .classycloseIcon .cross-wrap span{
+       background: var(--primary);
      }
-    .breakpoint-on .classy-navbar .classy-menu{
-     background:var(--primary-light) ;
     }
-    .breakpoint-on .classynav>ul>li>a{
-          background: var(--primary-light);
-        border-bottom: 1px solid #bf63631a;
+    .main-header-area {
+      position: relative;
+      z-index: 1;
+      background: {{section.settings.color-header}};
+      -webkit-transition-duration: 500ms;
+      -o-transition-duration: 500ms;
+      transition-duration: 500ms;
+       padding-top: 15px;
+        padding-bottom: 15px;
+       height:  auto;
+
     }
-    .header-area .cart-icon i, .header-area .search-icon i{
-      color:var(--primary);
-    }
-    .header-area .cart-icon:hover , .header-area .search-icon:hover{
-      color:var(--primary);
-    }
-    .search-icon button{
-      padding-left: 20px;
-    }
-  }
-.search-bar__interior {  
-  padding-top: 300px; 
-}
-  
-  
-.announcement-bar { 
-    background-color:  var(--primary);
-    width: 110%;
-    position: relative;
-    margin-left: -70px;
-    margin-top: -2px;
-    text-align: center;
-    z-index: 4;
-  }
-  
-  @media screen and (max-width: 575px) {
-    .announcement-bar { 
-     font-size: 12px;
-     width: 135%;
-  }
- 
-     
-   
+      .main-header-area.sticky {
+        background: {{section.settings.color-header-sticky}};
+        height: auto;
+
+        box-shadow: -3px -6px 6px 7px #37363638;
 
 
-                        
-  }
-  
-  @media screen and (max-width: 360px) {
-    .announcement-bar { 
-     font-size: 12px;
-     width: 135%;
-    
-  }
-  
-  }
-  
-  .announcement-bar__link{
-   transition: all 0.6s;
-  }
-   
-  .announcement-bar__link:hover { background-color: #c00202 } 
-  .announcement-bar__message { color: #ffffff; }
-  .breakpoint-on .classy-navbar .classy-menu.menu-on{
-  left: auto;
-    right:0;
-  }
-
-
-
-    .search-y-cart{
-        display:flex;
       }
-   div#cart-icon-phone{
-        padding:0 !important;
-      }
- 
-  .classy-navbar-toggler > *:not(:last-child),  .search-y-cart > *:not(:last-child) {
-        margin-right: 15px;
-      }
-  #cart-icon-phone a{
+
+    .classy-navbar-toggler .navbarToggler span {
+        position: relative;
+        background-color: #707070;
+        border-radius: 3px;
+        display: block;
+        height: 2.5px;
+        margin-top: 5px;
         padding: 0;
-    padding-top: 2.5px;
-  }
-  #cart-icon-phone #CartCount{
-    top: -4px;
-    right: -4px;
-  }
- 
+        -webkit-transition-duration: .3s;
+        transition-duration: .3s;
+        width: 20px;
+        cursor: pointer;
+
+
+    }
+
+    .classy-navbar-toggler .navbarToggler span{
+      background: var(--primary);
+    }
+
+    header .site-header__cart-count {
+      display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 0.9rem;
+        top: 0.2rem;
+        font-weight: bold;
+        background: var(--primary-gradient);
+        color: #fff !important;
+        border-radius: 2px !important;
+        min-width: 1em;
+        height: 1em;
+    }
+     header #CartCount .icon__fallback-text{
+       display:none;
+     }
+      @media screen and (max-width: 575px){
+
+        li .btn--link.site-header__icon.site-header__search-toggle.js-drawer-open-top:before {
+            content: "Search";
+            margin-right: 10px;
+          color: var(--primary);
+        }
+        .cart-icon {
+          display:flex !important;
+          justify-content: space-between !important;
+          padding-left:20px;
+          cursor:pointer;
+                             border-bottom: 1px solid #bf63631a;
+        }
+        .search-icon button{
+          width: 100%;
+          justify-content: space-between;
+          display: flex;
+          padding-right: 20px;
+          border-bottom: 1px solid #bf63631a;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        }
+
+
+         li.cart-icon:before {
+              content: "Cart";
+            color:var(--primary);
+          }
+        .classy-menu .classynav ul{
+           flex-direction:column;
+         }
+        .breakpoint-on .classy-navbar .classy-menu{
+         background:var(--primary-light) ;
+        }
+        .breakpoint-on .classynav>ul>li>a{
+              background: var(--primary-light);
+            border-bottom: 1px solid #bf63631a;
+        }
+        .header-area .cart-icon i, .header-area .search-icon i{
+          color:var(--primary);
+        }
+        .header-area .cart-icon:hover , .header-area .search-icon:hover{
+          color:var(--primary);
+        }
+        .search-icon button{
+          padding-left: 20px;
+        }
+      }
+    .search-bar__interior {
+      padding-top: 300px;
+    }
+
+
+    .announcement-bar {
+        background-color:  var(--primary);
+        width: 110%;
+        position: relative;
+        margin-left: -70px;
+        margin-top: -2px;
+        text-align: center;
+        z-index: 4;
+      }
+
+      @media screen and (max-width: 575px) {
+        .announcement-bar {
+         font-size: 12px;
+         width: 135%;
+      }
+
+
+
+
+
+
+      }
+
+      @media screen and (max-width: 360px) {
+        .announcement-bar {
+         font-size: 12px;
+         width: 135%;
+
+      }
+
+      }
+
+      .announcement-bar__link{
+       transition: all 0.6s;
+      }
+
+      .announcement-bar__link:hover { background-color: #c00202 }
+      .announcement-bar__message { color: #ffffff; }
+      .breakpoint-on .classy-navbar .classy-menu.menu-on{
+      left: auto;
+        right:0;
+      }
+
+
+
+        .search-y-cart{
+            display:flex;
+          }
+       div#cart-icon-phone{
+            padding:0 !important;
+          }
+
+      .classy-navbar-toggler > *:not(:last-child),  .search-y-cart > *:not(:last-child) {
+            margin-right: 15px;
+          }
+      #cart-icon-phone a{
+            padding: 0;
+        padding-top: 2.5px;
+      }
+      #cart-icon-phone #CartCount{
+        top: -4px;
+        right: -4px;
+      }
 </style>
 
-{% include 'search-drawer' %}
-{% render 'social-btn' 
-  facebook_link: settings.social_facebook_link, 
-  facebook_user: settings.user-facebook,
-  background: "var(--primary)",
-  text_color: "white",
-  instagram_link: settings.social_instagram_link,
-  instagram_user: settings.user-instagram,
-  nr_items: 2
-%}
-{% render 'social-btn' 
-  background: "var(--primary)",
-  text_color: "white",
-  nr_items: 3,
-  email: section.settings.email,
-  phone: section.settings.phone,
-  location: section.settings.location,
-  location_tooltip: section.settings.location_tooltip,
-  phone_tooltip: section.settings.phone_tooltip,
-  right: true,
-  id: "info"
-  
-%}
+{% include 'search-drawer' %} {% render 'social-btn' facebook_link: settings.social_facebook_link, facebook_user: settings.user-facebook, background: "var(--primary)", text_color: "white", instagram_link: settings.social_instagram_link,
+instagram_user: settings.user-instagram, nr_items: 2 %} {% render 'social-btn' background: "var(--primary)", text_color: "white", nr_items: 3, email: section.settings.email, phone: section.settings.phone, location:
+section.settings.location, location_tooltip: section.settings.location_tooltip, phone_tooltip: section.settings.phone_tooltip, right: true, id: "info" %} {% render "cart-popup-ajax" %}
 
-{% render "cart-popup-ajax" %}
-
-  <!-- Top Search Form Area -->
-    <div class="top-search-area">
-        <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <!-- Close -->
-                        <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
-                        <!-- Form -->
-                        <form action="index.html" method="post">
-                            <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter...">
-                            <button type="submit">Search</button>
-                        </form>
-                    </div>
+<!-- Top Search Form Area -->
+<div class="top-search-area">
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Close -->
+                    <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
+                    <!-- Form -->
+                    <form action="index.html" method="post">
+                        <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter..." />
+                        <button type="submit">Search</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Header Area Start -->
-    <header class="header-area">
-      
-   {% if section.settings.message %}
-    {% if section.settings.home_page_only == false or request.page_type == 'index' %}     
-      <div class="announcement-bar" role="region" aria-label="{{ 'sections.header.announcement_bar_label' | t }}">
-        {%- unless section.settings.message_link == blank -%}
-          <a href="{{ section.settings.message_link }}" class="announcement-bar__link">
-        {%- endunless -%}
-            <p class="announcement-bar__message">{{ section.settings.message_text | escape }}</p>
-        {%- unless section.settings.message_link == blank -%}
-          </a>
-        {%- endunless -%}
-      </div>
-
-    {% endif %}
-  {% endif %}
-
-        <!-- Main Header Start -->
-        <div class="main-header-area">
-            <div class="classy-nav-container breakpoint-off">
-                <div class="container">
-                    <!-- Classy Menu -->
-                    <nav class="classy-navbar justify-content-between" id="alimeNav">
-
-                        <!-- Logo -->
-                        <a class="nav-brand" href="{{ routes.root_url }}"><img src="{{ section.settings.logo | img_url: 'master' }}" alt="" style="max-width: {{ section.settings.logo_max_width }}px"></a>
-
-                        <!-- Navbar Toggler -->
-                        <div class="classy-navbar-toggler d-flex d-sm-none">
-                            <div class="search-y-cart">
-
-                             <div class="search-icon d-flex align-items-center justify-content-center ">
-                                   <button type="button" class="p-0 h-auto btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer>
-                                           <i class="fas fa-search"></i>
-                                   </button>
-                              </div>
-
-
-
-                  
-                               <div  style="padding:0;" role="button" class="cart-icon" id="cart-icon-phone" onclick="document.querySelector('.cartgo').click();">
-                                          <a href="{{ routes.cart_url }}" class="cartgo site-header__icon site-header__cart text-light" >
-                                          <i class="fas fa-shopping-cart"></i>
-                                          
-                                            <div id="CartCount"  data-ajax-cart-section class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden" data-cart-count-bubble>
-                                              <span data-cart-count >{{ cart.item_count }}</span>
-                                              <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
-                                            </div>
-                                          </a>
-                              </div>
-                                
-       
-
-  
-                          </div>
-
-
-
-
-                          
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
-                          
-                        </div>
-                        
-
-                        <!-- Menu -->
-                        <div class="classy-menu overflow-hidden">
-                            <!-- Menu Close Button -->
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                            </div>
-                            <!-- Nav Start -->
-                            <div class="classynav">
-                                <ul class="d-flex" id="nav">
-                                   
-                                  {% include 'site-nav', linklist: section.settings.main_linklist, wrapper_class: 'site-nav--centered' %}
-
-
-                                    <li class="search-icon " id="search-icon-phone">
-                                      <button type="button" class=" btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer>
-                                       <i class="fas fa-search"></i>
-                                    
-                                      </button>
-                                    </li>
-
-  
-                                    <li role="button" class="cart-icon " onclick="document.querySelector('.cartgo').click();">
-                                      <a href="{{ routes.cart_url }}" class="cartgo site-header__icon site-header__cart text-light" >
-                                      <i class="fas fa-shopping-cart"></i>
-                                      
-                                      <div id="CartCount"  data-ajax-cart-section class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden" data-cart-count-bubble>
-                                        <span data-cart-count >{{ cart.item_count }}</span>
-                                        <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
-                                      </div>
-                                      </a>
-                                    </li>
-
- 
-                                </ul>
-
-                               
-                            </div>
-                            <!-- Nav End -->
-                        </div>
-                    </nav>
-                      <!-- Search Icon -->
-                              
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- Header Area End -->
-<div data-section-id="{{ section.id }}" data-section-type="header-section" data-header-section>
-  <header  role="banner">     
-        <nav class="grid__item medium-up--one-half small--hide" id="AccessibleNav" role="navigation">
-          <!--{% include 'site-nav', linklist: section.settings.main_linklist %}-->
-        </nav>
-      
-  </header>
 </div>
 
+<!-- Header Area Start -->
+<header class="header-area">
+    {% if section.settings.message %} {% if section.settings.home_page_only == false or request.page_type == 'index' %}
+    <div class="announcement-bar" role="region" aria-label="{{ 'sections.header.announcement_bar_label' | t }}">
+        {%- unless section.settings.message_link == blank -%}
+        <a href="{{ section.settings.message_link }}" class="announcement-bar__link">
+            {%- endunless -%}
+            <p class="announcement-bar__message">{{ section.settings.message_text | escape }}</p>
+            {%- unless section.settings.message_link == blank -%}
+        </a>
+        {%- endunless -%}
+    </div>
+
+    {% endif %} {% endif %}
+
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar justify-content-between" id="alimeNav">
+                    <!-- Logo -->
+                    <a class="nav-brand" href="{{ routes.root_url }}"><img src="{{ section.settings.logo | img_url: 'master' }}" alt="" style="max-width: {{ section.settings.logo_max_width }}px" /></a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler d-flex d-sm-none">
+                        <div class="search-y-cart">
+                            <div class="search-icon d-flex align-items-center justify-content-center">
+                                <button type="button" class="p-0 h-auto btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer>
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+
+                            <div style="padding: 0;" role="button" class="cart-icon" id="cart-icon-phone" onclick="document.querySelector('.cartgo').click();">
+                                <a href="{{ routes.cart_url }}" class="cartgo site-header__icon site-header__cart text-light">
+                                    <i class="fas fa-shopping-cart"></i>
+
+                                    <div id="CartCount" data-ajax-cart-section class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden" data-cart-count-bubble>
+                                        <span data-cart-count>{{ cart.item_count }}</span>
+                                        <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu overflow-hidden">
+                        <!-- Menu Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul class="d-flex" id="nav">
+                                {% include 'site-nav', linklist: section.settings.main_linklist, wrapper_class: 'site-nav--centered' %}
+
+                                <li class="search-icon" id="search-icon-phone">
+                                    <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer>
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </li>
+
+                                <li role="button" class="cart-icon" onclick="document.querySelector('.cartgo').click();">
+                                    <a href="{{ routes.cart_url }}" class="cartgo site-header__icon site-header__cart text-light">
+                                        <i class="fas fa-shopping-cart"></i>
+
+                                        <div id="CartCount" data-ajax-cart-section class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden" data-cart-count-bubble>
+                                            <span data-cart-count>{{ cart.item_count }}</span>
+                                            <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+                </nav>
+                <!-- Search Icon -->
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header Area End -->
+<div data-section-id="{{ section.id }}" data-section-type="header-section" data-header-section>
+    <header role="banner">
+        <nav class="grid__item medium-up--one-half small--hide" id="AccessibleNav" role="navigation">
+            <!--{% include 'site-nav', linklist: section.settings.main_linklist %}-->
+        </nav>
+    </header>
+</div>
 {% schema %}
   {
     "name": "Header",
@@ -967,10 +915,5 @@ header .site-header__cart-count {
     }
    ]
   }
-{% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+{% endschema %} 
+{% stylesheet %} {% endstylesheet %} {% javascript %} {% endjavascript %}
