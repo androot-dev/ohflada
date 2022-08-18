@@ -343,7 +343,6 @@
   
 /* Mobile/Tablet Nav CSS */
 
-@media screen and(max-width: 575px){
   
 .breakpoint-on .classycloseIcon {
   display: block; }
@@ -447,4 +446,4 @@
   background-color: #ff0000;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg); }
-}
+
