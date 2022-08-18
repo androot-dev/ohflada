@@ -67,7 +67,7 @@
 
             // check browser width in real-time
             function breakpointCheck() {
-                var windoWidth = ;
+                var windoWidth = window.innerWidth;
               console.log(windoWidth)
               
                 if (windoWidth <= defaultOpt.breakpoint) {
