@@ -270,7 +270,7 @@
   </div>
   <script src="{{ 'jquery-3.6.0.min.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'main-2.js' | asset_url }}" defer="defer"></script> 
-  <script src="{{ 'bootstrap.min.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'bootstrap.min.js' | asset_url }}" defer="defer" onload="document.dispatchEvent(new CustomEvent('ready:bootstrap'))"></script>
   <script src="{{ 'owl.carousel.min.js' | asset_url }}" defer="defer" onload="document.dispatchEvent(new CustomEvent('ready:owl'))"></script>
   
   <script src="{{ 'classy-nav.js' | asset_url }}" defer="defer"></script>
