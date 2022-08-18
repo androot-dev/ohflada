@@ -540,7 +540,7 @@ header .site-header__cart-count {
                         <div class="classy-navbar-toggler">
                             <span class="navbarToggler"><span></span><span></span><span></span></span>
                           <div class="search-y-cart">
-                           <div role="button" class="cart-icon" id="cart-icon-phone" onclick="document.querySelector('.cartgo').click();">
+                           <div  style="padding:0;" role="button" class="cart-icon" id="cart-icon-phone" onclick="document.querySelector('.cartgo').click();">
                                       <a href="{{ routes.cart_url }}" class="cartgo site-header__icon site-header__cart text-light" >
                                       <i class="fas fa-shopping-cart"></i>
                                       
@@ -567,7 +567,7 @@ header .site-header__cart-count {
                                   {% include 'site-nav', linklist: section.settings.main_linklist, wrapper_class: 'site-nav--centered' %}
 
 
-                                    <li class="search-icon " style="padding:0;">
+                                    <li class="search-icon ">
                                       <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer>
                                        <i class="fas fa-search"></i>
                                     
