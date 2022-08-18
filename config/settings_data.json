@@ -325,7 +325,7 @@
           "color-header-sticky-links": "",
           "color-header-sticky-hover": "",
           "logo_max_width": 150,
-          "main_linklist": "main-menu",
+          "main_linklist": "footer",
           "message": false,
           "home_page_only": false,
           "message_text": "Announce something here",
