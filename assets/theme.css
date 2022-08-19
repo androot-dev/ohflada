@@ -111,7 +111,9 @@
    z-index:1;
 }
 
-
+.template-policy a{
+  color: var(--primary-dark);
+}
 
 .template-policy h1{
  
