@@ -26,25 +26,7 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
       <div class="container-fluid py-section ">
          <div class="row page-width">
-            <!-- HORIZOANTAL TAB -->
-  
-            <ul class="nav nav-tabs" role="tablist">
-             
-  
-                 
-              
-            </ul>
-            <div class="tab-content" >
-              
-               <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1">...</div>
-                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="contact-tab">...</div>
-
-            </div>
-
-
-
-
+ 
 
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -53,7 +35,7 @@
 
 
 
-   {%  assign tabs = "" %}
+                   {%  assign tabs = "" %}
                     {% for block in section.blocks %}
                       {%  if block.type =="Tab" %}
                         {% assign tab = block.settings %}
@@ -80,8 +62,9 @@
 
 </ul>
 <div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">.1.</div>
-  <div class="tab-pane fade " id="tab2" role="tabpanel" aria-labelledby="tab2-tab">2.</div>
+    {% for tab in tabs %}
+      {{ tab }}
+      {%  endfor %}}
 
 </div>
 
