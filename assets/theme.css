@@ -2595,7 +2595,7 @@ hr {
   margin-right: 35px; }
   @media only screen and (max-width: 749px) {
     .list-view-item__image-wrapper {
-      margin-right: 17.5px; } }
+      margin-right: 7.5px; } }
 
 .list-view-item__title-column {
   display: table-cell;
