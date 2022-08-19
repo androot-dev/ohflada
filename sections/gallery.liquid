@@ -70,12 +70,12 @@
                         {% assign idstring = id | plus: 0  %}
                         {% if block.settings.id-tab == idstring %}
                        
-                         {%  render "grid-photo" image: block.settings.image, col-lg: block.settings.col-lg , col-md: block.settings.col-md , col-sm:block.settings.col-sm  %}
+                         {%  render "grid-photo" caption:block.settings.caption, image: block.settings.image, col-lg: block.settings.col-lg , col-md: block.settings.col-md , col-sm:block.settings.col-sm  %}
                       {% endif %}
                   {% when "video" %}
                       {% assign idstring = id | plus: 0  %}
                       {% if block.settings.id-tab == idstring %}
-                           {% render "grid-video" url-video: block.settings.url-video col-lg: block.settings.col-lg , col-md: block.settings.col-md , col-sm:block.settings.col-sm  %}
+                           {% render "grid-video" caption:block.settings.caption url-video: block.settings.url-video col-lg: block.settings.col-lg , col-md: block.settings.col-md , col-sm:block.settings.col-sm  %}
                       {% endif %}
                  {% endcase %}
              {% endfor %}
