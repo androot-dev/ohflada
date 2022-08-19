@@ -117,10 +117,10 @@ font-size: 1.8rem;
         {% for block in section.blocks %}
             {% if block.type == "faq-item" %}
         <div class="card">
-            <div class="card-header" id="headingOne">
-                <h5 class="mb-0 text-primary-small">
-                    <a class=" hover_a" data-toggle="collapse"
+            <div class="card-header" id="headingOne" data-toggle="collapse"
                         data-target="#collapse{{forloop.index}}" aria-expanded="true" aria-controls="collapseOne">
+                <h5 class="mb-0 text-primary-small">
+                    <a class=" hover_a" >
                         <i class=" fa fa-angle-down pr-3"></i> {{block.settings.question}}
                     </a>
                 </h5>
