@@ -113,7 +113,7 @@
 
 
 .template-policy a:not([disabled]):hover, a:focus{
-   color: var(--primary-dark) !important;
+   color: var(--tertiary) !important;
 }
 .template-policy h1{
  
