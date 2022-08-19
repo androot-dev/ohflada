@@ -939,13 +939,21 @@
           "ea1474ca-f033-461a-87d1-7975f90c4162": {
             "type": "Tab",
             "settings": {
-              "new-tab": "Dulces",
+              "name-tab": "Gallery 1",
+              "id-tab": 1
+            }
+          },
+          "2fa14cb7-945f-4afe-824d-357de8231655": {
+            "type": "Tab",
+            "settings": {
+              "name-tab": "Gallery 2",
               "id-tab": 1
             }
           },
           "c3d695ea-8937-4250-8607-836662e71b64": {
             "type": "video",
             "settings": {
+              "url-video": "",
               "id-tab": 1,
               "col-lg": 4,
               "col-md": 6,
@@ -964,6 +972,7 @@
         },
         "block_order": [
           "ea1474ca-f033-461a-87d1-7975f90c4162",
+          "2fa14cb7-945f-4afe-824d-357de8231655",
           "c3d695ea-8937-4250-8607-836662e71b64",
           "80fbd8ba-c6b6-4c1f-af4d-d83bce3dbe2a"
         ],
