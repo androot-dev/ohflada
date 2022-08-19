@@ -13,8 +13,9 @@
                {% else %}
             
           <h1 class="title-primary text-center">The Best Categories For You</h1>
-            <h2 class="title-secondary text-center ">{{ section.settings.subtitle }}</h2>                   
+                          
         {% endif %}   
+        <h2 class="title-secondary text-center ">{{ section.settings.subtitle }}</h2>    
       </header>
 
   {%- assign blocks = section.blocks | sort: 'collection.all_products_count' -%}
