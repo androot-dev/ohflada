@@ -67,11 +67,22 @@
      {% for block in section.blocks %}
        {%  case block.type %}
          {% when "photo" %}
+         
               {% if block.id-tab == id %}
                  {%  render "grid-photo" block: block %}
               {% endif %}
+
+
+
+  
           {% when "video" %}
+
+
+   {% if block.id-tab == id %}
                {% render "grid-video" block: block %}
+  {% endif %}
+
+  
          {% endcase %}
         {%  endfor %}
     {%  endfor %}
