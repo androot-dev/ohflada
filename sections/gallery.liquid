@@ -62,7 +62,7 @@
   {% assign tabs = tabs | split: ',' %}
     {% for id in tabs   %}
       
-       <div class="tab-pane fade show {% if forloop.index == 1 %} active {%  endif %}" id="tab-{{ id }}" role="tabpanel" aria-labelledby="tab{{ id }}-tab">
+       <div class="tab-pane fade show {% if forloop.index == 1 %} active {%  endif %}" id="tab{{ id }}" role="tabpanel" aria-labelledby="tab{{ id }}-tab">
              {% for block in section.blocks %} 
                {%  case block.type %}
                  {% when "photo" %}
