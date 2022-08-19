@@ -2574,6 +2574,13 @@ hr {
     justify-content: center;
     align-items: center;
 }
+.pagination .pagination__text{
+    color: var(--primary-dark);
+    font-size: 18px;
+    font-family: "fuente-contenido" !important;
+    padding-right: 10px;
+    padding-left: 10px;
+}
 .list-view-item__image-column {
   display: table-cell;
   vertical-align: middle;
