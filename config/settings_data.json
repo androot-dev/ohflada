@@ -652,11 +652,13 @@
       "list-collections-template": {
         "type": "list-collections-template",
         "settings": {
-          "image-bg-1": "shopify:\/\/shop_images\/pexels-helena-lopes-708392.jpg",
-          "title": "",
-          "display_type": "all",
-          "sort": "alphabetical",
-          "grid": 3
+          "items-show": 9,
+          "category": "",
+          "col-lg": 4,
+          "col-md": 6,
+          "col-sm": 12,
+          "title": "The Best Categories For You",
+          "subtitle": "We have variety"
         }
       },
       "contact": {
@@ -918,6 +920,11 @@
       },
       "hero-product-individual": {
         "type": "hero-product-individual",
+        "settings": {
+        }
+      },
+      "hero-all-collections": {
+        "type": "hero-all-collections",
         "settings": {
         }
       }
