@@ -109,7 +109,7 @@
       </form>
 
       <div class="search-bar__actions">
-        <button type="button" class="btn--link search-bar__close js-drawer-close" document.body.classList.remove('js-drawer-open', 'js-drawer-open-top')>
+        <button type="button" class="btn--link search-bar__close js-drawer-close" onclick="document.body.classList.remove('js-drawer-open', 'js-drawer-open-top')">
           {% include 'icon-close' %}
           <!--<span class="icon__fallback-text">{{ 'general.search.close' | t }}</span>-->
         </button>
