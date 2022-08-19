@@ -111,10 +111,10 @@
    z-index:1;
 }
 
-.template-policy a:hover{
-  color: var(--primary-dark);
-}
 
+.template-policy a:not([disabled]):hover, a:focus{
+   color: var(--primary-dark);
+}
 .template-policy h1{
  
   color: var(--primary);
