@@ -71,7 +71,7 @@
        
        {%  case block.type %}
          {% when "photo" %}
-      
+      {{block.settings.id-tab}}
               {% if block.settings.id-tab == id %}
                  fgfg
                  {%  render "grid-photo" block: block %}
