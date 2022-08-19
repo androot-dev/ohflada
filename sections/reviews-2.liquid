@@ -201,10 +201,20 @@
     color: var(--tertiary);
     font-family: "fuente-cotenido" !important;
 }
+{% if section.settings.final-section  %}
+.section-{{ section.id }}{
+  padding-bottom: 150px;
+}
+  .myfooter {
+      margin-top: -90px;
+      z-index: 5;
+      position: relative;
+  }
+{% endif %}
 </style>
 
 
-<section class="overflow-hidden reviews position-relative section-{{ section.id }}-img-transparency position-relative">
+<section class="section-{{ section.id }} overflow-hidden reviews position-relative section-{{ section.id }}-img-transparency position-relative">
  {%  if section.settings.image-fondo != blank  %}
   <div class="image-container imgs">
     
@@ -295,6 +305,13 @@
   {
     "name": "Reviews",
     "settings": [
+       {
+      "type": "checkbox",
+      "id": "final-section",
+      "label": "final section",
+      "info": "If the footer uses rounded edges and this section is placed at the end, check this box to prevent the background image from being cut off.",
+      "default": true
+    },
       {
 			"type": "image_picker",
 			"id": "image-fondo",            
