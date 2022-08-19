@@ -28,23 +28,31 @@
               
                  <section class="gallery-section">
                   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+
+          
+
+
+
+  
                   <div class="container-fluid py-section ">
                       <div class="row page-width">
                           <!-- HORIZOANTAL TAB -->
-                          <div class="col-12 px-0 mx-0">
-                              <ul class="nav horizontal-tab pb-section tablet-compress nav-pills nav-fill d-flex justify-content-center">                 
-                                  <li class=" text-left ">
-                                      <a href="#category-1" class="active nav-link px-3 justify-content-start show" data-bs-toggle="tab">
-                                          <span class=" container-img" style="width:50px;height:50px;">Concrete</span>
-                                      </a>
-                                  </li>
-                                  <li class=" text-left ">
-                                      <a href="#category-2" class=" nav-link px-3 justify-content-start show" data-bs-toggle="tab">
-                                          <span class=" container-img" style="width:50px;height:50px;">Hardscaping</span>
-                                      </a>
-                                  </li>
-                              </ul>
-                          </div>
+                          <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+                      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                    </div>
                           <!-- HORIZONTAL CONTENT -->
                           <div class="col-12 px-0 mx-0">
                               <div class="tab-content d-flex justify-content-center px-0">
