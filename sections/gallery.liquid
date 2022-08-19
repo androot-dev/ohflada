@@ -71,8 +71,8 @@
        
        {%  case block.type %}
          {% when "photo" %}
-        {{ block.id-tab }} - {{id}}
-              {% if block.id-tab == id %}
+      
+              {% if block.settings.id-tab == id %}
                  
                  {%  render "grid-photo" block: block %}
               {% endif %}
@@ -82,7 +82,7 @@
   
           {% when "video" %}
 
-               {% if block.id-tab == id %}
+               {% if block.settings.id-tab == id %}
                  
 
                    {% render "grid-video" block: block %}
