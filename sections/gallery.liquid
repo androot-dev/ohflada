@@ -64,6 +64,12 @@
 <div class="tab-content" id="myTabContent">
     {% for id in tabs %}
       
+       <div class="tab-pane fade show {% if forloop.index == 1 %} active {%  endif %}" id="tab-{{ id }}" role="tabpanel" aria-labelledby="tab{{ id }}-tab">
+
+
+
+         
+      
      {% for block in section.blocks %}
        {%  case block.type %}
          {% when "photo" %}
@@ -78,13 +84,14 @@
           {% when "video" %}
 
 
-   {% if block.id-tab == id %}
-               {% render "grid-video" block: block %}
-  {% endif %}
+               {% if block.id-tab == id %}
+                           {% render "grid-video" block: block %}
+              {% endif %}
 
   
          {% endcase %}
         {%  endfor %}
+       </div>
     {%  endfor %}
 
 </div>
