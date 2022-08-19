@@ -32,9 +32,6 @@
 <ul class="nav nav-tabs" id="myTab" role="tablist">
 
 
-
-
-
                    {%  assign tabs = "" %}
                     {% for block in section.blocks %}
                       {%  if block.type =="Tab" %}
@@ -71,9 +68,9 @@
        
        {%  case block.type %}
          {% when "photo" %}
-      {{block.settings.id-tab}} {{ id }}
-              {% if block.settings.id-tab == id %}
-                 fgfg
+           {% assign idstring = id | plus: 0  %}
+              {% if block.settings.id-tab == idstring %}
+             
                  {%  render "grid-photo" block: block %}
               {% endif %}
 
@@ -82,9 +79,9 @@
   
           {% when "video" %}
 
-               {% if block.settings.id-tab == id %}
-                 
-fff
+               {% assign idstring = id | plus: 0  %}
+              {% if block.settings.id-tab == idstring %}
+
                    {% render "grid-video" block: block %}
               {% endif %}
 
