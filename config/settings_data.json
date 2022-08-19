@@ -927,6 +927,52 @@
         "type": "hero-all-collections",
         "settings": {
         }
+      },
+      "hero-gallery": {
+        "type": "hero-gallery",
+        "settings": {
+        }
+      },
+      "gallery": {
+        "type": "gallery",
+        "blocks": {
+          "ea1474ca-f033-461a-87d1-7975f90c4162": {
+            "type": "Tab",
+            "settings": {
+              "new-tab": "Dulces",
+              "id-tab": 1
+            }
+          },
+          "c3d695ea-8937-4250-8607-836662e71b64": {
+            "type": "video",
+            "settings": {
+              "id-tab": 1,
+              "col-lg": 4,
+              "col-md": 6,
+              "col-sm": 12
+            }
+          },
+          "80fbd8ba-c6b6-4c1f-af4d-d83bce3dbe2a": {
+            "type": "photo",
+            "settings": {
+              "id-tab": 1,
+              "col-lg": 4,
+              "col-md": 6,
+              "col-sm": 12
+            }
+          }
+        },
+        "block_order": [
+          "ea1474ca-f033-461a-87d1-7975f90c4162",
+          "c3d695ea-8937-4250-8607-836662e71b64",
+          "80fbd8ba-c6b6-4c1f-af4d-d83bce3dbe2a"
+        ],
+        "settings": {
+          "title-section": "Gallery",
+          "subtitle-section": "Check out our delicious work",
+          "padding_top": 40,
+          "padding_bottom": 52
+        }
       }
     },
     "content_for_index": [
