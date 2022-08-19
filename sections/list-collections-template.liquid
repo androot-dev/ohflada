@@ -143,11 +143,14 @@
 
   <div class="container-fluid">
    <div class="row">
+   {%- paginate blog.articles by 5 -%}
         {% for collection in collections %}
          
             {% include 'collection-grid-item', collection: collection, col-lg: section.settings.col-lg , col-md: section.settings.col-md , col-sm:section.settings.col-sm  %}
         
         {% endfor %}
+         {{ paginate | default_pagination: next: 'Older', previous: 'Newer' }}
+{%- endpaginate -%}
     </div>  
   </div>
 </div>
