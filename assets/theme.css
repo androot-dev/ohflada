@@ -124,6 +124,9 @@
 .template-policy h1:first-child {
     padding-top: 70px;
 }
+.template-policy strong{
+  color: var(--primary);
+}
 
 /* HERO SUBPAGES */
 .owl-nav .owl-next, .owl-nav .owl-prev{
