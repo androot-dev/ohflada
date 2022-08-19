@@ -61,7 +61,7 @@
       
         
                      <li class="nav-item" role="presentation">
-                        <button class="nav-link active" 
+                        <button class="nav-link {% if forloop.index == 1 %} active {% endif %}" 
                           data-toggle="tab" data-target="#tab{{ tab.id-tab }}" 
                           type="button" role="tab" 
                           aria-controls="tab{{ tab.id-tab }}"
@@ -78,7 +78,6 @@
 
 
 
-  
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">.1.</div>
