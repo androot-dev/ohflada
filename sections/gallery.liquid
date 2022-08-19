@@ -28,16 +28,18 @@
          <div class="row page-width">
             <!-- HORIZOANTAL TAB -->
             <ul class="nav nav-tabs" id="myTab" role="tablist">
-
+            {%  assign tabs = "" %}
               {% for block in section.blocks %}
                 {%  if block.type =="Tab" %}
                   {% assign tab = block %}}
+                  {% assign tabs =  tabs | append: tab.id-tab | append: ',' %} 
                <li class="nav-item" role="presentation">
                   <button class="nav-link active" id="home-tab" 
                     data-toggle="tab" data-target="#home" 
                     type="button" role="tab" 
                     aria-controls="home" aria-selected="true">
                   {{tab.name-tab}}</button>
+  
                </li>
               {% endif %}}
             {% endfor %}
