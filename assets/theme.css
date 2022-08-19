@@ -114,14 +114,14 @@
 
 
 .template-policy h1{
-  font-size: 3rem;
+ 
   color: var(--primary);
 }
 .template-policy h2{
-  font-size: 2.5rem;
   color: var(--primary);
 }
 .template-policy h1:first-child {
+   font-size: 3rem;
     padding-top: 70px;
 }
 .template-policy strong{
