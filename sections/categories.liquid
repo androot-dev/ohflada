@@ -246,7 +246,7 @@
             {% if block.type == 'collection' %}
               {% assign expanded = block.settings.expanded %}
 
-             {% render "collection-grid-item" collection: {{ block..settings.category }}, col-lg:{{ block.settings.col-lg }}, col-md:{{ block.settings.col-md }}, col-sm:{{ block.settings.col-sm }}   %}
+             {% render "collection-grid-item" collection: {{ block.settings.category }}, col-lg:{{ block.settings.col-lg }}, col-md:{{ block.settings.col-md }}, col-sm:{{ block.settings.col-sm }}   %}
 
             {% endif %}
           {% endfor %}
