@@ -111,18 +111,18 @@
 
 <section class="collection-list">
 
-<div class="container-triangle d-lg-block d-none">
+
    
 <div class="page-width">
-  <header class="section-title">
-    {% if  section.settings.title != blank %}
-   <h1 class="title-primary">{{ section.settings.title }}</h1>
-   
-   {% else %}
-        <h1>The best {{ page_title }} for you</h1>
-       
-  {% endif %}   
-  </header>
+                <header class="section-title">
+                          {% if  section.settings.title != blank %}
+                         <h1 class="title-primary">{{ section.settings.title }}</h1>
+                         
+                         {% else %}
+                              <h1>The best {{ page_title }} for you</h1>
+                             
+                        {% endif %}   
+                </header>
 
   {%- assign blocks = section.blocks | sort: 'collection.all_products_count' -%}
 
@@ -142,15 +142,15 @@
   {% endcase %}
 
   <div class="container-fluid">
-   <div class="row">
-   {%- paginate collections by 5 -%}
-        {% for collection in collections %}
-         
-            {% include 'collection-grid-item', collection: collection, col-lg: section.settings.col-lg , col-md: section.settings.col-md , col-sm:section.settings.col-sm  %}
-        
-        {% endfor %}
-         {{ paginate | default_pagination: next: 'Older', previous: 'Newer' }}
-{%- endpaginate -%}
+         <div class="row">
+               {%- paginate collections by 5 -%}
+                    {% for collection in collections %}
+                     
+                        {% include 'collection-grid-item', collection: collection, col-lg: section.settings.col-lg , col-md: section.settings.col-md , col-sm:section.settings.col-sm  %}
+                    
+                    {% endfor %}
+                     {% include 'pagination', paginate: paginate %}
+                    {%- endpaginate -%}
     </div>  
   </div>
 </div>
