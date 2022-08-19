@@ -27,7 +27,10 @@
       <div class="container-fluid py-section ">
          <div class="row page-width">
             <!-- HORIZOANTAL TAB -->
+  
             <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+  
             {%  assign tabs = "" %}
               {% for block in section.blocks %}
                 {%  if block.type =="Tab" %}
@@ -40,7 +43,10 @@
                     data-toggle="tab" data-target="#home" 
                     type="button" role="tab" 
                     aria-controls="home" aria-selected="true">
-                  {{tab.name-tab}}</button>
+  
+                    {{ tab.name-tab }}
+                  
+                  </button>
                </li>
 
   
