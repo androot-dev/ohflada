@@ -7629,13 +7629,13 @@ a, .a{
 }
 .list-none {
   list-style: none;
-  margin-bottom: 0 !important;
+  margin-bottom: 0 ;
 }
 
 .list {
   list-style: none;
   padding: 0;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .list li::before {
