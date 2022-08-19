@@ -114,15 +114,16 @@
 
    
 <div class="page-width">
-                <header class="section-title">
-                          {% if  section.settings.title != blank %}
-                         <h1 class="title-primary">{{ section.settings.title }}</h1>
+     <header class="section-title">
+          {% if  section.settings.title != blank %}
+            <h1 class="title-primary">{{ section.settings.title }}</h1>
                          
-                         {% else %}
-                              <h1>The best {{ page_title }} for you</h1>
+               {% else %}
+            
+          <h1 class="title-primary">The best {{ page_title }} for you</h1>
                              
-                        {% endif %}   
-                </header>
+        {% endif %}   
+      </header>
 
   {%- assign blocks = section.blocks | sort: 'collection.all_products_count' -%}
 
