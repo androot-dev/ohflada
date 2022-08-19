@@ -78,14 +78,10 @@
     
       
               {% when "video" %}
-    
-                   {% assign idstring = id | plus: 0  %}
-                      {% if block.settings.id-tab == idstring %}
-    
+                  {% assign idstring = id | plus: 0  %}
+                  {% if block.settings.id-tab == idstring %}
                        {% render "grid-video" block: block %}
                   {% endif %}
-    
-      
              {% endcase %}
             {%  endfor %}
        </div>
