@@ -64,30 +64,30 @@
       
        <div class="tab-pane fade show {% if forloop.index == 1 %} active {%  endif %}" id="tab-{{ id }}" role="tabpanel" aria-labelledby="tab{{ id }}-tab">
       
-     {% for block in section.blocks %}
-       
-       {%  case block.type %}
-         {% when "photo" %}
-           {% assign idstring = id | plus: 0  %}
-              {% if block.settings.id-tab == idstring %}
-             
-                 {%  render "grid-photo" block: block %}
-              {% endif %}
-
-
-
-  
-          {% when "video" %}
-
+         {% for block in section.blocks %}
+           
+           {%  case block.type %}
+             {% when "photo" %}
                {% assign idstring = id | plus: 0  %}
-              {% if block.settings.id-tab == idstring %}
-
-                   {% render "grid-video" block: block %}
-              {% endif %}
-
-  
-         {% endcase %}
-        {%  endfor %}
+                  {% if block.settings.id-tab == idstring %}
+                 
+                     {%  render "grid-photo" block: block %}
+                  {% endif %}
+    
+    
+    
+      
+              {% when "video" %}
+    
+                   {% assign idstring = id | plus: 0  %}
+                      {% if block.settings.id-tab == idstring %}
+    
+                       {% render "grid-video" block: block %}
+                  {% endif %}
+    
+      
+             {% endcase %}
+            {%  endfor %}
        </div>
     {%  endfor %}
 
