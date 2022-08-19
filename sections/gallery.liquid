@@ -1,3 +1,31 @@
+<style>
+  .section-{{ section.id }}-padding {
+  padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+  padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+}
+.section-{{ section.id }} {
+  background-color: {{ section.settings.background-color }};
+  height:auto;
+}
+@media screen and (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+}
+</style>
+ <section class=" section-{{ section.id }}-padding section-{{ section.id }}   m-0 faq my-section container-fluid position-relative">
+    <div class="page-width container-fluid">
+
+      <div class="title-section pb-element">
+          
+          <h1> {{ section.settings.title-section }}</h1>
+          <h2>{{ section.settings.subtitle-section }}</h2>                      
+         </div>
+    </div>
+
+ </section>
+
 {% schema %}
   {
     "name": "Section name",
@@ -37,21 +65,3 @@
     ]
   }
 {% endschema %}
-
- <section class=" section-{{ section.id }}-padding section-{{ section.id }}   m-0 faq my-section container-fluid position-relative">
-    <div class="page-width container-fluid">
-
-      <div class="title-section pb-element">
-          
-          <h1> {{ section.settings.title-section }}</h1>
-          <h2>{{ section.settings.subtitle-section }}</h2>                      
-         </div>
-    </div>
-
- </section>
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
