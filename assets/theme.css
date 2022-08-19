@@ -2567,7 +2567,13 @@ hr {
   width:100px;
   height:100px;
 }
-
+.pagination .btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .list-view-item__image-column {
   display: table-cell;
   vertical-align: middle;
