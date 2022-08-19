@@ -147,10 +147,10 @@
                     {% for collection in collections %}
                      
                         {% include 'collection-grid-item', collection: collection, col-lg: section.settings.col-lg , col-md: section.settings.col-md , col-sm:section.settings.col-sm  %}
-
+                     {% endfor %}
           </div>  
           <div class="row justify-content-center">
-                {% endfor %}
+               
                      {% include 'pagination', paginate: paginate %}
                     {%- endpaginate -%}            
           </div>
