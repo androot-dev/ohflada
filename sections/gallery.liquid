@@ -68,15 +68,11 @@
            
            {%  case block.type %}
              {% when "photo" %}
-               {% assign idstring = id | plus: 0  %}
+               
                   {% if block.settings.id-tab == idstring %}
-                 
+                    {% assign idstring = id | plus: 0  %}
                      {%  render "grid-photo" block: block %}
                   {% endif %}
-    
-    
-    
-      
               {% when "video" %}
                   {% assign idstring = id | plus: 0  %}
                   {% if block.settings.id-tab == idstring %}
