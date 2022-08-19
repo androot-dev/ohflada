@@ -716,7 +716,7 @@
           "1157819c-acc0-4ed0-9a4b-5fa4eb05c4d1"
         ],
         "settings": {
-          "final-section": true,
+          "final-section": false,
           "image-fondo": "shopify:\/\/shop_images\/pexels-pavel-danilyuk-7180857_1.jpg",
           "hidden_mobile_background": true,
           "left_image": "auto",
