@@ -66,10 +66,6 @@
     {% for id in tabs   %}
       
        <div class="tab-pane fade show {% if forloop.index == 1 %} active {%  endif %}" id="tab-{{ id }}" role="tabpanel" aria-labelledby="tab{{ id }}-tab">
-
-
-
-         {{ id }}
       
      {% for block in section.blocks %}
        
