@@ -30,30 +30,31 @@
   
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-    <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#tab1" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
-  </li
+                  <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#tab1" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                   </button>
+                </li>
   
-            {%  assign tabs = "" %}
-              {% for block in section.blocks %}
-                {%  if block.type =="Tab" %}
-                  {% assign tab = block.settings %}
-                  {% assign tabs =  tabs | append: tab.id-tab | append: ',' %} 
-
-  
-               <li class="nav-item" role="presentation">
-                  <button class="nav-link active" 
-                    data-toggle="tab" data-target="#tab{{ tab.id-tab }}" 
-                    type="button" role="tab" 
-                    aria-controls="home" aria-selected="true">
-  
-                    {{ tab.name-tab }}
-                  
-                  </button>
-               </li>
-
-  
-              {% endif %}
-            {% endfor %}
+                  {%  assign tabs = "" %}
+                    {% for block in section.blocks %}
+                      {%  if block.type =="Tab" %}
+                        {% assign tab = block.settings %}
+                        {% assign tabs =  tabs | append: tab.id-tab | append: ',' %} 
+      
+        
+                     <li class="nav-item" role="presentation">
+                        <button class="nav-link active" 
+                          data-toggle="tab" data-target="#tab{{ tab.id-tab }}" 
+                          type="button" role="tab" 
+                          aria-controls="home" aria-selected="true">
+        
+                          {{ tab.name-tab }}
+                        
+                        </button>
+                     </li>
+      
+        
+                    {% endif %}
+                  {% endfor %}
               
             </ul>
             <div class="tab-content" >
