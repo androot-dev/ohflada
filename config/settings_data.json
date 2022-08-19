@@ -324,7 +324,7 @@
           "color-header-sticky": "linear-gradient(89deg, rgba(255, 255, 255, 1) 7%, rgba(255, 255, 255, 1) 94%)",
           "color-header-sticky-links": "",
           "color-header-sticky-hover": "",
-          "logo_max_width": 150,
+          "logo_max_width": 190,
           "main_linklist": "main-menu",
           "message": false,
           "home_page_only": false,
