@@ -29,17 +29,18 @@
             <!-- HORIZOANTAL TAB -->
             <ul class="nav nav-tabs" id="myTab" role="tablist">
 
-              
+              {% for block in section.blocks %}
+                {%  if block.type =="Tab" %}
+                  {% assign tab = block %}}
                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                  <button class="nav-link active" id="home-tab" 
+                    data-toggle="tab" data-target="#home" 
+                    type="button" role="tab" 
+                    aria-controls="home" aria-selected="true">
+                  {{tab.name-tab}}</button>
                </li>
-               <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-               </li>
-               <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
-               </li>
-
+              {% endif %}}
+            {% endfor %}
               
             </ul>
             <div class="tab-content" id="myTabContent">
@@ -230,7 +231,7 @@
         [
            {
               "type": "text",
-              "id": "new-tab",
+              "id": "name-tab",
               "label": "Name Tab",
               "default": "Gallery 1"
             },
