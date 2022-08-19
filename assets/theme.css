@@ -2564,7 +2564,9 @@ hr {
   width: 100%; }
 
 .list-view-item__image {
-  max-height: 95px; }
+  width:100px;
+  height:100px;
+}
 
 .list-view-item__image-column {
   display: table-cell;
