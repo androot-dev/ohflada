@@ -74,7 +74,12 @@
 ==============================================================================*/
 /*================ Slick Slider SCSS ================*/
 
-
+.main-content{
+  min-height: calc(100vh - 355px );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
  .tag-price-comparation .price-1 {
     font-size: 1.2rem;
