@@ -141,12 +141,12 @@
       {%- assign image_size = '225x' -%}
   {% endcase %}
 
-  <div class="container">
+  <div class="container-fluid">
    <div class="row">
         {% for collection in collections %}
-          <div class="col-lg-4 col-md-6">
+         
             {% include 'collection-grid-item', collection: collection, col-lg: section.settings.col-lg , col-md: section.settings.col-md , col-sm:section.settings.col-sm  %}
-          </div>
+        
         {% endfor %}
     </div>  
   </div>
