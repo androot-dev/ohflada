@@ -62,8 +62,18 @@
 
 </ul>
 <div class="tab-content" id="myTabContent">
-    {% for tab in tabs %}
-      {{ tab }}
+    {% for id in tabs %}
+      
+     {% for block in section.blocks %}
+       {%  case block.type %}
+         {% when "photo" %}
+              {% if block.id-tab == id %}
+                 {%  render "grid-photo" block: block %}
+              {% endif %}
+          {% when "video" %}
+
+         {% endcase %}
+        {%  endfor %}
     {%  endfor %}
 
 </div>
