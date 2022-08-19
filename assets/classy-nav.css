@@ -399,7 +399,7 @@
   border-radius: 2px; }
   .breakpoint-on .dd-trigger::after {    
     content: "\025bc";
-    font-size: 12px;
+    font-size: 11px;
     color: #fff;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
