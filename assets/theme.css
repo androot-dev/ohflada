@@ -121,6 +121,9 @@
   font-size: 2.5rem;
   color: var(--primary);
 }
+.template-policy h1:first-child {
+    padding-top: 70px;
+}
 
 /* HERO SUBPAGES */
 .owl-nav .owl-next, .owl-nav .owl-prev{
