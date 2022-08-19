@@ -181,6 +181,46 @@
   },
   "settings": [
     {
+             "type": "collection",
+             "id": "category",
+             "label": "category"
+           },
+           {
+            "type": "header",
+            "content": "Bootstrap Grid",
+            "info": "The section is divided into a grid of 12 columns, set the size in number of columns that the card of this collection will cover"
+          },
+           {
+            "type": "range",
+            "id": "col-lg",
+            "min": 1,
+            "max": 12,
+            "step": 1,
+            "unit": "col",
+            "label": "Columns in Desktop",
+            "default": 4
+          },
+          {
+            "type": "range",
+            "id": "col-md",
+            "min": 1,
+            "max": 12,
+            "step": 1,
+            "unit": "col",
+            "label": "Columns in Tablet",
+            "default": 6
+          },
+          {
+            "type": "range",
+            "id": "col-sm",
+            "min": 1,
+            "max": 12,
+            "step": 1,
+            "unit": "col",
+            "label": "Columns in Phone",
+            "default": 12
+          },
+    {
 	"type": "image_picker",
      "id": "image-bg-1",
      "label": "Image Background"
