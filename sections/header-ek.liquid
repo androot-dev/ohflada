@@ -362,21 +362,21 @@
      header #CartCount .icon__fallback-text{
        display:none;
      }
-      @media screen and (max-width: 767px){
+    /* MENU MOBILE */
 
-        li .btn--link.site-header__icon.site-header__search-toggle.js-drawer-open-top:before {
+      .breakpoint-on  li .btn--link.site-header__icon.site-header__search-toggle.js-drawer-open-top:before {
             content: "Search";
             margin-right: 10px;
             color: var(--primary);
         }
-        .cart-icon {
+       .breakpoint-on .cart-icon {
           display:flex !important;
           justify-content: space-between !important;
           padding-left:20px;
           cursor:pointer;
                              border-bottom: 1px solid #bf63631a;
         }
-        .search-icon button{
+       .breakpoint-on .search-icon button{
           width: 100%;
           justify-content: space-between;
           display: flex;
@@ -387,11 +387,11 @@
           align-items: center;
         }
 
-         li.cart-icon:before {
+        .breakpoint-on li.cart-icon:before {
               content: "Cart";
               color:var(--primary);
           }
-        .classy-menu .classynav ul{
+       .breakpoint-on .classy-menu .classynav ul{
            flex-direction:column;
          }
         .breakpoint-on .classy-navbar .classy-menu{
@@ -401,16 +401,16 @@
             background: var(--primary-light);
             border-bottom: 1px solid #bf63631a;
         }
-        .header-area .cart-icon i, .header-area .search-icon i{
+        .header-area .breakpoint-on .cart-icon i, .header-area .search-icon i{
           color:var(--primary);
         }
-        .header-area .cart-icon:hover , .header-area .search-icon:hover{
+        .header-area .breakpoint-on .cart-icon:hover , .header-area .search-icon:hover{
           color:var(--primary);
         }
-        .search-icon button{
+       .breakpoint-on .search-icon button{
           padding-left: 20px;
         }
-    }
+    /* END MENU MOBILE */
 
 
 
@@ -524,6 +524,8 @@ section.settings.location, location_tooltip: section.settings.location_tooltip, 
 
 <!-- Header Area Start -->
 <header class="header-area">
+
+  
     {% if section.settings.message %} {% if section.settings.home_page_only == false or request.page_type == 'index' %}
     <div class="announcement-bar" role="region" aria-label="{{ 'sections.header.announcement_bar_label' | t }}">
         {%- unless section.settings.message_link == blank -%}
