@@ -473,7 +473,14 @@ span.flatpickr-weekday {
               {% endif %}
             </ul>
             {% if enable_thumbnail_slides == true %}
-              <button type="button" class="btn--link medium-up--hide thumbnails-slider__btn thumbnails-slider__next thumbnails-slider__next--{{ section.id }}" data-slider-button data-slider-button-next>
+              <button style="
+                  width: 50px;
+                  height: 50px;
+                  padding: 0;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;" 
+                type="button" class="btn--link medium-up--hide thumbnails-slider__btn thumbnails-slider__next thumbnails-slider__next--{{ section.id }}" data-slider-button data-slider-button-next>
                 {% include 'icon-chevron-right' %}
                 
               </button>
