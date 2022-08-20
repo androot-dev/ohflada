@@ -13,6 +13,10 @@
        padding-bottom: {{ section.settings.padding_bottom }}px;
      }
    }
+   .nav-tabs{
+     border-bottom: none;
+   }
+  
 </style>
 
 <section class=" section-{{ section.id }}-padding section-{{ section.id }}   m-0  my-section container-fluid position-relative">
@@ -26,38 +30,36 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
       <div class="container-fluid py-section ">
          <div class="row page-width">
- 
 
-
-<ul class="nav nav-tabs col-12 px-0 mx-0 pb-section d-flex justify-content-center" id="myTab" role="tablist">
-
-
-                   {%  assign tabs = "" %}
-                    {% for block in section.blocks %}
-                      {%  if block.type =="Tab" %}
-                        {% assign tab = block.settings %}
-                        {% assign tabs =  tabs | append: tab.id-tab | append: ',' %} 
-      
-        
-                     <li class="nav-item" role="presentation">
-                        <button class="nav-link {% if forloop.index == 1 %} active {% endif %}" 
-                          data-toggle="tab" data-target="#tab{{ tab.id-tab }}" 
-                          type="button" role="tab" 
-                          aria-controls="tab{{ tab.id-tab }}"
-                          aria-selected="true">
-        
-                          {{ tab.name-tab }}
-                        
-                        </button>
-                     </li>
-      
-        
-                    {% endif %}
-                  {% endfor %}
-
-
-
-</ul>
+              <ul class="nav nav-tabs col-12 px-0 mx-0 pb-section d-flex justify-content-center" id="myTab" role="tablist">
+              
+              
+                                 {%  assign tabs = "" %}
+                                  {% for block in section.blocks %}
+                                    {%  if block.type =="Tab" %}
+                                      {% assign tab = block.settings %}
+                                      {% assign tabs =  tabs | append: tab.id-tab | append: ',' %} 
+                    
+                      
+                                   <li class="nav-item" role="presentation">
+                                      <button class="nav-link {% if forloop.index == 1 %} active {% endif %}" 
+                                        data-toggle="tab" data-target="#tab{{ tab.id-tab }}" 
+                                        type="button" role="tab" 
+                                        aria-controls="tab{{ tab.id-tab }}"
+                                        aria-selected="true">
+                      
+                                        {{ tab.name-tab }}
+                                      
+                                      </button>
+                                   </li>
+                    
+                      
+                                  {% endif %}
+                                {% endfor %}
+              
+              
+              
+              </ul>
 <div class="tab-content col-12 px-0 mx-0" id="myTabContent">
   {% assign tabs = tabs | split: ',' %}
     {% for id in tabs   %}
