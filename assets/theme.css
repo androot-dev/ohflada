@@ -73,7 +73,24 @@
   - Remove `outline: none` from `.slick-dots li button`
 ==============================================================================*/
 /*================ Slick Slider SCSS ================*/
-
+ .tablet-compress.py-section, .tablet-compress.pb-section {
+    padding-bottom: var(--element-separation);
+  }
+  .tablet-compress.py-section, .tablet-compress.pt-section {
+    padding-top: var(--element-separation);
+  }
+  .tablet-compress.py-section-2, .tablet-compress.pt-section-2 {
+    padding-top: calc(var(--element-separation) * 2);
+  }
+  .tablet-compress.pb-section-2, .tablet-compress.pb-section-2 {
+    padding-bottom: calc(var(--element-separation) * 2);
+  }
+  .tablet-compress.my-section, .tablet-compress.mb-section {
+    margin-bottom: var(--element-separation);
+  }
+  .tablet-compress.my-section, .tablet-compress.mt-section {
+    margin-top: var(--element-separation);
+  }
 .main-content{
   min-height: calc(100vh - 355px );
     display: flex;
