@@ -991,6 +991,17 @@
               "col-md": 6,
               "col-sm": 12
             }
+          },
+          "12050fe1-1f5f-4a3d-a1fd-9bba53100915": {
+            "type": "photo",
+            "settings": {
+              "id-tab": 1,
+              "image": "shopify:\/\/shop_images\/IMG_5639.jpg",
+              "caption": "",
+              "col-lg": 4,
+              "col-md": 6,
+              "col-sm": 12
+            }
           }
         },
         "block_order": [
@@ -999,7 +1010,8 @@
           "c3d695ea-8937-4250-8607-836662e71b64",
           "80fbd8ba-c6b6-4c1f-af4d-d83bce3dbe2a",
           "6de5fa5c-6c7c-47f2-a4b9-f0c515037689",
-          "f0ed8b99-54c4-437e-b1ec-77fc25410805"
+          "f0ed8b99-54c4-437e-b1ec-77fc25410805",
+          "12050fe1-1f5f-4a3d-a1fd-9bba53100915"
         ],
         "settings": {
           "title-section": "Gallery",
