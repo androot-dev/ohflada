@@ -7852,6 +7852,9 @@ h1{
 
     font-size: 75px;
     cursor:pointer;
+      display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tooltip-inner{
