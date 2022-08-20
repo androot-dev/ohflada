@@ -939,7 +939,7 @@
           "ea1474ca-f033-461a-87d1-7975f90c4162": {
             "type": "Tab",
             "settings": {
-              "name-tab": "Desserts",
+              "name-tab": "Cakes",
               "id-tab": 1
             }
           },
@@ -1059,6 +1059,27 @@
               "col-md": 6,
               "col-sm": 12
             }
+          },
+          "5fe9a449-3d80-40ec-bc19-8ea60392893d": {
+            "type": "Tab",
+            "settings": {
+              "name-tab": "Gallery 1",
+              "id-tab": 1
+            }
+          },
+          "62377f45-8b8c-4bdf-b16e-1bfbc6930430": {
+            "type": "Tab",
+            "settings": {
+              "name-tab": "Gallery 1",
+              "id-tab": 1
+            }
+          },
+          "edba8ca0-98fa-4a6a-ab59-8a3a2ac022e8": {
+            "type": "Tab",
+            "settings": {
+              "name-tab": "Gallery 1",
+              "id-tab": 1
+            }
           }
         },
         "block_order": [
@@ -1073,7 +1094,10 @@
           "2fa14cb7-945f-4afe-824d-357de8231655",
           "653db67b-0cda-4dad-b975-b97842a5259f",
           "a56039ef-ce21-423f-8b85-1bf6c6ee85d2",
-          "9e8c00c3-3a60-46a2-91ae-0e49d9538620"
+          "9e8c00c3-3a60-46a2-91ae-0e49d9538620",
+          "5fe9a449-3d80-40ec-bc19-8ea60392893d",
+          "62377f45-8b8c-4bdf-b16e-1bfbc6930430",
+          "edba8ca0-98fa-4a6a-ab59-8a3a2ac022e8"
         ],
         "settings": {
           "title-section": "Gallery",
