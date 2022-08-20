@@ -3148,11 +3148,13 @@ hr {
     border-color: var(--color-text); }
 
 .product-single__thumbnail-image {
-  max-width: 100%;
+  width: 70px;
   display: block;
   margin: 0 auto;
-  padding: 2px; }
-
+  padding: 2px; 
+  height:70px;
+}
+  
 .product-single__thumbnail-badge {
   width: 22px;
   height: 22px;
