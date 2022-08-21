@@ -631,15 +631,14 @@ span.flatpickr-weekday {
      <script>
        document.addEventListener("DOMContentLoaded", function(){
          const outputForm = (out) => {
-            let output = document.querySelector('.my-output');
-            output.innerHTML = out;
+            console.log(out)
         }
         const panoptico = new MutationObserver(
             (mutaciones, observer) => {
                 for (var m of mutaciones) {
                     if (m.type == 'childList') {
                         if (m.addedNodes[0] && m.addedNodes[0].nodeValue) {
-                            console.log("pink")
+                            output(m);
                         }
 
                     }
