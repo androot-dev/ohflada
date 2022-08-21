@@ -305,7 +305,7 @@ background: var(--primary-light);
   
 </style>
 
-{% paginate collection.products by  18 %}
+{% paginate collection.products by section.settings.perpage %}
 
 <div data-section-id="{{ section.id }}" data-section-type="collection-template">
   <header class="collection-header">
