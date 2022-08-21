@@ -38,7 +38,7 @@
               </div>
           </div>
       </div>
-      <div class=" owl-carousel categories-carousel">
+      <div class="row owl-carousel categories-carousel">
             
           {% for block in section.blocks %}
             {% if block.type == 'collection' %}
@@ -59,7 +59,14 @@
 </section>
 <script>
  document.addEventListener("ready:owl", function(){
-                
+                $('.owl-carousel.categories-carousel').owlCarousel({
+                    loop:true,
+                    margin:10,
+                    nav:false,
+                    dots:false,
+                    items: 2,
+                    center: true
+                })
             })
   
 </script>
