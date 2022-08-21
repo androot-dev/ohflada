@@ -608,6 +608,14 @@ span.flatpickr-weekday {
               </div>
             </div>
           {% endform %}
+          <div
+          class="product-single__store-availability-container"
+          data-store-availability-container
+          data-product-title="{{ product.title | escape }}"
+          data-has-only-default-variant="{{ product.has_only_default_variant }}"
+          data-base-url="{{ shop.url }}{{ routes.root_url }}"
+        >
+        </div>
         </div>
 
         {%- comment -%}
