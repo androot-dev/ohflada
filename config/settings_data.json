@@ -870,7 +870,7 @@
             "type": "faq-item",
             "settings": {
               "question": "Where can I pick up an order?",
-              "answer": "<p>Pickup available, usually ready in 24 hours<\/p><p>9708 Gilespie<br\/>Las Vegas NV 89183<br\/>United States<\/p>"
+              "answer": "<p>La recogida está disponible, generalmente después de 24 horas, la dirección de recogida es:<br\/>9708 Gilespie Las Vegas NV 89183 Estados Unidos<\/p>"
             }
           }
         },
