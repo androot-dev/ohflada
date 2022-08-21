@@ -650,11 +650,9 @@
           "title": "Product Search",
           "subtitle": "Look at all what we offer for you",
           "grid": 4,
-          "rows": 6,
-          "show_collection_image": false,
-          "show_vendor": false,
+          "perpage": 18,
           "sort_enable": true,
-          "tags_enable": false
+          "tags_enable": true
         }
       },
       "list-collections-template": {
