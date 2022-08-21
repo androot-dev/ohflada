@@ -38,13 +38,13 @@
               </div>
           </div>
       </div>
-      <div class="row categories-carousel owl-carousel">
-          
+      <div class="row owl-carousel categories-carousel">
+            
           {% for block in section.blocks %}
             {% if block.type == 'collection' %}
               
-
-             {% render "collection-grid-for-carousel" collection:  block.settings.category , col-lg: block.settings.col-lg , col-md: block.settings.col-md , col-sm:block.settings.col-sm   %}
+                    
+             
 
             {% endif %}
           {% endfor %}
