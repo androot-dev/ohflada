@@ -16,7 +16,8 @@
           display: flex;
           justify-content: center;
         " action="{{ routes.cart_url }}" method="post" class="my-cart">
-         <button  class="btn-section btn-popup checkout mt-4" type="submit" name="checkout">
+    
+          <button  class="btn btn-popup checkout" type="submit" name="checkout">
           Checkout —&nbsp;<span data-ajax-cart-bind-state="cart.total_price | money_with_currency"> {{ cart.total_price | money_with_currency }}</span>
         </button> 
       </form>
