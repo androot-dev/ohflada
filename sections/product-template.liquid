@@ -631,7 +631,8 @@ span.flatpickr-weekday {
      <script>
        document.addEventListener("DOMContentLoaded", function(){
          const output = (out) => {
-            console.log(out)
+           let el = document.querySelector(".store-availability-information-container");
+           el.insertAdjacentHTML("beforeeend", "<a href='#modal-pickup' data-toggle='modal'>More Information</a>)
         }
         const panoptico = new MutationObserver(
             (mutaciones, observer) => {
