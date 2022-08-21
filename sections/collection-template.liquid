@@ -382,7 +382,7 @@ background: var(--primary-light);
    </div>
 
   <div class=" " id="Collection">
-    {% if section.settings.layout == 'grid' %}
+  
       {% case section.settings.grid %}
       {% when 2 %}
         {%- assign grid_item_width = 'medium-up--one-half' -%}
@@ -403,52 +403,6 @@ background: var(--primary-light);
           {% endfor %}
         </div>
       </div>
-    
-    {% else %}
-      <ul class="list-view-items">
-        {% for product in collection.products %}
-
-
-          <li class="list-view-item mb-4">
-            {% include 'product-card-list', product: product, show_vendor: section.settings.show_vendor %}
-          </li>
-        {% else %}
-
-          {% comment %}
-          Add default products to help with onboarding for collections/all only.
-
-          The onboarding styles and products are only loaded if the
-          store has no products.
-          {% endcomment %}
-          {% if collection.handle == 'all' and collection.all_vendors.size == 0 and collection.all_types.size == 0%}
-            {% for i in (1..4) %}
-              <li class="list-view-item">
-                <a href="#" class="list-view-item__link">
-                  <div class="list-view-item__image-column">
-                    <div class="list-view-item__image-wrapper">
-                      <div class="list-view-item__image">
-                        {% capture current %}{% cycle 1, 2, 3, 4 %}{% endcapture %}
-                        {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="list-view-item__title-column">
-                    <div class="list-view-item__title">{{ 'homepage.onboarding.product_title' | t }}</div>
-                  </div>
-
-                  <div class="list-view-item__price-column">
-                    <span class="product-price__price">$19.99</span>
-                  </div>
-                </a>
-              </li>
-            {% endfor %}
-          {% else %}
-            {%- assign is_empty_collection = true -%}
-          {% endif %}
-        {% endfor %}
-      </ul>
-    {% endif %}
 
     {% if is_empty_collection %}
       <div class="grid__item small--text-center">
