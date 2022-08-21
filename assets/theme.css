@@ -5096,53 +5096,7 @@ hr {
       align-items: center; } }
 
 /*================ Modals ================*/
-.modal {
-  -ms-transform: translateY(-20px);
-  -webkit-transform: translateY(-20px);
-  transform: translateY(-20px);
-  background-color: transparent;
-  bottom: 0;
-  color: var(--color-text);
-  display: none;
-  left: 0;
-  opacity: 0;
-  overflow: hidden;
-  position: fixed;
-  right: 0;
-  top: 0; 
-   z-index: 3000;
-    }
 
-.modal--is-active {
-  -ms-transform: translateY(0);
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  display: block;
-  opacity: 1;
-  overflow: hidden; }
-
-.modal__inner {
-  -moz-transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  height: 100%; }
-
-.modal__centered {
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  position: relative;
-  top: 50%; }
-
-.modal__close {
-  border: 0;
-  padding: 55px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 2; }
-  .modal__close .icon {
-    font-size: calc(((20) / (var(--font-size-base))) * 1em); }
 
 /*============================================================================
   Hero slider
