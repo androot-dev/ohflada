@@ -396,7 +396,7 @@ background: var(--primary-light);
     
      <div class="container h-auto">
         <div class="row all-product-row mx-auto my-2">
-          {% for product in collection.products limit: 5 %}
+          {% for product in collection.products  %}
              <div class="col-lg-{{ section.settings.grid }} col-md-6 col-12">
               {% include 'product-card-grid', max_height: 250, product: product, show_vendor: section.settings.show_vendor %}
             </div>
