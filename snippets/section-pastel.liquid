@@ -317,9 +317,6 @@
      pointer-events:all;
    }
    .items-best-sellers p {
-     scroll-behavior: smooth;
-      overflow-x: hidden;
-      overflow-y: auto;
       max-height: 117px;
       margin-bottom: 20px;
       height: 116px;
@@ -461,7 +458,7 @@
   <div class="item-best-sellers" >
     <h1 class='selected l text-primary'>{{block.settings.featured_product.title}}</h1>
     <h3 class="mb-0 ">{{block.settings.featured_product.price | money}}</span></h3>
-    <p class="py-4">{{block.settings.featured_product.description}}</p>
+    <p class="py-4 scrollbar-0">{{block.settings.featured_product.description}}</p>
     <div class="container-img-1 position-relative">
     <a href="{{block.settings.featured_product.url}}" class="container-img sb">
        <img  class="radius" src='{{ block.settings.featured_product.featured_image | image_url }}' />
