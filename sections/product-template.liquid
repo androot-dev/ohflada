@@ -338,7 +338,7 @@ span.flatpickr-weekday {
   }
 </style>
 
-<section class="spad-1 page-width product-individual">
+<section class="py-section  product-individual">
    <div class="product-single__meta mb-5 d-flex justify-content-center text-center ">
        
          <h1 class="d-lg-none d-flex product-single__title">{{ product.title }}</h1> 
@@ -608,7 +608,55 @@ span.flatpickr-weekday {
               </div>
             </div>
           {% endform %}
+       
+       <div
+          class="rte product-single__store-availability-container"
+          data-store-availability-container
+          data-product-title="{{ product.title | escape }}"
+          data-has-only-default-variant="{{ product.has_only_default_variant }}"
+          data-base-url="{{ shop.url }}{{ routes.root_url }}"
+          
+        >
+           
         </div>
+
+       
+           <style>
+             @media screen and (max-width: 767px){
+               padding-bottom: 30px;
+             }
+             .store-availability-information__button{
+             display:none;
+             }
+           </style>
+     <script>
+       document.addEventListener("DOMContentLoaded", function(){
+         const output = (out) => {
+           let el = document.querySelector(".store-availability-information-container");
+           el.insertAdjacentHTML("beforeEnd", "<a href='#modal-pickup' data-toggle='modal'>More Information</a>");
+        }
+        const panoptico = new MutationObserver(
+            (mutaciones, observer) => {
+                for (var m of mutaciones) {
+                    if (m.type == 'childList') {
+                        if (m.addedNodes[0] && m.addedNodes[0].nodeValue) {
+                            output(m);
+                        }
+
+                    }
+                }
+            }
+        );
+        panoptico.observe(
+            document.querySelector(".product-single__store-availability-container"), {
+                attributes: true,
+                childList: true,
+                subtree: true
+            },
+        );
+       });
+     </script>
+    </div>
 
         {%- comment -%}
           Live region for announcing updated price and availability to screen readers
@@ -628,21 +676,15 @@ span.flatpickr-weekday {
           aria-hidden="true"
         >{{ 'products.product.loader_label' | t }}</p>
 
-        <div
-          class="product-single__store-availability-container"
-          data-store-availability-container
-          data-product-title="{{ product.title | escape }}"
-          data-has-only-default-variant="{{ product.has_only_default_variant }}"
-          data-base-url="{{ shop.url }}{{ routes.root_url }}"
-        >
-        </div>
+        
        
 
       
     </div>
   </div>
+
   {% if product.description != blank %}
-   <div class="product-single__description title-section align-items-center">
+   <div class="product-single__description title-section align-items-center page-width">
    
                 
                    <h1> Descripción</h1> 
@@ -654,7 +696,7 @@ span.flatpickr-weekday {
           {% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product.featured_media %}
         </div>
           {% endif %}
-  </div>
+      </div>
   {% endif %}
 </div>
 
