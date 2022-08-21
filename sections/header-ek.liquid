@@ -542,21 +542,23 @@ instagram_user: settings.user-instagram, nr_items: 2 %}
 
 
 <div class="fixed-container">
-{% render 'social-btn' 
-bottom: "60px", 
-background: "var(--primary)", 
-text_color: "white", nr_items: 3, 
-email: section.settings.email,
-phone: section.settings.phone, 
-location: section.settings.location, 
-location_tooltip: section.settings.location_tooltip, 
-phone_tooltip: section.settings.phone_tooltip, 
-right: true, 
-id: "info" %} 
 
-{% if section.settings.btn-fixed-1-label and section.settings.btn-fixed-1-link %}
-  {% include "float-btn" label: section.settings.btn-fixed-1-label, link: section.settings.btn-fixed-1-link  %}
-{% endif %}
+    {% render 'social-btn' 
+    bottom: "60px", 
+    background: "var(--primary)", 
+    text_color: "white", nr_items: 3, 
+    email: section.settings.email,
+    phone: section.settings.phone, 
+    location: section.settings.location, 
+    location_tooltip: section.settings.location_tooltip, 
+    phone_tooltip: section.settings.phone_tooltip, 
+    right: true, 
+    id: "info" %} 
+    
+    {% if section.settings.btn-fixed-1-label and section.settings.btn-fixed-1-link %}
+      {% include "float-btn" label: section.settings.btn-fixed-1-label, link: section.settings.btn-fixed-1-link  %}
+    {% endif %}
+    
 </div>
 
 {% render "cart-popup-ajax" %}
