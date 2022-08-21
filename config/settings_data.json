@@ -321,7 +321,7 @@
       "header-ek": {
         "type": "header-ek",
         "settings": {
-          "btn-fixed-1-label": "Shopping Now",
+          "btn-fixed-1-label": "Shopping Now <i class=\"fa fa-shopping-cart\"><\/i>",
           "btn-fixed-1-link": "shopify:\/\/collections\/all",
           "email": "Jeannyvizcaino@ohfladacreations.com",
           "phone": "+18638049400",
