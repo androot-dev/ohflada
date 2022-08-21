@@ -869,8 +869,8 @@
           "8bc87e5f-5a18-48af-81f8-fdd09aba6db4": {
             "type": "faq-item",
             "settings": {
-              "question": "Your question here",
-              "answer": ""
+              "question": "Where can I pick up an order?",
+              "answer": "<p>Pickup available, usually ready in 24 hours<\/p><p>9708 Gilespie<br\/>Las Vegas NV 89183<br\/>United States<\/p>"
             }
           }
         },
