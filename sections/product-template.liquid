@@ -633,7 +633,10 @@ span.flatpickr-weekday {
        document.addEventListener("DOMContentLoaded", function(){
          const output = (out) => {
            let el = document.querySelector(".store-availability-information-container");
+           let title = document.querySelector(".title-modal");
+           title.innerHTML = {{ product.title }}
            el.insertAdjacentHTML("beforeEnd", "<a href='#modal-pickup' data-toggle='modal'>More Information</a>");
+           
         }
         const panoptico = new MutationObserver(
             (mutaciones, observer) => {
@@ -687,7 +690,7 @@ span.flatpickr-weekday {
    <div class="product-single__description title-section align-items-center page-width">
    
                 
-                   <h1> Descripción</h1> 
+      <h1> Descripción</h1> 
                     
      <p>{{ product.description }}<p>    
       
