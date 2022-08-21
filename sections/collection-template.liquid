@@ -395,16 +395,23 @@ background: var(--primary-light);
       {% endcase %}
 
   
-{% paginate collection.products by limit 1 %}      
+     
      <div class="container h-auto">
         <div class="row all-product-row mx-auto my-2">
-      
+      {% paginate collection.products by limit 1 %} 
           {% for product in collection.products %}
             
              <div class="col-lg-{{ section.settings.grid }} col-md-6 col-12">
               {% include 'product-card-grid', max_height: 250, product: product, show_vendor: section.settings.show_vendor %}
             </div>
           {% endfor %}
+          {%- if paginate.pages > 1 -%}
+      {% include 'pagination', paginate: paginate %}
+    {%- endif -%}
+  </div>
+
+
+{% endpaginate %}
         </div>
       </div>
 
@@ -414,13 +421,7 @@ background: var(--primary-light);
       </div>
     {% endif %}
 
-    {%- if paginate.pages > 1 -%}
-      {% include 'pagination', paginate: paginate %}
-    {%- endif -%}
-  </div>
-
-
-{% endpaginate %}
+  
 </section>
 
 
