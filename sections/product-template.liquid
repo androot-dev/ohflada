@@ -615,11 +615,11 @@ span.flatpickr-weekday {
           data-product-title="{{ product.title | escape }}"
           data-has-only-default-variant="{{ product.has_only_default_variant }}"
           data-base-url="{{ shop.url }}{{ routes.root_url }}"
-          onload="alert('asd')"
+          
         >
            
         </div>
-        <a if=""></a>
+       
            <style>
              @media screen and (max-width: 767px){
                padding-bottom: 30px;
@@ -627,8 +627,16 @@ span.flatpickr-weekday {
              .store-availability-information__button{
              display:none;
              }
-           </style
-   </div>
+           </style>
+     <script>
+       document.addEventListener("DOMContentLoaded", function(){
+         let ava = document.querySelector(".store-availability-information__title");
+         ava.onload = ()=>{
+           console.log("sd")
+         }
+       });
+     </script>
+    </div>
 
         {%- comment -%}
           Live region for announcing updated price and availability to screen readers
