@@ -986,17 +986,6 @@
               "col-sm": 12
             }
           },
-          "f0ed8b99-54c4-437e-b1ec-77fc25410805": {
-            "type": "photo",
-            "settings": {
-              "id-tab": 2,
-              "image": "shopify:\/\/shop_images\/111072479_287565805654714_6892770442475708796_n.jpg",
-              "caption": "",
-              "col-lg": 4,
-              "col-md": 6,
-              "col-sm": 12
-            }
-          },
           "12050fe1-1f5f-4a3d-a1fd-9bba53100915": {
             "type": "photo",
             "settings": {
@@ -1008,24 +997,6 @@
               "col-sm": 12
             }
           },
-          "5bc6995a-1073-4627-acee-0b59e6c0a4a2": {
-            "type": "photo",
-            "settings": {
-              "id-tab": 2,
-              "image": "shopify:\/\/shop_images\/251117311_2171472903033534_6762352293462860506_n.jpg",
-              "caption": "",
-              "col-lg": 4,
-              "col-md": 6,
-              "col-sm": 12
-            }
-          },
-          "2fa14cb7-945f-4afe-824d-357de8231655": {
-            "type": "Tab",
-            "settings": {
-              "name-tab": "Videos",
-              "id-tab": 2
-            }
-          },
           "653db67b-0cda-4dad-b975-b97842a5259f": {
             "type": "photo",
             "settings": {
@@ -1033,6 +1004,17 @@
               "image": "shopify:\/\/shop_images\/0DC66C03-A9DB-41C6-ACD2-A025D517E84F.jpg",
               "caption": "",
               "col-lg": 4,
+              "col-md": 6,
+              "col-sm": 12
+            }
+          },
+          "9e8c00c3-3a60-46a2-91ae-0e49d9538620": {
+            "type": "photo",
+            "settings": {
+              "id-tab": 1,
+              "image": "shopify:\/\/shop_images\/0d3005a3-e62e-4685-b8e6-f1e3a3f293e6.jpg",
+              "caption": "",
+              "col-lg": 6,
               "col-md": 6,
               "col-sm": 12
             }
@@ -1048,12 +1030,19 @@
               "col-sm": 12
             }
           },
-          "9e8c00c3-3a60-46a2-91ae-0e49d9538620": {
-            "type": "photo",
+          "2fa14cb7-945f-4afe-824d-357de8231655": {
+            "type": "Tab",
             "settings": {
-              "id-tab": 1,
-              "image": "shopify:\/\/shop_images\/0d3005a3-e62e-4685-b8e6-f1e3a3f293e6.jpg",
+              "name-tab": "Videos",
+              "id-tab": 2
+            }
+          },
+          "8182fc79-c018-4095-b1a0-c4a49a0c3f57": {
+            "type": "video",
+            "settings": {
+              "url-video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/2c5fe400e9d14ed990dc864cac28abe5.mp4",
               "caption": "",
+              "id-tab": 2,
               "col-lg": 6,
               "col-md": 6,
               "col-sm": 12
@@ -1066,13 +1055,12 @@
           "80fbd8ba-c6b6-4c1f-af4d-d83bce3dbe2a",
           "ec2cab2f-1509-4b0c-9f27-54e3c65d2c09",
           "6de5fa5c-6c7c-47f2-a4b9-f0c515037689",
-          "f0ed8b99-54c4-437e-b1ec-77fc25410805",
           "12050fe1-1f5f-4a3d-a1fd-9bba53100915",
-          "5bc6995a-1073-4627-acee-0b59e6c0a4a2",
-          "2fa14cb7-945f-4afe-824d-357de8231655",
           "653db67b-0cda-4dad-b975-b97842a5259f",
+          "9e8c00c3-3a60-46a2-91ae-0e49d9538620",
           "a56039ef-ce21-423f-8b85-1bf6c6ee85d2",
-          "9e8c00c3-3a60-46a2-91ae-0e49d9538620"
+          "2fa14cb7-945f-4afe-824d-357de8231655",
+          "8182fc79-c018-4095-b1a0-c4a49a0c3f57"
         ],
         "settings": {
           "title-section": "Gallery",
