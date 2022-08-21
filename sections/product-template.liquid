@@ -608,13 +608,14 @@ span.flatpickr-weekday {
               </div>
             </div>
           {% endform %}
-          <div
+       <div
           class="rte product-single__store-availability-container"
           data-store-availability-container
           data-product-title="{{ product.title | escape }}"
           data-has-only-default-variant="{{ product.has_only_default_variant }}"
-          data-base-url="{{ shop.url }}{{ routes.root_url }}"
+          
         >
+           
         </div>
         </div>
 
@@ -642,6 +643,9 @@ span.flatpickr-weekday {
       
     </div>
   </div>
+<div class="modal-dialog modal-dialog-centered">
+  ...
+</div>
   {% if product.description != blank %}
    <div class="product-single__description title-section align-items-center page-width">
    
