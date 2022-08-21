@@ -523,49 +523,16 @@
         top: -4px;
         right: -4px;
       }
-      .fixed-container {
-      position:fixed;
-      bottom:20px;
-      right: 20px;
-      display:flex;
-      flex-direction:column;
-      justify-content:flex-end;
-      align-items:flex-end;
-      z-index:444;
-      }
-      .fixed-container .floating-container-info,  .fixed-container .btn-fixed-1{
-        position:relative !important;
-        bottom: auto;
-        right:auto;
-        left:auto;
-      }
 </style>
 
 {% include 'search-drawer' %} {% render 'social-btn'  bottom: "20px" facebook_link: settings.social_facebook_link, facebook_user: settings.user-facebook, background: "var(--primary)", text_color: "white", instagram_link: settings.social_instagram_link,
 instagram_user: settings.user-instagram, nr_items: 2 %} 
 
 
-<div class="fixed-container">
 
-    {% render 'social-btn' 
-    bottom: "60px", 
-    background: "var(--primary)", 
-    text_color: "white", nr_items: 3, 
-    email: section.settings.email,
-    phone: section.settings.phone, 
-    location: section.settings.location, 
-    location_tooltip: section.settings.location_tooltip, 
-    phone_tooltip: section.settings.phone_tooltip, 
-    right: true, 
-    id: "info" %} 
-    
-    {% if section.settings.btn-fixed-1-label and section.settings.btn-fixed-1-link %}
-      {% include "float-btn" label: section.settings.btn-fixed-1-label, link: section.settings.btn-fixed-1-link  %}
-    {% endif %}
-    
-</div>
+{% render 'social-btn' bottom: "60px", background: "var(--primary)", text_color: "white", nr_items: 3, email: section.settings.email, phone: section.settings.phone, location:
+section.settings.location, location_tooltip: section.settings.location_tooltip, phone_tooltip: section.settings.phone_tooltip, right: true, id: "info" %} {% render "cart-popup-ajax" %}
 
-{% render "cart-popup-ajax" %}
 <!-- Top Search Form Area -->
 <div class="top-search-area">
     <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -672,7 +639,9 @@ instagram_user: settings.user-instagram, nr_items: 2 %}
         </div>
     </div>
 </header>
-
+{% if section.settings.btn-fixed-1-label and section.settings.btn-fixed-1-link %}
+  {% include "float-btn" label: section.settings.btn-fixed-1-label, link: section.settings.btn-fixed-1-link  %}
+{% endif %}
 <!-- Header Area End -->
 <div data-section-id="{{ section.id }}" data-section-type="header-section" data-header-section>
     <header role="banner">
