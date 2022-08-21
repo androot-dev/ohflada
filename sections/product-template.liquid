@@ -667,6 +667,9 @@ span.flatpickr-weekday {
                 left: -20px;
 
              }
+             .link-pick:hover{
+               color:var(--primary-light);
+             }
            </style>
      <script>
        document.addEventListener("DOMContentLoaded", function(){
@@ -677,7 +680,7 @@ span.flatpickr-weekday {
            let contentModal = document.querySelector(".modal-pick-title");
            title.innerHTML = "{{ product.title }}";
            contentModal.innerHTML = content.outerHTML;
-           el.insertAdjacentHTML("beforeEnd", "<a href='#modal-pickup' data-toggle='modal' style='border-bottom:none;' class='w-100 d-flex justify-content-md-start justify-content-center'>More Information</a>");   
+           el.insertAdjacentHTML("beforeEnd", "<a href='#modal-pickup' data-toggle='modal' style='border-bottom:none;' class='link-pick w-100 d-flex justify-content-md-start justify-content-center'>More Information</a>");   
         }
         const panoptico = new MutationObserver(
             (mutaciones, observer) => {
