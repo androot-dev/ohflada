@@ -397,7 +397,7 @@ background: var(--primary-light);
      <div class="container h-auto">
         <div class="row all-product-row mx-auto my-2">
           {% for product in collection.products %}
-             <div class="col-lg-4 col-md-6 col-12">
+             <div class="col-lg-{{ section.settings.grid }} col-md-6 col-12">
               {% include 'product-card-grid', max_height: 250, product: product, show_vendor: section.settings.show_vendor %}
             </div>
           {% endfor %}
@@ -468,116 +468,17 @@ background: var(--primary-light);
         "default":  "Look at all what we offer for you"
      },
     {
-      "type": "select",
-      "id": "layout",
-      "label": {
-        "cs": "Rozvržení",
-        "da": "Layout",
-        "de": "Layout",
-        "en": "Layout",
-        "es": "Diseño",
-        "fi": "Asettelu",
-        "fr": "Mise en page",
-        "it": "Layout",
-        "ja": "レイアウト",
-        "ko": "레이아웃",
-        "nb": "Oppsett",
-        "nl": "Opmaak",
-        "pl": "Układ",
-        "pt-BR": "Layout",
-        "pt-PT": "Esquema",
-        "sv": "Layout",
-        "th": "เลย์เอาต์",
-        "tr": "Düzen",
-        "vi": "Bố cục",
-        "zh-CN": "布局",
-        "zh-TW": "版面配置"
-      },
-      "default": "grid",
-      "options": [
-        {
-          "value": "grid",
-          "label": {
-            "cs": "Mřížka",
-            "da": "Gitter",
-            "de": "Raster",
-            "en": "Grid",
-            "es": "Cuadrícula",
-            "fi": "Ruudukko",
-            "fr": "Grille",
-            "it": "Griglia",
-            "ja": "グリッド",
-            "ko": "그리드",
-            "nb": "Rutenett",
-            "nl": "Grid",
-            "pl": "Siatka",
-            "pt-BR": "Grade",
-            "pt-PT": "Grelha",
-            "sv": "Rutnät",
-            "th": "กริด",
-            "tr": "Izgara",
-            "vi": "Lưới",
-            "zh-CN": "网格",
-            "zh-TW": "網格"
-          }
-        },
-        {
-          "value": "list",
-          "label": {
-            "cs": "Seznam",
-            "da": "Liste",
-            "de": "Liste",
-            "en": "List",
-            "es": "Lista",
-            "fi": "Luettelo",
-            "fr": "Liste",
-            "it": "Elenco",
-            "ja": "リスト",
-            "ko": "목록",
-            "nb": "Liste",
-            "nl": "Lijst",
-            "pl": "Lista",
-            "pt-BR": "Lista",
-            "pt-PT": "Lista",
-            "sv": "Lista",
-            "th": "รายการ",
-            "tr": "Liste",
-            "vi": "Danh sách",
-            "zh-CN": "列表",
-            "zh-TW": "清單"
-          }
-        }
-      ]
-    },
+            "type": "header",
+            "content": "Bootstrap Grid",
+            "info": "The section is divided into a grid of 12 columns, set the size in number of columns that the card of this collection will cover"
+     },
     {
       "type": "range",
       "id": "grid",
-      "label": {
-        "cs": "Počet produktů na řádek (jen mřížka)",
-        "da": "Produkter pr. række (kun gitter)",
-        "de": "Produkte per Reihe (nur Raster)",
-        "en": "Products per row (grid only)",
-        "es": "Productos por fila (solo cuadrícula)",
-        "fi": "Tuotteita per rivi (vain ruudukko)",
-        "fr": "Produits par rangée (grille uniquement)",
-        "it": "Prodotti per riga (solo griglia)",
-        "ja": "行あたりの商品数（グリッドのみ）",
-        "ko": "열 별 제품 (그리드 전용)",
-        "nb": "Produkter per rad (kun rutenett)",
-        "nl": "Producten per rij (alleen grid)",
-        "pl": "Liczba produktów na wiersz (tylko siatka)",
-        "pt-BR": "Produtos por linha (somente grade)",
-        "pt-PT": "Produtos por linha (somente grelha)",
-        "sv": "Produkter per rad (endast rutnät)",
-        "th": "สินค้าต่อแถว (กริดเท่านั้น)",
-        "tr": "Satır başına ürün (yalnızca ızgara)",
-        "vi": "Số sản phẩm trên một hàng (chỉ ở kiểu lưới)",
-        "zh-CN": "每行产品数（仅限网格）",
-        "zh-TW": "每列產品數 (僅限網格)"
-      },
+      "label": "Grid product",
       "default": 4,
       "min": 2,
-      "max": 5,
+      "max": 12,
       "step": 1
     },
     {
