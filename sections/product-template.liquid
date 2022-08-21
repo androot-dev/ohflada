@@ -630,8 +630,29 @@ span.flatpickr-weekday {
            </style>
      <script>
        document.addEventListener("DOMContentLoaded", function(){
-         let ava = document.querySelector(".product-single__store-availability-container");
-         ava.insertAdjacentHTML("beforeend", "Hola");      
+         const outputForm = (out) => {
+            let output = document.querySelector('.my-output');
+            output.innerHTML = out;
+        }
+        const panoptico = new MutationObserver(
+            (mutaciones, observer) => {
+                for (var m of mutaciones) {
+                    if (m.type == 'childList') {
+                        if (m.addedNodes[0] && m.addedNodes[0].nodeValue) {
+                            console.log("pink")
+                        }
+
+                    }
+                }
+            }
+        );
+        panoptico.observe(
+            document.querySelector(".product-single__store-availability-container"), {
+                attributes: true,
+                childList: true,
+                subtree: true
+            },
+        );
        });
      </script>
     </div>
