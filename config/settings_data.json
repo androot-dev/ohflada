@@ -321,6 +321,8 @@
       "header-ek": {
         "type": "header-ek",
         "settings": {
+          "btn-fixed-1-label": "Shopping Now",
+          "btn-fixed-1-link": "shopify:\/\/collections\/all",
           "email": "Jeannyvizcaino@ohfladacreations.com",
           "phone": "+18638049400",
           "phone_tooltip": "(863) 804 9400",
@@ -458,28 +460,19 @@
           "c4614e2e-bbb3-42bd-b007-6fc72ba35a99": {
             "type": "collection",
             "settings": {
-              "category": "bakery-supply",
-              "col-lg": 4,
-              "col-md": 6,
-              "col-sm": 12
+              "category": "bakery-supply"
             }
           },
           "9644d32d-1567-46cf-9a7e-d11caf65dd8a": {
             "type": "collection",
             "settings": {
-              "category": "desserts",
-              "col-lg": 4,
-              "col-md": 6,
-              "col-sm": 12
+              "category": "desserts"
             }
           },
           "36d132a1-c023-4bb6-9299-2ab5a09ddf05": {
             "type": "collection",
             "settings": {
-              "category": "cupcakes",
-              "col-lg": 4,
-              "col-md": 6,
-              "col-sm": 12
+              "category": "cupcakes"
             }
           }
         },
