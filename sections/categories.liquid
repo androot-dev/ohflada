@@ -43,9 +43,8 @@
           {% for block in section.blocks %}
             {% if block.type == 'collection' %}
               
-                      {%  render "collection-grid-carousel"  collection: block.settings.category %}
+               {%  render "collection-grid-carousel"  collection: block.settings.category %}
              
-
             {% endif %}
           {% endfor %}
 
