@@ -252,9 +252,7 @@
   </nav>
   {% endif %}
 </div>
-{% if section.settings.btn-fixed-1-label and section.settings.btn-fixed-1-link %}
-  {% include "float-btn" label: section.settings.btn-fixed-1-label, link: section.settings.btn-fixed-1-link  %}
-{% endif %}
+
 
 <script type="application/ld+json">
 {
@@ -323,17 +321,7 @@
   },
   "settings": [
     
-      {
-        "type": "text",
-        "id": "btn-fixed-1-label",
-        "label": "label button fixed 1",
-        "default": "Shopping Now"
-      },
-    {
-        "type": "url",
-        "label": "link button fixed 1",
-       "id": "btn-fixed-1-link"
-    },
+    
     {
       "type": "radio",
       "id": "align_logo",
