@@ -640,8 +640,7 @@
         "settings": {
           "title": "Product Search",
           "subtitle": "Look at all what we offer for you",
-          "layout": "grid",
-          "grid": 2,
+          "grid": 4,
           "rows": 6,
           "show_collection_image": false,
           "show_vendor": false,
