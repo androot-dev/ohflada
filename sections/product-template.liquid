@@ -614,12 +614,12 @@ span.flatpickr-weekday {
           data-store-availability-container
           data-product-title="{{ product.title | escape }}"
           data-has-only-default-variant="{{ product.has_only_default_variant }}"
-          
-         
+          data-base-url="{{ shop.url }}{{ routes.root_url }}"
+          onload="alert('asd')"
         >
            
         </div>
-        <a data-base-url="{{ shop.url }}{{ routes.root_url }}"></a>
+        <a if=""></a>
            <style>
              @media screen and (max-width: 767px){
                padding-bottom: 30px;
