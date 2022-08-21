@@ -525,8 +525,8 @@
       }
 </style>
 
-{% include 'search-drawer' %} {% render 'social-btn' facebook_link: settings.social_facebook_link, facebook_user: settings.user-facebook, background: "var(--primary)", text_color: "white", instagram_link: settings.social_instagram_link,
-instagram_user: settings.user-instagram, nr_items: 2 %} {% render 'social-btn' background: "var(--primary)", text_color: "white", nr_items: 3, email: section.settings.email, phone: section.settings.phone, location:
+{% include 'search-drawer' %} {% render 'social-btn'  bottom: "20px" facebook_link: settings.social_facebook_link, facebook_user: settings.user-facebook, background: "var(--primary)", text_color: "white", instagram_link: settings.social_instagram_link,
+instagram_user: settings.user-instagram, nr_items: 2 %} {% render 'social-btn' bottom: "60px", background: "var(--primary)", text_color: "white", nr_items: 3, email: section.settings.email, phone: section.settings.phone, location:
 section.settings.location, location_tooltip: section.settings.location_tooltip, phone_tooltip: section.settings.phone_tooltip, right: true, id: "info" %} {% render "cart-popup-ajax" %}
 
 <!-- Top Search Form Area -->
