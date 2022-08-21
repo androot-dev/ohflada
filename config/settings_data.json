@@ -938,7 +938,7 @@
           "ea1474ca-f033-461a-87d1-7975f90c4162": {
             "type": "Tab",
             "settings": {
-              "name-tab": "Cakes",
+              "name-tab": "Imagenes",
               "id-tab": 1
             }
           },
@@ -1022,7 +1022,7 @@
           "2fa14cb7-945f-4afe-824d-357de8231655": {
             "type": "Tab",
             "settings": {
-              "name-tab": "Gallery 2",
+              "name-tab": "Videos",
               "id-tab": 2
             }
           },
