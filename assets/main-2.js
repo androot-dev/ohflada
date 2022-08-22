@@ -181,8 +181,10 @@ class Page {
             try {
                 await videoElem.play();
                 playButton.style.display = "none";
+                document.body.classList.add("video-play");
             } catch (err) {
                 playButton.style.display = "block";
+              document.body.classList.remove("video-play");
             }
         }
         function handlePlayButton(playButton, videoElem) {
