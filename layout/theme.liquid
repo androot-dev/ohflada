@@ -347,7 +347,37 @@
   </div>
     </div>
   </div>
+    {% if page.title %}
+         {%  assign title = page.title %}
+    {%  else %}
+         {%  if template.name == "collection" %}
+           {%  assign title = "Products" %}
+         {% else %}
+            {%  assign title = template.name %}
+            {% if title == "product" %}
+              {%  for collection in product.collections limit:1 %} 
+                {% assign title = "Product" %}
+              {% endfor %}
+            {% elsif title == "cart" %}
+              {%  assign title = 'cart.general.title' | t  %}
+            {%  elsif title == "search" %}
+              {%  assign title =  "Search"  %}
+            {%  elsif title == "list-collections" %}
+              {%  assign title =  "Categories"  %}
+             
+    {% endif %}
+{% endif %}
+    {% endif %}
 
+  {% if title == "Categories" or  title == "Products" or title == "Product" %}
+
+    <style>
+      .btn-fixed-1{
+        display:none !important;
+      }
+    </style>
+  
+  {% endif %}
  
 </body>
 </html>
