@@ -69,10 +69,7 @@
       
         {%  else %}
          {%  if template.name == "collection" %}
-          {%  for collection in product.collections limit:1 %} 
-                {% assign title = collection.title %}
-              {% endfor %}
-
+         {% assign title = collection.title %}
           
            {% else %}
           {%  assign title = template.name %}
