@@ -533,6 +533,13 @@ instagram_user: settings.user-instagram, nr_items: 2 %}
 {% render 'social-btn' bottom: "65px", background: "var(--primary)", text_color: "white", nr_items: 3, email: section.settings.email, phone: section.settings.phone, location:
 section.settings.location, location_tooltip: section.settings.location_tooltip, phone_tooltip: section.settings.phone_tooltip, right: true, id: "info" %} {% render "cart-popup-ajax" %}
 
+
+
+{% if section.settings.btn-fixed-1-label and section.settings.btn-fixed-1-link %}
+  {% include "float-btn" label: section.settings.btn-fixed-1-label, link: section.settings.btn-fixed-1-link  %}
+{% endif %}
+
+
 <!-- Top Search Form Area -->
 <div class="top-search-area">
     <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -639,9 +646,7 @@ section.settings.location, location_tooltip: section.settings.location_tooltip, 
         </div>
     </div>
 </header>
-{% if section.settings.btn-fixed-1-label and section.settings.btn-fixed-1-link %}
-  {% include "float-btn" label: section.settings.btn-fixed-1-label, link: section.settings.btn-fixed-1-link  %}
-{% endif %}
+
 <!-- Header Area End -->
 <div data-section-id="{{ section.id }}" data-section-type="header-section" data-header-section>
     <header role="banner">
