@@ -173,6 +173,7 @@ class Page {
     
             videoElem.onended = () => {
                 playButton.style.display = "block";
+                document.body.classList.remove("video-play");
                 videoElem.controls = false;
             }
         });
@@ -184,7 +185,7 @@ class Page {
                 document.body.classList.add("video-play");
             } catch (err) {
                 playButton.style.display = "block";
-              document.body.classList.remove("video-play");
+                document.body.classList.remove("video-play");
             }
         }
         function handlePlayButton(playButton, videoElem) {
