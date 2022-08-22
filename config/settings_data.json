@@ -870,7 +870,7 @@
             "type": "faq-item",
             "settings": {
               "question": "Where can I pick up an order?",
-              "answer": "<p>Pickup is available, usually after 24 hours, the pick up address is:<br\/>9708 Gilespie Las Vegas NV 89183 United States<\/p>"
+              "answer": "<p>Pickup is available, usually after 24 hours, the pick up address is:<br\/><a href=\"https:\/\/www.google.com\/maps\/place\/Winter+Haven,+Florida,+EE.+UU.\/@28.0110855,-81.7558307,13z\/data=!4m5!3m4!1s0x88dd12c9ab273d23:0x866665fba892005a!8m2!3d28.0222435!4d-81.7328567\" target=\"_blank\">Winter Haven, FL, United States, Florida<\/a><\/p>"
             }
           }
         },
