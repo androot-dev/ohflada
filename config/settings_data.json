@@ -641,7 +641,7 @@
         "type": "collection-template",
         "settings": {
           "title": "Product Search",
-          "subtitle": "Look at all what we offer for you",
+          "subtitle": "Look at all that we have to offer.",
           "grid": 4,
           "perpage": 18,
           "sort_enable": true,
