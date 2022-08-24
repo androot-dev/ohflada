@@ -136,10 +136,12 @@
       </div>
    </section>
   <script>
-  var tabEl = document.querySelector('.tab-gallery')
-    tabEl.addEventListener("show.bs.tab", function(){
-      AOS.refresh();
+    document.addEventListener("ready:owl", function(){
+        $('.tab-gallery').on("show.bs.tab", function(){
+          AOS.refresh();
+        })  
     })
+
   </script>
 </section>
 {% schema %}
