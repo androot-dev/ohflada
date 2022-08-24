@@ -137,9 +137,7 @@
    </section>
   <script>
     document.addEventListener("ready:owl", function(){
-      console.log("ready")
-        $('.tab-gallery').on("show.bs.tab", function(){
-          console.log("a")
+        $('.tab-gallery').on("shown.bs.tab", function(){
           AOS.refresh();
         })  
     })
