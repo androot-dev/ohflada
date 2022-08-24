@@ -68,7 +68,7 @@
                     
                       
                                    <li class="nav-item" role="presentation">
-                                      <button class="nav-link {% if forloop.index == 1 %} active {% endif %}" 
+                                      <button class="nav-link {% if forloop.index == 1 %} active {% endif %} tab-gallery" 
                                         data-toggle="tab" data-target="#tab{{ tab.id-tab }}" 
                                         type="button" role="tab" 
                                         aria-controls="tab{{ tab.id-tab }}"
@@ -136,7 +136,8 @@
       </div>
    </section>
   <script>
-    document.addEventListener("show.bs.tab", function(){
+  var tabEl = document.querySelector('.tab-gallery')
+    tabEl.addEventListener("show.bs.tab", function(){
       AOS.refresh();
     })
   </script>
