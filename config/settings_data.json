@@ -796,7 +796,7 @@
         "type": "delivery",
         "settings": {
           "title-delivery": "We Have Delivery",
-          "subtitle": "Place an order and receive it at the door of your house!",
+          "subtitle": "Place your order and receive it at your doorstep!",
           "overlay": "linear-gradient(182deg, rgba(243, 219, 219, 1) 2%, rgba(255, 238, 237, 1) 100%)",
           "icon1": "fa fa-cake",
           "icon2": "fa-solid fa-people-carry-box",
