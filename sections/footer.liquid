@@ -442,6 +442,17 @@
 	</div>
 </div>
 </footer>
+<script>
+
+
+  function evaluar(){
+  if($("#CartCount > span:nth-child(1)").text() !== "0") {
+    $("#CartCount").removeClass("hide");
+  }
+}
+setInterval('evaluar()',100);
+
+</script>
 
 {% schema %}
 {
