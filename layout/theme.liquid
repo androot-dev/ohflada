@@ -388,5 +388,17 @@
        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>  
   {% endif %}
+
+<script>
+  function evaluar(){
+  if($("#CartCount span").html() !== "0") {
+    $("#CartCount").removeClass("hide");
+  }
+}
+  
+</script>  
+
+
+setInterval('evaluar()',100);
 </body>
 </html>
