@@ -4,7 +4,8 @@
 function evaluar(){
   if($("li.cart-icon > a:nth-child(1) > div:nth-child(2) > span:nth-child(1)").html() !== "0") {
     $("#CartCount").removeClass("hide");
-  }
+  }    alert("hola");
+
 }
 setInterval('evaluar()',100);
 
