@@ -8140,6 +8140,10 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
 	width: 100%;
 	height: 100%;
 }
-.qview-button:hover {
-	opacity: 1!important;
+.qview-button-wrapper {
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+.qview-button {
+	opacity: 1 !important;
 }
