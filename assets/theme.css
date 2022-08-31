@@ -8131,3 +8131,12 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
   text-transform: capitalize;
 
 }
+
+
+/*Custom 8/31/22*/
+/*app quick view*/
+.qview-button-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
