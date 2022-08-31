@@ -337,13 +337,13 @@
                         <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
                       </dt>
                       <dd>
-                        <s data-cart-item-original-price><span class='hulkapps-cart-item-price' data-key='{{item.key}}'>{{ item.original_price | money }}</span></s>
+                        <s data-cart-item-original-price><span class='hulkapps-cart-item-price' data-key='{{item.key}}'><span data-ymq-item-key="{{ item.key }}" class='ymq_item_original_price'>{{ item.original_price | money }}</span></span></s>
                       </dd>
                       <dt>
                         <span class="visually-hidden">{{ 'products.product.sale_price' | t }}</span>
                       </dt>
                       <dd>
-                        <span class="order-discount" data-cart-item-final-price>{{ item.final_price | money }}</span>
+                        <span class="order-discount" data-cart-item-final-price><span data-ymq-item-key="{{ item.key }}" class='ymq_item_final_price'>{{ item.final_price | money }}</span></span>
                       </dd>
                     </div>
 
@@ -355,7 +355,7 @@
                         <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
                       </dt>
                       <dd data-cart-item-regular-price>
-                        <span class='hulkapps-cart-item-price' data-key='{{item.key}}'>{{ item.original_price | money }}</span>
+                        <span class='hulkapps-cart-item-price' data-key='{{item.key}}'><span data-ymq-item-key="{{ item.key }}" class='ymq_item_original_price'>{{ item.original_price | money }}</span></span>
                       </dd>
                     </div>
 
@@ -364,7 +364,7 @@
                     {%- endcomment -%}
                     <div {% unless item.unit_price_measurement %}class="hide" {% endunless %}data-unit-price-group>
                       <dt>
-                        <span class="visually-hidden visually-hidden--inline">{{ 'products.product.unit_price_label' | t }}</span>
+                        <span class="visually-hidden visually-hidden--inline"><span data-ymq-item-key="{{ product.key }}" class='ymq_item_unit_price'>{{ 'products.product.unit_price_label' | t }}</span></span>
                       </dt>
                       <dd>
                         <span class="price-unit-price">
@@ -373,12 +373,12 @@
                           {%- endcapture -%}
                           {%- capture unit_price_base_unit -%}
                             {%- if item.unit_price_measurement.reference_value != 1 -%}
-                              {{- item.unit_price_measurement.reference_value -}}
+                              <span data-ymq-item-key="{{ item.key }}" class='ymq_item_unit_price_measurement'>{{- item.unit_price_measurement.reference_value -}}</span>
                             {%- endif -%}
-                            {{ item.unit_price_measurement.reference_unit }}
+                            <span data-ymq-item-key="{{ item.key }}" class='ymq_item_unit_price_measurement'>{{ item.unit_price_measurement.reference_unit }}</span>
                           {%- endcapture -%}
 
-                          <span data-unit-price>{{ item.unit_price | money }}</span>{{- unit_price_separator -}}<span data-unit-price-base-unit>{{- unit_price_base_unit -}}</span>
+                          <span data-unit-price><span data-ymq-item-key="{{ item.key }}" class='ymq_item_unit_price'>{{ item.unit_price | money }}</span></span>{{- unit_price_separator -}}<span data-unit-price-base-unit>{{- unit_price_base_unit -}}</span>
                         </span>
                       </dd>
                     </div>
@@ -437,13 +437,13 @@
                     <span class="visually-hidden">{{ 'cart.label.regular_total' | t }}</span>
                   </dt>
                   <dd>
-                    <s data-cart-item-original-price><span class='hulkapps-cart-item-line-price' data-key='{{item.key}}'>{{ item.original_line_price | money }}</span></s>
+                    <s data-cart-item-original-price><span class='hulkapps-cart-item-line-price' data-key='{{item.key}}'><span data-ymq-item-key="{{ item.key }}" class='ymq_item_original_line_price'>{{ item.original_line_price | money }}</span></span></s>
                   </dd>
                   <dt>
                     <span class="visually-hidden">{{ 'cart.label.discounted_total' | t }}</span>
                   </dt>
                   <dd>
-                    <span class="order-discount" data-cart-item-final-price>{{ item.final_line_price | money }}</span>
+                    <span class="order-discount" data-cart-item-final-price><span data-ymq-item-key="{{ item.key }}" class='ymq_item_final_line_price'>{{ item.final_line_price | money }}</span></span>
                   </dd>
                 </dl >
 
@@ -451,7 +451,7 @@
                   Markup template for regular price item
                 {%- endcomment -%}
                 <div {% if item.original_line_price != item.final_line_price %}class="hide" {% endif %}data-cart-item-regular-price-group>
-                  <span data-cart-item-regular-price><span class='hulkapps-cart-item-line-price' data-key='{{item.key}}'>{{ item.original_line_price | money }}</span></span>
+                  <span data-cart-item-regular-price><span class='hulkapps-cart-item-line-price' data-key='{{item.key}}'><span data-ymq-item-key="{{ item.key }}" class='ymq_item_original_line_price'>{{ item.original_line_price | money }}</span></span></span>
                 </div>
               </td>
             </tr>
@@ -488,7 +488,7 @@
 
             <div class="cart-subtotal">
               <span class="cart-subtotal__title">{{ 'cart.general.subtotal' | t }}</span>
-              <span class="cart-subtotal__price" data-cart-subtotal><span class='hulkapps-cart-original-total'>{{ cart.total_price | money_with_currency }}</span></span>
+              <span class="cart-subtotal__price" data-cart-subtotal><span class='hulkapps-cart-original-total'><span  class='ymq_cart_total_price'>{{ cart.total_price | money_with_currency }}</span></span></span>
             </div>
 
             {%- capture taxes_shipping_checkout -%}
@@ -668,3 +668,4 @@
   ]
 }
 {% endschema %}
+{% comment %}<!-- ymq option done -->{% endcomment %}

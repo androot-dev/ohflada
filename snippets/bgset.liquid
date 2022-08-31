@@ -19,3 +19,4 @@
     {% if image.width > 4100 %}{{ image | img_url: '4100x' }} 4100w {{ 4100 | divided_by: image.aspect_ratio | round }}h,{% endif %}
     {{ image | img_url: 'master' }} {{ image.width }}w {{ image.height }}h
 {%- endif -%}
+{% comment %}<!-- ymq option done -->{% endcomment %}
