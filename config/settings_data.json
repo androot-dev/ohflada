@@ -1104,7 +1104,15 @@
       "1660096450bfda049e",
       "16601376245bd0e012",
       "166011570480c04ade"
-    ]
+    ],
+    "blocks": {
+      "6279071938380501511": {
+        "type": "shopify:\/\/apps\/powerful-contact-form-builder\/blocks\/app-embed\/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {
