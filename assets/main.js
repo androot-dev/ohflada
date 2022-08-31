@@ -2,7 +2,6 @@
   { "use strict"
 
 
-
    // :: 7.0 Tooltip Active Code
     if ($.fn.tooltip) {
         $('[data-toggle="tooltip"]').tooltip({html:true});
@@ -131,4 +130,3 @@
               });
 
 })(jQuery);
-
