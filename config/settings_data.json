@@ -1084,13 +1084,13 @@
     "blocks": {
       "5294968793578418440": {
         "type": "shopify:\/\/apps\/variant-option-product-options\/blocks\/app-embed\/ce104259-52b1-4720-9ecf-76b34cae0401",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       },
       "11651401770006824842": {
         "type": "shopify:\/\/apps\/product-options-variant-option\/blocks\/app-embed\/86b91121-1f62-4e27-9812-b70a823eb918",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
