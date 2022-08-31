@@ -2,7 +2,7 @@
   { "use strict"
 
 function evaluar(){
-  if($("#CartCount span").html() !== "0") {
+  if($("li.cart-icon > a:nth-child(1) > div:nth-child(2) > span:nth-child(1)").html() !== "0") {
     $("#CartCount").removeClass("hide");
   }
 }
