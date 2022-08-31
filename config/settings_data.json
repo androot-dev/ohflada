@@ -477,18 +477,21 @@
           },
           "b9be7a04-560c-4602-9e00-d5a530fc9223": {
             "type": "collection",
+            "disabled": true,
             "settings": {
               "category": "candy-bar-and-treats"
             }
           },
           "590b1f7f-fe81-4f80-9053-0cedf4c8ab00": {
             "type": "collection",
+            "disabled": true,
             "settings": {
               "category": "flans-and-chocoflans"
             }
           },
           "e8d265c5-80aa-4f00-b544-d9724e18500e": {
             "type": "collection",
+            "disabled": true,
             "settings": {
               "category": "salty"
             }
