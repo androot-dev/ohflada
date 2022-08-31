@@ -1,6 +1,12 @@
 (function ($)
   { "use strict"
 
+function evaluar(){
+  if($("#CartCount span").html() !== "0") {
+    $("#CartCount").removeClass("hide");
+  }
+}
+setInterval('evaluar()',100);
 
    // :: 7.0 Tooltip Active Code
     if ($.fn.tooltip) {
@@ -131,10 +137,3 @@
 
 })(jQuery);
 
-
-function evaluar(){
-  if($("#CartCount span").html() !== "0") {
-    $("#CartCount").removeClass("hide");
-  }
-}
-setInterval('evaluar()',100);
