@@ -133,7 +133,7 @@
 
 
 function evaluar(){
-  if($("#CartCount > span:nth-child(1)").html() !== "0") {
+  if($("#CartCount span").html() !== "0") {
     $("#CartCount").removeClass("hide");
   }
 }
