@@ -8205,8 +8205,8 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
 	/* position: absolute !important; */
 	/* top: -45px !important; */
 	/* left: -40px !important; */
-	top: -15px !important;
+	bottom: -28px !important;
 	height: 50px !important;
-	left: 10px !important;
+	right: 0px !important;
 	width: 50px !important;
 }
