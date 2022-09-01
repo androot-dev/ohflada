@@ -8153,7 +8153,7 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
 .qview-button {
 	opacity: 1 !important;
   	transition: 400ms;
-  box-shadow: 0px 8px 32px 0 rgb(253 127 127 / 35%);
+    box-shadow: 0px 5px 10px 0 rgba(253, 127, 127, 0.18)!important;
 }
 .qview-button:hover {
 	background: #bf6363 !important;
