@@ -376,10 +376,9 @@ background: var(--primary-light);
  {% if  section.settings.subtitle != blank %}
      <h2>{{ section.settings.subtitle }}</h2>
   {% endif %}
-            {% if collection.title == "Cakes" %}
-
-     <p>{{ collection.description }}</p>
-            {% endif %}
+  {% if collection.title == "Cakes" %}
+     <p class="my-collection-description">{{ collection.description }}</p>
+  {% endif %}
 
   
    </div>
