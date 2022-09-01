@@ -8182,9 +8182,12 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
 .action.submit.flat_rounded-button {
 	color: #fff !important; //texto del boton form
 }
-/*tag price recomendados*/
+/* recomendados*/
 .tag-price {
 	z-index: 2 !important;
+}
+.product-recomended :not(.overlay-section-product-recomended) {
+	z-index: auto!important;
 }
 /*card home*/
 /*.slide_inner .qview-button-wrapper {
