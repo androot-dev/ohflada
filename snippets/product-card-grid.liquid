@@ -25,6 +25,7 @@
   
 
         <div class="class-item position-relative">
+             <a href="{{ product.url}}">
                {% if product.compare_at_price > product.price and product.available %}
                   <div class="tag-price-comparation">
                     <span class="price-1">{{product.compare_at_price | money }}</span>
@@ -38,7 +39,7 @@
                 {% endif %}
   
                     <div class="ci-pic" style="height: 85%;">
-                        <a href="{{ product.url}}">
+                     
                             
                           <img style="height: 100%;"
                               class="img-1 card-img-top"
@@ -67,7 +68,7 @@
                              width="{{ product.featured_media.width }}"
                              height="{{ product.featured_media.height }}"
                              >
-                        </a>
+                       
                     </div>
                     
                     <div class="new-ci-text ">
@@ -86,7 +87,7 @@
                       <!--<a data-ajax-cart-request-button  class="btn btn-circle" href="{{routes.cart_add_url}}?id={{ product.variants.first.id }}&quantity=1"><i class="fa fa-shopping-cart"></i></a>
                     -->
                     </div>
-
+ </a>
           </div>
 
     
