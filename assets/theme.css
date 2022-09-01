@@ -8179,3 +8179,7 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
 .action.submit.flat_rounded-button {
 	color: #fff !important; //texto del boton form
 }
+/*tag price recomendados*/
+.tag-price {
+	z-index: 2 !important;
+}
