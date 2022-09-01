@@ -8187,8 +8187,10 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
 	padding-right: 10px;
 }
 #myModal .close span:hover {
-	background: #bf6363 !important;
+	color: #1a1818 !important;
 	transition: 400ms;
+	opacity: 1;
+	text-shadow: none;
 }
 #myModal .modal-title {
 	color: #fff;
