@@ -8232,4 +8232,8 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
   .latest-products .qview-button-text {
 	display: block !important;
 }
+ .latest-products .qview-button.qview-button--bottom_right, .latest-products .qview-button.qview-button--mobile-bottom_right {
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
 }
