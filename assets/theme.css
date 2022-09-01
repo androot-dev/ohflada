@@ -8191,7 +8191,7 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
 	z-index:  !important;
 }
 /*card home*/
-/*.slide_inner .qview-button-wrapper {
+.slide_inner .qview-button-wrapper {
 	left: -45px!important;
 	position: absolute!important;
 	top: -30px!important;
