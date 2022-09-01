@@ -461,13 +461,13 @@ setInterval('evaluar()',100);
 
 
   };
-        document.querySelector(".slide .qview-button-wrapper .qview-button--bottom_right").textContent="New Text";
+   document.querySelector("#myBtn").onclick = function() {
+   $("#myModal").modal();
 
-$(document).ready(function(){
-  $("#myBtn").click(function(){
-    $("#myModal").modal();
-  });
-});
+
+  };
+
+
 </script>
 
 {% schema %}
