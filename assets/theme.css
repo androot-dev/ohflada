@@ -8162,6 +8162,8 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
 	padding: 0px !important;
 }
 /*Modal*/
+#myModal .modal-header {  background: #df8888; border-top-left-radius: 2rem;
+border-top-right-radius: 2rem; }
 #myModal .close {
 	opacity: 1;
 }
@@ -8207,13 +8209,8 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
 	left: -40px!important;
 }*/
 .slide .qview-button-wrapper .qview-button--bottom_right {
-	/* position: absolute !important; */
-	/* top: -45px !important; */
-	/* left: -40px !important; */
 	bottom: -28px !important;
-	/*height: 50px !important;*/
 	right: -85px !important;
-	/*width: 50px !important;*/
 }
 .slide .qview-button--has-text {
 	padding-left: 15px !important;
