@@ -8192,7 +8192,7 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
 }
 /*card home*/
 /*.slide_inner .qview-button-wrapper {
-	left: -350px!important;
+	left: -35px!important;
 	position: absolute!important;
-	top: -200px!important;
-}*/
+	top: -20px!important;
+}
