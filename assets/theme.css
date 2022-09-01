@@ -8157,6 +8157,10 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
 .qview-button-text {
 	display: none!important;
 }
+.qview-button.qview-button--bottom_right, .qview-button.qview-button--mobile-bottom_right {
+
+	padding: 0px !important;
+}
 /*Modal*/
 #myModal .close {
 	opacity: 1;
