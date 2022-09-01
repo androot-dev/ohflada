@@ -336,9 +336,11 @@ position: relative;
         {%- endif -%}
         <div class=container>
           <div class="row">
+       
+      
           {%- for product in recommendations.products limit:3-%}
             <div class="col-md-4 d-flex align-items-center justify-content-center">
-              {% include 'product-card-grid', max_height: 250, product: product, show_vendor: section.settings.show_vendor %}
+              {% include 'product-card-grid' %}
             </div>
           {%- endfor -%}
             </div>
