@@ -7945,6 +7945,7 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
   height: 365px;
   width: 100%;
   box-shadow: rgba(251, 154, 154, 0.2) 0px 2px 8px 0px;/*Nuevo shadow*/
+  border: 1px solid #f0ebeb;
 }
   
 .class-item-coll .ci-pic {
