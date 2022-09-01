@@ -8193,7 +8193,6 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
 	z-index: 2 !important;
 }
 .product-recomended :not(.overlay-section-product-recomended) {
-	z-index: 1;
 	z-index:  !important;
 }
 /*card home*/
