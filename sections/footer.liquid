@@ -479,10 +479,11 @@ setInterval('evaluar()',100);
   </div>
 
   
+<script src="//code.jquery.com/jqury-1.10.2.js"></script>
   <script>
 $(document).ready(function(){
-    jQuery('.child > li:nth-child(7) a').attr('data-toggle', 'modal');
-        jQuery('.child > li:nth-child(7) a').attr('data-target', '#myModal');
+    jQuery('.child > li:nth-child(7)').find('a').attr('data-toggle', 'modal');
+        jQuery('.child > li:nth-child(7)').find('a').attr('data-target', '#myModal');
    
 
 });
