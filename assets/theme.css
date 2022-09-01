@@ -8161,6 +8161,11 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
 	border-radius: 50%;
 	color: #fff;
 	font-size: 20px;
+  	transition: 400ms;
+}
+#myModal .close span:hover {
+	background: #bf6363 !important;
+	transition: 400ms;
 }
 #myModal .modal-title {
 	color: #df8888;
