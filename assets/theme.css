@@ -7943,6 +7943,7 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
   background: #ffffff;
   border-radius: var(--radius);
   height: 365px;
+  width: 100%;
 }
   
 .class-item-coll .ci-pic {
