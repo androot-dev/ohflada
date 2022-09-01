@@ -8143,7 +8143,7 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
 .qview-button-wrapper {
 	opacity: 1 !important;
 	visibility: visible !important;
-  	z-index: 9999!important;
+  	z-index: 9!important;
 
 }
 .qview-button {
