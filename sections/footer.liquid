@@ -479,12 +479,11 @@ setInterval('evaluar()',100);
   </div>
 
 <script>
-$(document).ready(function(){
-  $(".child > li:nth-child(7) > a:nth-child(1)").click(function(){
-   // $("#myModal").modal();
+
+  document.querySelector(".child > li:nth-child(7) > a:nth-child(1)").onclick = function() {
     alert("hola")
-  });
-});
+  };
+
 </script>
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
