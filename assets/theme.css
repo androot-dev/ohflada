@@ -8162,6 +8162,9 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
 	padding: 0px !important;
 }
 /*Modal*/
+#myModal {
+	z-index: 999999999999;
+}
 #myModal .modal-header {
 	background: #df8888;
 	border-top-left-radius: 2rem;
