@@ -7939,11 +7939,12 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
 .class-item-coll {
   overflow: hidden;
   margin-bottom: 30px;
-  box-shadow: rgb(255 154 154 / 17%) -8px -4px 14px 7px, rgb(0 0 0 / 23%) 0px 3px 6px;
+ /* box-shadow: rgb(255 154 154 / 17%) -8px -4px 14px 7px, rgb(0 0 0 / 23%) 0px 3px 6px;*/
   background: #ffffff;
   border-radius: var(--radius);
   height: 365px;
   width: 100%;
+  box-shadow: rgba(251, 154, 154, 0.2) 0px 2px 8px 0px;/*Nuevo shadow*/
 }
   
 .class-item-coll .ci-pic {
