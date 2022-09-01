@@ -8154,7 +8154,9 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
 	background: #bf6363 !important;
 	transition: 400ms;
 }
-
+.qview-button-text {
+	display: none!important;
+}
 /*Modal*/
 #myModal .close {
 	opacity: 1;
