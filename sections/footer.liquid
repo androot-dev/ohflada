@@ -478,12 +478,11 @@ setInterval('evaluar()',100);
     </div>
   </div>
 
-  <script>
+<script>
 $(document).ready(function(){
-  $(".child > li:nth-child(7) > a:nth-child(1)").attr("data-toggle", "modal");
-  $(".child > li:nth-child(7) > a:nth-child(1)").attr("data-target", "#myModal");
-   
-
+  $("#myBtn").click(function(){
+    $("#myModal").modal();
+  });
 });
 </script>
 {% schema %}
