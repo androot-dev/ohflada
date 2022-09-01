@@ -8184,9 +8184,12 @@ border-top-right-radius: 2rem; }
 	transition: 400ms;
 }
 #myModal .modal-title {
-	color: #df8888;
+	color: #fff;
 	font-size: 26px;
 }
+#myModal .modal-content{border-radius: 2rem; border: none;}
+
+#myModal .modal-body { padding: 1rem 2.5rem;}
 .action.submit.flat_rounded-button {
 	color: #fff !important; //texto del boton form
 }
