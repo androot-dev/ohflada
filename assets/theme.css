@@ -8206,6 +8206,10 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
 .action.submit.flat_rounded-button {
 	color: #fff !important; //texto del boton form
 }
+.description.globo-description p {
+	color: rgb(191, 99, 99) !important;
+	line-height: 1.2em;
+}
 /* recomendados*/
 .tag-price {
 	z-index: 2 !important;
