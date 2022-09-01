@@ -463,7 +463,11 @@ setInterval('evaluar()',100);
   };
         document.querySelector(".slide .qview-button-wrapper .qview-button--bottom_right").textContent="New Text";
 
-
+$(document).ready(function(){
+  $("#myBtn").click(function(){
+    $("#myModal").modal();
+  });
+});
 </script>
 
 {% schema %}
