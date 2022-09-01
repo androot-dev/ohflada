@@ -376,7 +376,7 @@ background: var(--primary-light);
  {% if  section.settings.subtitle != blank %}
      <h2>{{ section.settings.subtitle }}</h2>
   {% endif %}
-  {% if collection.description %}
+  {% if collection.description != blank %}
      <p class="my-collection-description">{{ collection.description }}</p>
       <div class="content-button-quote"><button type="button" class="btn btn-primary" id="myBtn">Request a Quote</button></div>
 
