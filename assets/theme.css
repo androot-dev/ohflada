@@ -8174,15 +8174,17 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
 }
 #myModal .close span {
 	background: #df8888;
-	width: 30px;
-	height: 30px;
+	/* width: 30px; */
+	/* height: 30px; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	border-radius: 50%;
 	color: #fff;
-	font-size: 20px;
-  	transition: 400ms;
+	font-size: 25px;
+	transition: 400ms;
+	font-weight: 800;
+	padding-right: 10px;
 }
 #myModal .close span:hover {
 	background: #bf6363 !important;
