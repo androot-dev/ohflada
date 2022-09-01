@@ -8210,3 +8210,6 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
 	right: -85px !important;
 	/*width: 50px !important;*/
 }
+.slide .qview-button-wrapper .qview-button--bottom_right .qview-button-text {
+	display: block!important;
+}
