@@ -30,8 +30,9 @@
                      {% endfor %}
           </div>  
           <div class="row justify-content-center">
-               
-                     {% include 'pagination', paginate: paginate %}
+               {%- if paginate.pages > 1 -%}
+      {% include 'pagination', paginate: paginate %}
+    {%- endif -%}
                     {%- endpaginate -%}            
           </div>
   </div>
