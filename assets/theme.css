@@ -8228,3 +8228,8 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
 	right: -183px !important;
 }
 }
+@media (max-width: 992px) {
+  .latest-products .qview-button-text {
+	display: block !important;
+}
+}
