@@ -1,63 +1,6 @@
 {% section 'hero-gallery' %}
-<div class="col-lg-4 col-md-6 col-12">
-              
-
-<section class="product-grid">
-<div class="grid-view-item product-card">
-  
-
-  
-  
-
-    <style>#ProductCardImage-collection-template-7047730855984 {
-    max-width: 226.96245733788396px;
-    max-height: 250px;
-  }
-
-  #ProductCardImageWrapper-collection-template-7047730855984 {
-    max-width: 226.96245733788396px;
-  }
-</style>
-
-  
-  
-  
-
-        <div class="class-item position-relative">
-             <a href="/products/tray-of-30-2-varieties" class=" qview-product-handle" data-qview="tray-of-30-2-varieties">
-               
-                
-                <div class="tag-price">
-                	$35.00
-                </div>
-                
-  
-                    <div class="ci-pic qview-button-container" style="height: 85%;" data-href="https://oh-flada-creations.myshopify.com/products/tray-of-30-2-varieties"><div class="qview-button-wrapper qview-button-wrapper--mobile-always_show qview-button-wrapper--mobile-top_right"><div class="qview-button qview-button--rounded-large qview-button--bottom_right qview-button--has-text"><div class="qview-button-idle"><div class="qview-button-icon"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M448 160h-64v-4.5C384 87 329 32 260.5 32h-8C184 32 128 87 128 155.5v4.5H64L32 480h448l-32-320zm-288-4.5c0-50.7 41.8-91.5 92.5-91.5h8c50.7 0 91.5 40.8 91.5 91.5v4.5H160v-4.5zM67.8 448l24.9-256H128v36.3c-9.6 5.5-16 15.9-16 27.7 0 17.7 14.3 32 32 32s32-14.3 32-32c0-11.8-6.4-22.2-16-27.7V192h192v36.3c-9.6 5.5-16 15.9-16 27.7 0 17.7 14.3 32 32 32s32-14.3 32-32c0-11.8-6.4-22.2-16-27.7V192h35.4l24.9 256H67.8z"></path></svg></div><div class="qview-button-text"><span>Add to cart</span></div></div><div class="qview-button-openning" style="display: none;">...</div></div></div>
-                     
-                            
-                          <img style="height: 100%;" class="img-1 card-img-top" draggable="false" srcset="//cdn.shopify.com/s/files/1/0571/1354/2704/products/image17.png?v=1662052339&amp;width=165 165w,//cdn.shopify.com/s/files/1/0571/1354/2704/products/image17.png?v=1662052339&amp;width=360 360w,//cdn.shopify.com/s/files/1/0571/1354/2704/products/image17.png?v=1662052339
-                                      532w" src="//cdn.shopify.com/s/files/1/0571/1354/2704/products/image17.png?v=1662052339&amp;width=533" sizes="(min-width: px) 
-                                    -33px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)" alt="Tray of 30 (2 varieties)" loading="lazy" width="532" height="586">
-                       
-                    </div>
-                    
-                    <div class="new-ci-text ">
-                        <div class="custom-shape-divider-bottom-1660074041">
-                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-                            </svg>
-  
-                        </div>
-                    </div>
-                    <div class="description-category position-absolute">
-                      <h5 class="text-primary m-0">Tray of 30 (2 varieties)</h5>
-                      <!--<a data-ajax-cart-request-button  class="btn btn-circle" href="/cart/add?id=40456356921392&quantity=1"><i class="fa fa-shopping-cart"></i></a>
-                    -->
-                    </div>
- </a>
-          </div>
-
-    
-
-</div></section>
-            </div>
+{%- for collection in collections limit: 1  -%}
+  {% for product in collection.products limit: 1 %}
+      {% include 'product-card-grid', max_height: 250, product: product %}
+  {% endfor %}
+{%- endfor -%}
