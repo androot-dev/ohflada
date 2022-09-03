@@ -122,6 +122,7 @@
     align-items: center;
     justify-content: center;
 }
+
  .tag-price {
     color: var(--primary);
     z-index:1;
@@ -8135,7 +8136,26 @@ body.js-ajax-cart-request-in-progress *[data-ajax-cart-request-button] , body:no
   text-transform: capitalize;
 
 }
-
+.owl-carousel .class-item-coll .description-category{
+  bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    font-size: 22px;
+    padding: 0 18px;
+    text-align: center;
+    height: 66px;
+    /* padding-bottom: 10px; */
+}
+.owl-carousel .class-item-coll .custom-shape-divider-bottom-1660074041 svg{
+  position: fixed;
+    display: block;
+    width: calc(174% + 1.3px);
+    height: 122px;
+    bottom: 40px;
+    left: -1px;
+}
 
 /*Custom 8/31/22*/
 /*app quick view*/
