@@ -1092,6 +1092,33 @@
           "padding_top": 40,
           "padding_bottom": 52
         }
+      },
+      "latest-products": {
+        "type": "latest-products",
+        "blocks": {
+          "9cca9eb7-6717-4d8e-9a35-58fb6640085e": {
+            "type": "product",
+            "settings": {
+              "featured_product": "4-milk-shots-12-2oz"
+            }
+          },
+          "bcc50e13-67ec-4ea1-836d-bc12ea6dfa98": {
+            "type": "product",
+            "settings": {
+              "featured_product": "tray-of-30-2-varieties"
+            }
+          }
+        },
+        "block_order": [
+          "9cca9eb7-6717-4d8e-9a35-58fb6640085e",
+          "bcc50e13-67ec-4ea1-836d-bc12ea6dfa98"
+        ],
+        "settings": {
+          "title": "Products",
+          "subtitle": "Subtitle",
+          "button_label": "View More Products",
+          "button_link": ""
+        }
       }
     },
     "content_for_index": [
