@@ -92,7 +92,8 @@
 </div>
 <script>
     function openModalDetails() {
-        const target = $(this);   
+        const target = $(this); 
+      console.log(target);
         var modal = document.getElementById("modal-details");
         let form = $(target).closest('form');
         let body_modal = modal.querySelector('.modal-body');
