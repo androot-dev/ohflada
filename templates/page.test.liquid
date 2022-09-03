@@ -4,7 +4,11 @@
 {%- for collection in collections limit: 1  -%}
   {% for product in collection.products %}
     <div class="col-lg-4 col-md-6 col-sm-12">
+      <!-- Product-grid-->
+      
       {% include 'product-card-grid', max_height: 250, product: product %}
+
+       <!--END Product-grid-->
     </div>
   {% endfor %}
 {%- endfor -%}
