@@ -5,7 +5,7 @@
    {% for product in collection.products %}
    <div class="col-lg-4 col-md-6 col-sm-12 product-grid">
       <!-- Product-grid-->
-      <div class="form-{{ forloop.index }} d-none">
+      <div class="form-{{ forloop.index }} d-none form">
          {% render "form-product" product:product %}
       </div>
       {% comment %}
@@ -92,14 +92,16 @@
 </div>
 <script>
     function openModalDetails(idform) {
-       
-
         var modal = document.getElementById("modal-details");
         let form = document.querySelector(".form-"+idform);
         let body_modal = modal.querySelector('.modal-body');
-        body_modal.replaceChild(form);
-        form.classList.remove("d-none");
-        
+        let body_form = modal.querySelector('.modal-body form');
+        if(body_form){
+            body_modal.replaceChild(form, body_form);
+        }else{
+            body_modal.appendChild(form);
+        }
+        form.classList.remove("d-none");    
     }
 </script>
 <style>
