@@ -79,10 +79,9 @@
                   </div>
                   <div class="description-category position-absolute">
                      <h5 class="text-primary m-0">{{ product.title }}</h5>
-              
+               <a onclick="alert('asdasd')" class="btn btn-circle" data-toggle="modal" href="#modal-details"><i class="fa fa-shopping-cart"></i></a>
                </div>
                </a>
-               <button onclick="(evt)=>{openModalDetails(evt)}" class="btn btn-circle" data-toggle="modal" data-target="#modal-details"><i class="fa fa-shopping-cart"></i></button>
             </div>
       </section>
       <!--END Product-grid-->
@@ -92,9 +91,7 @@
    </div>
 </div>
 <script>
-  
     function openModalDetails(evt) {
-      console.log("hoañl")
         var modal = document.getElementById("#modal-details");
         let form = $(evt.target).closest('form');
         let body_modal = modal.querySelector('.modal-body');
