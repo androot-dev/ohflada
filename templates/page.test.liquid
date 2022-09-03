@@ -79,7 +79,7 @@
                   </div>
                   <div class="description-category position-absolute">
                      <h5 class="text-primary m-0">{{ product.title }}</h5>
-               <a class="btn btn-circle" data-toggle="modal" href="#modal-details"><i class="fa fa-shopping-cart"></i></a>
+               <a onclick="openModalDetails()" class="btn btn-circle" data-toggle="modal" href="#modal-details"><i class="fa fa-shopping-cart"></i></a>
                </div>
                </a>
             </div>
@@ -90,6 +90,15 @@
       {%- endfor -%}
    </div>
 </div>
+<script>
+    function openModalDetails(evt) {
+        var modal = document.getElementById("#modal-details");
+        let form = $(evt.target).closest('form');
+        let body_modal = modal.querySelector('.modal-body');
+        body_modal.innerHTML = form.html();
+        
+    }
+</script>
 <style>
    .qview-button.qview-button--bottom_right, .qview-button.qview-button--mobile-bottom_right{
    display:none !important;
