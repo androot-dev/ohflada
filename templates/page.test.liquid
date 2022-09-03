@@ -97,7 +97,8 @@
         var modal = document.getElementById("modal-details");
         let form = document.querySelector(".form-"+idform);
         let body_modal = modal.querySelector('.modal-body');
-        body_modal.innerHTML = form.html();
+        body_modal.appendChild(form);
+      form.style.desplay = "block";
         
     }
 </script>
