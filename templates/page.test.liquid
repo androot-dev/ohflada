@@ -1,6 +1,6 @@
 {% section 'hero-gallery' %}
 {%- for collection in collections limit: 1  -%}
-  {% for product in collection.products limit: 1 %}
+  {% for product in collection.products %}
       {% include 'product-card-grid', max_height: 250, product: product %}
   {% endfor %}
 {%- endfor -%}
