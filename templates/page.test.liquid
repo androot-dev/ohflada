@@ -3,12 +3,12 @@
   <div class="row">
 {%- for collection in collections limit: 1  -%}
   {% for product in collection.products %}
-    <div class="form d-none">
-      {% render "form-product" product:product %}
-    </div>
+ 
     <div class="col-lg-4 col-md-6 col-sm-12">
       <!-- Product-grid-->
-      
+         <div class="form d-none">
+      {% render "form-product" product:product %}
+    </div>
       
 {% comment %}
     Renders a product card using "Grid" style
