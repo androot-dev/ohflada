@@ -1,5 +1,5 @@
  {% form 'product', product, novalidate: 'novalidate', data-product-form: '' %}
-
+ {%- assign current_variant = product.selected_or_first_available_variant -%}
 <p class="line-item-property__field">
   <label>option 3</label><br>
   <select id="option-3" name="properties[option 3]">
