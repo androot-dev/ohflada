@@ -82,64 +82,6 @@
             
          {% endfor %}
       });
-     document.addEventListener("ready:owl", function(){
-      all_inputs = $.getJSON("{{ "custom-inputs.json" | asset_url}}" , function(data){
-         {% for coll in collections_product %}
-            let inputs = data["{{coll.title}}"];
-
-            for(let i in inputs){
-              let custom = document.createElement("div");
-              
-               custom.innerHTML = `<label for="${inputs[i].name}">${inputs[i].name}</label>`;
-               switch(inputs[i].type){
-                  case "select":
-                  custom.classList.add("custom-input", "select-custom");
-                  let select = document.createElement("select");
-                  select.name = "properties["+inputs[i].name+"]";
-                  select.id = inputs[i].name+"-{{ id }}";
-                  // agregar las options
-                  for(let opt in inputs[i].options){
-                     let option = document.createElement("option");
-                     option.value = inputs[i].options[opt];
-                     option.innerHTML = inputs[i].options[opt];
-                     select.appendChild(option);
-                  } 
-                  if(inputs[i].placeholder){
-                     let option = document.createElement("option");
-                     option.value = "";
-                     option.disabled = true;
-                  
-                     option.innerHTML = inputs[i].placeholder;
-                     //agregar la option al inicio
-                     select.insertBefore(option, select.firstChild);
-                  }
-                  custom.appendChild(select);
-                  document.querySelector("#custom-inputs-{{ id }}").appendChild(custom);
-                  break;
-
-                  case "text":
-                    custom.classList.add("custom-input", "text-custom");
-                  let input = document.createElement("input");
-                  input.type = "text";
-                  input.name = "properties["+inputs[i].name+"]";
-                  input.id = inputs[i].name;
-                  input.placeholder = inputs[i].placeholder;	
-                  custom.appendChild(input);
-                  
-                 
-                  if(inputs[i]["show-if"]){
-                      //no se ha probado en select
-                     showIf(custom, inputs[i]["show-if"]);
-                  }
-
-                  document.querySelector("#custom-inputs-{{ id }}").appendChild(custom);
-                  break;
-               }
-            }
-
-            
-         {% endfor %}
-      });
       $('#custom-inputs-{{ id }}').closest("form").on("submit", function(e){
          console.log("..")
          let noSend = document.querySelectorAll(".no-send");
@@ -149,12 +91,12 @@
          }
          setTimeout(function(){
             for(let i in noSend){
+              console.log(noSend[i])
                noSend[i].removeAttribute("disabled");
             }
          }, 1000);
          return true;
       });
-
    });
    
 
