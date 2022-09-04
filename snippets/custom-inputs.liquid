@@ -82,32 +82,7 @@
             
          {% endfor %}
       });
-      $('#custom-inputs-{{ id }}').closest("form").on("submit", function(e){
-        
-         let noSend = document.querySelectorAll(".no-send");
-         
-         noSend.forEach(function(input){
-          
-             input.setAttribute("disabled", "disabled");
-             
-         });
-
-         //enviar el formulario
-
-         this.submit();
-
-         
-         noSend.forEach(function(input){
-           
-             input.removeAttribute("disabled");
-             
-             
-         });
-
-
-
-         
-      });
+      
    });
    
 
