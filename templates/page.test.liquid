@@ -1,11 +1,11 @@
 {% section 'hero-gallery' %}
 <div class="container">
     <div class="row">
-        {%- for collection in collections  -%}
-        {% for product in collection.products %}
+        {%- for collection in collections limit: 1 -%}
+        {% for product in collection.products limit: 2%}
         <div class="col-lg-4 col-md-6 col-sm-12 product-grid">
             <!-- Product-grid-->
-            <div class="form-{{ forloop.index }} d-none form-product-inner">
+            <div id="form-{{ forloop.index }}" class=" d-none form-product-inner">
                 {% render "form-product" product:product %}
             </div>
             {% comment %}
@@ -88,20 +88,16 @@
     </div>
 </div>
 <script>
-   function openModalDetails(idform) {
-        var modal = document.getElementById("modal-details");
-        let form = document.querySelector(".form-" + idform);
-        let replaceValue = modal.querySelector(".modal-body .form-product-inner");
-        let newForm = form.cloneNode(true);
-        newForm.classList.remove("d-none");
-        if (replaceValue) {
-            //repalce form
-            replaceValue.replaceWith(newForm);
-
-        } else {
-            //add form
-            modal.querySelector(".modal-body").appendChild(newForm);
-
+    function openModalDetails(idform) {
+        let modal = document.querySelector(".modal-details .modal_body");
+        let form = document.querySelector(".modal-details .modal_body .form-product-inner");
+        let newForm = document.querySelector("#form-" + idform);
+       
+        if(form){
+            form.remove();
+            modal.appendChild(newForm);
+        }else{
+            modal.appendChild(newForm);
         }
 
 
