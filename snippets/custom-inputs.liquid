@@ -83,23 +83,14 @@
     outline: none;
    }
    .custom-inputs{
-     display: flex;
-    flex-wrap: wrap;
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
    }
-   .custom-inputs .custom-input {
-    flex-basis: 100%;
-    padding: 0 5px;
-     margin: 5px 0;
-}
+
      .custom-inputs .custom-input select,   .custom-inputs .custom-input input{
        display:block;
        width:100%;
      }
-   @media screen and (max-width: 767px){
-      .custom-inputs .custom-input {
-        flex-grow: 0;
-        flex-basis: 100%;
-        padding: 0;
-      }
-   }
+
  </style>
