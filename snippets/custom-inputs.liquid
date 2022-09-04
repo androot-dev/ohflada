@@ -7,9 +7,9 @@
 <script>
 
    document.addEventListener("ready:owl", function(){
-      all_inputs = $.getJSON({{ "custom-inputs" | asset_url}});
-      {% for coll in collections_product %}
-            let inputs = all_inputs["{{coll.title}}"];
+      all_inputs = $.getJSON("{{ "custom-inputs" | asset_url}}" , function(data){
+         {% for coll in collections_product %}
+            let inputs = data["{{coll.title}}"];
 
             for(let i in inputs){
                swicth(input[i].type){
@@ -29,7 +29,9 @@
             }
 
             
-     {% endfor %}
+         {% endfor %}
+      });
+      
    });
 
  </script>
