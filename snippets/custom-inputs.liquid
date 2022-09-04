@@ -6,7 +6,6 @@
    function showIf(input, ifValue){
       //evitar que se envie el valor del input en el formulario
       input.querySelector("input").setAttribute("disabled", "disabled");
-      input.classList.add("d-none");
        for(let i in ifValue){
           let inputValidate = document.querySelector("#"+i+"-{{ id }}");
           inputValidate.addEventListener("change", function(){
@@ -82,15 +81,14 @@
             
          {% endfor %}
       });
-      $('#custom-inputs-{{ id }}').submit(function() {
-        //no enviar inputs con la clase no-send
-        console.log("..")
+      $('#custom-inputs-{{ id }}').closest("form").on("submit", function(e){
+         console.log("..")
          let noSend = document.querySelectorAll(".no-send");
          for(let i in noSend){
             noSend[i].setAttribute("disabled", "disabled");
          }
          return true;
-     });
+      });
    });
    
 
