@@ -83,6 +83,7 @@
       });
       $('#custom-inputs-{{ id }}').submit(function() {
         //no enviar inputs con la clase no-send
+        console.log("..")
          let noSend = document.querySelectorAll(".no-send");
          for(let i in noSend){
             noSend[i].setAttribute("disabled", "disabled");
