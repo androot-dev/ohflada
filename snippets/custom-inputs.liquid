@@ -5,7 +5,7 @@
    function showIf(input, ifValue){
       input.classList.add("d-none");
       //evitar que se envie el valor del input en el formulario
-      input.queyrySelector("input").setAttribute("disabled", "disabled");
+      input.querySelector("input").setAttribute("disabled", "disabled");
        for(let i in ifValue){
           let inputValidate = document.querySelector("#"+i+"-{{ id }}");
           inputValidate.addEventListener("change", function(){
