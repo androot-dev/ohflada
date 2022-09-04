@@ -6,29 +6,30 @@
 
 <script>
 
-   document.addEventListener("ready:owl", function(){
-      all_inputs = $.getJSON("{{ "custom-inputs.json" | asset_url}}" , function(data){
-        {% for coll in collections_product %}
+  document.addEventListener("ready:owl", function(){
+      all_inputs = $.getJSON("{{ "custom-inputs" | asset_url}}" , function(data){
+         {% for coll in collections_product %}
             let inputs = data["{{coll.title}}"];
 
             for(let i in inputs){
-              switch (input[i].type){
+               switch(input[i].type){
+                  case "select":
                   let select = document.createElement("select");
-                        select.name = input[i].name;
-                        select.id = input[i].name;
-                        // agregar las options
-                        for(let opt in select.options){
-                           let option = document.createElement("option");
-                           option.value = opt;
-                           option.innerHTML = opt;
-                           select.appendChild(option);
-                        }
+                  select.name = input[i].name;
+                  select.id = input[i].name;
+                  // agregar las options
+                  for(let opt in select.options){
+                     let option = document.createElement("option");
+                     option.value = opt;
+                     option.innerHTML = opt;
+                     select.appendChild(option);
+                  }
+                  break;
                }
             }
 
             
          {% endfor %}
-         
       });
       
    });
