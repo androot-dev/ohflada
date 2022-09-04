@@ -2,25 +2,27 @@
    
 </div>
 <script>
+   
    function showIf(input, ifValue){
-      input.classList.add("d-none");
       //evitar que se envie el valor del input en el formulario
       input.querySelector("input").setAttribute("disabled", "disabled");
        for(let i in ifValue){
           let inputValidate = document.querySelector("#"+i+"-{{ id }}");
           inputValidate.addEventListener("change", function(){
-               let value = inputValidate.value;
+            let value = inputValidate.value;
              if(value == ifValue[i]){
                input.classList.remove("d-none");
                input.querySelector("input").removeAttribute("disabled");
-
+               inputValidate.classList.add("no-send");
              }else{
                input.classList.add("d-none");
                input.querySelector("input").setAttribute("disabled", "disabled");
+               inputValidate.classList.remove("no-send");
              }
           });
        }
    }
+  
   document.addEventListener("ready:owl", function(){
       all_inputs = $.getJSON("{{ "custom-inputs.json" | asset_url}}" , function(data){
          {% for coll in collections_product %}
@@ -42,8 +44,7 @@
                      option.value = inputs[i].options[opt];
                      option.innerHTML = inputs[i].options[opt];
                      select.appendChild(option);
-                  }
-                  
+                  } 
                   if(inputs[i].placeholder){
                      let option = document.createElement("option");
                      option.value = "";
@@ -53,11 +54,8 @@
                      //agregar la option al inicio
                      select.insertBefore(option, select.firstChild);
                   }
-
-
                   custom.appendChild(select);
                   document.querySelector("#custom-inputs-{{ id }}").appendChild(custom);
-
                   break;
 
                   case "text":
@@ -83,8 +81,17 @@
             
          {% endfor %}
       });
-      
+      $('#custom-inputs-{{ id }}').submit(function() {
+        //no enviar inputs con la clase no-send
+         let noSend = document.querySelectorAll(".no-send");
+         for(let i in noSend){
+            noSend[i].setAttribute("disabled", "disabled");
+         }
+         return true;
+     });
    });
+   
+
 </script>
  <style>
    .custom-inputs select{
