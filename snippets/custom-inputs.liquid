@@ -8,6 +8,7 @@
 
    document.addEventListener("ready:owl", function(){
       all_inputs = $.getJSON("{{ "custom-inputs" | asset_url}}" , function(data){
+        console.log(data)
          {% for coll in collections_product %}
             let inputs = data["{{coll.title}}"];
 
