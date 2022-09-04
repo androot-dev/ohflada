@@ -5,9 +5,16 @@
       "label": "Color",
       "name": "option 3",
       "options": [
-        "Red",
-        "Blue",
-        "Green"
+        "Meat Pastries",
+        "Egg Rolls",
+        "Croquettes",
+        "Quipes",
+        "Chicken Patties",
+        "Cheese Cupcakes",
+        "Banana Balls",
+        "Potato Dumplings",
+        "Cassava Balls",
+        "Sandwiches"
       ]
     }
   ]
