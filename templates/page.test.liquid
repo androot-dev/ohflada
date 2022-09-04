@@ -88,19 +88,24 @@
     </div>
 </div>
 <script>
-    function openModalDetails(idform) {
+   function openModalDetails(idform) {
         var modal = document.getElementById("modal-details");
         let form = document.querySelector(".form-" + idform);
         let replaceValue = modal.querySelector(".modal-body .form-product-inner");
         let newForm = form.cloneNode(true);
-        if (form) {
+        newForm.classList.remove("d-none");
+        if (replaceValue) {
             //repalce form
             replaceValue.replaceWith(newForm);
 
         } else {
-            body_modal.appendChild(form);
+            //add form
+            modal.querySelector(".modal-body").appendChild(newForm);
+
         }
-        form.classList.remove("d-none");
+
+
+
     }
 </script>
 <style>
