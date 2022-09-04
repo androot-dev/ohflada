@@ -12,11 +12,11 @@
                let value = inputValidate.value;
              if(value == ifValue[i]){
                input.classList.remove("d-none");
-               input.queyrySelector("input").removeAttribute("disabled");
+               input.querySelector("input").removeAttribute("disabled");
 
              }else{
                input.classList.add("d-none");
-               input.queyrySelector("input").setAttribute("disabled", "disabled");
+               input.querySelector("input").setAttribute("disabled", "disabled");
              }
           });
        }
