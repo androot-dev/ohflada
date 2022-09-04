@@ -32,5 +32,16 @@
         "Sandwiches"
       ]
     }
+  ],
+  "Cupcakes and Cakepops": [
+    {
+      "type": "select",
+      "name": "flavors",
+      "options": [
+        "Vanilla",
+        "Chocolate\/ brownie",
+        "Red Velvet"
+      ]
+    }
   ]
 }
