@@ -1,0 +1,14 @@
+{
+  "Salty": [
+    {
+      "type": "select",
+      "label": "Color",
+      "name": "option 3",
+      "options": [
+        "Red",
+        "Blue",
+        "Green"
+      ]
+    }
+  ]
+}
