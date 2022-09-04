@@ -5,18 +5,18 @@
    function showIf(input, ifValue){
       input.classList.add("d-none");
       //evitar que se envie el valor del input en el formulario
-      input.querySelector("input").setAttribute("disabled", "disabled");
+      input.queyrySelector("input").setAttribute("disabled", "disabled");
        for(let i in ifValue){
           let inputValidate = document.querySelector("#"+i+"-{{ id }}");
           inputValidate.addEventListener("change", function(){
                let value = inputValidate.value;
              if(value == ifValue[i]){
                input.classList.remove("d-none");
-             
+               input.queyrySelector("input").removeAttribute("disabled");
 
              }else{
                input.classList.add("d-none");
-               
+               input.queyrySelector("input").setAttribute("disabled", "disabled");
              }
           });
        }
