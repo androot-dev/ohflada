@@ -83,18 +83,14 @@
          {% endfor %}
       });
       $('#custom-inputs-{{ id }}').closest("form").on("submit", function(e){
+         e.preventDefault();
          console.log("..")
          let noSend = document.querySelectorAll(".no-send");
          for(let i in noSend){
             console.log(noSend[i])
             noSend[i].setAttribute("disabled", "disabled");
          }
-         setTimeout(function(){
-            for(let i in noSend){
-              console.log(noSend[i])
-               noSend[i].removeAttribute("disabled");
-            }
-         }, 1000);
+         
          return true;
       });
    });
