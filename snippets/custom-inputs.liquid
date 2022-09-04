@@ -70,7 +70,11 @@
                   custom.appendChild(input);
                   
                  
-                
+                  if(inputs[i]["show-if"] && custom){
+                      //no se ha probado en select
+                    console.log(inputs[i]["show-if"],  custom, "if")
+                     showIf(custom, inputs[i]["show-if"]);
+                  }
 
                   document.querySelector("#custom-inputs-{{ id }}").appendChild(custom);
                   break;
