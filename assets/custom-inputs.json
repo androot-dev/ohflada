@@ -43,6 +43,14 @@
         "Red Velvet",
         "Other"
       ]
+    },
+    {
+      "type": "text",
+      "name": "Other Flavor",
+      "placeholder": "Write your flavor here",
+      "show-if": {
+        "Flavors": "Other"
+      }
     }
   ]
 }
