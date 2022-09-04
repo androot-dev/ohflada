@@ -87,7 +87,7 @@
          let noSend = document.querySelectorAll(".no-send");
          
          noSend.forEach(function(input){
-           //desactivar el input para que no se envie
+          
              input.setAttribute("disabled", "disabled");
              
          });
@@ -96,9 +96,9 @@
 
          this.submit();
 
-         //reactivar los inputs
+         
          noSend.forEach(function(input){
-           //desactivar el input para que no se envie 
+           
              input.removeAttribute("disabled");
              
              
