@@ -29,7 +29,7 @@
                      select.appendChild(option);
                   }
                   custom.appendChild(select);
-                  document.querySelector(".custom-inputs").appendChild(custom);
+                  document.querySelector("#custom-inputs-{{ id }}").appendChild(custom);
                   break;
 
                   case "text":
@@ -40,7 +40,7 @@
                   input.placeholder = inputs[i].placeholder;	
                   custom.appendChild(input);
 
-                  document.querySelector(".custom-inputs").appendChild(custom);
+                  document.querySelector("#custom-inputs-{{ id }}").appendChild(custom);
                   break;
 
                }
