@@ -80,12 +80,22 @@
    }
    .custom-inputs{
      display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
    }
-   .custom-input.text-custom{
-     grid-column: 1 / 3;
+   .custom-inputs label{
+     cursor: pointer;
+   
+      position: absolute;
+      font-size: 13px;
+      right: 20px;
+      top: -5px;
+      background: #ffffff;
+      padding: 0;
+      line-height: 11px;
+      color: var(--primary);
    }
+
 
      .custom-inputs .custom-input select,   .custom-inputs .custom-input input{
        display:block;
