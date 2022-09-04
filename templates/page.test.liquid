@@ -92,7 +92,7 @@
         let modal = document.querySelector("#modal-details .modal-body");
         let form = document.querySelector("#modal-details .modal-body .form-product-inner");
         let newForm = document.querySelector("#form-" + idform);
-
+        newForm.classList.remove("d-none");
         if (form) {
             form.remove();
             modal.appendChild(newForm);
