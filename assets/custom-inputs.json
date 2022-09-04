@@ -37,6 +37,7 @@
     {
       "type": "select",
       "name": "Fillings",
+      "placeholder": "Select a filling",
       "options": [
         "Strawberry",
         "Pineapple",
@@ -57,6 +58,7 @@
     {
       "type": "select",
       "name": "Flavors",
+      "placeholder": "Select a flavor",
       "options": [
         "Vanilla",
         "Almonds",
@@ -77,6 +79,7 @@
     {
       "type": "select",
       "name": "Coverage",
+      "placeholder": "Select a coverage",
       "options": [
         "Frosting Regular",
         "Merengue",
