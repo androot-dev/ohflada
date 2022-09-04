@@ -31,11 +31,6 @@
         "Cassava Balls",
         "Sandwiches"
       ]
-    },
-    {
-      "type": "text",
-      "name": "Option 5",
-      "placeholder": "Enter your text here"
     }
   ]
 }
