@@ -28,9 +28,19 @@
                      option.innerHTML = inputs[i].options[opt];
                      select.appendChild(option);
                   }
-                   custom.appendChild(select);
+                  custom.appendChild(select);
                   document.querySelector(".custom-inputs").appendChild(custom);
                   break;
+
+                  case "text":
+                  let input = document.createElement("input");
+                  input.type = "text";
+                  input.name = "properties["+inputs[i].name+"]";
+                  input.id = inputs[i].name;
+                  custom.appendChild(input);
+                  document.querySelector(".custom-inputs").appendChild(custom);
+                  break;
+
                }
             }
 
