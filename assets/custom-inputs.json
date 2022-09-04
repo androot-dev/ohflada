@@ -2,8 +2,23 @@
   "Salty": [
     {
       "type": "select",
-      "label": "Color",
       "name": "option 3",
+      "options": [
+        "Meat Pastries",
+        "Egg Rolls",
+        "Croquettes",
+        "Quipes",
+        "Chicken Patties",
+        "Cheese Cupcakes",
+        "Banana Balls",
+        "Potato Dumplings",
+        "Cassava Balls",
+        "Sandwiches"
+      ]
+    },
+    {
+      "type": "select",
+      "name": "option 4",
       "options": [
         "Meat Pastries",
         "Egg Rolls",
