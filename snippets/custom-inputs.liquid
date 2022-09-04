@@ -18,7 +18,7 @@
                   select.name = inputs[i].name;
                   select.id = inputs[i].name;
                   // agregar las options
-                  for(let opt in select.options){
+                  for(let opt in inputs[i].options){
                      let option = document.createElement("option");
                      option.value = opt;
                      option.innerHTML = opt;
