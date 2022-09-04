@@ -11,7 +11,9 @@
         {% for coll in collections_product %}
             let inputs = data["{{coll.title}}"];
 
-            console.log(inputs)
+            for(let i in inputs){
+               console.log(inputs[i].type);
+            }
 
             
          {% endfor %}
