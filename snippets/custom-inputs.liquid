@@ -12,11 +12,11 @@
             let inputs = data["{{coll.title}}"];
 
             for(let i in inputs){
-               switch(input[i].type){
+               switch(inputs[i].type){
                   case "select":
                   let select = document.createElement("select");
-                  select.name = input[i].name;
-                  select.id = input[i].name;
+                  select.name = inputs[i].name;
+                  select.id = inputs[i].name;
                   // agregar las options
                   for(let opt in select.options){
                      let option = document.createElement("option");
