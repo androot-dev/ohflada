@@ -4,7 +4,21 @@
  
 
 <script>
-
+   function showIf(input, ifValue){
+       for(let i in ifValue){
+          let inputValidate = document.getElementById(i);
+          inputValidate.addEventListener("change", function(){
+               let value = inputValidate.value;
+             if(value == inputs[i]["show-if"][i]){
+                custom.classList.remove("d-none");
+             }else{
+                custom.classList.add("d-none");
+             }
+          });
+       }
+   
+   
+   }
   document.addEventListener("ready:owl", function(){
       all_inputs = $.getJSON("{{ "custom-inputs.json" | asset_url}}" , function(data){
          {% for coll in collections_product %}
@@ -16,8 +30,6 @@
                custom.innerHTML = `<label for="${inputs[i].name}">${inputs[i].name}</label>`;
                switch(inputs[i].type){
                   case "select":
-                 
-                   
                   let select = document.createElement("select");
                   select.name = "properties["+inputs[i].name+"]";
                   select.id = inputs[i].name;
@@ -30,6 +42,7 @@
                   }
                   custom.appendChild(select);
                   document.querySelector("#custom-inputs-{{ id }}").appendChild(custom);
+
                   break;
 
                   case "text":
@@ -39,9 +52,15 @@
                   input.id = inputs[i].name;
                   input.placeholder = inputs[i].placeholder;	
                   custom.appendChild(input);
+                  
+                  if(inputs[i]["show-if"]){
+                     showIf(custom, inputs[i]["show-if"]);
+                  }
+
 
                   document.querySelector("#custom-inputs-{{ id }}").appendChild(custom);
                   break;
+
 
                }
             }
