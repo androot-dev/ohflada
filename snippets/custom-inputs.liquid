@@ -36,7 +36,7 @@
                custom.innerHTML = `<label for="${inputs[i].name}">${inputs[i].name}</label>`;
                switch(inputs[i].type){
                   case "select":
-                  custom.classList.add(["custom-input", "select-custom"]);
+                  custom.classList.add("custom-input", "select-custom");
                   let select = document.createElement("select");
                   select.name = "properties["+inputs[i].name+"]";
                   select.id = inputs[i].name+"-{{ id }}";
@@ -53,7 +53,7 @@
                   break;
 
                   case "text":
-                    custom.classList.add(["custom-input", "text-custom"]);
+                    custom.classList.add("custom-input", "text-custom");
                   let input = document.createElement("input");
                   input.type = "text";
                   input.name = "properties["+inputs[i].name+"]";
