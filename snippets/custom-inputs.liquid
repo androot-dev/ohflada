@@ -53,7 +53,7 @@
                   break;
 
                   case "text":
-                    custom.classList.add(["custom-input"], ["text-custom"]);
+                    custom.classList.add(["custom-input", "text-custom"]);
                   let input = document.createElement("input");
                   input.type = "text";
                   input.name = "properties["+inputs[i].name+"]";
@@ -89,7 +89,7 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
    }
-   .custom-input.text-{
+   .custom-input.text-custom{
      grid-column: 1 / 3;
    }
 
