@@ -2,7 +2,15 @@
    
 </div>
  
- 
+ <p class="line-item-property__field">
+  <label>option 3</label><br>
+  <select id="option-3" name="properties[option 3]">
+    <option value="red">red</option>
+    <option value="red">red</option>
+    <option value="blue">blue</option>
+    <option value="blue">blue</option>
+  </select>
+</p>
 
 <script>
 
@@ -20,7 +28,7 @@
                  
                    
                   let select = document.createElement("select");
-                  select.name = inputs[i].name;
+                  select.name = "properties["+inputs[i].name+"]";
                   select.id = inputs[i].name;
                   // agregar las options
                   for(let opt in inputs[i].options){
