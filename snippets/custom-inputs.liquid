@@ -20,8 +20,8 @@
                   // agregar las options
                   for(let opt in inputs[i].options){
                      let option = document.createElement("option");
-                     option.value = opt;
-                     option.innerHTML = opt;
+                     option.value = inputs[i].options[opt];
+                     option.innerHTML = inputs[i].options[opt];
                      select.appendChild(option);
                   }
                     document.querySelector(".custom-inputs").appendChild(select);
