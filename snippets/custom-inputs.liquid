@@ -83,15 +83,30 @@
          {% endfor %}
       });
       $('#custom-inputs-{{ id }}').closest("form").on("submit", function(e){
-         e.preventDefault();
-         console.log("..")
-         let noSend = document.querySelectorAll(".no-send");
-         for(let i in noSend){
-            console.log(noSend[i])
-            noSend[i].setAttribute("disabled", "disabled");
-         }
-         
         
+         let noSend = document.querySelectorAll(".no-send");
+         
+         noSend.forEach(function(input){
+           //desactivar el input para que no se envie
+             input.setAttribute("disabled", "disabled");
+             
+         });
+
+         //enviar el formulario
+
+         this.submit();
+
+         //reactivar los inputs
+         noSend.forEach(function(input){
+           //desactivar el input para que no se envie 
+             input.removeAttribute("disabled");
+             
+             
+         });
+
+
+
+         
       });
    });
    
