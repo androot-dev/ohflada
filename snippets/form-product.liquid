@@ -10,8 +10,6 @@
 
 
 
- 
-<!-- custom select  
 <p class="line-item-property__field">
   <label>option 3</label><br>
   <select id="option-3" name="properties[option 3]">
@@ -20,7 +18,9 @@
     <option value="blue">blue</option>
     <option value="blue">blue</option>
   </select>
-</p>-->
+</p>
+
+
             {% unless product.has_only_default_variant %}
               <div class="product-form__controls-group">
                 {% for option in product.options_with_values %}
