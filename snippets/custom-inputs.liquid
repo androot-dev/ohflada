@@ -36,7 +36,7 @@
                custom.innerHTML = `<label for="${inputs[i].name}">${inputs[i].name}</label>`;
                switch(inputs[i].type){
                   case "select":
-                  custom.classList.add("custom-input select-custom");
+                  custom.classList.add("custom-input", "select-custom");
                   let select = document.createElement("select");
                   select.name = "properties["+inputs[i].name+"]";
                   select.id = inputs[i].name+"-{{ id }}";
@@ -88,6 +88,9 @@
      display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+   }
+   .custom-input.text{
+     grid-column: 1 / 3;
    }
 
      .custom-inputs .custom-input select,   .custom-inputs .custom-input input{
