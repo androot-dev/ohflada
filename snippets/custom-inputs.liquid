@@ -12,10 +12,17 @@
             let inputs = data["{{coll.title}}"];
 
             for(let i in inputs){
-              swicth (input[i].type){
-                  case "select":
-                       ..
-                  break;
+              switch (input[i].type){
+                  let select = document.createElement("select");
+                        select.name = input[i].name;
+                        select.id = input[i].name;
+                        // agregar las options
+                        for(let opt in select.options){
+                           let option = document.createElement("option");
+                           option.value = opt;
+                           option.innerHTML = opt;
+                           select.appendChild(option);
+                        }
                }
             }
 
