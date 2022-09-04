@@ -37,7 +37,9 @@
                   input.type = "text";
                   input.name = "properties["+inputs[i].name+"]";
                   input.id = inputs[i].name;
+                  input.placeholder = inputs[i].placeholder;	
                   custom.appendChild(input);
+
                   document.querySelector(".custom-inputs").appendChild(custom);
                   break;
 
