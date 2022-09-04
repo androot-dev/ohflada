@@ -9,10 +9,10 @@
           let inputValidate = document.getElementById(i);
           inputValidate.addEventListener("change", function(){
                let value = inputValidate.value;
-             if(value == inputs[i]["show-if"][i]){
-                custom.classList.remove("d-none");
+             if(value == ifValue[i]){
+               input.classList.remove("d-none");
              }else{
-                custom.classList.add("d-none");
+               input.classList.add("d-none");
              }
           });
        }
