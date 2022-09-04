@@ -43,6 +43,18 @@
                      option.innerHTML = inputs[i].options[opt];
                      select.appendChild(option);
                   }
+                  
+                  if(inputs[i].placeholder){
+                     let option = document.createElement("option");
+                     option.value = "";
+                     option.disabled = true;
+                     option.hidden = true;
+                     option.innerHTML = inputs[i].placeholder;
+                     //agregar la option al inicio
+                     select.insertBefore(option, select.firstChild);
+                  }
+
+
                   custom.appendChild(select);
                   document.querySelector("#custom-inputs-{{ id }}").appendChild(custom);
 
@@ -57,7 +69,9 @@
                   input.placeholder = inputs[i].placeholder;	
                   custom.appendChild(input);
                   
+                 
                   if(inputs[i]["show-if"]){
+                      //no se ha probado en select
                      showIf(custom, inputs[i]["show-if"]);
                   }
 
