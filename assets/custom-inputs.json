@@ -33,6 +33,57 @@
       ]
     }
   ],
+  "Cakes": [
+    {
+      "type": "select",
+      "name": "Fillings",
+      "options": [
+        "Strawberry",
+        "Pineapple",
+        "Nutella",
+        "Cream and Almonds",
+        "Custard Cream",
+        "Other"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Other Filling",
+      "placeholder": "Write a Filling",
+      "show-if": {
+        "Fillings": "Other"
+      }
+    },
+    {
+      "type": "select",
+      "name": "Flavors",
+      "options": [
+        "Vanilla",
+        "Almonds",
+        "Chocolate",
+        "Red Velvet",
+        "Cream-Bouquet",
+        "Other"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Other Flavor",
+      "placeholder": "Write a Flavor",
+      "show-if": {
+        "Flavors": "Other"
+      }
+    },
+    {
+      "type": "select",
+      "name": "Coverage",
+      "options": [
+        "Frosting Regular",
+        "Merengue",
+        "Whip cream"
+      ]
+    }
+  ],
   "Cupcakes and Cakepops": [
     {
       "type": "select",
