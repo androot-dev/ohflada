@@ -7,7 +7,7 @@
 <script>
 
     document.addEventListener("ready:owl", function(){
-      all_inputs = $.getJSON("{{ "custom-inputs.json" | asset_url}}" , function(data){
+     all_inputs = $.getJSON("{{ "custom-inputs.json" | asset_url}}" , function(data){
          {% for coll in collections_product %}
             let inputs = data["{{coll.title}}"];
 
@@ -27,7 +27,7 @@
                      option.innerHTML = opt;
                      select.appendChild(option);
                   }
-                  document.querySelector(".custom-input").appendChild(select);
+                  custom.appendChild(select);
                   document.querySelector(".custom-inputs").appendChild(custom);
                   break;
                }
