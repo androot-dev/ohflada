@@ -7,7 +7,7 @@
       input.classList.add("d-none");
        for(let i in ifValue){
           let inputValidate = document.querySelector("#"+i+"-{{ id }}");
-          console.log(inputValidate, "inputVa")
+          console.log("#"+i+"-{{ id }}", "inputVa")
           inputValidate?.addEventListener("change", function(){
             let value = inputValidate.value;
              if(value == ifValue[i]){
@@ -63,7 +63,7 @@
                   let input = document.createElement("input");
                   input.type = "text";
                   input.name = "properties["+inputs[i].name+"]";
-                  input.id = inputs[i].name;
+                  input.id = inputs[i].name+"-{{ id }}";
                   input.placeholder = inputs[i].placeholder;	
                   custom.appendChild(input);
                   
