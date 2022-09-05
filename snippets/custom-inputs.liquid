@@ -14,7 +14,7 @@
           console.log("#"+i+"-{{ id }}", "if","#"+i+"-{{ id }}", inputValidate)
           
           inputValidate?.addEventListener("change", function(){
-            console.log("change")
+            console.log("change", inputValidate.id)
             let value = inputValidate.value;
              if(value == ifValue[i]){
                input.classList.remove("d-none");
