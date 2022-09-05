@@ -105,7 +105,7 @@
 
       // seleccionar el formulario que no tiene la clase d-none
       let formActive = document.querySelector("#modal-details .modal-body .form-product-inner:not(.d-none)");
-      
+      console.log(formActive);
       // si el formulario que se quiere abrir es diferente al que esta abierto
       if (formActive?.id != newForm.id) {
         // ocultar el formulario que esta abierto
