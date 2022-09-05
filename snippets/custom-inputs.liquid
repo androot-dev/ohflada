@@ -30,7 +30,7 @@
    }
   
   document.addEventListener("ready:owl", function(){
-     let showIf = []
+     let showIfValues = []
       all_inputs = $.getJSON("{{ "custom-inputs.json" | asset_url}}" , function(data){
         
          {% for coll in collections_product %}
@@ -93,8 +93,8 @@
             
          {% endfor %}
 
-          for(let i in showIf){
-            showIf(showIf[i].input, showIf[i].if);
+          for(let i in showIfValues){
+            showIf(showIfValues[i].input, showIfValues[i].if);
           }
       });
    });
