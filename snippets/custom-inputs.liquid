@@ -34,7 +34,6 @@
 
             for(let i in inputs){
               let custom = document.createElement("div");
-              
                custom.innerHTML = `<label for="${inputs[i].name}">${inputs[i].name}</label>`;
                switch(inputs[i].type){
                   case "select":
@@ -86,7 +85,10 @@
             
          {% endfor %}
       });
-      
+      {% if openinModal %}
+
+        document.querySelector("#modal-details .modal-body").appendChild(document.querySelector("#custom-inputs-{{ id }}"));
+      {% endif %}
    });
    
 
