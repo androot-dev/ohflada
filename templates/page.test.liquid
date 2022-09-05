@@ -140,7 +140,7 @@
           "product-price": "{{ product.price | money }}",
           "product-image": {{ product.images.first | json }},
           "product-description":  `{{ product.description }}`,
-          "product-link": '<a href="`{{ product.url }}`" >More Details</a>'
+          "product-link": '<a href="`{{ routes.root_url }}{{ product.url }}`" >More Details</a>'
        }
    
        let formActive = modal.querySelector(".form-product-inner:not(.d-none)");
