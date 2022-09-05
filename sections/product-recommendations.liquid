@@ -279,6 +279,7 @@
             {%- for product in recommendations.products limit:3-%}
             <div class="col-md-4 d-flex align-items-center justify-content-center">
                {% render 'product-card-grid-recommedations', max_height: 250, product: product %}
+              <script>console.log("-...")</script>
             </div>
             {%- endfor -%}
          </div>
