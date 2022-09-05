@@ -73,7 +73,11 @@ Usage:
          <a onclick="openModalInRecommendations(
           {{ product.id }}, 
          '{{ product.title }}',
-         '{{ product.price | money}}'
+         '{{ product.price | money}}',
+         '{{ product.description }}',
+         `{{ product.images.first | json }}`
+         `{{ product.url }}`  
+           
            
           )" class="btn btn-circle"
             data-toggle="modal" href="#modal-details"><i class="fa fa-shopping-cart"></i></a>
