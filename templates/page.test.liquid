@@ -39,10 +39,7 @@
          {% for product in collection.products   %}
          <div class="col-lg-4 col-md-6 col-sm-12 product-grid">
  
-             <!-- Product-grid-->
-             <div id="form-{{ product.id }}" class=" d-none form-product-inner">
-                 {% render "form-product" product:product, hidden_variants_selector: true %}
-             </div>
+
  
            
              {% comment %}
