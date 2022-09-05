@@ -288,11 +288,6 @@
      
    {%- endif -%}
    {%- else  -%}
-       <script>
-         
-         console.log( "{{ product.title }}" )
-       
-       </script>
    <div class="page-width" data-base-url="{{ routes.product_recommendations_url }}" 
      data-product-id="{{ product.id }}" 
      data-section-id="{{ section.id }}" 
@@ -306,15 +301,17 @@
   
     <script>
          function openModalInRecommendations(id, title, price, description, image, url  ) {
-                let modal = document.querySelector("#modal-details");
-                let form = modal.querySelector(".form-product-inner");
+         
+
                 let newForm = document.querySelector("#form-" + id);
+
                 let slots = { 
                    "product-title": title ,
                    "product-price": price,
                    "product-image":image,
                    "product-description":  description,
-                   "product-link": `<a href="${url}" >More Details</a>`
+                   "product-link": `<a href="${url}" >More Details</a>`,
+                   "product-form": newForm.innerHTML
                 }
             
                 let formActive = modal.querySelector(".form-product-inner:not(.d-none)");
