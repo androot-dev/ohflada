@@ -323,12 +323,12 @@
    }
   
   document.addEventListener("ready:owl", function(){
-    
+    console.log(1)
      let showIfValues = [];
       all_inputs = $.getJSON("{{ "custom-inputs.json" | asset_url}}" , function(data){
          {%- for product in recommendations.products limit:3-%}
             {% assign id = product.id %}
-
+               console.log(2)
             {% for coll in product.collections %}
                let inputs = data["{{coll.title}}"];
                for(let i in inputs){
