@@ -288,7 +288,11 @@
      
    {%- endif -%}
    {%- else  -%}
-       <script>console.log({{ product.title }})</script>
+       <script>
+         
+         console.log( ""{{ product.title }}" )
+       
+       </script>
    <div class="page-width" data-base-url="{{ routes.product_recommendations_url }}" 
      data-product-id="{{ product.id }}" 
      data-section-id="{{ section.id }}" 
