@@ -13,6 +13,7 @@ Usage:
       <div id="form-{{ product.id }}" class=" d-none form-product-inner">
          {% render "form-product" product:product, hidden_variants_selector: true %}
       </div>
+     <script>console.log("-...")</script>
       {% capture img_id %}ProductCardImage-{{ section.id }}-{{ product.id }}{% endcapture %}
       {% capture wrapper_id %}ProductCardImageWrapper-{{ section.id }}-{{ product.id }}{% endcapture %}
       {%- assign preview_image = product.featured_media.preview_image -%}
