@@ -50,6 +50,44 @@
 
   
               </div>
+               <style>
+                 .custom-inputs select, .custom-inputs input {
+                   border: 1px solid var(--primary-light);
+                  border-radius: 50px;
+                  outline: none;
+                 }
+                 .custom-inputs{
+                   display: grid;
+                    grid-template-columns: 1fr;
+                    grid-gap: 10px;
+                   
+                 }
+                  .product-form__controls-group--submit{
+                    margin-top: 10px;
+                  }
+                 .custom-input{
+                   position:relative;
+                 }
+                 .custom-inputs label{
+                   cursor: pointer;
+                 
+                    position: absolute;
+                    font-size: 13px;
+                    right: 20px;
+                    top: -5px;
+                    background: #ffffff;
+                    padding: 0;
+                    line-height: 11px;
+                    color: var(--primary);
+                 }
+              
+              
+                   .custom-inputs .custom-input select,   .custom-inputs .custom-input input{
+                     display:block;
+                     width:100%;
+                   }
+              
+               </style>
           {% else %}
               {% render "custom-inputs" collections_product: product.collections, id: product.id %}
           {% endif; %}
