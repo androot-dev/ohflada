@@ -127,12 +127,14 @@
          if(key != "product-image"){
             slot.innerHTML = value;
          }else{
-            let images = JSON.parse(value);
+            let images = value.split(",");
             let html = "";
             images.forEach(image => {
                html += `<img src="${image}" alt="" class="img-fluid">`;
             });
             slot.innerHTML = html;
+
+            
          }
 
          
