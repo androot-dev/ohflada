@@ -9,8 +9,9 @@
      
        for(let i in ifValue){
           let inputValidate = document.querySelector("#"+i+"-{{ id }}");
-          console.log("#"+i+"-{{ id }}", "inputVa", inputValidate)
-          inputValidate?.addEventListener("change", function(){
+          console.log("#"+i+"-{{ id }}", "inputVa", inputValidate);
+         
+          inputValidate.addEventListener("change", function(){
             console.log("change")
             let value = inputValidate.value;
              if(value == ifValue[i]){
