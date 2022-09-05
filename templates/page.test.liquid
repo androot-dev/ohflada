@@ -102,12 +102,7 @@
       let modal = document.querySelector("#modal-details .modal-body .product-form");
       let form = modal.querySelector(".form-product-inner");
       let newForm = document.querySelector("#form-" + idform);
-      let slots = { // estas son las clases que se van a reemplazar
-         "product-title": {{ product.title }},
-         "product-price": {{ product.price }},
-         "product-image": {{ product.featured_media }},
-         "product-description": {{ product.description }},
-      }
+
   
       let formActive = modal.querySelector(".form-product-inner:not(.d-none)");
     
@@ -122,13 +117,6 @@
          
          newForm.classList.remove("d-none");
       }
-      for (const [key, value] of Object.entries(slots)) {
-         let slot = modal.querySelector("." + key);
-         if (slot) {
-            slot.innerHTML = value;
-         }
-      }
-      
   }
 </script>
         {% endfor %}
