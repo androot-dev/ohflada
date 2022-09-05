@@ -4,7 +4,7 @@
 </div>
 <script>
    
-   function showIf(input, ifValue){
+   function showIf{{ id }}(input, ifValue){
      
       input.querySelector("input").setAttribute("disabled", "disabled");
       input.classList.add("d-none");
@@ -94,7 +94,7 @@
          {% endfor %}
 
           for(let i in showIfValues){
-            showIf(showIfValues[i].input, showIfValues[i].if);
+            showIf{{ id }}(showIfValues[i].input, showIfValues[i].if);
           }
       });
    });
