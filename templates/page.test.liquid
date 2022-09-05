@@ -106,7 +106,7 @@
          "product-title": "{{ product.title }}",
          "product-price": "{{ product.price }}",
          "product-image": {{ product.images | json }},
-         "product-description": "{{ product.description }}",
+         "product-description":  `{{ product.description }}`,
       }
   
       let formActive = modal.querySelector(".form-product-inner:not(.d-none)");
