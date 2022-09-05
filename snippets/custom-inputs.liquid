@@ -72,11 +72,15 @@
                  
                 
                   document.querySelector("#custom-inputs-{{ id }}").appendChild(custom);
-                   if(inputs[i]["show-if"]){
-                      //no se ha probado en select
+                   setTimeout(function(){
+                        if(inputs[i]["show-if"]){
+                            //no se ha probado en select
+                           showIf(custom, inputs[i]["show-if"]);
+                        }
                      
-                     showIf(custom, inputs[i]["show-if"]);
-                  }
+                   }, 1000)
+                   
+                   
                   break;
                }
             }
