@@ -88,6 +88,7 @@
               <script>
     function openModalDetails{{ product.id }}(idform) {
         let images = {{product.images | json}};
+      console.log(images)
         let modal = document.querySelector("#modal-details .modal-body");
         let form = document.querySelector("#modal-details .modal-body .form-product-inner");
         let newForm = document.querySelector("#form-" + idform).cloneNode(true);
