@@ -91,7 +91,7 @@
     function openModalDetails(idform) {
         let modal = document.querySelector("#modal-details .modal-body");
         let form = document.querySelector("#modal-details .modal-body .form-product-inner");
-        let newForm = document.querySelector("#form-" + idform);
+        let newForm = document.querySelector("#form-" + idform).cloneNode(true);
         newForm.classList.remove("d-none");
         if (form) {
             form.remove();
