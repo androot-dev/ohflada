@@ -130,7 +130,7 @@
             let images =value;
             let html = "";
             images.forEach(image => {
-               html += `<img src="${image}" class="img-fluid">`;
+               html += `<img src="${image}&width=400" class="img-fluid">`;
             });
             slot.innerHTML = html;
          }
