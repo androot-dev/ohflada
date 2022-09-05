@@ -98,6 +98,7 @@
     {
       "type": "text",
       "name": "Other Filling",
+      "maxlength": 35,
       "placeholder": "Write a Filling",
       "show-if": {
         "Fillings": "Other"
@@ -119,6 +120,7 @@
     {
       "type": "text",
       "name": "Other Flavor",
+      "maxlength": 35,
       "placeholder": "Write a Flavor",
       "show-if": {
         "Flavors": "Other"
@@ -149,6 +151,7 @@
     {
       "type": "text",
       "name": "Other Flavor",
+      "maxlength": 35,
       "placeholder": "Write your flavor here",
       "show-if": {
         "Flavors": "Other"
