@@ -324,73 +324,87 @@
        }
    }
   
-  document.addEventListener("ready:owl", function(){
-     let showIfValues = []
-      all_inputs = $.getJSON("{{ "custom-inputs.json" | asset_url}}" , function(data){
-        
-         {% for coll in collections_product %}
-            let inputs = data["{{coll.title}}"];
-            for(let i in inputs){
-              let custom = document.createElement("div");
-               custom.innerHTML = `<label for="${inputs[i].name}">${inputs[i].name}</label>`;
-           
-               switch(inputs[i].type){
-                  case "select":
-                  custom.classList.add("custom-input", "select-custom");
-                  let select = document.createElement("select");
-                  select.name = "properties["+inputs[i].name+"]";
-                  select.id = inputs[i].name+"-{{ id }}";
-                  // agregar las options
-                  for(let opt in inputs[i].options){
-                     let option = document.createElement("option");
-                     option.value = inputs[i].options[opt];
-                     option.innerHTML = inputs[i].options[opt];
-                     select.appendChild(option);
-                  } 
-                  if(inputs[i].placeholder){
-                     let option = document.createElement("option");
-                     option.value = "";
-                     option.disabled = true;
-                  
-                     option.innerHTML = inputs[i].placeholder;
-                     //agregar la option al inicio
-                     select.insertBefore(option, select.firstChild);
-                  }
-                  custom.appendChild(select);
-                  document.querySelector("#custom-inputs-{{ id }}").appendChild(custom);
-                  break;
+  document.addEventListener("ready:owl", function() {
+    let showIfValues = [];
+    all_inputs = $.getJSON("{{ "
+        custom - inputs.json " | asset_url}}",
+        function(data) {
 
-                  case "text":
-                  custom.classList.add("custom-input", "text-custom");
-                  let input = document.createElement("input");
-                  input.type = "text";
-                  input.name = "properties["+inputs[i].name+"]";
-                  input.id = inputs[i].name+"-{{ id }}";
-                  input.placeholder = inputs[i].placeholder;	
-                   if(inputs[i].maxlength){
-                     input.setAttribute("maxlength", inputs[i].maxlength);
-                  }
-                 
-                  custom.appendChild(input);
-                  document.querySelector("#custom-inputs-{{ id }}").appendChild(custom);
-                  
-                  if(inputs[i]["show-if"]){
-                    //no se ha probado en select
-                    showIfValues.push({input: custom, if:inputs[i]["show-if"]})
-                  }
-                    
-                  break;
-               }
+            {
+                %
+                for coll in collections_product %
+            }
+            let inputs = data["{{coll.title}}"];
+            for (let i in inputs) {
+                let custom = document.createElement("div");
+                custom.innerHTML = `<label for="${inputs[i].name}">${inputs[i].name}</label>`;
+
+                switch (inputs[i].type) {
+                    case "select":
+                        custom.classList.add("custom-input", "select-custom");
+                        let select = document.createElement("select");
+                        select.name = "properties[" + inputs[i].name + "]";
+                        select.id = inputs[i].name + "-{{ id }}";
+                        // agregar las options
+                        for (let opt in inputs[i].options) {
+                            let option = document.createElement("option");
+                            option.value = inputs[i].options[opt];
+                            option.innerHTML = inputs[i].options[opt];
+                            select.appendChild(option);
+                        }
+                        if (inputs[i].placeholder) {
+                            let option = document.createElement("option");
+                            option.value = "";
+                            option.disabled = true;
+
+                            option.innerHTML = inputs[i].placeholder;
+                            //agregar la option al inicio
+                            select.insertBefore(option, select.firstChild);
+                        }
+                        custom.appendChild(select);
+                        document.querySelector("#custom-inputs-{{ id }}").appendChild(custom);
+                        break;
+
+                    case "text":
+                        custom.classList.add("custom-input", "text-custom");
+                        let input = document.createElement("input");
+                        input.type = "text";
+                        input.name = "properties[" + inputs[i].name + "]";
+                        input.id = inputs[i].name + "-{{ id }}";
+                        input.placeholder = inputs[i].placeholder;
+                        if (inputs[i].maxlength) {
+                            input.setAttribute("maxlength", inputs[i].maxlength);
+                        }
+
+                        custom.appendChild(input);
+                        document.querySelector("#custom-inputs-{{ id }}").appendChild(custom);
+
+                        if (inputs[i]["show-if"]) {
+                            //no se ha probado en select
+                            showIfValues.push({
+                                input: custom,
+                                if: inputs[i]["show-if"]
+                            })
+                        }
+
+                        break;
+                }
             }
 
-            
-         {% endfor %}
 
-          for(let i in showIfValues){
-            showIf{{ id }}(showIfValues[i].input, showIfValues[i].if);
-          }
-      });
-   });
+            {
+                % endfor %
+            }
+
+            for (let i in showIfValues) {
+                showIf {
+                    {
+                        id
+                    }
+                }(showIfValues[i].input, showIfValues[i].if);
+            }
+        });
+});
    
   
 
