@@ -323,6 +323,7 @@
    }
   
   document.addEventListener("ready:owl", function(){
+    
      let showIfValues = [];
       all_inputs = $.getJSON("{{ "custom-inputs.json" | asset_url}}" , function(data){
          {%- for product in recommendations.products limit:3-%}
@@ -389,14 +390,14 @@
             showIf(showIfValues[i].id, showIfValues[i].input, showIfValues[i].if);
           }
       });
-   });
-   
-  
+
 
 
 
 
       
+   });
+   
          function openModalInRecommendations(id, title, price, description, image, url  ) {
           // seleccionar formulario y agregarlo al modal
           
