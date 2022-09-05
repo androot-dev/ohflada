@@ -7,9 +7,20 @@
         <div class="col-lg-4 col-md-6 col-sm-12 product-grid">
 
             <!-- Product-grid-->
+
+
+
+
+          
             <div id="form-{{ product.id }}" class=" d-none form-product-inner">
-                {% render "form-product" product:product, openInModal:true %}
+                {% render "form-product" product:product %}
             </div>
+
+
+
+
+
+          
             {% comment %}
             Renders a product card using "Grid" style
             Accepts:
