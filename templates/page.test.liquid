@@ -8,7 +8,7 @@
 
             <!-- Product-grid-->
             <div id="form-{{ product.id }}" class=" d-none form-product-inner">
-                {% render "form-product" product:product %}
+                {% render "form-product" product:product, openInModal:true %}
             </div>
             {% comment %}
             Renders a product card using "Grid" style
@@ -92,7 +92,7 @@
         let modal = document.querySelector("#modal-details .modal-body");
         let form = document.querySelector("#modal-details .modal-body .form-product-inner");
         let newForm = document.querySelector("#form-" + idform);
-      
+        
         newForm.classList.remove("d-none");
       
         if (form) {
