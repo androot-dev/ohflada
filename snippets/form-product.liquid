@@ -46,7 +46,10 @@
             </select>
 
          {% if recommendations %}
+              <div id="custom-inputs-{{ product.id }}" class="custom-inputs py-3">
 
+  
+              </div>
           {% else %}
               {% render "custom-inputs" collections_product: product.collections, id: product.id %}
           {% endif; %}
