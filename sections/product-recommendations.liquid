@@ -306,13 +306,10 @@
               
                 if(formActive){
                    if (formActive.id != newForm.id) {
-                  
                    formActive.classList.add("d-none");
-                
                    newForm.classList.remove("d-none");
                    }  
                 }else{
-                   
                    newForm.classList.remove("d-none");
                 }
                 for (const [key, value] of Object.entries(slots)) {
@@ -320,12 +317,8 @@
                    if (key != "product-image") {
                       slot.innerHTML = value;
                    }else{
-             
                       slot.innerHTML = `<img style="width:100%; height:100%;" src="${value}&height=350" class="radius shadow img-fluid">`;
                    }
-          
-                   
-                  
                 }
                 
           }
