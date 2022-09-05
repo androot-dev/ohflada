@@ -77,7 +77,7 @@
                             </div>
                             <div class="description-category position-absolute">
                                 <h5 class="text-primary m-0">{{ product.title }}</h5>
-                                <a onclick="openModalDetails({{ product.id }})" class="btn btn-circle"
+                                <a onclick="openModalDetails({{ product.id }}, {{ product.images | json }})" class="btn btn-circle"
                                     data-toggle="modal" href="#modal-details"><i class="fa fa-shopping-cart"></i></a>
                             </div>
                         </a>
@@ -90,7 +90,8 @@
     </div>
 </div>
 <script>
-    function openModalDetails(idform) {
+    function openModalDetails(idform, images) {
+      console.log(images)
         let modal = document.querySelector("#modal-details .modal-body");
         let form = document.querySelector("#modal-details .modal-body .form-product-inner");
         let newForm = document.querySelector("#form-" + idform).cloneNode(true);
