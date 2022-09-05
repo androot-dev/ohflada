@@ -1,11 +1,6 @@
 <style>
   
-
   <!-- estilos de card products -->
-
-
-
-
   
 .classes-section {
 	background: #fff;
@@ -340,7 +335,7 @@ position: relative;
       
           {%- for product in recommendations.products limit:3-%}
             <div class="col-md-4 d-flex align-items-center justify-content-center">
-              {% include 'product-card-grid', max_height: 250, product: product, show_vendor: section.settings.show_vendor %}
+              {% render 'product-card-grid', max_height: 250, product: product, show_vendor: section.settings.show_vendor %}
             </div>
           {%- endfor -%}
             </div>
