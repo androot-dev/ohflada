@@ -45,8 +45,12 @@
               {% endfor %}
             </select>
 
+         {% if recommendations %}
 
-         {% render "custom-inputs" collections_product: product.collections, id: product.id %}
+          {% else %}
+              {% render "custom-inputs" collections_product: product.collections, id: product.id %}
+          {% endif; %}
+        
 
 
             {% if section.settings.show_quantity_selector %}
