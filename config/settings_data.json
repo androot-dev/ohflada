@@ -638,7 +638,7 @@
           "show_vendor": false,
           "enable_payment_button": true,
           "show_share_buttons": true,
-          "media_size": "large",
+          "media_size": "medium",
           "enable_image_zoom": true,
           "enable_video_looping": false
         }
