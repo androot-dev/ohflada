@@ -11,7 +11,7 @@ Usage:
    <div class="grid-view-item{% unless product.available %} grid-view-item--sold-out{% endunless %} product-card">
       <!-- Product-grid-->
       <div id="form-{{ product.id }}" class=" d-none form-product-inner">
-         {% render "form-product" product:product, hidden_variants_selector: true %}
+         {% render "form-product" product:product, hidden_variants_selector: true, recommendations: true %}
       </div>
      
       {% capture img_id %}ProductCardImage-{{ section.id }}-{{ product.id }}{% endcapture %}
