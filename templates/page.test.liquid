@@ -104,7 +104,7 @@
       let newForm = document.querySelector("#form-" + idform);
       let slots = { 
          "product-title": "{{ product.title }}",
-         "product-price": "{{ product.price }}",
+         "product-price": "{{ product.price | money }}",
          "product-image": {{ product.images.first | json }},
          "product-description":  `{{ product.description }}`,
       }
