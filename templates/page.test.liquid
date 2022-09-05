@@ -102,7 +102,7 @@
       let modal = document.querySelector("#modal-details");
       let form = modal.querySelector(".form-product-inner");
       let newForm = document.querySelector("#form-" + idform);
-      let slots = { // estas son las clases que se van a reemplazar
+      let slots = { 
          "product-title": "{{ product.title }}",
          "product-price": "{{ product.price }}",
          "product-image": {{ product.images | json }},
@@ -124,10 +124,19 @@
       }
       for (const [key, value] of Object.entries(slots)) {
          let slot = modal.querySelector("." + key);
-         console.log(slot)
-         if (slot) {
+         if(key != "product-image"){
             slot.innerHTML = value;
+         }else{
+            let images = JSON.parse(value);
+            let html = "";
+            images.forEach(image => {
+               html += `<img src="${image}" alt="" class="img-fluid">`;
+            });
+            slot.innerHTML = html;
          }
+
+         
+        
       }
       
   }
