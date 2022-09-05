@@ -92,30 +92,29 @@
     document.addEventListener("DOMContentLoaded", function() {
         // seleccionar todos los formularios y agregarlos al modal
          let forms = document.querySelectorAll(".form-product-inner");
-         let modal = document.querySelector("#modal-details .modal-body");
+         let modal = document.querySelector("#modal-details .modal-body .product-form");
          forms.forEach(form => {
              modal.appendChild(form);
          });
     });
     function openModalDetails{{ product.id }}(idform) {
       
-      let modal = document.querySelector("#modal-details .modal-body");
-      let form = document.querySelector("#modal-details .modal-body .form-product-inner");
+      let modal = document.querySelector("#modal-details .modal-body .product-form");
+      let form = modal.querySelector(".form-product-inner");
       let newForm = document.querySelector("#form-" + idform);
 
-      // seleccionar el formulario que no tiene la clase d-none
-      let formActive = document.querySelector("#modal-details .modal-body .form-product-inner:not(.d-none)");
-      console.log(formActive);
-      // si el formulario que se quiere abrir es diferente al que esta abierto
+  
+      let formActive = modal.querySelector(".form-product-inner:not(.d-none)");
+    
       if(formActive){
          if (formActive.id != newForm.id) {
-         // ocultar el formulario que esta abierto
+        
          formActive.classList.add("d-none");
-         // mostrar el formulario que se quiere abrir
+      
          newForm.classList.remove("d-none");
          }  
       }else{
-         // mostrar el formulario que se quiere abrir
+         
          newForm.classList.remove("d-none");
       }
   }
