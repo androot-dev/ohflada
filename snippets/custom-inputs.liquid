@@ -33,10 +33,10 @@
       all_inputs = $.getJSON("{{ "custom-inputs.json" | asset_url}}" , function(data){
          {% for coll in collections_product %}
             let inputs = data["{{coll.title}}"];
-
             for(let i in inputs){
               let custom = document.createElement("div");
                custom.innerHTML = `<label for="${inputs[i].name}">${inputs[i].name}</label>`;
+           
                switch(inputs[i].type){
                   case "select":
                   custom.classList.add("custom-input", "select-custom");
@@ -64,7 +64,7 @@
                   break;
 
                   case "text":
-                    custom.classList.add("custom-input", "text-custom");
+                  custom.classList.add("custom-input", "text-custom");
                   let input = document.createElement("input");
                   input.type = "text";
                   input.name = "properties["+inputs[i].name+"]";
@@ -76,10 +76,10 @@
                 
                   document.querySelector("#custom-inputs-{{ id }}").appendChild(custom);
                   
-                        if(inputs[i]["show-if"]){
+                  if(inputs[i]["show-if"]){
                             //no se ha probado en select
-                           showIf(custom, inputs[i]["show-if"]);
-                        }
+                  showIf(custom, inputs[i]["show-if"]);
+                  }
                      
                
                    
