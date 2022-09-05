@@ -124,12 +124,15 @@
       }
       for (const [key, value] of Object.entries(slots)) {
          let slot = modal.querySelector("." + key);
-         if(key != "product-image"){
+         if (key != "product-image") {
             slot.innerHTML = value;
          }else{
-            console.log(value)
-
-            
+            let images =value;
+            let html = "";
+            images.forEach(image => {
+               html += `<img src="${image.src}" alt="${image.alt}" class="img-fluid">`;
+            });
+            slot.innerHTML = html;
          }
 
          
