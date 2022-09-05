@@ -2,6 +2,7 @@
 
 {% unless current_variant %}
   {%- assign current_variant = product.selected_or_first_available_variant -%}
+  {%- assign price = current_variant.price -%}
 {% endunless %}
 
 
@@ -39,7 +40,7 @@
             </select>
 
 
-         {% render "custom-inputs" collections_product: product.collections, id: product.id %}
+         {% render "custom-inputs" collections_product: product.collections, id: product.id,  price: price %}
 
 
             {% if section.settings.show_quantity_selector %}
