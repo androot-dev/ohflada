@@ -7,7 +7,7 @@
       input.classList.add("d-none");
        for(let i in ifValue){
           let inputValidate = document.querySelector("#"+i+"-{{ id }}");
-          console.log("#"+i+"-{{ id }}", "inputVa", inputValidate)
+          console.log("#"+i+"-{{ id }}", "inputVa","#"+i+"-{{ id }}", inputValidate)
           
           inputValidate?.addEventListener("change", function(){
             console.log("change")
