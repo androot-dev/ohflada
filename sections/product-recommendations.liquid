@@ -301,19 +301,27 @@
   
     <script>
          function openModalInRecommendations(id, title, price, description, image, url  ) {
-         
+          // seleccionar formulario y agregarlo al modal
+          let modal = document.querySelector("#modal-details"); 
+
+               let slots = { 
+                  "product-title": title ,
+                  "product-price": price,
+                  "product-image":image,
+                  "product-description":  description,
+                  "product-link": `<a href="${url}" >More Details</a>`
+                  
+               };
+               for (const [key, value] of Object.entries(slots)) {
+                  let slot = modal.querySelector("." + key);
+                  if (key != "product-image") {
+                     slot.innerHTML = value;
+                  }else{
+                     slot.innerHTML = `<img style="width:100%; height:100%;" src="${value}&height=350" class="radius shadow img-fluid">`;
+                  }
+               }
 
                 let newForm = document.querySelector("#form-" + id);
-
-                let slots = { 
-                   "product-title": title ,
-                   "product-price": price,
-                   "product-image":image,
-                   "product-description":  description,
-                   "product-link": `<a href="${url}" >More Details</a>`,
-                   "product-form": newForm.innerHTML
-                }
-            
                 let formActive = modal.querySelector(".form-product-inner:not(.d-none)");
               
                 if(formActive){
@@ -324,14 +332,7 @@
                 }else{
                    newForm.classList.remove("d-none");
                 }
-                for (const [key, value] of Object.entries(slots)) {
-                   let slot = modal.querySelector("." + key);
-                   if (key != "product-image") {
-                      slot.innerHTML = value;
-                   }else{
-                      slot.innerHTML = `<img style="width:100%; height:100%;" src="${value}&height=350" class="radius shadow img-fluid">`;
-                   }
-                }
+                
                 
           }
           
