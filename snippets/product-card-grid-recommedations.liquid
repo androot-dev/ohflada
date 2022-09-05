@@ -71,14 +71,12 @@ Usage:
             <div class="description-category position-absolute">
                <h5 class="text-primary m-0">{{ product.title }}</h5>
          <a onclick="openModalInRecommendations(
-          {{ product.id }}, 
-         '{{ product.title }}',
-         '{{ product.price | money}}',
-         '{{ product.description }}',
-         `{{ product.images.first }}`,
-         `{{ product.url }}`  
-           
-           
+            {{ product.id }}, 
+           '{{ product.title }}',
+           '{{ product.price | money}}',
+           '{{ product.description }}',
+           `{{ product.images.first }}`,
+           `{{ product.url }}`  
           )" class="btn btn-circle"
             data-toggle="modal" href="#modal-details"><i class="fa fa-shopping-cart"></i></a>
          </div>
