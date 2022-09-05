@@ -32,6 +32,7 @@
   document.addEventListener("ready:owl", function(){
      let showIf = []
       all_inputs = $.getJSON("{{ "custom-inputs.json" | asset_url}}" , function(data){
+        
          {% for coll in collections_product %}
             let inputs = data["{{coll.title}}"];
             for(let i in inputs){
@@ -91,8 +92,9 @@
 
             
          {% endfor %}
+
+          console.log(showIf)
       });
-    
    });
    
 
