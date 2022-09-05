@@ -95,5 +95,47 @@
           </div>
 
     
-
+<script>
+function openModalDetails{{ product.id }}(idform) {
+       
+       let modal = document.querySelector("#modal-details");
+       let form = modal.querySelector(".form-product-inner");
+       let newForm = document.querySelector("#form-" + idform);
+       let slots = { 
+          "product-title": "{{ product.title }}",
+          "product-price": "{{ product.price | money }}",
+          "product-image": {{ product.images.first | json }},
+          "product-description":  `{{ product.description }}`,
+         
+          "product-link": `<a href="{{ product.url }}" >More Details</a>`
+       }
+   
+       let formActive = modal.querySelector(".form-product-inner:not(.d-none)");
+     
+       if(formActive){
+          if (formActive.id != newForm.id) {
+         
+          formActive.classList.add("d-none");
+       
+          newForm.classList.remove("d-none");
+          }  
+       }else{
+          
+          newForm.classList.remove("d-none");
+       }
+       for (const [key, value] of Object.entries(slots)) {
+          let slot = modal.querySelector("." + key);
+          if (key != "product-image") {
+             slot.innerHTML = value;
+          }else{
+    
+             slot.innerHTML = `<img style="width:100%; height:100%;" src="${value}&height=350" class="radius shadow img-fluid">`;
+          }
+ 
+          
+         
+       }
+       
+   }
+ </script>
 </section>
