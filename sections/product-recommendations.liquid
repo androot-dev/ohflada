@@ -302,7 +302,17 @@
     <script>
          function openModalInRecommendations(id, title, price, description, image, url  ) {
           // seleccionar formulario y agregarlo al modal
+          
+          let forms = document.querySelectorAll(".form-product-inner");
+          let slot_form = document.querySelector("#modal-details .modal-body .product-form");
+          if(forms.length > 0){
+            forms.forEach(form => {
+               slot_form.appendChild(form);
+           });
+          }
+
           let modal = document.querySelector("#modal-details"); 
+         
 
                let slots = { 
                   "product-title": title ,
