@@ -5,7 +5,21 @@
   {%- assign price = current_variant.price -%}
 {% endunless %}
 
+ <div class="product__price">
+            {% include 'product-price', variant: current_variant, show_vendor: section.settings.show_vendor %}
+          </div>
 
+          {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
+            <div class="product__policies  rte" data-product-policies>
+              {%- if cart.taxes_included -%}
+                {{ 'products.product.include_taxes' | t }}
+              {%- endif -%}
+              {%- if shop.shipping_policy.body != blank -%}
+                {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+          
  {% form 'product', product,  class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
 
   
