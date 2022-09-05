@@ -107,7 +107,6 @@ function openModalDetails{{ product.id }}(idform) {
           "product-price": "{{ product.price | money }}",
           "product-image": {{ product.images.first | json }},
           "product-description":  `{{ product.description }}`,
-         
           "product-link": `<a href="{{ product.url }}" >More Details</a>`
        }
    
