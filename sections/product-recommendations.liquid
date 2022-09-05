@@ -285,12 +285,13 @@
          </div>
       </div>
    </div>
+       <script>console.log("-...")</script>
    {%- endif -%}
    {%- else  -%}
    <div class="page-width" data-base-url="{{ routes.product_recommendations_url }}" data-product-id="{{ product.id }}" data-section-id="{{ section.id }}" data-section-type="product-recommendations"></div>
    {%- endif -%}
    {%- endif -%}
-    <script>console.log("-...")</script>
+  
     <script>
          function openModalInRecommendations(id, title, price, description, image, url  ) {
                 let modal = document.querySelector("#modal-details");
