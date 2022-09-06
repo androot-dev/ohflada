@@ -322,7 +322,7 @@
         for (let i in inputs) {
             let custom = document.createElement("div");
             custom.innerHTML = `<label for="${inputs[i].name}">${inputs[i].name}</label>`;
-            console.log(inputs[i].type)   
+           
             switch (inputs[i].type) {
                 case "select":
                     custom.classList.add("custom-input", "select-custom");
