@@ -377,14 +377,14 @@
             "type": "product",
             "settings": {
               "featured_product": "cake-pop",
-              "open_modal_details": false
+              "open_modal_details": true
             }
           },
           "6fa0b9b5-6154-4e65-bbec-4d38e64e8a96": {
             "type": "product",
             "settings": {
               "featured_product": "pastelillo-de-guayaba",
-              "open_modal_details": false
+              "open_modal_details": true
             }
           }
         },
