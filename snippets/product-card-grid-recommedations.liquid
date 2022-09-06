@@ -19,7 +19,7 @@ Usage:
       {%- assign preview_image = product.featured_media.preview_image -%}
       {%- assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
       <div class="class-item position-relative">
-         <a href="{{ product.url}}">
+         <a class="w-100" href="{{ product.url}}">
             {% if product.compare_at_price > product.price and product.available %}
             <div class="tag-price-comparation">
                <span class="price-1">{{product.compare_at_price | money }}</span>
