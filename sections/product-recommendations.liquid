@@ -296,10 +296,12 @@
    {%- endif -%}
 
     <script>
-  /*  CUSTOM-input */
-  document.addEventListener("ready:owl", function () {
+ 
+
+let syncdata = null;
+document.addEventListener("ready:owl", function () {
    let showIfValues = [];
-   let syncdata = null;
+   
 
 
    let dataAsync = new Promise((resolve, reject) => {
@@ -310,123 +312,126 @@
        });
    }).then((data) => {
        syncdata = data;
-       console.log("data-load")
    });
 
 
-   function loadInputs(collection, id, data) {
-       let inputs = data[collection];
-
-       for (let i in inputs) {
-           let custom = document.createElement("div");
-           custom.innerHTML = `<label for="${inputs[i].name}">${inputs[i].name}</label>`;
-
-           switch (inputs[i].type) {
-               case "select":
-                   custom.classList.add("custom-input", "select-custom");
-                   let select = document.createElement("select");
-                   select.name = "properties[" + inputs[i].name + "]";
-                   select.id = inputs[i].name + "-" + id;
-                   // agregar las options
-                   for (let opt in inputs[i].options) {
-                       let option = document.createElement("option");
-                       option.value = inputs[i].options[opt];
-                       option.innerHTML = inputs[i].options[opt];
-                       select.appendChild(option);
-                   }
-                   if (inputs[i].placeholder) {
-                       let option = document.createElement("option");
-                       option.value = "";
-                       option.disabled = true;
-                       option.innerHTML = inputs[i].placeholder;
-                       //agregar la option al inicio
-                       select.insertBefore(option, select.firstChild);
-                   }
-                   custom.appendChild(select);
-                   document.querySelector("#custom-inputs-" + id).appendChild(custom);
-                   break;
-
-               case "text":
-                   custom.classList.add("custom-input", "text-custom");
-                   let input = document.createElement("input");
-                   input.type = "text";
-                   input.name = "properties[" + inputs[i].name + "]";
-                   input.id = inputs[i].name + "-" + id;
-                   input.placeholder = inputs[i].placeholder;
-                   if (inputs[i].maxlength) {
-                       input.setAttribute("maxlength", inputs[i].maxlength);
-                   }
-
-                   custom.appendChild(input);
-                   document.querySelector("#custom-inputs-" + id).appendChild(custom);
-
-                   if (inputs[i]["show-if"]) {
-                       //no se ha probado en select
-                       showIfValues.push({ id, input: custom, if: inputs[i]["show-if"] })
-                   }
-
-                   break;
-           }
-       }
-    }
-
-       function openModalInRecommendations(id, title, price, description, image, url, collections) {
-           // seleccionar formulario y agregarlo al modal
-
-           if (syncdata) {
-               for (let i in collections) {
-                   loadInputs(collections[i], id, syncdata);
-               }
-           } else {
-               console.log("error al cargar los datos");
-           }
-
-
-           let forms = document.querySelectorAll(".form-product-inner");
-           let slot_form = document.querySelector("#modal-details .modal-body .product-form");
-           if (forms.length > 0) {
-               forms.forEach(form => {
-                   slot_form.appendChild(form);
-               });
-           }
-
-           let modal = document.querySelector("#modal-details");
-
-
-           let slots = {
-               "product-title": title,
-               "product-price": price,
-               "product-image": image,
-               "product-description": description,
-               "product-link": `<a href="${url}" >More Details</a>`
-
-           };
-           for (const [key, value] of Object.entries(slots)) {
-               let slot = modal.querySelector("." + key);
-               if (key != "product-image") {
-                   slot.innerHTML = value;
-               } else {
-                   slot.innerHTML = `<img style="width:100%; height:100%;" src="${value}&height=350" class="radius shadow img-fluid">`;
-               }
-           }
-
-           let newForm = document.querySelector("#form-" + id);
-           let formActive = modal.querySelector(".form-product-inner:not(.d-none)");
-
-           if (formActive) {
-               if (formActive.id != newForm.id) {
-                   formActive.classList.add("d-none");
-                   newForm.classList.remove("d-none");
-               }
-           } else {
-               newForm.classList.remove("d-none");
-           }
-
-       }
-
+ 
 
 
 });
+
+    
+
+
+function loadInputs(collection, id, data) {
+    let inputs = data[collection];
+
+    for (let i in inputs) {
+        let custom = document.createElement("div");
+        custom.innerHTML = `<label for="${inputs[i].name}">${inputs[i].name}</label>`;
+
+        switch (inputs[i].type) {
+            case "select":
+                custom.classList.add("custom-input", "select-custom");
+                let select = document.createElement("select");
+                select.name = "properties[" + inputs[i].name + "]";
+                select.id = inputs[i].name + "-" + id;
+                // agregar las options
+                for (let opt in inputs[i].options) {
+                    let option = document.createElement("option");
+                    option.value = inputs[i].options[opt];
+                    option.innerHTML = inputs[i].options[opt];
+                    select.appendChild(option);
+                }
+                if (inputs[i].placeholder) {
+                    let option = document.createElement("option");
+                    option.value = "";
+                    option.disabled = true;
+                    option.innerHTML = inputs[i].placeholder;
+                    //agregar la option al inicio
+                    select.insertBefore(option, select.firstChild);
+                }
+                custom.appendChild(select);
+                document.querySelector("#custom-inputs-" + id).appendChild(custom);
+                break;
+
+            case "text":
+                custom.classList.add("custom-input", "text-custom");
+                let input = document.createElement("input");
+                input.type = "text";
+                input.name = "properties[" + inputs[i].name + "]";
+                input.id = inputs[i].name + "-" + id;
+                input.placeholder = inputs[i].placeholder;
+                if (inputs[i].maxlength) {
+                    input.setAttribute("maxlength", inputs[i].maxlength);
+                }
+
+                custom.appendChild(input);
+                document.querySelector("#custom-inputs-" + id).appendChild(custom);
+
+                if (inputs[i]["show-if"]) {
+                    //no se ha probado en select
+                    showIfValues.push({ id, input: custom, if: inputs[i]["show-if"] })
+                }
+
+                break;
+        }
+    }
+ }
+
+ function openModalInRecommendations(id, title, price, description, image, url, collections) {
+        // seleccionar formulario y agregarlo al modal
+
+        if (syncdata) {
+            for (let i in collections) {
+                loadInputs(collections[i], id, syncdata);
+            }
+        } else {
+            console.log("error al cargar los datos");
+        }
+
+
+        let forms = document.querySelectorAll(".form-product-inner");
+        let slot_form = document.querySelector("#modal-details .modal-body .product-form");
+        if (forms.length > 0) {
+            forms.forEach(form => {
+                slot_form.appendChild(form);
+            });
+        }
+
+        let modal = document.querySelector("#modal-details");
+
+
+        let slots = {
+            "product-title": title,
+            "product-price": price,
+            "product-image": image,
+            "product-description": description,
+            "product-link": `<a href="${url}" >More Details</a>`
+
+        };
+        for (const [key, value] of Object.entries(slots)) {
+            let slot = modal.querySelector("." + key);
+            if (key != "product-image") {
+                slot.innerHTML = value;
+            } else {
+                slot.innerHTML = `<img style="width:100%; height:100%;" src="${value}&height=350" class="radius shadow img-fluid">`;
+            }
+        }
+
+        let newForm = document.querySelector("#form-" + id);
+        let formActive = modal.querySelector(".form-product-inner:not(.d-none)");
+
+        if (formActive) {
+            if (formActive.id != newForm.id) {
+                formActive.classList.add("d-none");
+                newForm.classList.remove("d-none");
+            }
+        } else {
+            newForm.classList.remove("d-none");
+        }
+
+ }
 
     
 </script>
