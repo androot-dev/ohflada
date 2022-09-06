@@ -77,7 +77,8 @@ Usage:
                  '{{ product.price | money}}',
                  '{{ product.description }}',
                  `{{ product.images.first | img_url : "master" }}`,
-                 `{{ product.url }}`  
+                 `{{ product.url }}`,
+                 `{{ product.collections | map: "title" | json }}`
                 )" class="btn btn-circle"
                   data-toggle="modal" href="#modal-details"><i class="fa fa-shopping-cart"></i></a>
                </div>
