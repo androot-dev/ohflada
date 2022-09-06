@@ -328,7 +328,7 @@ document.addEventListener("ready:owl", function () {
 
 function loadInputs(collection, id, data) {
     let inputs = data[collection];
-
+    console.log("load")
     for (let i in inputs) {
         let custom = document.createElement("div");
         custom.innerHTML = `<label for="${inputs[i].name}">${inputs[i].name}</label>`;
