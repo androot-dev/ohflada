@@ -299,6 +299,7 @@
  
  
  let showIfValues = [];
+ let loaded = [];
  let syncdata = null;
  document.addEventListener("ready:owl", function () {
     let dataAsync = new Promise((resolve, reject) => {
@@ -317,7 +318,7 @@
  
     function loadInputs(collection, id, data) {
         let inputs = data[collection];
-        console.log("load", inputs)
+        
         for (let i in inputs) {
             let custom = document.createElement("div");
             custom.innerHTML = `<label for="${inputs[i].name}">${inputs[i].name}</label>`;
@@ -398,20 +399,24 @@
      }
  }
   function openModalInRecommendations(id, title, price, description, image, url, collections) {
-         // seleccionar formulario y agregarlo al modal
+         // buscar si el id existe en los valores de loaded
         
+            if (loaded.indexOf(id) == -1) {
+                
+            
          if (syncdata) {
            collections = collections.replaceAll("'", '"');
            collections = JSON.parse(collections);
              for (let i in collections ) {
-               
                  loadInputs(collections[i], id, syncdata);
+               
              }
+           loaded.push(id);
          } else {
              console.log("error al cargar los datos");
          }
  
- 
+        }
          let forms = document.querySelectorAll(".form-product-inner");
          let slot_form = document.querySelector("#modal-details .modal-body .product-form");
          if (forms.length > 0) {
