@@ -353,7 +353,9 @@
                         </p>
 
                         {%  if block.settings.open_modal_details %}
-                          
+                           <div id="form-{{ product.id }}" class=" d-none form-product-inner">
+                             {% render "form-product" product:product, hidden_variants_selector: true, scripts_off: true %}
+                            </div>
                           
                         {% else %}
                         <a  data-ajax-cart-request-button style="z-index: 5;" class="btn-small" href="{{routes.cart_add_url}}?id={{ block.settings.featured_product.variants.first.id }}&quantity=1" class="container-img sb">
