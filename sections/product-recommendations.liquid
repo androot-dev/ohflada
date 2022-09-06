@@ -302,10 +302,6 @@
 let showIfValues = [];
 let syncdata = null;
 document.addEventListener("ready:owl", function () {
-   
-   
-
-
    let dataAsync = new Promise((resolve, reject) => {
        $.getJSON("{{ "custom-inputs.json" | asset_url}}", function (data) {
            resolve(data);
@@ -315,11 +311,6 @@ document.addEventListener("ready:owl", function () {
    }).then((data) => {
        syncdata = data;
    });
-
-
- 
-
-
 });
 
     
@@ -327,11 +318,11 @@ document.addEventListener("ready:owl", function () {
 
 function loadInputs(collection, id, data) {
     let inputs = data[collection];
-    console.log("load", inputs)
+   
     for (let i in inputs) {
         let custom = document.createElement("div");
         custom.innerHTML = `<label for="${inputs[i].name}">${inputs[i].name}</label>`;
-        console.log(inputs[i].type)   
+          
         switch (inputs[i].type) {
             case "select":
                 custom.classList.add("custom-input", "select-custom");
@@ -370,9 +361,10 @@ function loadInputs(collection, id, data) {
 
                 custom.appendChild(input);
                 document.querySelector("#custom-inputs-" + id).appendChild(custom);
-
+               
                 if (inputs[i]["show-if"]) {
                     //no se ha probado en select
+                     console.log(inputs[i]["show-if"]);
                     showIfValues.push({ id, input: custom, if: inputs[i]["show-if"] })
                 }
 
