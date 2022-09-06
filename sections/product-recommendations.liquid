@@ -384,7 +384,7 @@ function loadInputs(collection, id, data) {
 
  function openModalInRecommendations(id, title, price, description, image, url, collections) {
         // seleccionar formulario y agregarlo al modal
-        console.log(syncdata)
+        console.log(collections)
         if (syncdata) {
             for (let i in collections) {
                 loadInputs(collections[i], id, syncdata);
