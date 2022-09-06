@@ -75,7 +75,7 @@ Usage:
                   {{ product.id }}, 
                  '{{ product.title }}',
                  '{{ product.price | money}}',
-                 '{{ product.description }}',
+                 `{{ product.description }}`,
                  `{{ product.images.first | img_url : "master" }}`,
                  `{{ product.url }}`,
                  `{{ product.collections | map: "title" | json | replace: '"', "'" }}`
