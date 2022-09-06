@@ -311,6 +311,14 @@
     }).then((data) => {
         syncdata = data;
     });
+
+    document.addEventListener("submit", function (e) {
+        let modal = document.querySelector("#modal-details.show");
+        if (modal) {  
+            $("#modal-details").modal("hide");
+        }
+    });
+   
  });
  
      
