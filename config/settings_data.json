@@ -369,19 +369,22 @@
           "8a7bd123-b3c4-4fd8-abd5-74c5f78b2041": {
             "type": "product",
             "settings": {
-              "featured_product": "cheese-flan"
+              "featured_product": "cheese-flan",
+              "open_modal_details": true
             }
           },
           "5d2f3882-ee40-44ab-bc66-259f2ccff1a2": {
             "type": "product",
             "settings": {
-              "featured_product": "cake-pop"
+              "featured_product": "cake-pop",
+              "open_modal_details": false
             }
           },
           "6fa0b9b5-6154-4e65-bbec-4d38e64e8a96": {
             "type": "product",
             "settings": {
-              "featured_product": "pastelillo-de-guayaba"
+              "featured_product": "pastelillo-de-guayaba",
+              "open_modal_details": false
             }
           }
         },
