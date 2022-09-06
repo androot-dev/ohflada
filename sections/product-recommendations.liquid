@@ -298,6 +298,9 @@
     <script>
  
 
+
+
+
 let syncdata = null;
 document.addEventListener("ready:owl", function () {
    let showIfValues = [];
@@ -381,7 +384,7 @@ function loadInputs(collection, id, data) {
 
  function openModalInRecommendations(id, title, price, description, image, url, collections) {
         // seleccionar formulario y agregarlo al modal
-
+        console.log(syncdata)
         if (syncdata) {
             for (let i in collections) {
                 loadInputs(collections[i], id, syncdata);
@@ -433,7 +436,6 @@ function loadInputs(collection, id, data) {
 
  }
 
-    
 </script>
 </section>
 {% schema %}
