@@ -314,11 +314,19 @@
 
     document.addEventListener("submit", function (e) {
         let modal = document.querySelector("#modal-details.show");
+        let buttons = modal.querySelectorAll("button");
+        buttons.forEach(function(el){
+          el.disabled = true;
+        });
         document.body.classList.add("sending-form");
         if (modal) {  
             setTimeout(function(){
+              
               $("#modal-details").modal("hide");
                document.body.classList.remove("sending-form");
+               buttons.forEach(function(el){
+                  el.disabled = false;
+              });
             }, 1000)
             
         }
