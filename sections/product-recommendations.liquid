@@ -332,7 +332,7 @@ function loadInputs(collection, id, data) {
     for (let i in inputs) {
         let custom = document.createElement("div");
         custom.innerHTML = `<label for="${inputs[i].name}">${inputs[i].name}</label>`;
-
+        console.log(inputs[i].type)   
         switch (inputs[i].type) {
             case "select":
                 custom.classList.add("custom-input", "select-custom");
@@ -389,8 +389,8 @@ function loadInputs(collection, id, data) {
           collections = collections.replaceAll("'", '"');
           collections = JSON.parse(collections);
             for (let i in collections ) {
+              
                 loadInputs(collections[i], id, syncdata);
-               
             }
         } else {
             console.log("error al cargar los datos");
