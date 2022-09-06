@@ -386,6 +386,7 @@ function loadInputs(collection, id, data) {
         // seleccionar formulario y agregarlo al modal
        
         if (syncdata) {
+          collections = collections.replaceAll("'", '"');
           collections = JSON.parse(collections);
             for (let i in collections ) {
                 loadInputs(collections[i], id, syncdata);
