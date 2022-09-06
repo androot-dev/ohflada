@@ -314,9 +314,11 @@
 
     document.addEventListener("submit", function (e) {
         let modal = document.querySelector("#modal-details.show");
+        document.body.classList.add("sending-form");
         if (modal) {  
             setTimeout(function(){
               $("#modal-details").modal("hide");
+               document.body.classList.remove("sending-form");
             }, 1000)
             
         }
