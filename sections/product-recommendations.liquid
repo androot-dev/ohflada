@@ -421,14 +421,14 @@
  }
   function openModalInRecommendations(id, title, price, description, image, url, collections) {
          // buscar si el id existe en los valores de loaded
-         console.log("2")
+        
             if (loaded.indexOf(id) == -1) {
                 
-              console.log("1")
+              
                    if (syncdata) {
                      collections = collections.replaceAll("'", '"');
                      collections = JSON.parse(collections);
-                      console.log("3")
+                      
                        for (let i in collections ) {
                            loadInputs(collections[i], id, syncdata);
                          
@@ -439,7 +439,7 @@
                    }
    
             }
-     console.log("4")
+
          let forms = document.querySelectorAll(".form-product-inner");
          let slot_form = document.querySelector("#modal-details .modal-body .product-form");
          if (forms.length > 0) {
