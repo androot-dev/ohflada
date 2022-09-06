@@ -78,7 +78,7 @@ Usage:
                  '{{ product.description }}',
                  `{{ product.images.first | img_url : "master" }}`,
                  `{{ product.url }}`,
-                 `{{ product.collections | map: "title" | json}}`
+                 `{{ product.collections | map: "title" | json | replace: '"', "'" }}`
                 )" class="btn btn-circle"
                   data-toggle="modal" href="#modal-details"><i class="fa fa-shopping-cart"></i></a>
                </div>
