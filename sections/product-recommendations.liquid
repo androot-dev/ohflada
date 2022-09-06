@@ -386,7 +386,7 @@ function loadInputs(collection, id, data) {
         // seleccionar formulario y agregarlo al modal
        
         if (syncdata) {
-            for (let i in collections) {
+            for (let i in JSON.parse(collections)) {
                 loadInputs(collections[i], id, syncdata);
                console.log(collections[i])
             }
